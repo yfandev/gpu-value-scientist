@@ -4,6 +4,11 @@ An AI research team that tests GPU rental-price forecasts, shares evidence, and 
 
 **[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the captioned walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv)**
 
+
+## What the price data taught us
+
+A separately frozen audit reconstructed 2,837 daily medians from 444,663 observations. In one H100 marketplace category, the median moved **$1.90 → $0.94 → $2.23** while the matching observed price record remained **$0.94**. Changing observed entries can move an index without that record repricing. This does not prove identical executable offers, a causal market mechanism, or improved forecasting. The full study did not establish a dominant explanation. [Report, scripts, raw evidence and automated verification](https://github.com/yfandev/gpu-value-scientist/blob/main/research/frontier_20261115/REPORT.md).
+
 ## What to submit
 
 Use **`forecasts_calibrated.csv`**: 111 predictions covering 37 combinations of GPU model, pricing source and rental type. The predicted dates are **November 7, 9 and 13, 2026**. Input data ends November 6. The original `forecasts.csv` is unchanged.
@@ -21,9 +26,14 @@ Pacific’s **drift** baseline comes from the supplied starter kit. It estimates
 
 The improvement is uncertain: its 95% interval is **−0.82% to +7.02%**, which includes zero. The ranges are **74.1% wider** and still miss the 80% coverage goal. In a separate matched test using drift as the starting forecast, pooled error improved **4.266%**, but the series-by-series average was **1.63% worse**. The calibration-study average was 1.62% worse; these are two distinct comparisons.
 
+A useful diagnosis: **52.8% of the original ranges had identical lower and upper prices**, leaving no room for a price change. The follow-up widened those ranges without changing the middle predictions.
+
 We selected the calibrated file for its observed overall error and coverage improvements. It is not proven better on future data. The rule was fixed before its test, after we had already seen the original undercoverage. It was first saved in a separate JSON file, then copied unchanged into `config.json`; the timestamps and limitation are preserved.
 
 A further fixed-rule test asked whether separate widening for rental groups beat global widening. **It did not.** It helped hyperscaler spot but hurt neocloud rate cards and neocloud spot on pooled error. The average across series was also worse than global widening. No replacement file was produced. [Read the full comparison](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/GROUP_CALIBRATION_STUDY.md).
+
+
+**Additional-date check:** on November 1–3 backtests (1- and 3-day horizons), the selected calibration had **1.488% higher error than Pacific drift**. A new learned-median combination looked better on older dates but was **2.610% worse than drift** on this check and was rejected. These are not the final submission outcomes. [Full results and reproducible protocols](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/PRICE_RESET_STUDY.md).
 
 ## What the agents actually did
 
@@ -79,6 +89,7 @@ To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY
 - Network-disabled reproduction preserves forecast bytes and official metrics.
 - A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
 - The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts under two minutes.
+- A fresh agent with no project background reviewed the site for a two-minute judging visit; its clarity findings were fixed before final capture ([review](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FINAL_DEMO_REVIEW.md)).
 - Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 
 Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/main/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/MEMORY_BENCHMARK_V3.md).

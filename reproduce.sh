@@ -28,3 +28,6 @@ if [ -f results/group_calibration_study/rule.json ]; then
   "$PYTHON" -B src/group_calibration_study.py
 fi
 "$PYTHON" -B src/finalize_demo.py
+
+"$PYTHON" -B src/export_price_history.py
+"$PYTHON" -B src/export_calibration_curve.py

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/research/frontier_20261115/test_study.py", line 77, in <module>
+    Controls().identity(b)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/research/frontier_20261115/test_study.py", line 13, in identity
+    self.assertAlmostEqual(b['D'],b['S']+b['C']+b['R'],places=13)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/unittest/case.py", line 961, in assertAlmostEqual
+    raise self.failureException(msg)
+AssertionError: -0.6931471805599453 != 0.3068528194400547 within 13 places (1.0 difference)

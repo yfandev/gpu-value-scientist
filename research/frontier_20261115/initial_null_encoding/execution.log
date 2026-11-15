@@ -1,0 +1,6 @@
+Extracted 444663 rows
+primary {"F": 0.41630300432617057, "transitions": 2731, "identifiable": 2731, "sum_abs_S": 0.3918608689282647, "sum_abs_C": 9.551165056606282, "sum_abs_R": 13.941082097246507}
+coarse {"F": 0.46348052612415375, "transitions": 2731, "identifiable": 2731, "sum_abs_S": 4.354724646109588, "sum_abs_C": 8.422429557394661, "sum_abs_R": 14.790679790197569}
+raw_provider {"F": 0.41630300432617057, "transitions": 2731, "identifiable": 2731, "sum_abs_S": 0.3918608689282647, "sum_abs_C": 9.551165056606282, "sum_abs_R": 13.941082097246507}
+{"blocks": 18, "draws": 2000, "seed": 20261115, "ci95": [0.2193586354360814, 0.5616814947950501], "decision": "H_mixed_or_inconclusive"}
+FRONTIER_STUDY_COMPLETE

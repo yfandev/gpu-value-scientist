@@ -1,0 +1,78 @@
+{
+  "status": "retrospective_existing_study",
+  "source_forecast_sha256": "6bf20eafbd192d9eeffe077e5fd2cd0c73c09ff18c44770e5a6553502f5b8e0d",
+  "scorer_sha256": "38f197e966169d898b5b209e83bcf1c26b0cf5a3a5116e51d9a40aed5875037b",
+  "caveat": "Widening was designed after inspecting original errors. This curve re-presents the existing retrospective study, not untouched validation or autonomous improvement.",
+  "rounds": [
+    {
+      "origin_date": "2026-07-22",
+      "cumulative_skill_vs_drift": 0.0,
+      "n_cells": 12
+    },
+    {
+      "origin_date": "2026-07-29",
+      "cumulative_skill_vs_drift": -0.0,
+      "n_cells": 24
+    },
+    {
+      "origin_date": "2026-08-05",
+      "cumulative_skill_vs_drift": -0.0,
+      "n_cells": 75
+    },
+    {
+      "origin_date": "2026-08-12",
+      "cumulative_skill_vs_drift": -0.064919,
+      "n_cells": 126
+    },
+    {
+      "origin_date": "2026-08-19",
+      "cumulative_skill_vs_drift": -0.055554,
+      "n_cells": 177
+    },
+    {
+      "origin_date": "2026-08-26",
+      "cumulative_skill_vs_drift": -0.059388,
+      "n_cells": 228
+    },
+    {
+      "origin_date": "2026-09-02",
+      "cumulative_skill_vs_drift": -0.05078,
+      "n_cells": 279
+    },
+    {
+      "origin_date": "2026-09-09",
+      "cumulative_skill_vs_drift": -0.046394,
+      "n_cells": 390
+    },
+    {
+      "origin_date": "2026-09-16",
+      "cumulative_skill_vs_drift": -0.029949,
+      "n_cells": 501
+    },
+    {
+      "origin_date": "2026-09-23",
+      "cumulative_skill_vs_drift": -0.004373,
+      "n_cells": 612
+    },
+    {
+      "origin_date": "2026-09-30",
+      "cumulative_skill_vs_drift": 0.026444,
+      "n_cells": 723
+    },
+    {
+      "origin_date": "2026-10-07",
+      "cumulative_skill_vs_drift": 0.03127,
+      "n_cells": 821
+    },
+    {
+      "origin_date": "2026-10-14",
+      "cumulative_skill_vs_drift": 0.030439,
+      "n_cells": 919
+    },
+    {
+      "origin_date": "2026-10-21",
+      "cumulative_skill_vs_drift": 0.043226,
+      "n_cells": 1017
+    }
+  ]
+}

@@ -65,7 +65,7 @@ def check(url: str, artifacts: Path):
         rejected = [h for h in data.get('hypotheses', []) if 'reject' in str(h.get('verdict', '')).lower()]
         assert page.locator('#research-table tbody tr').count() == len(rejected)
         page.locator('#hypothesis-search').fill('no-such-hypothesis-7fcd1819')
-        assert 'No matching' in page.locator('#research-table').inner_text()
+        assert 'No forecasting ideas match.' in page.locator('#research-table').inner_text()
         page.locator('#hypothesis-search').fill('')
         checks.append('Rejected hypothesis filtering and empty search state')
 
@@ -90,7 +90,7 @@ def check(url: str, artifacts: Path):
             assert page.locator('#sponsor-cards article').count() == 4
             backend = (sponsors.get('modal') or {}).get('actual_backend')
             if backend:
-                assert backend in page.locator('#sponsor-cards').inner_text()
+                assert backend.lower() in page.locator('#sponsor-cards').inner_text().lower()
             checks.append('Four sponsor audit cards reflect generated service status')
         else:
             assert 'No sponsor audit' in page.locator('#sponsor-cards').inner_text()
@@ -122,7 +122,7 @@ def check(url: str, artifacts: Path):
             assert 'forecasts_calibrated.csv' in page.locator('#final-method').inner_text()
             assert '54/54' in page.locator('#shared-memory-label').inner_text()
             assert 'Exa ran inside' in page.locator('#researcher-detail').inner_text()
-            assert 'Details' in page.locator('#rejected-table').inner_text()
+            assert 'Test details and original AI notes' in page.locator('#rejected-table').inner_text()
             assert 'Pacific' in page.locator('#overview').inner_text()
             checks.append('Recorded calibration comparison displays both official outcomes and named Pacific baseline')
         downloads = ['forecasts.csv', 'findings.md', 'README.md', 'data.json']

@@ -1,4 +1,5 @@
 """Publish measured follow-up reports without changing recorded agent decisions."""
+import hashlib
 import json
 import csv
 import shutil
@@ -17,6 +18,12 @@ if (ROOT/'forecasts_calibrated.csv').exists():
  with (ROOT/'forecasts_calibrated.csv').open() as f:
   data['forecasts']=[{**r,'horizon_days':int(r['horizon_days']),**{k:float(r[k]) for k in ['q10','q50','q90']}} for r in csv.DictReader(f)]
 p.write_text(json.dumps(data,indent=2)+'\n')
+reviewed=ROOT/'docs/FINDINGS_REVIEWED.md'
+basis=ROOT/'docs/findings_review_basis.json'
+if reviewed.exists() and basis.exists():
+ expected=json.loads(basis.read_text())
+ if all((ROOT/name).exists() and hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest for name,digest in expected.items()):
+  shutil.copyfile(reviewed,ROOT/'findings.md')
 for name in ['README.md','findings.md','config.json']:
  shutil.copyfile(ROOT/name,ROOT/'demo'/name)
 print('Measured follow-up reports added to demo; original forecasts unchanged')

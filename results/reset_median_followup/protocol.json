@@ -1,0 +1,18 @@
+{
+  "study": "reset_median_with_frozen_calibrated_bounds_v1",
+  "reason_for_followup": "The prespecified reset distribution improved middle-price losses but had worse range coverage and failed promotion. This follow-up tests that specific diagnosed failure; it was designed after seeing the first experiment and is not an independent confirmation on the old dates.",
+  "rule": "Use the frozen price-reset model's q50. Retain q10 and q90 from the existing selected calibration method. If necessary only, expand q10 downward or q90 upward to contain the new q50. Enforce q10 >= 1e-9. No parameters are tuned and no probability averaging is introduced.",
+  "immutable_model_protocol_sha256": "577025ea38996e03eda04038a2ebba71b6074b5afea493be049a651d60b73c46",
+  "primary_old_dates": ["2026-09-23", "2026-09-30", "2026-10-07", "2026-10-14", "2026-10-21"],
+  "all_old_dates": "The14original research dates; report separately.",
+  "additional_check_origins": ["2026-11-01", "2026-11-02", "2026-11-03"],
+  "additional_check_horizons": [1, 3],
+  "additional_check_status": "Previously unscored November backtests, not truly unseen data: the source prices were already available in the pack and November6prices were used as economic anchors. No 7-day November result can be scored before the pack ends.",
+  "additional_selected_comparator": "At each additional origin generate official drift and apply the existing frozen calibration function using only the original14origin forecast residual archive with target dates strictly before that origin. No additional-origin outcomes enter that residual archive.",
+  "comparators": ["Pacific drift", "Existing selected calibration method"],
+  "scoring": "Unmodified Pacific scorer, identical scored cells and declared origins/horizons. Pair origin bootstrap5000 seed20261115 on old primary dates; no significance claim from the three additional dates.",
+  "promotion_gates_all_required": ["Old primary pooled error lower than both comparators with paired95% improvement intervals entirely above zero", "Old primary mean-series skill versus Pacific at least zero and no worse than selected", "Old primary coverage no farther from80% than selected", "Additional November pooled error lower than both comparators and mean-series skill versusPacific no worse than selected", "All quantile validity and strict temporal leakage checks pass", "All existing forecast files remain unchanged"],
+  "new_file": "Only if every gate passes, save forecasts_reset_median.csv separately. Never overwrite existing forecasts or silently change the selected submission.",
+  "falsification": "If the previously unscored dates reverse the apparent gain, reject promotion even if the old dates look better. Report this negative result.",
+  "budget_minutes": 15
+}

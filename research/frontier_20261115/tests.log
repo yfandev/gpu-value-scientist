@@ -1,0 +1,17 @@
+test_cancellation (__main__.Controls.test_cancellation) ... ok
+test_fixed_prices_membership (__main__.Controls.test_fixed_prices_membership) ... ok
+test_gap_and_cutoff (__main__.Controls.test_gap_and_cutoff) ... ok
+test_multiplicity_only (__main__.Controls.test_multiplicity_only) ... ok
+test_no_overlap_unidentified (__main__.Controls.test_no_overlap_unidentified) ... ok
+test_order_invariance (__main__.Controls.test_order_invariance) ... ok
+test_persisted_identity_and_stable_membership (__main__.Controls.test_persisted_identity_and_stable_membership) ... ok
+test_protected_and_input_hashes (__main__.Controls.test_protected_and_input_hashes) ... ok
+test_raw_key_excludes_observation_identity (__main__.Controls.test_raw_key_excludes_observation_identity) ... ok
+test_raw_medians_and_counts (__main__.Controls.test_raw_medians_and_counts) ... ok
+test_uniform_repricing (__main__.Controls.test_uniform_repricing) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.177s
+
+OK
+FRONTIER_CONTROLS_PASS

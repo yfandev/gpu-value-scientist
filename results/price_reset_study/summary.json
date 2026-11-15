@@ -1,0 +1,453 @@
+{
+  "protocol_sha256": "577025ea38996e03eda04038a2ebba71b6074b5afea493be049a651d60b73c46",
+  "status": "rejected",
+  "promotion_gates": {
+    "pooled_beats_both": false,
+    "bootstrap_supports_both": false,
+    "mean_series_not_harmed": true,
+    "coverage_no_farther_from_target": false,
+    "leakage_and_distribution_checks": true
+  },
+  "middle_prediction_improvement_supported": true,
+  "changed_median_count": 223,
+  "n_predictions": 1056,
+  "candidate_file": null,
+  "protected_sha256": {
+    "forecasts.csv": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+    "forecasts_calibrated.csv": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d",
+    "forecasts_extended.csv": "05db1f8d92814cde2af97e87f9a58c471e7c09c080c7bf8e7b32d3107cbcc3dd"
+  },
+  "evaluations": {
+    "all": {
+      "reports": {
+        "candidate": {
+          "n_cells": 1017,
+          "pinball": 0.020412,
+          "baseline_pinball": 0.021483,
+          "skill_pooled": 0.049858,
+          "pinball_by_quantile": {
+            "q10": 0.015138,
+            "q50": 0.023322,
+            "q90": 0.022775
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.015605,
+            "q50": 0.023898,
+            "q90": 0.024945
+          },
+          "coverage": {
+            "below_q10": 0.097345,
+            "within_q10_q90": 0.700098,
+            "above_q90": 0.202557
+          },
+          "mae_q50": 0.046644,
+          "baseline_mae_q50": 0.047796,
+          "skill_mean_of_series": 0.059353,
+          "skill_median_of_series": 0.05707,
+          "share_series_positive_skill": 0.783784,
+          "relative_loss_geomean": 0.927753,
+          "skill_geomean": 0.072247,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.049858,
+          "headline_definition": "pooled"
+        },
+        "no_peer": {
+          "n_cells": 1017,
+          "pinball": 0.020525,
+          "baseline_pinball": 0.021483,
+          "skill_pooled": 0.044589,
+          "pinball_by_quantile": {
+            "q10": 0.015451,
+            "q50": 0.02326,
+            "q90": 0.022863
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.015605,
+            "q50": 0.023898,
+            "q90": 0.024945
+          },
+          "coverage": {
+            "below_q10": 0.100295,
+            "within_q10_q90": 0.691249,
+            "above_q90": 0.208456
+          },
+          "mae_q50": 0.04652,
+          "baseline_mae_q50": 0.047796,
+          "skill_mean_of_series": 0.051596,
+          "skill_median_of_series": 0.049512,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.935672,
+          "skill_geomean": 0.064328,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.044589,
+          "headline_definition": "pooled"
+        },
+        "selected": {
+          "n_cells": 1017,
+          "pinball": 0.020554,
+          "baseline_pinball": 0.021483,
+          "skill_pooled": 0.043226,
+          "pinball_by_quantile": {
+            "q10": 0.014261,
+            "q50": 0.023861,
+            "q90": 0.02354
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.015605,
+            "q50": 0.023898,
+            "q90": 0.024945
+          },
+          "coverage": {
+            "below_q10": 0.083579,
+            "within_q10_q90": 0.754179,
+            "above_q90": 0.162242
+          },
+          "mae_q50": 0.047722,
+          "baseline_mae_q50": 0.047796,
+          "skill_mean_of_series": -0.016189,
+          "skill_median_of_series": 0.019899,
+          "share_series_positive_skill": 0.621622,
+          "relative_loss_geomean": 0.9939,
+          "skill_geomean": 0.0061,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.043226,
+          "headline_definition": "pooled"
+        },
+        "candidate_vs_selected": {
+          "n_cells": 1017,
+          "pinball": 0.020412,
+          "baseline_pinball": 0.020554,
+          "skill_pooled": 0.006932,
+          "pinball_by_quantile": {
+            "q10": 0.015138,
+            "q50": 0.023322,
+            "q90": 0.022775
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.014261,
+            "q50": 0.023861,
+            "q90": 0.02354
+          },
+          "coverage": {
+            "below_q10": 0.097345,
+            "within_q10_q90": 0.700098,
+            "above_q90": 0.202557
+          },
+          "mae_q50": 0.046644,
+          "baseline_mae_q50": 0.047722,
+          "skill_mean_of_series": 0.057636,
+          "skill_median_of_series": 0.041366,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.933447,
+          "skill_geomean": 0.066553,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.006932,
+          "headline_definition": "pooled"
+        },
+        "candidate_vs_no_peer": {
+          "n_cells": 1017,
+          "pinball": 0.020412,
+          "baseline_pinball": 0.020525,
+          "skill_pooled": 0.005515,
+          "pinball_by_quantile": {
+            "q10": 0.015138,
+            "q50": 0.023322,
+            "q90": 0.022775
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.015451,
+            "q50": 0.02326,
+            "q90": 0.022863
+          },
+          "coverage": {
+            "below_q10": 0.097345,
+            "within_q10_q90": 0.700098,
+            "above_q90": 0.202557
+          },
+          "mae_q50": 0.046644,
+          "baseline_mae_q50": 0.04652,
+          "skill_mean_of_series": 0.008201,
+          "skill_median_of_series": 0.003912,
+          "share_series_positive_skill": 0.621622,
+          "relative_loss_geomean": 0.991537,
+          "skill_geomean": 0.008463,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.005515,
+          "headline_definition": "pooled"
+        }
+      },
+      "uncertainty_vs_drift": {
+        "ci": [
+          0.027192086448094774,
+          0.075462598220415
+        ],
+        "n_origins": 14,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "uncertainty_vs_selected": {
+        "ci": [
+          -0.017962179071826515,
+          0.048205389021264665
+        ],
+        "n_origins": 14,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "peer_ablation_uncertainty": {
+        "ci": [
+          0.0019492945141106695,
+          0.008431088465725343
+        ],
+        "n_origins": 14,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_vs_drift": {
+        "ci": [
+          0.0035670753730416174,
+          0.04973129403548464
+        ],
+        "n_origins": 14,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_vs_selected": {
+        "ci": [
+          0.0004857638844399549,
+          0.048686312743220245
+        ],
+        "n_origins": 14,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_observed_beats_both": true
+    },
+    "primary": {
+      "reports": {
+        "candidate": {
+          "n_cells": 516,
+          "pinball": 0.028315,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.06334,
+          "pinball_by_quantile": {
+            "q10": 0.018987,
+            "q50": 0.033106,
+            "q90": 0.032853
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.087209,
+            "within_q10_q90": 0.689922,
+            "above_q90": 0.222868
+          },
+          "mae_q50": 0.066211,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.062443,
+          "skill_median_of_series": 0.082544,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.922861,
+          "skill_geomean": 0.077139,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.06334,
+          "headline_definition": "pooled"
+        },
+        "no_peer": {
+          "n_cells": 516,
+          "pinball": 0.028526,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.056361,
+          "pinball_by_quantile": {
+            "q10": 0.019566,
+            "q50": 0.03294,
+            "q90": 0.033072
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.091085,
+            "within_q10_q90": 0.676357,
+            "above_q90": 0.232558
+          },
+          "mae_q50": 0.06588,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.0558,
+          "skill_median_of_series": 0.082547,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.929561,
+          "skill_geomean": 0.070439,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.056361,
+          "headline_definition": "pooled"
+        },
+        "selected": {
+          "n_cells": 516,
+          "pinball": 0.028037,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.072541,
+          "pinball_by_quantile": {
+            "q10": 0.017369,
+            "q50": 0.034147,
+            "q90": 0.032595
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.075581,
+            "within_q10_q90": 0.748062,
+            "above_q90": 0.176357
+          },
+          "mae_q50": 0.068294,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.022663,
+          "skill_median_of_series": 0.057855,
+          "share_series_positive_skill": 0.810811,
+          "relative_loss_geomean": 0.958202,
+          "skill_geomean": 0.041798,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.072541,
+          "headline_definition": "pooled"
+        },
+        "candidate_vs_selected": {
+          "n_cells": 516,
+          "pinball": 0.028315,
+          "baseline_pinball": 0.028037,
+          "skill_pooled": -0.009921,
+          "pinball_by_quantile": {
+            "q10": 0.018987,
+            "q50": 0.033106,
+            "q90": 0.032853
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.017369,
+            "q50": 0.034147,
+            "q90": 0.032595
+          },
+          "coverage": {
+            "below_q10": 0.087209,
+            "within_q10_q90": 0.689922,
+            "above_q90": 0.222868
+          },
+          "mae_q50": 0.066211,
+          "baseline_mae_q50": 0.068294,
+          "skill_mean_of_series": 0.027428,
+          "skill_median_of_series": 0.021917,
+          "share_series_positive_skill": 0.621622,
+          "relative_loss_geomean": 0.963117,
+          "skill_geomean": 0.036883,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": -0.009921,
+          "headline_definition": "pooled"
+        },
+        "candidate_vs_no_peer": {
+          "n_cells": 516,
+          "pinball": 0.028315,
+          "baseline_pinball": 0.028526,
+          "skill_pooled": 0.007396,
+          "pinball_by_quantile": {
+            "q10": 0.018987,
+            "q50": 0.033106,
+            "q90": 0.032853
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.019566,
+            "q50": 0.03294,
+            "q90": 0.033072
+          },
+          "coverage": {
+            "below_q10": 0.087209,
+            "within_q10_q90": 0.689922,
+            "above_q90": 0.222868
+          },
+          "mae_q50": 0.066211,
+          "baseline_mae_q50": 0.06588,
+          "skill_mean_of_series": 0.006767,
+          "skill_median_of_series": 0.00179,
+          "share_series_positive_skill": 0.567568,
+          "relative_loss_geomean": 0.992793,
+          "skill_geomean": 0.007207,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.007396,
+          "headline_definition": "pooled"
+        }
+      },
+      "uncertainty_vs_drift": {
+        "ci": [
+          0.047551054222114135,
+          0.10782423952475784
+        ],
+        "n_origins": 5,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "uncertainty_vs_selected": {
+        "ci": [
+          -0.03747078953885574,
+          0.041177939345834025
+        ],
+        "n_origins": 5,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "peer_ablation_uncertainty": {
+        "ci": [
+          0.004242805345978207,
+          0.01155711438286744
+        ],
+        "n_origins": 5,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_vs_drift": {
+        "ci": [
+          0.007589303624845556,
+          0.06752285900600719
+        ],
+        "n_origins": 5,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_vs_selected": {
+        "ci": [
+          0.0055107674358689795,
+          0.06651301774598539
+        ],
+        "n_origins": 5,
+        "draws": 5000,
+        "status": "computed"
+      },
+      "middle_observed_beats_both": true
+    }
+  },
+  "caveat": "One candidate; no parameter search. All evaluation dates were previously inspected in other project experiments, so this is retrospective evidence, not untouched validation."
+}

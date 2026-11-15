@@ -1,0 +1,52 @@
+{
+  "study": "Do posted GPU price indices measure repricing or observation-basket change?",
+  "frozen_at_utc": "2026-11-15T21:03:00Z",
+  "status": "Frozen before any decomposition, transition count or outcome computation; schema, two non-price sample rows per collector, target source counts and existing literature/results inspected first.",
+  "question": "How much of observed adjacent-day movement in the 37 scored posted-rental median indices is attributable to changing observed contract membership or row sampling, rather than movement in matched observed contract cells?",
+  "hypotheses": {
+    "H_price": "Matched-cell movement dominates: non-repricing absolute-component share F <= 0.20.",
+    "H_basket": "Membership plus sampling dominates: F >= 0.50.",
+    "H_mixed": "Neither dominance claim is supported, or result depends materially on source or matching definition."
+  },
+  "data": "Unmodified Pacific gpu-price-pack-v0.1.1-handover rental_observations parquet and daily_statistics.csv; no network or new data. 37 rows in existing data/targets.csv. Primary endpoint dates 2026-07-10 through 2026-11-06 with both adjacent dates observed and earliest input 2026-07-09, avoiding known early-July backfill. No filling gaps. Exclude no source within the target cohort. Broader population or forecast promotion is out of scope.",
+  "key": {
+    "primary": ["source_id", "instrument_class", "gpu_model", "pricing_tier", "provider", "gpu_memory_gb", "gpu_count", "sku_raw", "region_raw", "region_canonical", "country", "price_basis", "extra_json.instance", "extra_json.commitment", "extra_json.min_gpus", "extra_json.rate_basis", "extra_json.vcpus", "extra_json.ram_gb", "extra_json.availability_zone", "extra_json.vcpus_per_gpu", "extra_json.memory_gib_per_gpu"],
+    "forbidden": ["prices", "obs_id", "date", "snapshot_ts_utc", "fetched_at", "collector_version", "source_url", "extra_json.snapshot_file", "extra_json.git_sha"],
+    "nulls": "Explicit null is a reproducible category, not evidence of identical unobserved quality. Never infer missing SKU, memory or region.",
+    "sensitivity_coarse": "same primary key with sku_raw and all extra_json attributes removed; retain other published contract fields",
+    "sensitivity_raw_provider": "primary key but provider_raw replaces normalized provider",
+    "daily_cell_price": "Median of all observed rows in that key/day; do not use row count as weight for cell median index. Record within-key same-snapshot distinct-price conflicts and missing SKU/count/region.",
+    "interpretation": "Matched observable contract cell, not verified identical executable offer. FastGPU cells are daily minima, not individual offers. Different collectors never pooled into a single price index."
+  },
+  "decomposition": {
+    "A": "Median over all raw rows of one target/day, unrounded; verify round(A,4) equals supplied daily_statistics median to rounding tolerance.",
+    "E": "Unweighted median of daily cell prices over all keys that day.",
+    "M": "Unweighted median of daily cell prices restricted to keys present on both adjacent days.",
+    "D": "log(A_new/A_old)",
+    "sampling_S": "log(A_new/E_new)-log(A_old/E_old); includes multiplicity and within-cell aggregation, not pure sampling causality",
+    "membership_C": "log(E_new/M_new)+log(M_old/E_old)",
+    "matched_R": "log(M_new/M_old)",
+    "identity": "D = S + C + R to floating-point tolerance. C is an overlap-bridge residual, not a causal effect or a unique index-number attribution.",
+    "no_overlap": "Report as unidentified; never assign all movement to membership or repricing.",
+    "high_overlap": "At least 3 common keys and common/old >= .8 and common/new >= .8; report separately, not substitute for primary.",
+    "unchanged": "Retain all transitions, including zero aggregate change, because opposing components may cancel. Material-change diagnostic: abs(D)>=log(1.01)."
+  },
+  "primary_metric": "F = (sum abs(S) + sum abs(C)) / (sum abs(S)+sum abs(C)+sum abs(R)), over all identifiable adjacent-day target transitions. Components measured in log units. This is share of absolute bridge components, NOT percent of observed net change explained. Also report net motion sum abs(D), cancellation, source/series shares, count with zero matched change and nonzero index change, no-overlap coverage and fraction of total raw absolute movement retained.",
+  "statistical_tests": {
+    "bootstrap": "2000 draws, numpy seed 20261115. Resample whole fixed 7-calendar-day endpoint blocks starting 2026-07-10, preserving all series and days within each block, including final partial block. Percentile 95% CI for F. Descriptive dependent-panel inference; no claim of untouched holdout or randomized causal identification.",
+    "decision": "Support H_basket only if lower CI > .50; support H_price only if upper CI < .20; otherwise inconclusive/mixed. Report all prespecified key sensitivities and leave-one-source-out estimates. A conclusion that reverses across keys or removal of a source is explicitly source/key-dependent.",
+    "multiplicity": "One primary metric/test only. All subgroup, high-overlap, 1% move, and sensitivity statistics are diagnostic, not extra independent tests or selectable winning claims."
+  },
+  "controls": [
+    "Synthetic fixed prices with changing membership: R=0 and all motion S+C.",
+    "Synthetic fixed membership, uniform 10% repricing: S=C=0 and R=log(1.1).",
+    "Synthetic changing multiplicity only: C=R=0 and all motion S.",
+    "Synthetic offsetting membership and repricing with unchanged raw median exposes cancellation.",
+    "Synthetic missing-day gap never becomes adjacent-day transition.",
+    "Rows reordered or observation IDs changed cannot alter keys or outputs.",
+    "Primary decomposition identity, stable-basket C=0, raw median reconciliation, cutoff and protected-file hashes checked.",
+    "Independent implementation reconstructs deterministic highest-motion cases from original parquet and validates summary against persisted transitions; review separates observed-cell change from proven repricing."
+  ],
+  "deliverables": "Frozen protocol and hash, standalone scripts, daily-cell derived data, every transition and bootstrap draw, coverage/provenance report, deterministic event raw rows with source provenance, synthetic tests, independent verification, readable report with negatives and discovery chain. All writes only research/frontier_20261115. No forecasts changed or promoted.",
+  "limitations_known_before_results": "Retrospective final-cutoff cohort, sources correlated through shared providers, posted quotes not transactions, missing quote attributes, collector updates and product availability inseparable from economic entry/exit, exact identity not unique causal decomposition, rounding in official target, source-specific panel construction, limited period, supplied backfilled or revised data do not prove historical publication availability."
+}

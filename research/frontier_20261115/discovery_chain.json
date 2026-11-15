@@ -1,0 +1,37 @@
+{
+  "closed_utc": "2026-11-15T21:09:20.436950+00:00",
+  "question": "Does movement in aggregate posted GPU rental medians identify repricing of comparable observed contract cells?",
+  "prior_evidence_reviewed": [
+    "README.md",
+    "findings.md",
+    "docs/CALIBRATION_STUDY.md (via findings)",
+    "docs/GROUP_CALIBRATION_STUDY.md (via findings)",
+    "docs/FALSIFICATION_AUDIT.md",
+    "docs/SERIES_AUDIT.md",
+    "results/hypotheses.json",
+    "results/method_summary.json",
+    "results/price_reset_study/protocol.json",
+    "results/price_reset_study/summary.json",
+    "results/reset_median_followup/summary.json",
+    "data/pack/gpu-price-pack-v0.1.1-handover/DATA.md",
+    "data/pack/gpu-price-pack-v0.1.1-handover/BUILD_rental_panels.md",
+    "data/pack/gpu-price-pack-v0.1.1-handover/starter/build_series.py"
+  ],
+  "search_result": "Repository src/tests/docs search for composition/basket/matched/repricing/sampling found caveats and unrelated matched-score tests, no existing matched-observation median decomposition.",
+  "before_results": "Protocol frozen and hashed; source/schema reconnaissance only. No transition counts or component outcomes viewed before freeze.",
+  "execution": "Single prespecified decomposition; three frozen keys, overlap/material diagnostics,18-block bootstrap. No new models or post-hoc candidate promotion.",
+  "negative_result": "Neither prespecified dominance criterion passes; F .416303 with interval [.219359,.561681].",
+  "positive_descriptive_finding": "Actual index changes can occur with all common cells unchanged; verified 5-to-1-to-4 H100 basket example. Aggregate and common-cell medians can move oppositely in a rate-card example.",
+  "unexpected_evidence": "Most row-count volume is afhubbard, but its component share is lowest; tiny unrounded movements may disappear in official rounding. Poor-overlap pairs have disproportionate absolute motion.",
+  "correction": "Null serialization normalized after control failure, preserved initial outputs, numeric results identical.",
+  "validation": "11 controls pass; deliberate corrupted-identity fails; independent original-parquet daily/case reconstruction and full bootstrap pass after correction;536 input hashes and3 protected forecast hashes verified.",
+  "scientific_boundary": "Accounting bridge, not causal decomposition. Missing attributes and source minima prevent certifying same executable offers. No forecast-score improvement or market-outperformance claim.",
+  "unchanged_artifacts": [
+    "forecasts.csv",
+    "forecasts_calibrated.csv",
+    "forecasts_extended.csv",
+    "Pacific pack",
+    "existing code/docs/demo/submission outputs"
+  ],
+  "write_scope": "research/frontier_20261115 only; no commit,push,deploy,network or new experiment."
+}

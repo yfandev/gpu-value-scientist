@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "origin": "2026-07-22",
+      "check": "truncated",
+      "predictions": 12,
+      "equal": true
+    },
+    {
+      "origin": "2026-07-22",
+      "check": "perturbed",
+      "predictions": 12,
+      "equal": true
+    },
+    {
+      "origin": "2026-07-29",
+      "check": "truncated",
+      "predictions": 12,
+      "equal": true
+    },
+    {
+      "origin": "2026-07-29",
+      "check": "perturbed",
+      "predictions": 12,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-05",
+      "check": "truncated",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-05",
+      "check": "perturbed",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-12",
+      "check": "truncated",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-12",
+      "check": "perturbed",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-19",
+      "check": "truncated",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-19",
+      "check": "perturbed",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-26",
+      "check": "truncated",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-08-26",
+      "check": "perturbed",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-02",
+      "check": "truncated",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-02",
+      "check": "perturbed",
+      "predictions": 51,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-09",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-09",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-16",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-16",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-23",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-23",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-30",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-09-30",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-07",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-07",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-14",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-14",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-21",
+      "check": "truncated",
+      "predictions": 111,
+      "equal": true
+    },
+    {
+      "origin": "2026-10-21",
+      "check": "perturbed",
+      "predictions": 111,
+      "equal": true
+    }
+  ],
+  "no_change_atom": true,
+  "signed_jump_quantiles": true,
+  "missing_day_resets_age": true,
+  "note": "Future rows removed and separately perturbed at all14origins; existing official baseline fallback independently remains origin-truncated."
+}
