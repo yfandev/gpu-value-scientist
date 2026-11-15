@@ -35,7 +35,7 @@ Default branch: `main`. Published as `yfandev`.
 ## Demo video
 Public download: https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm
 
-This is a captioned browser recording, without audio. The judging brief names YouTube, Drive or Loom; the direct WebM link is not one of those hosts. No connected uploader is available in this workspace.
+This is a 1 minute 52 second (112.28 seconds), 1920×1080 captioned browser recording, without audio. The judging brief names YouTube, Drive or Loom; the direct WebM link is not one of those hosts. No connected uploader is available in this workspace.
 
 To get a compliant Drive link:
 1. Open the public video, right-click the video and choose **Save video as…**; save `demo.webm`.

@@ -2,5 +2,9 @@
   "public_url": "https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/",
   "browser_errors": [],
   "recording": "actual browser with explanatory captions",
-  "audio": false
+  "audio": false,
+  "duration": 112.28,
+  "width": 1920,
+  "height": 1080,
+  "playback_check": "local encoded file opens and seeks in Chromium"
 }

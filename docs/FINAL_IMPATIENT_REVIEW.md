@@ -49,3 +49,13 @@ The script uses 24px captions at 1920×1080 with a dark background and pointer-e
 ### Final stage verification
 
 On the deployed page at 1366×768, the tour handler directly calls `learning-chart.scrollIntoView`. Two seconds after clicking replay, the chart occupied y≈0–307 px and the transport occupied y=448–508 px. Pause, Next test and Start over all occupied y=463–494 px, fully inside the viewport. This verifies the stage scroll fix. The final metric color-only change requested afterward does not change these findings; it was not separately evaluated here.
+
+## Final encoded-video sample review
+
+Inspected the actual encoded-video screenshots at 20, 34, 65, 85 and 100 seconds using the image viewer, plus `artifacts/submission/project-screenshot.png`. The 34-second frame visibly reaches test 14 and the final positive green endpoint, confirming the replay timing correction in the recording. The 65-second frame clearly shows the selected H100 SXM 80GB category, historical white prices, November 6 divider, overlapping future middle estimates and the wider shaded range. The 85-second frame presents the conditional economic scenarios and their assumptions; 100 seconds presents offline reproduction and the unmet coverage target. The final landing screenshot is clean and presents the concrete matching-record example.
+
+The supplied video-frame PNGs include the native video player's dark controls overlay over the captions. To distinguish this from a recording defect, I independently opened `demo.webm` in Chromium, disabled native video controls and sought to 65 seconds. The encoded caption is bright white, readable and complete on its dark panel. Thus the dim caption in the supplied screenshots is a playback-control overlay, not an encoded contrast problem. Controls should be hidden in any published stills extracted this way.
+
+Sampled-video verdict: PASS, no new blocker. Story continuity across sampled sections is clear and the caption qualification remains honest. Existing small-detail/density limitations still apply. This is a representative-frame review, not a claim to have watched every frame or independently measured the parent-reported 112.28-second duration and silent audio status.
+
+The parent subsequently regenerated the review PNGs without native controls. I re-opened the regenerated 100-second frame: its full reproduction caption is bright, readable and unobscured. The temporary review-frame overlay concern is resolved.

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "index.html",
+    "sha256": "a5a5d090d15a80e7428742d4817f03f63278f4ef24371c77808f8470a10b908c",
+    "status": 200
+  },
+  {
+    "file": "demo.webm",
+    "sha256": "8a5018b55038a75a62b29068618fe83daf021b08cb081b1ddb3107e937208650",
+    "status": 200
+  },
+  {
+    "file": "project-screenshot.png",
+    "sha256": "38ae36ee94dbf6c8925f8eaf8ec6a076d1d4d99ab2c4a942e34b79ba529e8532",
+    "status": 200
+  },
+  {
+    "file": "forecasts_calibrated.csv",
+    "sha256": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d",
+    "status": 200
+  },
+  {
+    "file": "README.md",
+    "sha256": "7cc7e2faadb9a9a1477db236541739ae71776499629df7a3145fc8157ee5a3be",
+    "status": 200
+  },
+  {
+    "file": "findings.md",
+    "sha256": "2020ccc5bcb49622db1ef15658c17e6256b27834d3302f65b6b220341de7f535",
+    "status": 200
+  }
+]

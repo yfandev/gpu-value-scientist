@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/ATTRIBUTION.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/data/headline_series_audit.csv",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/CALIBRATION_STUDY.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FALSIFICATION_AUDIT.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FINAL_DEMO_REVIEW.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/GROUP_CALIBRATION_STUDY.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/MEMORY_BENCHMARK_V3.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/PRICE_RESET_STUDY.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/docs/SERIES_AUDIT.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/findings.md",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_extended.csv",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/yfandev/gpu-value-scientist/blob/main/research/frontier_20261115/REPORT.md",
+    "status": 200
+  }
+]

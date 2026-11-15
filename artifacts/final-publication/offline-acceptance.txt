@@ -1,0 +1,23 @@
+{
+  "status": "passed_offline_core",
+  "forecast_sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+  "pack_files_verified": 672,
+  "offline_network_guard_positive_control": "passed",
+  "byte_identical_forecasts": true,
+  "official_metrics_identical": true,
+  "memory_writers": [
+    "ANALYST",
+    "CRITIC",
+    "RESEARCHER"
+  ],
+  "memory_readers": [
+    "ANALYST",
+    "FORECASTER"
+  ],
+  "live_integrations": {
+    "matching_live_receipt": true,
+    "actual_access_verified": true
+  },
+  "target_discrepancy": "37 actual November posted headline targets, not the mixed 97 October targets"
+}
+GPU_VALUE_OFFLINE_ACCEPTANCE_PASSED
