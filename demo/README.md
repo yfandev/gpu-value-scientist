@@ -1,10 +1,66 @@
 # GPU Value Scientist
 
-An auditable GPU rental forecasting experiment and static research demo for the Pacific challenge. Published to GitHub as yfandev with explicit user authorization. Credentials and the original data pack are excluded.
+An AI research team that tests GPU rental-price forecasts, shares evidence, and keeps a record of ideas that fail.
 
-Public demo: https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/
+**[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the captioned walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/forecasts_calibrated.csv)**
 
-## Run
+## What to submit
+
+Use **`forecasts_calibrated.csv`**: 111 predictions covering 37 combinations of GPU model, pricing source and rental type. The predicted dates are **November 7, 9 and 13, 2026**. Input data ends November 6. The original `forecasts.csv` is unchanged.
+
+## What improved—and what did not
+
+These are **historical tests, not results for the November submission**.
+
+| Same saved agent forecasts | Actual prices inside the predicted range | Less forecast error than Pacific’s drift baseline |
+|---|---:|---:|
+| Before calibration | 64.70% | 0.057% |
+| After widening the ranges | **75.42%** | **4.323%** |
+
+Pacific’s **drift** baseline comes from the supplied starter kit. It estimates future prices and ranges from historical price changes. “Less error” means a reduction in the official score, not the percentage of correct answers.
+
+The improvement is uncertain: its 95% interval is **−0.82% to +7.02%**, which includes zero. The ranges are **74.1% wider** and still miss the 80% coverage goal. In a separate matched test using drift as the starting forecast, pooled error improved **4.266%**, but the series-by-series average was **1.63% worse**. The calibration-study average was 1.62% worse; these are two distinct comparisons.
+
+We selected the calibrated file for its observed overall error and coverage improvements. It is not proven better on future data. The rule was fixed before its test, after we had already seen the original undercoverage. It was first saved in a separate JSON file, then copied unchanged into `config.json`; the timestamps and limitation are preserved.
+
+A further fixed-rule test asked whether separate widening for rental groups beat global widening. **It did not.** It helped hyperscaler spot but hurt neocloud rate cards and neocloud spot on pooled error. The average across series was also worse than global widening. No replacement file was produced. [Read the full comparison](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/GROUP_CALIBRATION_STUDY.md).
+
+## What the agents actually did
+
+Four OpenAI agents ran a bounded research loop across 14 later test dates. They tested recent-price windows, smaller changes for stable prices, and adjusted uncertainty ranges. The original loop did not establish a reliable improvement over drift. The later calibration studies were prompted by human feedback; we do not present them as autonomous discoveries.
+
+- **Analyst** proposes forecasting ideas and records results.
+- **Critic** tests later outcomes and accepts or rejects ideas.
+- **Forecaster** reads shared findings and chooses permitted methods.
+- **Researcher** searches for dated evidence and shares it with Analyst.
+
+The Economic view leads with the argued 2028–29 outlook. Forecast explorer shows actual posted rental prices through November 6 beside the future predictions; later actual prices are unavailable. The gold dashed line in the learning chart is Pacific’s drift comparison at zero improvement.
+
+The demo’s replay reveals saved results from real completed experiments. It does not run new experiments or play a video.
+
+## Sponsor technology—and the limits
+
+**OpenAI:** real model calls for all four roles; saved requests and responses support offline reproduction.
+
+**Exa:** the verified run includes **13 live calls inside the main loop**, with dated sources in 13 rounds. Sources were supplied to Analyst; the demo distinguishes available sources from explicit citations. This is separate from long-term research notes.
+
+**past.dev writers:** Analyst, Critic and Researcher. **Readers:** Analyst and Forecaster. Agents read records written by other agents. In the structured lookup benchmark, past.dev matched local lookup accuracy (**54/54**) but was slower: **0.8234 seconds versus 0.000426 seconds**. **No cost savings are established.** This tests memory lookup, not GPU forecasting. Actual calls, failures and all three benchmark versions are preserved.
+
+**Modal:** eight real parallel experiment jobs and independent public hosting. We do not claim a speedup from the experiment jobs.
+
+**Originator:** development took place in an ori / hackwithori.com workspace. We do not claim an official judging score or award.
+
+past.dev holds shared hypotheses, verdicts and evidence. Local files hold canonical records, exact API replay caches, data, forecasts and official reports. Local memory is an explicit outage fallback, not proof of a past.dev call.
+
+## Why 37 categories, when the brief says 97?
+
+October 24 has **97 headline series: 80 AWS archive series plus 17 posted-rental series**. November 6 has 37 eligible posted-rental series: those 17 plus 20 more. All 37 have November 6 data.
+
+The AWS series are still forecastable from October 31 observations, but are stale and outside Sunday’s scored posted-rental scope. [`forecasts_extended.csv`](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/forecasts_extended.csv) preserves the original 111 rows and adds 240 AWS predictions: **117 series, 351 rows**. It is not the selected calibrated submission. [Every series, latest date and inclusion reason](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/data/headline_series_audit.csv).
+
+## Reproduce it
+
+Download the unchanged Pacific pack from the [organiser’s Drive folder](https://drive.google.com/drive/folders/14zWi964QlLh3mZeWGrBI85J31-SqfGHN). Extract it to `data/pack/gpu-price-pack-v0.1.1-handover/`.
 
 ```bash
 python3 -m venv .venv
@@ -12,84 +68,21 @@ python3 -m venv .venv
 ./reproduce.sh
 ```
 
-The unchanged pack must be at `data/pack/gpu-price-pack-v0.1.1-handover/` (or set its path in config.json before starting a new experiment). This workspace already has the verified pack and installed dependencies. Normal reproduction is offline: it rebuilds posted series, all candidate forecasts, official score reports, the 14-round research replay, findings, and demo data. No API calls are made. `forecasts.csv` is the final submission; `forecasts_fallback.csv` is starter drift. Exact columns: series_id,origin_date,horizon_days,q10,q50,q90,target_date.
+Normal reproduction makes **no API calls**. It rebuilds forecasts, official scores, saved agent decisions, memory comparisons, calibration studies, the series audit and demo data. Original and calibrated forecast bytes reproduce exactly.
 
-Start the demo with `.venv/bin/python -m http.server 8080 --directory demo` and open its workspace preview. See `demo/DEMO_FLOW.md` for a three-minute presentation. The UI contains only computed results and explicitly labels recorded replay and unavailable integrations.
+To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY`, `EXA_API_KEY` and `PAST_API_KEY`, then run `./reproduce.sh --live`. Existing actual responses may be reused from cache. Never commit `.env`. Modal deployment additionally needs its token ID and secret, `requirements-modal.txt`, and `./deploy_modal.sh`.
 
-## Target mismatch discovered in the actual pack
+## Checks and evidence
 
-The October 24 starter catalog's 97 headline targets include 80 AWS archive spot series and **17 posted-rental series**. The November 6 posted-only catalog has **37 headline posted-rental series**. The original submission covers all 37 (111 rows). The 80 October-headline AWS archive series can also be forecast from their older observations, but are outside Sunday’s posted-rental scoring; see `data/headline_series_audit.csv` and `forecasts_extended.csv`. The full rebuilt catalog has 725 series; the union of October/November headline membership is 117. Original 97-series quickstart artifacts remain in `results/quickstart`. `data/targets.csv` gives every target's instrument class, benchmark contract, source URL and license. Sources and instruments are never chained. The historical evaluation cohort is defined at the final cutoff, so cohort-selection/survivorship bias is a disclosed limitation.
+- Pacific’s unchanged `starter/scorer.py` supplies every reported loss and skill score.
+- The starter rejects history containing a post-cutoff row.
+- Network-disabled reproduction preserves forecast bytes and official metrics.
+- A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
+- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts about 112 seconds.
+- Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 
-## Agent integrations and live mode
+Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/MEMORY_BENCHMARK_V3.md).
 
-Configure environment secrets securely:
+Remaining limits include retrospective target selection, previously inspected test dates, few test origins, dependent prices, uneven gains across series, and unavailable November outcomes. Long-term resale/rental ranges are assumption-based scenarios, not scored forecasts.
 
-- `OPENAI_API_KEY`: four strict-JSON roles, model configured in config.json (gpt-4.1-mini), temperature 0.
-- `PAST_API_KEY`: past.dev project key for shared research memory.
-- `EXA_API_KEY`: dated external evidence searches.
-
-Then `./reproduce.sh --live`. Agent calls are cached by canonical request hash in `data/agent_cache.json`; live mode upgrades deterministic fallback records but reuses actual API responses. To force a fresh experiment, archive caches and results first and use a new config namespace. Calls may incur API charges. Missing OpenAI credentials stop live execution. Failed/missing past.dev uses a conspicuous local fallback. Missing Exa is recorded as blocked, never shown as a successful search. The original run used deterministic policies. Live OpenAI, Exa, and past.dev execution is now supported and verified through production logs; inspect the current sponsor audit and any matching recorded live receipt for exact run provenance.
-
-The method library accepts JSON parameter sets only. Agents choose bounded candidate IDs; candidate definitions map to method and parameters, and no generated code executes. Analyst proposes hypotheses and logs mature results. Critic reviews paired official losses on later origins. Forecaster reads Analyst/Critic memory and chooses among admitted methods. Researcher writes dated evidence-boundary notes. Per-origin Exa notes enter the historical Analyst through shared memory; final-cutoff narrative sources remain separate.
-
-### What is stored where
-
-- **past.dev in live mode:** timestamped Analyst hypotheses/results, Critic verdicts, and Researcher notes; isolated audience and agent identities. At least Analyst and Forecaster recall shared entries. Retrieved source IDs are matched to canonical records and filtered by round/date; generated remote summaries cannot bypass the cutoff.
-- **Local canonical memory:** `data/memory.json`; the same records for audit and outage fallback. `data/memory_recall_cache.json` records actual remote selections for offline replay.
-- **Local files:** pack, series, forecasts, full official scoring reports and per-cell losses, evidence, cached decisions, `logs/agent_log.jsonl`, and `results/replay_audit.json`. These are not all uploaded to past.dev.
-
-## Evaluation protocol
-
-Config and its initial hash were written before running any score (`logs/config-preregistered.sha256`). Fifteen weekly origins are July 15 through October 21, the starter's interpretation of a range ending October 24. Round t chooses at the next origin using only earlier-origin outcomes whose target date has matured. Hypotheses must be frozen before their validation origins, and at least three later origins are required. The online curve comprises 14 subsequent origins. Final promotion requires positive online skill against drift **and** a paired loss CI wholly below zero; otherwise submit drift.
-
-All pooled, mean, median, and geometric-mean skill values and coverage come from the unchanged starter `scorer.py`. Paired bootstrap resamples whole origins from its emitted per-cell losses, retaining cross-series/horizon dependence within origins. Its intervals are exploratory: few clusters, serial dependence across origins, and repeated tests limit inference. Conformal-style calibration uses prequential residuals, not an exchangeability guarantee. Rate-card steps make exact 80% deterministic coverage difficult.
-
-Final November truth is not in the pack. Historical performance must never be presented as a score for the submission. A zero or tiny learning gain is not a demonstrated improvement.
-
-## Validation
-
-```bash
-.venv/bin/python -B -m unittest discover -s tests -v
-.venv/bin/python -B tests/acceptance.py
-```
-
-Acceptance validates official forecast checks and exact target grid, a controlled post-cutoff history refusal, byte-identical network-disabled offline reproduction, temporal decision audit, actual shared-memory writers/readers, and authorized GitHub identity where a repository exists. It separately reports live integrations as blocked if unexecuted. The known-bad history fixture is deleted after the refusal check and never enters forecasts.
-
-`./reproduce.sh` rebuilds generated reports; official reports carry runtime timestamps, so report bytes can change while scores and forecast bytes remain identical. The pack manifest is verified unchanged. Eight actual Modal parallel jobs have completed, with all official score reports matching local results exactly. No speedup is claimed: cold-start and local timings are not a controlled benchmark.
-
-## Data and attribution
-
-Pacific Machines (2026), gpu-price-pack v0.1.1-handover, cutoff November 6, CC BY 4.0 on the compilation. The full upstream wording is in ATTRIBUTION.md and the pack's sources_register.csv and licences/. Derived changes include target extraction, forecasts, evaluation and analysis. Keep the pack unchanged and attribution with derived work. Direct public citations in data/evidence.json are labeled separately from Exa results. Long-term economic ranges in findings.md are argued assumptions-based sensitivities, not scored or calibrated forecasts.
-
-## Sponsor challenges and public hosting
-
-Create `.env` using `.env.example` and set OPENAI_API_KEY, EXA_API_KEY, PAST_API_KEY, MODAL_TOKEN_ID, and MODAL_TOKEN_SECRET. The loader treats values as literal text, never shell commands, and does not overwrite existing environment variables. `.env` stays local, mode 0600, and is excluded from the static site, Modal images, and submission bundle. Never paste credentials into chat.
-
-Exa is now called inside each round by `src/research_loop.py:research_round`, through `src/evidence.py:LoopResearcher.research`. Before Analyst proposes, Researcher searches with an exclusive publication end date at the next UTC midnight after that round's origin, rejects undated/later/restricted results, and writes cited notes to shared memory. Analyst reads those notes and chooses only fixed method-library candidates. The demo's Sources & sponsors tab links the results, dates, excerpts, and hypotheses. Offline replay uses exact cached searches; a cache miss is unavailable, never a fabricated Exa result. Current-source publication metadata does not prove that an older article was never revised: this limits historical claims, and sources are hypothesis context, never evaluation truth or unverified numerical targets.
-
-Actual production use is audited in `results/sponsor_audit.json`: API fixture tests do not count. past.dev requires multiple successful live writers/readers and evidence that decisions received another agent's retrieved records. We make no accuracy, latency, or cost-gain claim for memory. The public repository is https://github.com/yfandev/gpu-value-scientist. The original paired memory benchmark and its negative results are in docs/MEMORY_BENCHMARK.md; optimizations are evaluated separately without replacing that record.
-
-For Modal, install `requirements-modal.txt`, then run `./deploy_modal.sh` after setting its token pair. This deploys an independent public static site on Modal, not a tunnel or an Ori private-preview workaround. Run `.venv/bin/python -B tests/check_public.py '<exact URL printed by Modal>'` to verify the homepage, data and forecast download without cookies, authorization, or redirects, and verify secret paths return 404. The current Ori preview fails this anonymous-access test with HTTP 401 and must not be described as a public judges URL.
-
-Run `.venv/bin/python -B src/modal_jobs.py --run-experiments --backend modal` for eight parallel bounded forecast/scoring jobs. Missing credentials or cloud failures are labeled local fallback. `results/modal/execution.json` states the actual backend. Real Modal cloud execution is recorded in results/modal/execution.json. The public static demo is https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/ and is independent of this workspace.
-
-This work is already conducted on hackwithori.com, satisfying the stated platform-use direction for Originator. We have not verified registration, an automated pre-score, finalist status, or an award.
-
-
-The unchanged Pacific pack is available from the organiser’s [Google Drive folder](https://drive.google.com/drive/folders/14zWi964QlLh3mZeWGrBI85J31-SqfGHN). Extract its zip to `data/pack/`, preserving the enclosed `gpu-price-pack-v0.1.1-handover` directory. The original pack is not stored in this repository.
-
-## past.dev challenge: measured result
-
-**Writers:** Analyst writes hypotheses and results; Critic writes verdicts; Researcher writes dated evidence. **Readers:** Analyst and Forecaster read shared records, including records written by other agents. The recorded live run verifies these past.dev API calls.
-
-In the structured lookup benchmark, past.dev matched the local lookup’s accuracy (**54/54**) but was slower: **0.8234 seconds** per query versus **0.000426 seconds** locally. **No cost savings are established.** Token reductions and list-price scenarios are not proof of lower total cost. This benchmark measures memory lookup, not GPU forecast accuracy.
-
-Reviews in this project are **automated self-review by the build agent**, including delegated agents in the same system. They are not external certification or official judging scores.
-
-## Additional submission files and calibration
-
-`forecasts.csv` remains the original 111-row posted-rental submission. `forecasts_calibrated.csv` is the optional 111-row version with wider history-only price ranges; `forecasts_extended.csv` preserves the original rows and adds 240 AWS forecasts (117 total series, 351 rows). AWS is not Sunday-scored and its latest observation is October 31. `data/headline_series_audit.csv` lists all 117 series and reasons.
-
-The fixed calibration follow-up improves historical coverage from 64.70% to 75.42%, and pooled skill against drift from 0.057% to 4.323%. Applying the same adjustment to drift itself improves measured skill from zero to 4.266%. Mean series skill worsens and the uncertainty interval includes no improvement. We recommend the optional calibrated file for the observed pooled-loss and coverage objectives, with those limits; this is not a proven November improvement. See docs/CALIBRATION_STUDY.md for the fixed-rule timing disclosure, all group breakdowns and validity checks. The original file stays unchanged.
-
-`./reproduce.sh` also rebuilds these follow-up files and replays the three memory benchmarks offline. All reviews are automated self-review by the build agent.
+Data: Pacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0 compilation. Preserve the original pack and [full attribution](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/ATTRIBUTION.md). No endorsement implied.

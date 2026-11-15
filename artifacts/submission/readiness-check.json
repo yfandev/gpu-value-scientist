@@ -1,0 +1,50 @@
+[
+  {
+    "file": "index.html",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "data.json",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "README.md",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "findings.md",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "forecasts.csv",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "forecasts_calibrated.csv",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "forecasts_extended.csv",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  },
+  {
+    "file": "demo.webm",
+    "status": 200,
+    "matches_local": true,
+    "no_store": "no-store, max-age=0"
+  }
+]

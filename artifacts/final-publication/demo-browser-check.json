@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "url": "https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run",
+  "page_errors": [],
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    "Real generated data loaded; six tabs available",
+    "All six tabs display their panels",
+    "Accessible arrow/Home/End keyboard navigation",
+    "Recorded learning curve reset, step, play, pause",
+    "Rejected hypothesis filtering and empty search state",
+    "Forecast search, instrument filter, declared contract and quantile chart",
+    "Four sponsor audit cards reflect generated service status",
+    "Actual per-round source trail expands and filters",
+    "Recorded calibration comparison displays both official outcomes and named Pacific baseline",
+    "All displayed downloads respond; /.env returns 404",
+    "Mobile navigation and layout without horizontal page overflow",
+    "Stage1366x768 playback scrolls into view; measured ready time0.846s (hosting may be warm)",
+    "No browser JavaScript errors"
+  ]
+}

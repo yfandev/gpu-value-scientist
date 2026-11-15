@@ -1825,7 +1825,7 @@
       "series_id": "afhubbard.hyperscaler_spot.A100_40GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 1.9891,
+      "q10": 1.9883390326249495,
       "q50": 1.9891,
       "q90": 1.9891,
       "target_date": "2026-11-07"
@@ -1834,7 +1834,7 @@
       "series_id": "afhubbard.hyperscaler_spot.A100_40GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 1.9891,
+      "q10": 1.9841519012115827,
       "q50": 1.9891,
       "q90": 2.000728468,
       "target_date": "2026-11-09"
@@ -1843,16 +1843,16 @@
       "series_id": "afhubbard.hyperscaler_spot.A100_40GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.949907219,
+      "q10": 1.9009240986165667,
       "q50": 1.9891,
-      "q90": 2.094166954,
+      "q90": 2.1280225564578608,
       "target_date": "2026-11-13"
     },
     {
       "series_id": "afhubbard.hyperscaler_spot.A100_SXM_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 1.8818,
+      "q10": 1.8810800822450504,
       "q50": 1.8818,
       "q90": 1.8818,
       "target_date": "2026-11-07"
@@ -1861,7 +1861,7 @@
       "series_id": "afhubbard.hyperscaler_spot.A100_SXM_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 1.849607979,
+      "q10": 1.8449268004267538,
       "q50": 1.8818,
       "q90": 1.914068126,
       "target_date": "2026-11-09"
@@ -1870,16 +1870,16 @@
       "series_id": "afhubbard.hyperscaler_spot.A100_SXM_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.788922101,
+      "q10": 1.7425813258064227,
       "q50": 1.8818,
-      "q90": 1.974671438,
+      "q90": 2.006700734015888,
       "target_date": "2026-11-13"
     },
     {
       "series_id": "afhubbard.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 0.3041251285,
+      "q10": 0.30400855982111114,
       "q50": 0.3047,
       "q90": 0.306036637,
       "target_date": "2026-11-07"
@@ -1888,7 +1888,7 @@
       "series_id": "afhubbard.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 0.3032914952,
+      "q10": 0.3025335213923328,
       "q50": 0.3047,
       "q90": 0.3092386071,
       "target_date": "2026-11-09"
@@ -1897,16 +1897,16 @@
       "series_id": "afhubbard.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 0.3028470512,
+      "q10": 0.29532302142757977,
       "q50": 0.3055347945,
-      "q90": 0.3125566702,
+      "q90": 0.3177570445098066,
       "target_date": "2026-11-13"
     },
     {
       "series_id": "afhubbard.hyperscaler_spot.V100.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 1.475,
+      "q10": 1.474435711186869,
       "q50": 1.475,
       "q90": 1.475,
       "target_date": "2026-11-07"
@@ -1915,7 +1915,7 @@
       "series_id": "afhubbard.hyperscaler_spot.V100.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 1.454007963,
+      "q10": 1.4503387428939643,
       "q50": 1.475,
       "q90": 1.544205089,
       "target_date": "2026-11-09"
@@ -1924,16 +1924,16 @@
       "series_id": "afhubbard.hyperscaler_spot.V100.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.4266,
+      "q10": 1.390276988303472,
       "q50": 1.475,
-      "q90": 1.54984807,
+      "q90": 1.5749534008658916,
       "target_date": "2026-11-13"
     },
     {
       "series_id": "fastgpu_daily.hyperscaler_spot.A100_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 1.684610129,
+      "q10": 1.6815822683922543,
       "q50": 1.757,
       "q90": 1.843821644,
       "target_date": "2026-11-07"
@@ -1942,7 +1942,7 @@
       "series_id": "fastgpu_daily.hyperscaler_spot.A100_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 1.582609897,
+      "q10": 1.5750571878905744,
       "q50": 1.757,
       "q90": 1.961562315,
       "target_date": "2026-11-09"
@@ -1951,16 +1951,16 @@
       "series_id": "fastgpu_daily.hyperscaler_spot.A100_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.452143213,
+      "q10": 1.3965330344231501,
       "q50": 1.783510406,
-      "q90": 2.11675583,
+      "q90": 2.1559624149804786,
       "target_date": "2026-11-13"
     },
     {
       "series_id": "fastgpu_daily.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 1,
-      "q10": 0.08597905957,
+      "q10": 0.08582568472988084,
       "q50": 0.089,
       "q90": 0.09113473886,
       "target_date": "2026-11-07"
@@ -1969,7 +1969,7 @@
       "series_id": "fastgpu_daily.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 3,
-      "q10": 0.08195890105,
+      "q10": 0.0815763221594258,
       "q50": 0.089,
       "q90": 0.09524791997,
       "target_date": "2026-11-09"
@@ -1978,9 +1978,9 @@
       "series_id": "fastgpu_daily.hyperscaler_spot.T4.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 0.07602584954,
+      "q10": 0.07325081336600885,
       "q50": 0.089,
-      "q90": 0.1046464581,
+      "q90": 0.10660292891818182,
       "target_date": "2026-11-13"
     },
     {
@@ -1989,7 +1989,7 @@
       "horizon_days": 1,
       "q10": 1.8155,
       "q50": 1.8155,
-      "q90": 1.83366216,
+      "q90": 1.8428349155382822,
       "target_date": "2026-11-07"
     },
     {
@@ -1998,16 +1998,16 @@
       "horizon_days": 3,
       "q10": 1.793913262,
       "q50": 1.823571131,
-      "q90": 1.871267597,
+      "q90": 1.9250214087239734,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.A100_40GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.571328071,
+      "q10": 1.4002629633948827,
       "q50": 1.832865165,
-      "q90": 2.11269136,
+      "q90": 2.233683351266726,
       "target_date": "2026-11-13"
     },
     {
@@ -2016,7 +2016,7 @@
       "horizon_days": 1,
       "q10": 2.293,
       "q50": 2.293,
-      "q90": 2.315569248,
+      "q90": 2.3271545569778467,
       "target_date": "2026-11-07"
     },
     {
@@ -2025,16 +2025,16 @@
       "horizon_days": 3,
       "q10": 2.23337274,
       "q50": 2.293,
-      "q90": 2.422573667,
+      "q90": 2.4901649378792885,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.A100_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 2.240670018,
+      "q10": 2.0266595718259444,
       "q50": 2.293,
-      "q90": 2.553659396,
+      "q90": 2.7050260329313116,
       "target_date": "2026-11-13"
     },
     {
@@ -2043,7 +2043,7 @@
       "horizon_days": 1,
       "q10": 6.262837697,
       "q50": 6.3,
-      "q90": 6.363065998,
+      "q90": 6.394896545998445,
       "target_date": "2026-11-07"
     },
     {
@@ -2052,16 +2052,16 @@
       "horizon_days": 3,
       "q10": 6.039105853,
       "q50": 6.3,
-      "q90": 6.614524008,
+      "q90": 6.800230508889454,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.B200.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 5.538475947,
+      "q10": 4.9440527162092325,
       "q50": 6.36890625,
-      "q90": 6.930960292,
+      "q90": 7.351387644809991,
       "target_date": "2026-11-13"
     },
     {
@@ -2070,7 +2070,7 @@
       "horizon_days": 1,
       "q10": 8.49,
       "q50": 8.49,
-      "q90": 8.575698535,
+      "q90": 8.618593987778858,
       "target_date": "2026-11-07"
     },
     {
@@ -2079,16 +2079,16 @@
       "horizon_days": 3,
       "q10": 8.287563888,
       "q50": 8.49,
-      "q90": 8.746565493,
+      "q90": 8.996827110865311,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.B300.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 7.558767553,
+      "q10": 6.750530456716491,
       "q50": 8.6598,
-      "q90": 9.493151081,
+      "q90": 10.064806031936666,
       "target_date": "2026-11-13"
     },
     {
@@ -2097,7 +2097,7 @@
       "horizon_days": 1,
       "q10": 2.79,
       "q50": 2.79,
-      "q90": 2.79,
+      "q90": 2.804096385542169,
       "target_date": "2026-11-07"
     },
     {
@@ -2106,16 +2106,16 @@
       "horizon_days": 3,
       "q10": 2.680424872,
       "q50": 2.79,
-      "q90": 2.79,
+      "q90": 2.872241450393901,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.H100_PCIe_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 2.524078125,
+      "q10": 2.263681637941293,
       "q50": 2.79,
-      "q90": 2.872670019,
+      "q90": 3.0568448628893847,
       "target_date": "2026-11-13"
     },
     {
@@ -2124,7 +2124,7 @@
       "horizon_days": 1,
       "q10": 3.949,
       "q50": 3.949,
-      "q90": 3.953091513,
+      "q90": 3.973043708880295,
       "target_date": "2026-11-07"
     },
     {
@@ -2133,16 +2133,16 @@
       "horizon_days": 3,
       "q10": 3.92860587,
       "q50": 3.949,
-      "q90": 3.980679192,
+      "q90": 4.097084743113088,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 3.92860587,
+      "q10": 3.560037508926583,
       "q50": 3.949,
-      "q90": 3.999279347,
+      "q90": 4.259962665465656,
       "target_date": "2026-11-13"
     },
     {
@@ -2151,7 +2151,7 @@
       "horizon_days": 1,
       "q10": 4.54,
       "q50": 4.54,
-      "q90": 4.56250775,
+      "q90": 4.585445954430625,
       "target_date": "2026-11-07"
     },
     {
@@ -2160,16 +2160,16 @@
       "horizon_days": 3,
       "q10": 4.515136911,
       "q50": 4.54,
-      "q90": 4.58444699,
+      "q90": 4.7182735795298605,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.H200.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 4.515136911,
+      "q10": 4.089619576970368,
       "q50": 4.559175799,
-      "q90": 4.644918439,
+      "q90": 4.94588098059322,
       "target_date": "2026-11-13"
     },
     {
@@ -2178,7 +2178,7 @@
       "horizon_days": 1,
       "q10": 1.7355,
       "q50": 1.7355,
-      "q90": 1.74624955,
+      "q90": 1.755018108103381,
       "target_date": "2026-11-07"
     },
     {
@@ -2187,16 +2187,16 @@
       "horizon_days": 3,
       "q10": 1.732843959,
       "q50": 1.7355,
-      "q90": 1.787806224,
+      "q90": 1.8389639434116902,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.L40S.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.684277812,
+      "q10": 1.5222999972005784,
       "q50": 1.7355,
-      "q90": 1.830866619,
+      "q90": 1.9454312933978593,
       "target_date": "2026-11-13"
     },
     {
@@ -2205,7 +2205,7 @@
       "horizon_days": 1,
       "q10": 1.528,
       "q50": 1.53429749,
-      "q90": 1.543615664,
+      "q90": 1.551367652872911,
       "target_date": "2026-11-07"
     },
     {
@@ -2214,16 +2214,16 @@
       "horizon_days": 3,
       "q10": 1.529720075,
       "q50": 1.5467341,
-      "q90": 1.57498503,
+      "q90": 1.6205784550027615,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.365350717,
+      "q10": 1.2195155247979883,
       "q50": 1.562540996,
-      "q90": 1.638289515,
+      "q90": 1.7414367350749334,
       "target_date": "2026-11-13"
     },
     {
@@ -2232,7 +2232,7 @@
       "horizon_days": 1,
       "q10": 0.5,
       "q50": 0.5,
-      "q90": 0.5027056404,
+      "q90": 0.5052318743681306,
       "target_date": "2026-11-07"
     },
     {
@@ -2241,16 +2241,16 @@
       "horizon_days": 3,
       "q10": 0.4918918919,
       "q50": 0.5,
-      "q90": 0.5080819525,
+      "q90": 0.5228205636817027,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.RTX_A6000.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 0.4465065315,
+      "q10": 0.39984049439270486,
       "q50": 0.5,
-      "q90": 0.5137401605,
+      "q90": 0.5467464049246209,
       "target_date": "2026-11-13"
     },
     {
@@ -2259,7 +2259,7 @@
       "horizon_days": 1,
       "q10": 2.151621082,
       "q50": 2.1615,
-      "q90": 2.182894087,
+      "q90": 2.1938149964442286,
       "target_date": "2026-11-07"
     },
     {
@@ -2268,16 +2268,16 @@
       "horizon_days": 3,
       "q10": 2.075090477,
       "q50": 2.1615,
-      "q90": 2.272404131,
+      "q90": 2.3361191471385006,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "fastgpu_daily.neocloud_rate_card.RTX_PRO_6000.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 2.049303111,
+      "q10": 1.847565832585163,
       "q50": 2.1615,
-      "q90": 2.526891484,
+      "q90": 2.669577478647636,
       "target_date": "2026-11-13"
     },
     {
@@ -2286,7 +2286,7 @@
       "horizon_days": 1,
       "q10": 1.147,
       "q50": 1.147,
-      "q90": 1.149236281,
+      "q90": 1.1500549288581958,
       "target_date": "2026-11-07"
     },
     {
@@ -2295,7 +2295,7 @@
       "horizon_days": 3,
       "q10": 1.147,
       "q50": 1.147,
-      "q90": 1.158860173,
+      "q90": 1.1711111743351137,
       "target_date": "2026-11-09"
     },
     {
@@ -2304,7 +2304,7 @@
       "horizon_days": 7,
       "q10": 1.147,
       "q50": 1.147,
-      "q90": 1.191007753,
+      "q90": 1.2262293818384513,
       "target_date": "2026-11-13"
     },
     {
@@ -2313,7 +2313,7 @@
       "horizon_days": 1,
       "q10": 4.177,
       "q50": 4.177,
-      "q90": 4.197433,
+      "q90": 4.200414248564676,
       "target_date": "2026-11-07"
     },
     {
@@ -2322,7 +2322,7 @@
       "horizon_days": 3,
       "q10": 4.177,
       "q50": 4.177,
-      "q90": 4.236841501,
+      "q90": 4.281455653202937,
       "target_date": "2026-11-09"
     },
     {
@@ -2331,7 +2331,7 @@
       "horizon_days": 7,
       "q10": 4.123069114,
       "q50": 4.177,
-      "q90": 4.308776209,
+      "q90": 4.437041896583445,
       "target_date": "2026-11-13"
     },
     {
@@ -2340,7 +2340,7 @@
       "horizon_days": 1,
       "q10": 4.735,
       "q50": 4.735,
-      "q90": 4.759718942,
+      "q90": 4.763098451684879,
       "target_date": "2026-11-07"
     },
     {
@@ -2349,7 +2349,7 @@
       "horizon_days": 3,
       "q10": 4.735,
       "q50": 4.735,
-      "q90": 4.833648186,
+      "q90": 4.884222284798398,
       "target_date": "2026-11-09"
     },
     {
@@ -2358,7 +2358,7 @@
       "horizon_days": 7,
       "q10": 4.735,
       "q50": 4.735,
-      "q90": 4.921122817,
+      "q90": 5.066523351045394,
       "target_date": "2026-11-13"
     },
     {
@@ -2367,7 +2367,7 @@
       "horizon_days": 1,
       "q10": 2.285,
       "q50": 2.285,
-      "q90": 2.285,
+      "q90": 2.2866308721499364,
       "target_date": "2026-11-07"
     },
     {
@@ -2376,7 +2376,7 @@
       "horizon_days": 3,
       "q10": 2.285,
       "q50": 2.285,
-      "q90": 2.327881265,
+      "q90": 2.352287139499332,
       "target_date": "2026-11-09"
     },
     {
@@ -2385,7 +2385,7 @@
       "horizon_days": 7,
       "q10": 2.285,
       "q50": 2.285,
-      "q90": 2.348767442,
+      "q90": 2.418934331185581,
       "target_date": "2026-11-13"
     },
     {
@@ -2394,7 +2394,7 @@
       "horizon_days": 1,
       "q10": 2.8,
       "q50": 2.8,
-      "q90": 2.814743308,
+      "q90": 2.816741750897078,
       "target_date": "2026-11-07"
     },
     {
@@ -2403,7 +2403,7 @@
       "horizon_days": 3,
       "q10": 2.8,
       "q50": 2.8,
-      "q90": 2.844237096,
+      "q90": 2.8741436380560748,
       "target_date": "2026-11-09"
     },
     {
@@ -2412,7 +2412,7 @@
       "horizon_days": 7,
       "q10": 2.8,
       "q50": 2.817803468,
-      "q90": 2.901809561,
+      "q90": 2.988337571365821,
       "target_date": "2026-11-13"
     },
     {
@@ -2421,7 +2421,7 @@
       "horizon_days": 1,
       "q10": 0.97,
       "q50": 0.97,
-      "q90": 0.9801147467,
+      "q90": 0.9808070644179161,
       "target_date": "2026-11-07"
     },
     {
@@ -2430,7 +2430,7 @@
       "horizon_days": 3,
       "q10": 0.97,
       "q50": 0.9801570681,
-      "q90": 0.9991113674,
+      "q90": 1.0095803347495327,
       "target_date": "2026-11-09"
     },
     {
@@ -2439,7 +2439,7 @@
       "horizon_days": 7,
       "q10": 0.97,
       "q50": 0.9998291572,
-      "q90": 1.029799403,
+      "q90": 1.0605017669727637,
       "target_date": "2026-11-13"
     },
     {
@@ -2448,7 +2448,7 @@
       "horizon_days": 1,
       "q10": 1.4145,
       "q50": 1.4145,
-      "q90": 1.421109547,
+      "q90": 1.4221191175278272,
       "target_date": "2026-11-07"
     },
     {
@@ -2457,7 +2457,7 @@
       "horizon_days": 3,
       "q10": 1.4145,
       "q50": 1.416086355,
-      "q90": 1.480767617,
+      "q90": 1.4958927049038717,
       "target_date": "2026-11-09"
     },
     {
@@ -2466,7 +2466,7 @@
       "horizon_days": 7,
       "q10": 1.4145,
       "q50": 1.435602098,
-      "q90": 1.583174686,
+      "q90": 1.6272585955514018,
       "target_date": "2026-11-13"
     },
     {
@@ -2475,7 +2475,7 @@
       "horizon_days": 1,
       "q10": 1.603541662,
       "q50": 1.875,
-      "q90": 2.224421994,
+      "q90": 2.230831896955448,
       "target_date": "2026-11-07"
     },
     {
@@ -2484,16 +2484,16 @@
       "horizon_days": 3,
       "q10": 1.549330689,
       "q50": 1.875,
-      "q90": 2.260135135,
+      "q90": 2.2891186998527004,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.marketplace_ask.H100_80GB.spot.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.30784456,
+      "q10": 1.2748903029416647,
       "q50": 1.875,
-      "q90": 2.631854299,
+      "q90": 2.69501270711549,
       "target_date": "2026-11-13"
     },
     {
@@ -2502,7 +2502,7 @@
       "horizon_days": 1,
       "q10": 1.99,
       "q50": 1.99,
-      "q90": 1.99,
+      "q90": 1.99935736677116,
       "target_date": "2026-11-07"
     },
     {
@@ -2511,16 +2511,16 @@
       "horizon_days": 3,
       "q10": 1.99,
       "q50": 1.99,
-      "q90": 2.00880315,
+      "q90": 2.0395643734969995,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.A100_40GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.99,
+      "q10": 1.983893341278117,
       "q50": 1.99,
-      "q90": 2.03931255,
+      "q90": 2.1015652945732186,
       "target_date": "2026-11-13"
     },
     {
@@ -2529,7 +2529,7 @@
       "horizon_days": 1,
       "q10": 1.95,
       "q50": 1.95,
-      "q90": 1.969612513,
+      "q90": 1.978781791996865,
       "target_date": "2026-11-07"
     },
     {
@@ -2538,16 +2538,16 @@
       "horizon_days": 3,
       "q10": 1.940233723,
       "q50": 1.95,
-      "q90": 2.000102775,
+      "q90": 2.0302456824468087,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.890083799,
+      "q10": 1.8840998871870995,
       "q50": 1.95,
-      "q90": 2.062168459,
+      "q90": 2.1231698921245106,
       "target_date": "2026-11-13"
     },
     {
@@ -2556,7 +2556,7 @@
       "horizon_days": 1,
       "q10": 7.89,
       "q50": 7.89,
-      "q90": 7.929093781,
+      "q90": 7.966194094479624,
       "target_date": "2026-11-07"
     },
     {
@@ -2565,16 +2565,16 @@
       "horizon_days": 3,
       "q10": 7.89,
       "q50": 7.89,
-      "q90": 7.989726631,
+      "q90": 8.111689471900164,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.B200.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 7.83315562,
+      "q10": 7.808943792203189,
       "q50": 7.89,
-      "q90": 8.081702344,
+      "q90": 8.328523527257635,
       "target_date": "2026-11-13"
     },
     {
@@ -2583,7 +2583,7 @@
       "horizon_days": 1,
       "q10": 9.730558402,
       "q50": 9.745,
-      "q90": 9.792679573,
+      "q90": 9.838502457012538,
       "target_date": "2026-11-07"
     },
     {
@@ -2592,16 +2592,16 @@
       "horizon_days": 3,
       "q10": 9.720731746,
       "q50": 9.748189041,
-      "q90": 9.965544737,
+      "q90": 10.116231280608645,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.B300.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 9.703770374,
+      "q10": 9.673790610807954,
       "q50": 9.769618947,
-      "q90": 10.58786913,
+      "q90": 10.89349003094737,
       "target_date": "2026-11-13"
     },
     {
@@ -2610,7 +2610,7 @@
       "horizon_days": 1,
       "q10": 3.871660141,
       "q50": 3.885,
-      "q90": 3.89685864,
+      "q90": 3.91512666507837,
       "target_date": "2026-11-07"
     },
     {
@@ -2619,16 +2619,16 @@
       "horizon_days": 3,
       "q10": 3.864664019,
       "q50": 3.885,
-      "q90": 3.911719395,
+      "q90": 3.9717733413747958,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.H100_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 3.847055204,
+      "q10": 3.8351376946421274,
       "q50": 3.883603899,
-      "q90": 4.155395335,
+      "q90": 4.276885285526634,
       "target_date": "2026-11-13"
     },
     {
@@ -2637,7 +2637,7 @@
       "horizon_days": 1,
       "q10": 3.5539,
       "q50": 3.5539,
-      "q90": 3.573660429,
+      "q90": 3.5903715575266455,
       "target_date": "2026-11-07"
     },
     {
@@ -2646,16 +2646,16 @@
       "horizon_days": 3,
       "q10": 3.526350388,
       "q50": 3.5539,
-      "q90": 3.609514053,
+      "q90": 3.6644498882693397,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 3.526350388,
+      "q10": 3.51542301590219,
       "q50": 3.560944121,
-      "q90": 3.746700389,
+      "q90": 3.858096642670411,
       "target_date": "2026-11-13"
     },
     {
@@ -2664,7 +2664,7 @@
       "horizon_days": 1,
       "q10": 4.59,
       "q50": 4.59,
-      "q90": 4.59,
+      "q90": 4.611583072100314,
       "target_date": "2026-11-07"
     },
     {
@@ -2673,16 +2673,16 @@
       "horizon_days": 3,
       "q10": 4.59,
       "q50": 4.59,
-      "q90": 4.648232895,
+      "q90": 4.71918466175941,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.H200.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 4.495684932,
+      "q10": 4.48159972419425,
       "q50": 4.59,
-      "q90": 4.700548757,
+      "q90": 4.844136745739233,
       "target_date": "2026-11-13"
     },
     {
@@ -2691,7 +2691,7 @@
       "horizon_days": 1,
       "q10": 0.8808044088,
       "q50": 0.8839,
-      "q90": 0.8866177508,
+      "q90": 0.8907740203924766,
       "target_date": "2026-11-07"
     },
     {
@@ -2700,16 +2700,16 @@
       "horizon_days": 3,
       "q10": 0.878555398,
       "q50": 0.8833098153,
-      "q90": 0.8885120009,
+      "q90": 0.9021661168022798,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.L4.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 0.8737765786,
+      "q10": 0.8710706868818591,
       "q50": 0.8817791798,
-      "q90": 0.8897166116,
+      "q90": 0.9173011211729003,
       "target_date": "2026-11-13"
     },
     {
@@ -2718,7 +2718,7 @@
       "horizon_days": 1,
       "q10": 1.6099,
       "q50": 1.6099,
-      "q90": 1.611386853,
+      "q90": 1.6189569156959247,
       "target_date": "2026-11-07"
     },
     {
@@ -2727,16 +2727,16 @@
       "horizon_days": 3,
       "q10": 1.6099,
       "q50": 1.6099,
-      "q90": 1.618215599,
+      "q90": 1.6431012742300601,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.L40S.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.603893452,
+      "q10": 1.5989531957807241,
       "q50": 1.6099,
-      "q90": 1.619387331,
+      "q90": 1.6697494885318718,
       "target_date": "2026-11-13"
     },
     {
@@ -2745,7 +2745,7 @@
       "horizon_days": 1,
       "q10": 1.2515,
       "q50": 1.2515,
-      "q90": 1.264296276,
+      "q90": 1.2701810722382445,
       "target_date": "2026-11-07"
     },
     {
@@ -2754,16 +2754,16 @@
       "horizon_days": 3,
       "q10": 1.2515,
       "q50": 1.2515,
-      "q90": 1.289766852,
+      "q90": 1.3091124154203493,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 1.2515,
+      "q10": 1.2475602342607777,
       "q50": 1.283866379,
-      "q90": 1.329131882,
+      "q90": 1.3692947994663467,
       "target_date": "2026-11-13"
     },
     {
@@ -2772,7 +2772,7 @@
       "horizon_days": 1,
       "q10": 0.711,
       "q50": 0.711,
-      "q90": 0.7181315077,
+      "q90": 0.7214747678880877,
       "target_date": "2026-11-07"
     },
     {
@@ -2781,16 +2781,16 @@
       "horizon_days": 3,
       "q10": 0.711,
       "q50": 0.711,
-      "q90": 0.7326548223,
+      "q90": 0.743645390092144,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.RTX_A6000.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 0.711,
+      "q10": 0.7088181736928347,
       "q50": 0.711,
-      "q90": 0.7620080037,
+      "q90": 0.7842500647007832,
       "target_date": "2026-11-13"
     },
     {
@@ -2799,7 +2799,7 @@
       "horizon_days": 1,
       "q10": 2.3,
       "q50": 2.3,
-      "q90": 2.322719721,
+      "q90": 2.3335347680219436,
       "target_date": "2026-11-07"
     },
     {
@@ -2808,16 +2808,16 @@
       "horizon_days": 3,
       "q10": 2.3,
       "q50": 2.3,
-      "q90": 2.346843177,
+      "q90": 2.3823963498859793,
       "target_date": "2026-11-09"
     },
     {
       "series_id": "gpurentalprices.neocloud_rate_card.RTX_PRO_6000.on_demand.median",
       "origin_date": "2026-11-06",
       "horizon_days": 7,
-      "q10": 2.3,
+      "q10": 2.292942052733502,
       "q50": 2.3,
-      "q90": 2.462785388,
+      "q90": 2.534735796300705,
       "target_date": "2026-11-13"
     }
   ],
@@ -4564,5 +4564,346 @@
       ]
     },
     "caveat": "Retrospective rule designed after original coverage observed; no untouched external holdout. Whole-origin bootstrap only descriptive: origins and series dependent, 14 origins. November truth unavailable."
+  },
+  "group_calibration_study": {
+    "rule_sha256": "09215e984505bd5996488e8d0a7a93ac167cdcdf28b3deb48de86bcbd2dfedb1",
+    "scorer_sha256": "38f197e966169d898b5b209e83bcf1c26b0cf5a3a5116e51d9a40aed5875037b",
+    "common_py_sha256": "3cfaa7edfc6e183362779be4bfe9e20bcdb9178997030b4cf69bd72faa1825f2",
+    "protected_before": {
+      "forecasts.csv": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+      "forecasts_calibrated.csv": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d"
+    },
+    "protected_after": {
+      "forecasts.csv": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+      "forecasts_calibrated.csv": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d"
+    },
+    "paired_cells": 516,
+    "origins": [
+      "2026-09-23",
+      "2026-09-30",
+      "2026-10-07",
+      "2026-10-14",
+      "2026-10-21"
+    ],
+    "archive_origin_count": 14,
+    "reports": {
+      "drift": {
+        "last_value": {
+          "n_cells": 516,
+          "pinball": 0.03023,
+          "baseline_pinball": 0.033334,
+          "skill_pooled": 0.093125,
+          "pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.021107,
+            "q50": 0.033334,
+            "q90": 0.045561
+          },
+          "coverage": {
+            "below_q10": 0.104651,
+            "within_q10_q90": 0.581395,
+            "above_q90": 0.313953
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.066668,
+          "skill_mean_of_series": 0.117619,
+          "skill_median_of_series": 0.092767,
+          "share_series_positive_skill": 0.72973,
+          "relative_loss_geomean": 0.861389,
+          "skill_geomean": 0.138611,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.093125,
+          "headline_definition": "pooled",
+          "mean_width": 0.09152866612207364
+        },
+        "drift": {
+          "n_cells": 516,
+          "pinball": 0.03023,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.0,
+          "pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.104651,
+            "within_q10_q90": 0.581395,
+            "above_q90": 0.313953
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.0,
+          "skill_median_of_series": 0.0,
+          "share_series_positive_skill": 0.0,
+          "relative_loss_geomean": 1.0,
+          "skill_geomean": 0.0,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.0,
+          "headline_definition": "pooled",
+          "mean_width": 0.09152866612207364
+        }
+      },
+      "global": {
+        "last_value": {
+          "n_cells": 516,
+          "pinball": 0.028502,
+          "baseline_pinball": 0.033334,
+          "skill_pooled": 0.144946,
+          "pinball_by_quantile": {
+            "q10": 0.01899,
+            "q50": 0.034184,
+            "q90": 0.032334
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.021107,
+            "q50": 0.033334,
+            "q90": 0.045561
+          },
+          "coverage": {
+            "below_q10": 0.096899,
+            "within_q10_q90": 0.71124,
+            "above_q90": 0.19186
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.066668,
+          "skill_mean_of_series": 0.13859,
+          "skill_median_of_series": 0.161165,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.822425,
+          "skill_geomean": 0.177575,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.144946,
+          "headline_definition": "pooled",
+          "mean_width": 0.13816456567714192
+        },
+        "drift": {
+          "n_cells": 516,
+          "pinball": 0.028502,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.057142,
+          "pinball_by_quantile": {
+            "q10": 0.01899,
+            "q50": 0.034184,
+            "q90": 0.032334
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.096899,
+            "within_q10_q90": 0.71124,
+            "above_q90": 0.19186
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.031761,
+          "skill_median_of_series": 0.051051,
+          "share_series_positive_skill": 0.783784,
+          "relative_loss_geomean": 0.954766,
+          "skill_geomean": 0.045234,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.057142,
+          "headline_definition": "pooled",
+          "mean_width": 0.13816456567714192
+        }
+      },
+      "grouped": {
+        "last_value": {
+          "n_cells": 516,
+          "pinball": 0.028683,
+          "baseline_pinball": 0.033334,
+          "skill_pooled": 0.139529,
+          "pinball_by_quantile": {
+            "q10": 0.019201,
+            "q50": 0.034184,
+            "q90": 0.032665
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.021107,
+            "q50": 0.033334,
+            "q90": 0.045561
+          },
+          "coverage": {
+            "below_q10": 0.077519,
+            "within_q10_q90": 0.732558,
+            "above_q90": 0.189922
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.066668,
+          "skill_mean_of_series": 0.135953,
+          "skill_median_of_series": 0.169253,
+          "share_series_positive_skill": 0.756757,
+          "relative_loss_geomean": 0.820927,
+          "skill_geomean": 0.179073,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.139529,
+          "headline_definition": "pooled",
+          "mean_width": 0.13705738897572123
+        },
+        "drift": {
+          "n_cells": 516,
+          "pinball": 0.028683,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.051169,
+          "pinball_by_quantile": {
+            "q10": 0.019201,
+            "q50": 0.034184,
+            "q90": 0.032665
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.077519,
+            "within_q10_q90": 0.732558,
+            "above_q90": 0.189922
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.028785,
+          "skill_median_of_series": 0.05563,
+          "share_series_positive_skill": 0.783784,
+          "relative_loss_geomean": 0.953027,
+          "skill_geomean": 0.046973,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.051169,
+          "headline_definition": "pooled",
+          "mean_width": 0.13705738897572123
+        }
+      },
+      "current_v1": {
+        "last_value": {
+          "n_cells": 516,
+          "pinball": 0.028049,
+          "baseline_pinball": 0.033334,
+          "skill_pooled": 0.158543,
+          "pinball_by_quantile": {
+            "q10": 0.017369,
+            "q50": 0.034184,
+            "q90": 0.032595
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.021107,
+            "q50": 0.033334,
+            "q90": 0.045561
+          },
+          "coverage": {
+            "below_q10": 0.075581,
+            "within_q10_q90": 0.748062,
+            "above_q90": 0.176357
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.066668,
+          "skill_mean_of_series": 0.129156,
+          "skill_median_of_series": 0.198475,
+          "share_series_positive_skill": 0.702703,
+          "relative_loss_geomean": 0.825662,
+          "skill_geomean": 0.174338,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.158543,
+          "headline_definition": "pooled",
+          "mean_width": 0.1579873697936553
+        },
+        "drift": {
+          "n_cells": 516,
+          "pinball": 0.028049,
+          "baseline_pinball": 0.03023,
+          "skill_pooled": 0.072136,
+          "pinball_by_quantile": {
+            "q10": 0.017369,
+            "q50": 0.034184,
+            "q90": 0.032595
+          },
+          "baseline_pinball_by_quantile": {
+            "q10": 0.020046,
+            "q50": 0.034184,
+            "q90": 0.03646
+          },
+          "coverage": {
+            "below_q10": 0.075581,
+            "within_q10_q90": 0.748062,
+            "above_q90": 0.176357
+          },
+          "mae_q50": 0.068367,
+          "baseline_mae_q50": 0.068367,
+          "skill_mean_of_series": 0.022322,
+          "skill_median_of_series": 0.057855,
+          "share_series_positive_skill": 0.810811,
+          "relative_loss_geomean": 0.958524,
+          "skill_geomean": 0.041476,
+          "n_series_with_skill": 37,
+          "n_series_baseline_degenerate": 0,
+          "n_series_no_cells": 0,
+          "headline_skill": 0.072136,
+          "headline_definition": "pooled",
+          "mean_width": 0.1579873697936553
+        }
+      }
+    },
+    "paired_origin_bootstrap": {
+      "global": {
+        "mean_pinball_change": 0.00018058598434908885,
+        "ci95": [
+          -6.211487394251824e-05,
+          0.00046833526348446375
+        ]
+      },
+      "current_v1": {
+        "mean_pinball_change": 0.0006338298797233462,
+        "ci95": [
+          -0.00034834798960116104,
+          0.0022275820718123916
+        ]
+      },
+      "drift": {
+        "mean_pinball_change": -0.0015468189210501393,
+        "ci95": [
+          -0.00275536280878021,
+          -0.0006572482712678316
+        ]
+      }
+    },
+    "promotion_checks": {
+      "ci_beats_global": false,
+      "ci_beats_current_v1": false,
+      "mean_series_at_least_global": false,
+      "mean_series_at_least_current_v1": true,
+      "mean_series_nonnegative": true
+    },
+    "promoted": false,
+    "caveat": "Retrospective later-origin evaluation; all origins previously viewed, not independent heldout data. No tuning/search after scoring. Only five origin clusters; bootstrap descriptive, not proof of future improvement. Current-v1 comparison jointly changes archive and pooling."
+  },
+  "selected_submission": {
+    "file": "forecasts_calibrated.csv",
+    "metrics_basis": "historical calibration of original agent replay; November truth unavailable",
+    "original_file": "forecasts.csv"
   }
 }

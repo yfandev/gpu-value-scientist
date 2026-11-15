@@ -5,6 +5,8 @@ import shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 source=ROOT/'demo'
+from export_price_history import export
+export()
 data=json.loads((source/'data.json').read_text())
 assert data['metrics']['online_last_value']==json.loads((ROOT/'results/online_last_value.json').read_text())['overall']
 calibration=ROOT/'results/calibration_study/summary.json'

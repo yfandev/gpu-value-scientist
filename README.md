@@ -34,6 +34,8 @@ Four OpenAI agents ran a bounded research loop across 14 later test dates. They 
 - **Forecaster** reads shared findings and chooses permitted methods.
 - **Researcher** searches for dated evidence and shares it with Analyst.
 
+The Economic view leads with the argued 2028–29 outlook. Forecast explorer shows actual posted rental prices through November 6 beside the future predictions; later actual prices are unavailable. The gold dashed line in the learning chart is Pacific’s drift comparison at zero improvement.
+
 The demo’s replay reveals saved results from real completed experiments. It does not run new experiments or play a video.
 
 ## Sponsor technology—and the limits
@@ -76,7 +78,7 @@ To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY
 - The starter rejects history containing a post-cutoff row.
 - Network-disabled reproduction preserves forecast bytes and official metrics.
 - A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
-- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts about 99 seconds.
+- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts about 112 seconds.
 - Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 
 Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/MEMORY_BENCHMARK_V3.md).

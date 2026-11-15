@@ -21,6 +21,6 @@ Every source, decision, failed idea and comparison can be inspected. Pacific’s
 
 **Video file:** https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm
 
-The video is a captioned recording of the actual public site, about 99 seconds, without audio. The judging brief requires a YouTube, Drive or Loom link. Upload the finished file to one of those services and use that publicly accessible share link; the direct WebM URL is not one of the named hosts.
+The video is a captioned recording of the actual public site, about 112 seconds, without audio. The judging brief requires a YouTube, Drive or Loom link. Upload the finished file to one of those services and use that publicly accessible share link; the direct WebM URL is not one of the named hosts.
 
 **Selected forecast:** forecasts_calibrated.csv. Original forecasts.csv remains unchanged; forecasts_extended.csv adds unscored AWS archive forecasts and is not the selected file.

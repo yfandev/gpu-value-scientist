@@ -46,7 +46,7 @@ PARAM_BOUNDS = {'window': (8, 365), 'min_samples': (2, 365),
                 'shrinkage': (0, 1), 'calibration_days': (7, 120),
                 'min_calibration': (2, 120)}
 INTEGER_PARAMS = {'window', 'min_samples', 'calibration_days', 'min_calibration'}
-PUBLIC_FILES = {'index.html', 'data.json', 'forecasts.csv', 'findings.md',
+PUBLIC_FILES = {'price_history.json', 'index.html', 'data.json', 'forecasts.csv', 'findings.md',
                 'README.md', 'targets.csv', 'DEMO_FLOW.md', 'ATTRIBUTION.md', 'sponsor_audit.json', 'headlines.csv', 'forecasts_extended.csv', 'forecasts_calibrated.csv', 'demo.webm', 'project-screenshot.png'}
 
 
@@ -209,7 +209,7 @@ else:
     def experiment(payload: dict):
         return run_experiment(payload)
 
-    @app.function(image=site_image, cpu=.25, memory=256, timeout=120)
+    @app.function(image=site_image, cpu=.25, memory=256, timeout=120, min_containers=1)
     @modal.concurrent(max_inputs=40)
     @modal.asgi_app()
     def demo_site():
