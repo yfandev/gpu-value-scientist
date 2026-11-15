@@ -1,0 +1,34 @@
+# Attempted falsification of the calibration follow-up
+
+This is **automated self-review by the build agent**, including a delegated agent in the same system. It is not external certification.
+
+The numerical calibration claims survived a different leakage check. `tests/falsification_audit.py` physically removes history dated on or after each forecast origin, removes current/future forecasts from the residual archive, and supplies only the current-origin forecast rows to `calibrate`. This differs from the previous tests, which retained future rows and replaced their values. All 14 origins reproduce the serialized historical output and its pool audit, for both the selected-policy main comparison and the drift-base diagnostic: 28 replays in total. The final November 6 candidate also reproduces using strictly earlier dated truth. Dates, pool sizes and minimum origin counts agree with the saved audits. A negative control multiplying available historical prices by 100 changes the final historical upper bounds, confirming the replay is sensitive to eligible truth.
+
+Reloading the written CSVs finds no duplicate forecast keys, nonfinite quantiles, negative lower bounds, reversed quantiles or incorrect target dates. Calibration preserves the median and only widens intervals. The original `forecasts.csv` retains SHA-256 `62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31`. Both final files contain 111 rows; validation does not establish November performance.
+
+All eight historical reports were rescored with the unmodified official scorer: four forecast variants, each against last value and drift. Both every report's overall object and every saved per-cell row reproduce. No replacement loss or skill implementation is used. Full evidence is in `artifacts/falsification/audit.json`, with the fresh official JSON and per-cell CSV files beside it.
+
+| Paired 1,017-cell comparison | Original | Calibrated |
+|---|---:|---:|
+| Main selected-policy coverage | 64.7001% | 75.4179% |
+| Main pooled skill vs drift | 0.0567% | 4.3226% |
+| Main pooled skill vs last value | 8.0144% | 11.9406% |
+| Drift-base diagnostic coverage | 64.7001% | 75.4179% |
+| Drift-base pooled skill vs drift | 0% | 4.2657% |
+| Drift-base pooled skill vs last value | 7.9622% | 11.8882% |
+
+The approximate 64.6% from the request does not reproduce in the current official reports; 64.7001% does. The original site data and findings agree with the original reports, but initially omit the follow-up. They must identify the optional candidate separately. The site's full-library baseline has 1,029 scored cells, so it is not the paired 1,017-cell drift-base diagnostic. The older method named `calibrated` in the agent's hypothesis library is also not this new fixed follow-up rule.
+
+The stronger claim that calibration clearly dominates does **not** survive scrutiny. Main mean series skill versus drift worsens from 0.0084% to -1.6189%; intervals become about 74.1% wider; one-day skill and some sources worsen; coverage remains below 80%. The main whole-origin bootstrap skill interval includes zero. Rule design followed observation of undercoverage, and the fixed final-cutoff cohort introduces retrospective selection. These checks establish calibration-layer availability and reproducibility only: they do not certify original base-model design, contemporaneous series selection, source publication availability, or future generalization. No November truth is available and no final-window improvement can be asserted.
+
+Reproduce with `.venv/bin/python tests/falsification_audit.py`. Success prints `FALSIFICATION_AUDIT_PASS`.
+
+## Final artifact reconciliation
+
+After regeneration, local `demo/data.json` contains the complete calibration summary exactly; its original metrics exactly match the original official reports. The root and demo copies of original, calibrated and extended forecast CSVs and findings are byte-identical. Findings embeds the current calibration and series-audit documents and explicitly reports past.dev's 54/54 lookup accuracy, slower timing and no demonstrated cost savings. The counts reconcile: original and calibrated each have 111 rows for 37 series; the optional archive extension has 351 rows for 117 series. `artifacts/falsification/local_reconciliation.json` records these checks.
+
+At the November 15 18:27 UTC public check, the advertised `https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run` endpoint still served old HTML, data and findings, without the new cache-control header. Both optional CSV downloads returned 404. Unique query strings and a no-cache request reproduced the problem; the original CSV remained correct. This is a deployment inconsistency, not an arithmetic disagreement. `public_reconciliation.json`, `public_cache_busted_reconciliation.json` and `public_headers.txt` preserve the observed evidence. The parent build agent was notified to resolve the public deployment before claiming final delivery; later successful deployment evidence must supersede this observed failure explicitly.
+
+The 18:27 public failure was superseded for the numerical artifacts at **18:32:07 UTC**: public `data.json` exactly matched the canonical local file and its calibration summary matched the official summary; findings and all three CSV downloads returned 200 with exact local hashes. Every response supplied `Cache-Control: no-store, max-age=0`. Evidence: `public_final_reconciliation_retry.json`. During the intervening deployment, an 18:31 request still lacked calibration data; that mixed snapshot was preserved in `public_final_reconciliation.json`. HTML still carried the prior wording at 18:32, so this successful numerical reconciliation does not certify the subsequent wording deployment. The build agent identified concurrent artifact regeneration during deployment as the mixed-snapshot risk and is sequencing final publication after validation.
+
+**Final deployment reconciliation passed at 18:35:27 UTC.** After deployment from the immutable `deliverables/deploy_demo` snapshot, unauthenticated, cache-busted requests for HTML, data, findings, original CSV, calibrated CSV and extended CSV all returned 200. Every response was byte-identical to both the immutable snapshot and the current demo artifact; all supplied `Cache-Control: no-store, max-age=0`. Public calibration data exactly matches the official calibration summary. The HTML hash is `6848c149021dc3afc8e151bb8204866c0f441f4984a95946a1c26d69d4523eaf`. `artifacts/falsification/public_immutable_final_reconciliation.json` records every file hash. This final result supersedes both the earlier missing-download/mixed-data deployment failure and the interim HTML wording mismatch; those observations remain recorded above for chronology. No numerical inconsistency remains in the checked public artifacts.

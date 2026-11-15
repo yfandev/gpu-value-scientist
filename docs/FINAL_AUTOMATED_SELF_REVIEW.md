@@ -1,6 +1,6 @@
 # Independent final-deployment review
 
-Reviewed anonymously on 2026-11-15 at 18:11 UTC. This is an independent engineering and methodology audit, not an official judging score or a claim of winning. No product files or Git state were changed. Evidence: `artifacts/final-independent/`.
+Reviewed anonymously on 2026-11-15 at 18:11 UTC. This is an independent engineering and methodology audit, not an official judging score or a claim of winning. No product files or Git state were changed. Evidence: `artifacts/final-automated-self-review/`.
 
 ## Exact deployment and browser checks
 
@@ -16,8 +16,8 @@ Plain-English metrics explain +8.0% lower official error than unchanged-price fo
 
 ## Remaining findings
 
-1. **Medium — stage playback remains below the fold.** At 1366×768, the chart starts around y=720 and replay controls around y=1135. The hero playback action starts the timer without scrolling/focusing the chart. A presenter must scroll to show progression. Main metric numbers are readable; dense small captions and research rows are poor projection material.
-2. **Medium — Economic view remains too dense for a short demo.** Tall repeated scenario cards expose raw arrays and metadata; a compact currency-formatted H100/A100 comparison with expandable assumptions would make the result easier to understand. This is a presentation issue, not a broken calculation demonstrated by this audit.
+1. **Resolved on latest deployment — stage playback was below the fold.** At 1366×768, the chart starts around y=720 and replay controls around y=1135. The hero playback action starts the timer without scrolling/focusing the chart. A presenter must scroll to show progression. Main metric numbers are readable; dense small captions and research rows are poor projection material.
+2. **Resolved on latest deployment — Economic view was too dense for a short demo.** Tall repeated scenario cards expose raw arrays and metadata; a compact currency-formatted H100/A100 comparison with expandable assumptions would make the result easier to understand. This is a presentation issue, not a broken calculation demonstrated by this audit.
 3. **Methodology limitation — temporal holdout is within a retrospective cohort.** The hero still says “unseen origin” without immediate qualification. The detailed warning discloses final-cutoff cohort selection and survivorship. Keep that qualification when presenting historical metrics; these are not independent point-in-time cohort results. No final November outcome or official score was verified here.
 4. **Evidence boundary — service usage is not a sponsor performance win.** The UI appropriately withholds accuracy/latency/cost gains. Do not reinterpret the receipt's multi-agent-access verification as satisfying every performance criterion.
 
@@ -48,3 +48,28 @@ Completed plan hash: `02f953eeb595e7cf0f2be965b19394bfcf850b8347d1687e02c8ed3478
 All 36 local/past paired OpenAI request payloads are identical as parsed objects. Therefore, the one-answer difference cannot be attributed to better retrieved information; it is repeated model/service variability on identical supplied evidence. Remote recall added latency and saved no model prompt tokens relative to the strong local control. Both compact arms improve over the poor raw-context baseline, but this does not establish a past.dev-specific performance gain. All 57 failures and zero expected-source retrieval misses are reported; no dollar saving is verified. The v2 result does not satisfy an all-three accuracy/latency/cost improvement claim.
 
 A supplemental mobile audit exercised and captured all six tabs at 390×844, with no horizontal page overflow (`mobile-all-tabs.json`).
+
+## V3 automated self-review by the build agent (18:17 UTC)
+
+Inspected `src/memory_benchmark_v3.py`, its frozen plan, final report, and documentation. Four v3 tests pass independently. The new resolver makes no model call and only resolves matching canonical records whose IDs are actually returned by past.dev, with temporal checks and no rescue for missing recall. Gold answers are used for evaluation rather than request construction. This is a legitimate deterministic implementation of the exact structured task, but the helper has access to the full local canonical corpus, so it is a retrieval-gated local resolver rather than a standalone remote memory store evaluation.
+
+V3 openly reuses the 18 already evaluated questions, repeats three times, and randomizes contemporaneous arm ordering. It is operational replication, not independent holdout. The full raw prompt model is a weak comparator for a task completely specified by exact selectors; the local deterministic arm is the meaningful implementation control.
+
+| Arm | Exact matches | Mean seconds | Prompt tokens |
+|---|---:|---:|---:|
+| Full raw model context | 0/54 | 0.691 | 553,200 |
+| Local deterministic | 54/54 | 0.000426 | 0 |
+| past.dev deterministic | 54/54 | 0.823 | 0 |
+
+Remote deterministic lookup is correct on this corpus and eliminates unnecessary model tokens. It is slower than the newly measured raw model comparator and far slower than equally accurate local resolution. No all-three accuracy/latency/cost gain is established. Request IDs and provider credits/list prices can support a clearly labeled cost estimate; they are not invoice-level actual expenditure or proof of total savings. Ingestion amortization, subscriptions, credit conversion and pricing assumptions must remain explicit.
+
+At the 18:16 UTC deployment recheck, the public page still served the original header/playback/economic rendering and the original data hash; requested presentation fixes were not yet visible in fresh anonymous browser checks. This finding will be superseded only after the changed public assets are observed.
+
+V3 cost-estimate audit: all 54 unique recorded recall request IDs exactly match the cost artifact's 54 ledger IDs, totaling 54 credits. Recalculation using stated model list rates and reported cached/uncached/output token counts agrees with $0.0734432 for the raw-model comparator. Recall list cost is $0.0162; estimated one-corpus ingestion adds $0.0828, making $0.099 for this 54-query experiment, higher than the raw-model estimate. Longer-use amortization changes that comparison, but no amortization horizon was demonstrated. The artifact correctly labels estimates rather than invoice charges and leaves actual savings unverified. Local deterministic resolution requires neither recall nor model API charges.
+
+
+## Latest public presentation fixes verified
+
+A subsequent fresh anonymous visit observed the deployed fixes. Public index SHA-256: `e0c98fa0af74eff4a77ed50b3ede1b435accbb4259824d2c970698f52ff13afc`. At 1366×768, clicking the hero playback action scrolls to y=581: the chart occupies viewport y=73–318 and controls y=361, clearly visible. Economic view now presents six currency-formatted H100/A100 scenario rows with expandable assumptions and a visible illustrative-value caveat. Both earlier medium presentation findings are resolved. Evidence: `fixed-stage-play.png`, `fixed-stage-economics.png`, and `fixes.json`. Earlier 18:16 observations document propagation delay and are superseded by this check.
+
+The complete anonymous browser regression suite was rerun against the newly deployed presentation and passed again: six tabs, replay, keyboard, filters, downloads, mobile checks and no JavaScript errors. Latest regression evidence is under `artifacts/final-automated-self-review/latest/`.

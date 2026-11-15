@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-11-15T18:35:27.904808+00:00",
+  "url": "https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run",
+  "files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "6848c149021dc3afc8e151bb8204866c0f441f4984a95946a1c26d69d4523eaf"
+    },
+    {
+      "file": "data.json",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "d8bb44e973910c0dfbfdaab61180c42a0d841382abe865b099cbd2b2dec0cae2",
+      "calibration_matches_official_summary": true
+    },
+    {
+      "file": "findings.md",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "548eaa99933f68aee7c063e63c59d6249ebe12765b9cec7598e542bade495e16"
+    },
+    {
+      "file": "forecasts.csv",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31"
+    },
+    {
+      "file": "forecasts_calibrated.csv",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d"
+    },
+    {
+      "file": "forecasts_extended.csv",
+      "status": 200,
+      "immutable_snapshot_byte_match": true,
+      "local_byte_match": true,
+      "cache_control": "no-store, max-age=0",
+      "sha256": "05db1f8d92814cde2af97e87f9a58c471e7c09c080c7bf8e7b32d3107cbcc3dd"
+    }
+  ],
+  "status": "passed"
+}

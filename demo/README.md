@@ -18,7 +18,7 @@ Start the demo with `.venv/bin/python -m http.server 8080 --directory demo` and 
 
 ## Target mismatch discovered in the actual pack
 
-The October 24 starter catalog's 97 headline targets include 80 AWS archive spot series and **17 posted-rental series**. The November 6 official catalog has **37 headline posted-rental series**. The submission covers all 37 (111 rows); no nonexistent targets are invented. Original 97-series quickstart artifacts remain in `results/quickstart`. `data/targets.csv` gives every target's instrument class, benchmark contract, source URL and license. Sources and instruments are never chained. The historical evaluation cohort is defined at the final cutoff, so cohort-selection/survivorship bias is a disclosed limitation.
+The October 24 starter catalog's 97 headline targets include 80 AWS archive spot series and **17 posted-rental series**. The November 6 posted-only catalog has **37 headline posted-rental series**. The original submission covers all 37 (111 rows). The 80 October-headline AWS archive series can also be forecast from their older observations, but are outside Sunday’s posted-rental scoring; see `data/headline_series_audit.csv` and `forecasts_extended.csv`. The full rebuilt catalog has 725 series; the union of October/November headline membership is 117. Original 97-series quickstart artifacts remain in `results/quickstart`. `data/targets.csv` gives every target's instrument class, benchmark contract, source URL and license. Sources and instruments are never chained. The historical evaluation cohort is defined at the final cutoff, so cohort-selection/survivorship bias is a disclosed limitation.
 
 ## Agent integrations and live mode
 
@@ -77,3 +77,19 @@ This work is already conducted on hackwithori.com, satisfying the stated platfor
 
 
 The unchanged Pacific pack is available from the organiser’s [Google Drive folder](https://drive.google.com/drive/folders/14zWi964QlLh3mZeWGrBI85J31-SqfGHN). Extract its zip to `data/pack/`, preserving the enclosed `gpu-price-pack-v0.1.1-handover` directory. The original pack is not stored in this repository.
+
+## past.dev challenge: measured result
+
+**Writers:** Analyst writes hypotheses and results; Critic writes verdicts; Researcher writes dated evidence. **Readers:** Analyst and Forecaster read shared records, including records written by other agents. The recorded live run verifies these past.dev API calls.
+
+In the structured lookup benchmark, past.dev matched the local lookup’s accuracy (**54/54**) but was slower: **0.8234 seconds** per query versus **0.000426 seconds** locally. **No cost savings are established.** Token reductions and list-price scenarios are not proof of lower total cost. This benchmark measures memory lookup, not GPU forecast accuracy.
+
+Reviews in this project are **automated self-review by the build agent**, including delegated agents in the same system. They are not external certification or official judging scores.
+
+## Additional submission files and calibration
+
+`forecasts.csv` remains the original 111-row posted-rental submission. `forecasts_calibrated.csv` is the optional 111-row version with wider history-only price ranges; `forecasts_extended.csv` preserves the original rows and adds 240 AWS forecasts (117 total series, 351 rows). AWS is not Sunday-scored and its latest observation is October 31. `data/headline_series_audit.csv` lists all 117 series and reasons.
+
+The fixed calibration follow-up improves historical coverage from 64.70% to 75.42%, and pooled skill against drift from 0.057% to 4.323%. Applying the same adjustment to drift itself improves measured skill from zero to 4.266%. Mean series skill worsens and the uncertainty interval includes no improvement. We recommend the optional calibrated file for the observed pooled-loss and coverage objectives, with those limits; this is not a proven November improvement. See docs/CALIBRATION_STUDY.md for the fixed-rule timing disclosure, all group breakdowns and validity checks. The original file stays unchanged.
+
+`./reproduce.sh` also rebuilds these follow-up files and replays the three memory benchmarks offline. All reviews are automated self-review by the build agent.

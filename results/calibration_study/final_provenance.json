@@ -1,0 +1,7 @@
+{
+  "original_sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+  "candidate_sha256": "226f58a63771488290a8073579853ec9e64189ac2e7a4c99d706db6c370fe59d",
+  "rows": 111,
+  "cutoff": "2026-11-06",
+  "caveat": "Optional candidate, not a proven final-window improvement. Calibration errors use the original mixed-policy prequential forecasts, whereas final original forecasts use drift fallback. November truth unavailable."
+}

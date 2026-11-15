@@ -1,0 +1,104 @@
+{
+  "scope": "v1 benchmark time window; temporal match only, no request id receipt in v1 cache",
+  "requests": [
+    {
+      "requestId": "req_gkfzaxg5n3ui",
+      "receivedAt": "2026-11-15T17:54:39.236864Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 327,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_lpgomxcfd732",
+      "receivedAt": "2026-11-15T17:54:17.276366Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 318,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_soqygwawnggf",
+      "receivedAt": "2026-11-15T17:53:52.920967Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 410,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_n4oewxe4pvyj",
+      "receivedAt": "2026-11-15T17:53:52.919944Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 493,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_dixts7jhntip",
+      "receivedAt": "2026-11-15T17:53:50.080252Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 354,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_7nuj5wliq637",
+      "receivedAt": "2026-11-15T17:53:47.416404Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 329,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_ewdch5qyik3n",
+      "receivedAt": "2026-11-15T17:53:44.798165Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 331,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_bn64unr4qzgc",
+      "receivedAt": "2026-11-15T17:53:42.152491Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 355,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_jlmjh2s5pjx7",
+      "receivedAt": "2026-11-15T17:53:40.588718Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 377,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_en75rcdkhi66",
+      "receivedAt": "2026-11-15T17:53:36.131573Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 322,
+      "credits": 1.0
+    },
+    {
+      "requestId": "req_axpa4kh5u7wb",
+      "receivedAt": "2026-11-15T17:53:33.06525Z",
+      "method": "POST",
+      "path": "/api/v1/recall",
+      "status": 200,
+      "durationMs": 335,
+      "credits": 1.0
+    }
+  ]
+}

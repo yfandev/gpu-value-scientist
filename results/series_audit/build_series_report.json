@@ -1,0 +1,229 @@
+{
+  "starter_version": "0.1",
+  "run_utc": "2026-11-15T18:34:22Z",
+  "pack": "gpu-price-pack-v0.1.1-handover",
+  "cutoff": "2026-11-06",
+  "parts": {
+    "daily_statistics": {
+      "rows_in": 39203,
+      "rows_dropped_ewyluda": 0,
+      "rows_dropped_nonpositive_or_null": 0,
+      "rows_out": 39203,
+      "n_series": 592
+    },
+    "aws_spot_ticks": {
+      "parquet_files": 50,
+      "segments": [
+        [
+          "2022-05-01",
+          "2026-02-28",
+          46
+        ],
+        [
+          "2026-07-01",
+          "2026-10-31",
+          4
+        ]
+      ],
+      "instances": [
+        "p4d.24xlarge",
+        "p4de.24xlarge",
+        "p5.48xlarge",
+        "p5e.48xlarge",
+        "p5en.48xlarge",
+        "p6-b200.48xlarge",
+        "p6-b300.48xlarge"
+      ],
+      "tick_days_read": 55729,
+      "n_az_series": 128,
+      "composites": {
+        "p4d.24xlarge": {
+          "members": [
+            "aws_spot.p4d.24xlarge.apne1-az4",
+            "aws_spot.p4d.24xlarge.apne2-az4",
+            "aws_spot.p4d.24xlarge.aps1-az1",
+            "aws_spot.p4d.24xlarge.aps1-az2",
+            "aws_spot.p4d.24xlarge.aps1-az3",
+            "aws_spot.p4d.24xlarge.apse2-az1",
+            "aws_spot.p4d.24xlarge.apse2-az2",
+            "aws_spot.p4d.24xlarge.euc1-az3",
+            "aws_spot.p4d.24xlarge.euw1-az2",
+            "aws_spot.p4d.24xlarge.sae1-az1",
+            "aws_spot.p4d.24xlarge.sae1-az3",
+            "aws_spot.p4d.24xlarge.use1-az1",
+            "aws_spot.p4d.24xlarge.use1-az2",
+            "aws_spot.p4d.24xlarge.use1-az6",
+            "aws_spot.p4d.24xlarge.use2-az1",
+            "aws_spot.p4d.24xlarge.use2-az2",
+            "aws_spot.p4d.24xlarge.usw2-az1",
+            "aws_spot.p4d.24xlarge.usw2-az2",
+            "aws_spot.p4d.24xlarge.usw2-az3"
+          ],
+          "built": true,
+          "rule": "members reused from --members-from",
+          "min_members_per_day": 10
+        },
+        "p4de.24xlarge": {
+          "members": [
+            "aws_spot.p4de.24xlarge.apne1-az1",
+            "aws_spot.p4de.24xlarge.apne1-az4",
+            "aws_spot.p4de.24xlarge.apse1-az2",
+            "aws_spot.p4de.24xlarge.apse1-az3",
+            "aws_spot.p4de.24xlarge.euc1-az1",
+            "aws_spot.p4de.24xlarge.euc1-az2",
+            "aws_spot.p4de.24xlarge.ilc1-az2",
+            "aws_spot.p4de.24xlarge.use1-az4",
+            "aws_spot.p4de.24xlarge.use1-az6",
+            "aws_spot.p4de.24xlarge.usw2-az1",
+            "aws_spot.p4de.24xlarge.usw2-az2",
+            "aws_spot.p4de.24xlarge.usw2-az3"
+          ],
+          "built": true,
+          "rule": "members reused from --members-from",
+          "min_members_per_day": 6
+        },
+        "p5.48xlarge": {
+          "members": [
+            "aws_spot.p5.48xlarge.apne1-az1",
+            "aws_spot.p5.48xlarge.apne1-az4",
+            "aws_spot.p5.48xlarge.aps1-az1",
+            "aws_spot.p5.48xlarge.aps1-az2",
+            "aws_spot.p5.48xlarge.aps1-az3",
+            "aws_spot.p5.48xlarge.apse2-az1",
+            "aws_spot.p5.48xlarge.apse2-az2",
+            "aws_spot.p5.48xlarge.apse2-az3",
+            "aws_spot.p5.48xlarge.cac1-az4",
+            "aws_spot.p5.48xlarge.eun1-az3",
+            "aws_spot.p5.48xlarge.euw2-az1",
+            "aws_spot.p5.48xlarge.euw2-az2",
+            "aws_spot.p5.48xlarge.euw2-az3",
+            "aws_spot.p5.48xlarge.sae1-az3",
+            "aws_spot.p5.48xlarge.use1-az1",
+            "aws_spot.p5.48xlarge.use1-az2",
+            "aws_spot.p5.48xlarge.use1-az3",
+            "aws_spot.p5.48xlarge.use1-az4",
+            "aws_spot.p5.48xlarge.use1-az5",
+            "aws_spot.p5.48xlarge.use1-az6",
+            "aws_spot.p5.48xlarge.use2-az1",
+            "aws_spot.p5.48xlarge.use2-az2",
+            "aws_spot.p5.48xlarge.use2-az3",
+            "aws_spot.p5.48xlarge.usw1-az3",
+            "aws_spot.p5.48xlarge.usw2-az1",
+            "aws_spot.p5.48xlarge.usw2-az2",
+            "aws_spot.p5.48xlarge.usw2-az3",
+            "aws_spot.p5.48xlarge.usw2-az4"
+          ],
+          "built": true,
+          "rule": "members reused from --members-from",
+          "min_members_per_day": 14
+        },
+        "p5e.48xlarge": {
+          "members": [
+            "aws_spot.p5e.48xlarge.apse3-az1",
+            "aws_spot.p5e.48xlarge.use2-az1",
+            "aws_spot.p5e.48xlarge.use2-az3",
+            "aws_spot.p5e.48xlarge.usw2-az3"
+          ],
+          "built": true,
+          "rule": "members reused from --members-from",
+          "min_members_per_day": 3
+        },
+        "p5en.48xlarge": {
+          "members": [
+            "aws_spot.p5en.48xlarge.apne1-az4",
+            "aws_spot.p5en.48xlarge.apne2-az1",
+            "aws_spot.p5en.48xlarge.aps1-az1",
+            "aws_spot.p5en.48xlarge.aps1-az3",
+            "aws_spot.p5en.48xlarge.apse3-az2",
+            "aws_spot.p5en.48xlarge.apse3-az3",
+            "aws_spot.p5en.48xlarge.eus2-az1",
+            "aws_spot.p5en.48xlarge.eus2-az2",
+            "aws_spot.p5en.48xlarge.use1-az2",
+            "aws_spot.p5en.48xlarge.use1-az6",
+            "aws_spot.p5en.48xlarge.use2-az1",
+            "aws_spot.p5en.48xlarge.use2-az2",
+            "aws_spot.p5en.48xlarge.use2-az3",
+            "aws_spot.p5en.48xlarge.usw1-az3",
+            "aws_spot.p5en.48xlarge.usw2-az2",
+            "aws_spot.p5en.48xlarge.usw2-az3",
+            "aws_spot.p5en.48xlarge.usw2-az4"
+          ],
+          "built": true,
+          "rule": "members reused from --members-from",
+          "min_members_per_day": 9
+        },
+        "p6-b200.48xlarge": {
+          "members": [],
+          "built": false,
+          "rule": "AZ series with at least 365 calendar days in the archive"
+        },
+        "p6-b300.48xlarge": {
+          "members": [],
+          "built": false,
+          "rule": "AZ series with at least 365 calendar days in the archive"
+        }
+      },
+      "rows_out": 63948
+    }
+  },
+  "rows_total_before_cutoff": 103151,
+  "rows_written": 103151,
+  "rows_dropped_after_cutoff": 0,
+  "series_written": 725,
+  "as_of": "2026-11-06",
+  "tiers": {
+    "extended": 688,
+    "headline": 37
+  },
+  "headline_series": [
+    "afhubbard.hyperscaler_spot.A100_40GB.spot.median",
+    "afhubbard.hyperscaler_spot.A100_SXM_80GB.spot.median",
+    "afhubbard.hyperscaler_spot.T4.spot.median",
+    "afhubbard.hyperscaler_spot.V100.spot.median",
+    "fastgpu_daily.hyperscaler_spot.A100_80GB.spot.median",
+    "fastgpu_daily.hyperscaler_spot.T4.spot.median",
+    "fastgpu_daily.neocloud_rate_card.A100_40GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.A100_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.B200.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.B300.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H100_PCIe_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H200.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.L40S.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_A6000.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_PRO_6000.on_demand.median",
+    "fastgpu_daily.neocloud_spot.A100_80GB.spot.median",
+    "fastgpu_daily.neocloud_spot.B200.spot.median",
+    "fastgpu_daily.neocloud_spot.B300.spot.median",
+    "fastgpu_daily.neocloud_spot.H100_SXM_80GB.spot.median",
+    "fastgpu_daily.neocloud_spot.H200.spot.median",
+    "fastgpu_daily.neocloud_spot.L40S.spot.median",
+    "fastgpu_daily.neocloud_spot.RTX_PRO_6000.spot.median",
+    "gpurentalprices.marketplace_ask.H100_80GB.spot.median",
+    "gpurentalprices.neocloud_rate_card.A100_40GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.B200.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.B300.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H100_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H200.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.L4.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.L40S.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_A6000.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_PRO_6000.on_demand.median"
+  ],
+  "gates": {
+    "min_history_days": 60,
+    "aws_min_history_days": 365,
+    "max_staleness_days": 3,
+    "min_distinct_90d": 5,
+    "min_providers": 3,
+    "composite_min_days": 365
+  },
+  "outputs": {
+    "series": "series_daily.csv",
+    "catalog": "series_catalog.csv"
+  }
+}

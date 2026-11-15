@@ -1,0 +1,10 @@
+test_all_origins_future_truth_invariance (tests.test_calibration_study.CalibrationTests.test_all_origins_future_truth_invariance) ... ok
+test_explicit_residual_archive_is_preserved (tests.test_calibration_study.CalibrationTests.test_explicit_residual_archive_is_preserved) ... ok
+test_future_forecast_invariance (tests.test_calibration_study.CalibrationTests.test_future_forecast_invariance) ... ok
+test_strict_maturity_and_fallback (tests.test_calibration_study.CalibrationTests.test_strict_maturity_and_fallback) ... ok
+test_widening_and_unchanged_median (tests.test_calibration_study.CalibrationTests.test_widening_and_unchanged_median) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 17.167s
+
+OK

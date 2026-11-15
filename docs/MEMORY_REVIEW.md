@@ -1,4 +1,4 @@
-# Independent memory benchmark review
+# Automated self-review by the build agent: memory benchmark
 
 Reviewed 2026-11-15. This document records v1 diagnosis and constraints for v2; it does not claim v2 has passed.
 
@@ -19,7 +19,7 @@ Measured v1 mean latency was 1.5712 seconds past.dev versus 1.2264 seconds full 
 
 ## Monetary evidence actually available
 
-Fetched public https://past.dev/pricing.md and https://past.dev/docs/memory-api/debugging/llms.txt on 2026-11-15; copies are under `artifacts/independent-review/`. Published ingestion is ceil(UTF-8 bytes/350) credits per data point. PAYG recall is one credit per call; Flex includes recall within fair use but costs $99/month. Purchased credit tiers range from $0.0003/credit at 100,000 credits/$30 to $0.00013/credit at 10 million/$1,300. Free grants, subscription allocation, purchased-credit tiers and expiry mean list price is not proof of actual cash paid.
+Fetched public https://past.dev/pricing.md and https://past.dev/docs/memory-api/debugging/llms.txt on 2026-11-15; copies are under `artifacts/automated-self-review/`. Published ingestion is ceil(UTF-8 bytes/350) credits per data point. PAYG recall is one credit per call; Flex includes recall within fair use but costs $99/month. Purchased credit tiers range from $0.0003/credit at 100,000 credits/$30 to $0.00013/credit at 10 million/$1,300. Free grants, subscription allocation, purchased-credit tiers and expiry mean list price is not proof of actual cash paid.
 
 Authorized read-only `GET /api/v1/usage` succeeded using the existing configured project credential without printing the credential. At 18:08:40 UTC it reported metered=true, 1,385 project credits, 347 ingestions and 186 recalls. Aggregate sanitized evidence is `past-usage.json`; it includes other project activity and cannot price the benchmark alone.
 

@@ -1,0 +1,177 @@
+{
+  "rule_sha256": "4a83157bd1c3f239eec9b0f39f6687edcff3a9c5f9af74e2900059346b304e28",
+  "scorer_sha256": "38f197e966169d898b5b209e83bcf1c26b0cf5a3a5116e51d9a40aed5875037b",
+  "original_sha256": "9c293f26b2766d1b31a238dd91a6063c009c837f6db51cc6975dee359e00cdc5",
+  "paired_cells": 1017,
+  "origins": [
+    "2026-07-22",
+    "2026-07-29",
+    "2026-08-05",
+    "2026-08-12",
+    "2026-08-19",
+    "2026-08-26",
+    "2026-09-02",
+    "2026-09-09",
+    "2026-09-16",
+    "2026-09-23",
+    "2026-09-30",
+    "2026-10-07",
+    "2026-10-14",
+    "2026-10-21"
+  ],
+  "reports": {
+    "original": {
+      "last_value": {
+        "n_cells": 1017,
+        "pinball": 0.02147,
+        "baseline_pinball": 0.023341,
+        "skill_pooled": 0.080144,
+        "pinball_by_quantile": {
+          "q10": 0.015605,
+          "q50": 0.023861,
+          "q90": 0.024945
+        },
+        "baseline_pinball_by_quantile": {
+          "q10": 0.016218,
+          "q50": 0.023341,
+          "q90": 0.030465
+        },
+        "coverage": {
+          "below_q10": 0.104228,
+          "within_q10_q90": 0.647001,
+          "above_q90": 0.248771
+        },
+        "mae_q50": 0.047722,
+        "baseline_mae_q50": 0.046682,
+        "skill_mean_of_series": 0.119973,
+        "skill_median_of_series": 0.097439,
+        "share_series_positive_skill": 0.756757,
+        "relative_loss_geomean": 0.866471,
+        "skill_geomean": 0.133529,
+        "n_series_with_skill": 37,
+        "n_series_baseline_degenerate": 0,
+        "n_series_no_cells": 0,
+        "headline_skill": 0.080144,
+        "headline_definition": "pooled"
+      },
+      "drift": {
+        "n_cells": 1017,
+        "pinball": 0.02147,
+        "baseline_pinball": 0.021483,
+        "skill_pooled": 0.000567,
+        "pinball_by_quantile": {
+          "q10": 0.015605,
+          "q50": 0.023861,
+          "q90": 0.024945
+        },
+        "baseline_pinball_by_quantile": {
+          "q10": 0.015605,
+          "q50": 0.023898,
+          "q90": 0.024945
+        },
+        "coverage": {
+          "below_q10": 0.104228,
+          "within_q10_q90": 0.647001,
+          "above_q90": 0.248771
+        },
+        "mae_q50": 0.047722,
+        "baseline_mae_q50": 0.047796,
+        "skill_mean_of_series": 8.4e-05,
+        "skill_median_of_series": 0.0,
+        "share_series_positive_skill": 0.027027,
+        "relative_loss_geomean": 0.999916,
+        "skill_geomean": 8.4e-05,
+        "n_series_with_skill": 37,
+        "n_series_baseline_degenerate": 0,
+        "n_series_no_cells": 0,
+        "headline_skill": 0.000567,
+        "headline_definition": "pooled"
+      },
+      "mean_width": 0.0627299692814061
+    },
+    "calibrated": {
+      "last_value": {
+        "n_cells": 1017,
+        "pinball": 0.020554,
+        "baseline_pinball": 0.023341,
+        "skill_pooled": 0.119406,
+        "pinball_by_quantile": {
+          "q10": 0.014261,
+          "q50": 0.023861,
+          "q90": 0.02354
+        },
+        "baseline_pinball_by_quantile": {
+          "q10": 0.016218,
+          "q50": 0.023341,
+          "q90": 0.030465
+        },
+        "coverage": {
+          "below_q10": 0.083579,
+          "within_q10_q90": 0.754179,
+          "above_q90": 0.162242
+        },
+        "mae_q50": 0.047722,
+        "baseline_mae_q50": 0.046682,
+        "skill_mean_of_series": 0.097409,
+        "skill_median_of_series": 0.148514,
+        "share_series_positive_skill": 0.675676,
+        "relative_loss_geomean": 0.861259,
+        "skill_geomean": 0.138741,
+        "n_series_with_skill": 37,
+        "n_series_baseline_degenerate": 0,
+        "n_series_no_cells": 0,
+        "headline_skill": 0.119406,
+        "headline_definition": "pooled"
+      },
+      "drift": {
+        "n_cells": 1017,
+        "pinball": 0.020554,
+        "baseline_pinball": 0.021483,
+        "skill_pooled": 0.043226,
+        "pinball_by_quantile": {
+          "q10": 0.014261,
+          "q50": 0.023861,
+          "q90": 0.02354
+        },
+        "baseline_pinball_by_quantile": {
+          "q10": 0.015605,
+          "q50": 0.023898,
+          "q90": 0.024945
+        },
+        "coverage": {
+          "below_q10": 0.083579,
+          "within_q10_q90": 0.754179,
+          "above_q90": 0.162242
+        },
+        "mae_q50": 0.047722,
+        "baseline_mae_q50": 0.047796,
+        "skill_mean_of_series": -0.016189,
+        "skill_median_of_series": 0.019899,
+        "share_series_positive_skill": 0.621622,
+        "relative_loss_geomean": 0.9939,
+        "skill_geomean": 0.0061,
+        "n_series_with_skill": 37,
+        "n_series_baseline_degenerate": 0,
+        "n_series_no_cells": 0,
+        "headline_skill": 0.043226,
+        "headline_definition": "pooled"
+      },
+      "mean_width": 0.10920006037554547
+    }
+  },
+  "bootstrap_95_percentile": {
+    "calibrated_skill_vs_drift": [
+      -0.008201174999999998,
+      0.07022434999999999
+    ],
+    "calibrated_minus_original_pinball": [
+      -0.0019260999999999972,
+      0.00014317499999999642
+    ],
+    "coverage_gain": [
+      0.06277967499999998,
+      0.14804097499999996
+    ]
+  },
+  "caveat": "Retrospective rule designed after original coverage observed; no untouched external holdout. Whole-origin bootstrap only descriptive: origins and series dependent, 14 origins. November truth unavailable."
+}

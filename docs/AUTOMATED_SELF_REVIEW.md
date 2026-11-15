@@ -1,6 +1,6 @@
 # Independent preliminary review — GPU Value Scientist
 
-Reviewed 2026-11-15, public deployment fetched at 17:56 UTC. This is a preliminary review, not final-deployment signoff or an official judging score. No product files or Git state were changed. Evidence is in `artifacts/independent-review/`.
+Reviewed 2026-11-15, public deployment fetched at 17:56 UTC. This is a preliminary review, not final-deployment signoff or an official judging score. No product files or Git state were changed. Evidence is in `artifacts/automated-self-review/`.
 
 ## Version and scope
 

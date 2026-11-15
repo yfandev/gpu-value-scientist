@@ -1,0 +1,484 @@
+{
+  "accessed_date": "2026-11-15",
+  "actual_dollar_savings_verified": false,
+  "actual_recall_credits": 54.0,
+  "assumptions": {
+    "exclusions": "Taxes, discounts, subscription allocation and local compute excluded equally; actual invoice/paid credit grant unknown.",
+    "ingestion_basis": "Estimated ceil(canonical UTF-8 content bytes/350) per source; actual original billed ingestion not reconciled.",
+    "openai_usd_per_million": {
+      "cached_input": 0.1,
+      "output": 1.6,
+      "uncached_input": 0.4
+    },
+    "past_usd_per_credit": 0.0003
+  },
+  "estimated_corpus_ingestion_credits": 276,
+  "estimated_corpus_ingestion_list_usd": 0.0828,
+  "full_context_model_list_usd": 0.0734432,
+  "matched_requests": 54,
+  "model_pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+  "model_usage": {
+    "cached_tokens": 499584,
+    "completion_tokens": 1274,
+    "prompt_tokens": 553200
+  },
+  "past_pricing_source": "https://past.dev/pricing.md",
+  "past_recall_list_usd": 0.0162,
+  "recall_requests": [
+    {
+      "credits": 1.0,
+      "durationMs": 403,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:16:02.170909Z",
+      "requestId": "req_stthjrqvp6pv",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 339,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:16:01.331935Z",
+      "requestId": "req_bwyqxpxoafxt",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 400,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:59.082093Z",
+      "requestId": "req_weunyreozrvw",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 422,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:58.133803Z",
+      "requestId": "req_aesmiov47oai",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 427,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:56.531736Z",
+      "requestId": "req_io4rrzrbubis",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 418,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:54.244842Z",
+      "requestId": "req_6dtfkv2b4rws",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 476,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:52.555868Z",
+      "requestId": "req_esyouyibbjng",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 392,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:50.177359Z",
+      "requestId": "req_3rk42njiwk3j",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 414,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:49.311024Z",
+      "requestId": "req_cels2r5cmvuj",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 373,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:46.014086Z",
+      "requestId": "req_wrvmwhlewv7q",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 413,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:44.04525Z",
+      "requestId": "req_o7lkrn7lrpyv",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 447,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:43.15243Z",
+      "requestId": "req_asahz3o5znry",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 450,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:40.621316Z",
+      "requestId": "req_cdqqix2lqanx",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 434,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:39.693038Z",
+      "requestId": "req_qof4ozwjk4aw",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 421,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:37.941426Z",
+      "requestId": "req_45xmrrqbbcfe",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 331,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:35.824838Z",
+      "requestId": "req_g37rpt56265a",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 339,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:35.048522Z",
+      "requestId": "req_ulqgik63bagc",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 374,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:33.483163Z",
+      "requestId": "req_qp2lblfopqt6",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 437,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:31.224502Z",
+      "requestId": "req_agysgnwbp64d",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 350,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:29.601498Z",
+      "requestId": "req_mvzafu6ueby6",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 365,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:28.812582Z",
+      "requestId": "req_v5ebm4izgvih",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 278,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:27.473261Z",
+      "requestId": "req_7azawcpssxhc",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 376,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:26.107998Z",
+      "requestId": "req_yhyqpz4v6tbt",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 315,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:24.542522Z",
+      "requestId": "req_vz267kin2ztn",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 408,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:22.200822Z",
+      "requestId": "req_comkpcfxnobu",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 338,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:21.445249Z",
+      "requestId": "req_ea6dqs4vxt6y",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 517,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:19.578513Z",
+      "requestId": "req_dflpb55kpf4v",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 581,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:17.167841Z",
+      "requestId": "req_g5tuf2wyk6zd",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 520,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:15.463314Z",
+      "requestId": "req_kbt3mjbiw3xc",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 604,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:14.427005Z",
+      "requestId": "req_hkvddxtel5r3",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 518,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:12.2185Z",
+      "requestId": "req_bhbzv3wvfmm3",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 705,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:10.425567Z",
+      "requestId": "req_uzodbdk4it4w",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 623,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:08.448914Z",
+      "requestId": "req_m6dgvhimhojp",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 830,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:06.531028Z",
+      "requestId": "req_maxvd3t5tzg2",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 421,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:05.730669Z",
+      "requestId": "req_q5acuu4ib2fq",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 388,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:03.455282Z",
+      "requestId": "req_3vx6mro7gqdn",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 625,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:01.763726Z",
+      "requestId": "req_gdmpr3sihus2",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 335,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:15:00.573763Z",
+      "requestId": "req_vchcwd56wpew",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 422,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:59.023987Z",
+      "requestId": "req_giu2sddyovqr",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 337,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:57.484615Z",
+      "requestId": "req_jzllysyhk7t7",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 392,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:55.928583Z",
+      "requestId": "req_vyrrllvyuwft",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 399,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:55.121265Z",
+      "requestId": "req_uot7zxm7mjek",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 380,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:53.754747Z",
+      "requestId": "req_quj5rlln7pwe",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 365,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:51.722062Z",
+      "requestId": "req_k4vt5pfnv6yc",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 544,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:50.760578Z",
+      "requestId": "req_nevsbr5woukn",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 502,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:47.990737Z",
+      "requestId": "req_jfxnufu75eri",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 433,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:46.371889Z",
+      "requestId": "req_bszlgjjx2iiw",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 600,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:45.369076Z",
+      "requestId": "req_cuefh6x4r6t4",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 471,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:43.75708Z",
+      "requestId": "req_4exl3lfe6jh4",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 483,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:41.316992Z",
+      "requestId": "req_btwgcx43k5aq",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 428,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:40.499832Z",
+      "requestId": "req_3763s62lxyl7",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 650,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:38.888299Z",
+      "requestId": "req_i5rbfo67xeoi",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 427,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:37.594445Z",
+      "requestId": "req_rwwzpo7oilv5",
+      "status": 200
+    },
+    {
+      "credits": 1.0,
+      "durationMs": 756,
+      "path": "/api/v1/recall",
+      "receivedAt": "2026-11-15T18:14:35.824936Z",
+      "requestId": "req_35jp5jwrx4ld",
+      "status": 200
+    }
+  ],
+  "sensitivity": [
+    {
+      "amortization_queries": 54,
+      "past_54_queries_list_usd": 0.099,
+      "savings_vs_full_context": -0.025556800000000005
+    },
+    {
+      "amortization_queries": 100,
+      "past_54_queries_list_usd": 0.060911999999999994,
+      "savings_vs_full_context": 0.012531200000000006
+    },
+    {
+      "amortization_queries": 1000,
+      "past_54_queries_list_usd": 0.0206712,
+      "savings_vs_full_context": 0.052772
+    },
+    {
+      "amortization_queries": 10000,
+      "past_54_queries_list_usd": 0.016647119999999998,
+      "savings_vs_full_context": 0.05679608
+    }
+  ],
+  "status": "list_price_estimate_not_invoice"
+}

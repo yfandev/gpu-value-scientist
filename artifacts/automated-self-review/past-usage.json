@@ -1,0 +1,25 @@
+{
+  "month": {
+    "from": "2026-11-01T00:00:00Z",
+    "to": "2026-11-15T18:08:40.6181011Z",
+    "resetsAt": null
+  },
+  "balance": {
+    "left": 548615.0,
+    "included": 50000,
+    "bought": 498615.0,
+    "rolledOver": 0,
+    "spent": 1385.0
+  },
+  "project": {
+    "slug": "default-project",
+    "credits": 1385.0,
+    "ingestions": 347,
+    "recalls": 186,
+    "creditCap": null,
+    "creditCapLeft": null,
+    "ingestionCap": null,
+    "ingestionCapLeft": null
+  },
+  "metered": true
+}

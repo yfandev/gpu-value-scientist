@@ -5,7 +5,11 @@ from environment import load_environment
 load_environment()
 ROOT=Path(__file__).resolve().parents[1]
 os.chdir(ROOT); sys.dont_write_bytecode=True
-CONFIG=json.loads(Path('config.json').read_text()); PACK=Path(CONFIG['pack']).resolve()
+CONFIG=json.loads(Path('config.json').read_text())
+# Follow-up calibration is a separately preregistered study, not an input to the
+# completed live-agent experiment. Preserve its original cache namespace.
+CONFIG.pop('calibration_study',None)
+PACK=Path(CONFIG['pack']).resolve()
 sys.path.insert(0,str(PACK/'starter'))
 import numpy as np
 import pandas as pd
@@ -209,7 +213,7 @@ Paired mean loss difference against drift: {u['mean_loss_difference']}; explorat
 
 config.json was saved and hashed before any score was run. Fifteen weekly origins run July 15–October 21 inclusive, the starter's interpretation of July 15–October 24. October 24 is a separate quickstart cutoff. Each forecast slices history at its own origin. Calibration uses only matured residuals. Each proposed hypothesis is frozen before its validation forecast origins, with at least three later origins required by the critic. Predictions for round t are committed before their error is evaluated. The 14-round curve evaluates July 22–October 21. Results from the same round never enter its own choices.
 
-Important brief discrepancy: the starter's October 24 headline catalog has 97 series, of which 80 are AWS archive spot and only 17 are posted rentals. At November 6 the official builder yields **37 posted-rental headline series**. We forecast that actual set, not 97 invented posted targets. The original 97-series quickstart remains in results/quickstart. data/targets.csv declares every instrument and full benchmark contract. Posted hyperscaler_spot is a collector's daily statistic, distinct from the unscored AWS archive. Source-specific medians are never chained. No index date alignment or interpolation across the AWS hole is used. The fixed final-cutoff cohort creates retrospective selection/survivorship bias in earlier backtests; this is not a real-time cohort backtest.
+Important brief discrepancy: the starter's October 24 headline catalog has 97 series, of which 80 are AWS archive spot and only 17 are posted rentals. Our November 6 posted-only build yields **37 headline posted-rental series**. The 80 AWS archive series from the October catalog remain legitimately forecastable from older observations, but are excluded from the posted-rental submission and Sunday scoring. A separate full-catalog audit and extended forecast file document that distinction. The original 97-series quickstart remains in results/quickstart. data/targets.csv declares every instrument and full benchmark contract. Posted hyperscaler_spot is a collector's daily statistic, distinct from the unscored AWS archive. Source-specific medians are never chained. No index date alignment or interpolation across the AWS hole is used. The fixed final-cutoff cohort creates retrospective selection/survivorship bias in earlier backtests; this is not a real-time cohort backtest.
 
 ## Methods and research loop
 
@@ -232,6 +236,9 @@ Runtime: **{payload['status']['agent_mode']}**. Shared memory: **{payload['statu
     if Path('docs/MEMORY_BENCHMARK.md').exists():text+='\n'+Path('docs/MEMORY_BENCHMARK.md').read_text()+'\n'
     for benchmark_doc in ['docs/MEMORY_BENCHMARK_V2.md','docs/MEMORY_BENCHMARK_V3.md']:
         if Path(benchmark_doc).exists():text+='\n'+Path(benchmark_doc).read_text()+'\n'
+    if Path('docs/PAST_DEV_DISCLOSURE.md').exists():text+='\n'+Path('docs/PAST_DEV_DISCLOSURE.md').read_text()+'\n'
+    if Path('docs/CALIBRATION_STUDY.md').exists():text+='\n'+Path('docs/CALIBRATION_STUDY.md').read_text()+'\n'
+    if Path('docs/SERIES_AUDIT.md').exists():text+='\n'+Path('docs/SERIES_AUDIT.md').read_text()+'\n'
     if Path('docs/economic_view.md').exists():text+=Path('docs/economic_view.md').read_text()
     text+='\n## Limitations\n\n'+'\n'.join('- '+x for x in payload['status']['warnings'])+'\n'
     text+='\n## Reproduction and attribution\n\nRun `./reproduce.sh` after installing requirements in a local virtual environment. `./reproduce.sh --live` requires configured API keys and rebuilds live decisions. The pack is read-only, verified with MANIFEST.sha256, and never bundled with generated submission files.\n\nPacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0. Full unchanged upstream attribution accompanies this work in ATTRIBUTION.md; original notices remain in the pack. Derived changes: target extraction, history-only forecasts, official score reports, and research decisions. No endorsement implied.\n'

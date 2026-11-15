@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -112,7 +113,14 @@ def check(url: str, artifacts: Path):
             assert 'No main-loop source trail' in page.locator('#loop-sources').inner_text()
             checks.append('Missing source trail explicitly unavailable')
 
+        if data.get('calibration_study'):
+            page.get_by_role('tab',name='Overview').click()
+            assert page.locator('#calibration-comparison tbody tr').count()==2
+            assert '75.4%' in page.locator('#calibration-comparison').inner_text()
+            assert 'Pacific' in page.locator('#overview').inner_text()
+            checks.append('Recorded calibration comparison displays both official outcomes and named Pacific baseline')
         downloads = ['forecasts.csv', 'findings.md', 'README.md', 'data.json']
+        if data.get('calibration_study'):downloads += ['forecasts_calibrated.csv','forecasts_extended.csv','headlines.csv']
         if sponsors:
             downloads.append('sponsor_audit.json')
         for name in downloads:
@@ -138,6 +146,15 @@ def check(url: str, artifacts: Path):
             assert mobile.get_by_role('tab', name=tab).get_attribute('aria-selected') == 'true'
             assert mobile.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Mobile tab overflow: ' + tab
         checks.append('Mobile navigation and layout without horizontal page overflow')
+        stage=browser.new_page(viewport={'width':1366,'height':768})
+        started=time.perf_counter();stage.goto(url+'/');stage.wait_for_function("document.getElementById('metric-skill').textContent !== '—'")
+        ready_seconds=time.perf_counter()-started
+        stage.locator('#tour').click();stage.wait_for_timeout(700)
+        transport=stage.locator('.transport').bounding_box()
+        assert transport and transport['y']>=0 and transport['y']+transport['height']<=768,'Stage playback controls outside screen'
+        assert ready_seconds<10,'Stage startup exceeded10seconds in this measured run'
+        stage.screenshot(path=str(artifacts/'stage-playback.png'))
+        checks.append(f'Stage1366x768 playback scrolls into view; measured ready time{ready_seconds:.3f}s (hosting may be warm)')
         assert not errors, 'Browser JavaScript errors: ' + '; '.join(errors)
         checks.append('No browser JavaScript errors')
         browser.close()

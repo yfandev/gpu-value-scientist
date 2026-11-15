@@ -1,0 +1,38 @@
+[
+  {
+    "file": "index.html",
+    "status": 200,
+    "local_byte_match": false,
+    "cache_control": null,
+    "sha256": "e0c98fa0af74eff4a77ed50b3ede1b435accbb4259824d2c970698f52ff13afc"
+  },
+  {
+    "file": "data.json",
+    "status": 200,
+    "local_byte_match": false,
+    "cache_control": null,
+    "sha256": "719a613f5380c3fa3fca8691de37ef255666cfb314508bfd0eeaad476e803a31"
+  },
+  {
+    "file": "findings.md",
+    "status": 200,
+    "local_byte_match": false,
+    "cache_control": null,
+    "sha256": "0b2917efafe7295074f5fdfb226aeb4c2f46a1c27b53627851c2ebb059e96a58"
+  },
+  {
+    "file": "forecasts.csv",
+    "status": 200,
+    "local_byte_match": true,
+    "cache_control": null,
+    "sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31"
+  },
+  {
+    "file": "forecasts_calibrated.csv",
+    "status": 404
+  },
+  {
+    "file": "forecasts_extended.csv",
+    "status": 404
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "cutoff": "2026-11-06",
+  "oct24_headline": 97,
+  "oct24_aws_headline": 80,
+  "oct24_posted_headline": 17,
+  "nov6_posted_headline": 37,
+  "nov6_full_headline": 37,
+  "headline_union": 117,
+  "overlap_oct24_nov6": 17,
+  "new_nov6_posted": 20,
+  "original_rows": 111,
+  "added_series": 80,
+  "added_rows": 240,
+  "extended_rows": 351,
+  "exact_nov6_series": 37,
+  "original_forecasts_sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+  "extended_sha256": "05db1f8d92814cde2af97e87f9a58c471e7c09c080c7bf8e7b32d3107cbcc3dd",
+  "input_source_sha256": {
+    "DATA.md": "18d28108dd068b64b7f25b4b27b705c19eb29c2232848544ff44f82c7436f595",
+    "starter/build_series.py": "def7c77acfa124cae1e0066aadca029d502a7fa4fe8cb84b951c42460a5d6f98",
+    "starter/baselines.py": "e5ed0b9f6342989a89a7e5c3a52a74654bd9eae49700ccdc82486b479e76e81c",
+    "starter/_common.py": "3cfaa7edfc6e183362779be4bfe9e20bcdb9178997030b4cf69bd72faa1825f2"
+  },
+  "validation": "PASS: exact117x3 grid; starter validator; positive finite ordered quantiles; exact starter drift; frozen history; archive gap absent; original111 rows byte-preserved",
+  "no_november_truth": true,
+  "commands": [
+    {
+      "command": [
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/.venv/bin/python",
+        "-B",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/data/pack/gpu-price-pack-v0.1.1-handover/starter/build_series.py",
+        "--pack",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/data/pack/gpu-price-pack-v0.1.1-handover",
+        "--cutoff",
+        "2026-11-06",
+        "--members-from",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/quickstart/series_catalog.csv",
+        "--out",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/series_audit/series_daily.csv",
+        "--catalog",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/series_audit/series_catalog.csv"
+      ],
+      "stdout": "series rows 103,151 | series 725 | headline 37 | as_of 2026-11-06 | cutoff 2026-11-06 | wrote series_daily.csv, series_catalog.csv\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/.venv/bin/python",
+        "-B",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/data/pack/gpu-price-pack-v0.1.1-handover/starter/baselines.py",
+        "--history",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/series_audit/series_daily.csv",
+        "--origin",
+        "2026-11-06",
+        "--horizons",
+        "1,3,7",
+        "--method",
+        "drift",
+        "--series-ids",
+        "@/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/series_audit/added_series_ids.txt",
+        "--frozen",
+        "--out",
+        "/workspace/project/1b623b8ba545d813ddaf2a2bc1784952/results/series_audit/aws_starter_drift.csv"
+      ],
+      "stdout": "drift: 240 rows | series 80/80 | origins 1 | horizons [1, 3, 7] | not in history: 0 | wrote aws_starter_drift.csv\n",
+      "stderr": ""
+    }
+  ]
+}

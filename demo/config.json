@@ -92,5 +92,30 @@
         "min_calibration": 12
       }
     }
-  ]
+  ],
+  "calibration_study": {
+    "rule": {
+      "study": "retrospective follow-up designed after observing original undercoverage; not external holdout",
+      "rule_id": "signed-relative-tail-expansion-v1",
+      "pool_hierarchy": [
+        "source_id + instrument_class + horizon_days",
+        "instrument_class + horizon_days",
+        "horizon_days"
+      ],
+      "minimum_pool_cells": 20,
+      "minimum_distinct_prior_origins": 2,
+      "maturity_rule": "prior origin_date < current origin_date AND target_date < current origin_date",
+      "residuals": "lower=(original_q10-y)/max(abs(original_q50),1e-9); upper=(y-original_q90)/max(abs(original_q50),1e-9)",
+      "tail_quantile": 0.9,
+      "quantile_rank": "min(n,ceil((n+1)*0.9)), one-indexed sorted signed residuals",
+      "adjustment": "q10=max(0,q10-scale*max(0,lower_quantile)); q90=q90+scale*max(0,upper_quantile); q50 unchanged",
+      "fallback": "first qualifying pool; if none leave unchanged (including first origin)",
+      "window": "all matured prior original online forecasts; never recalibrated residuals",
+      "tuning": "one fixed rule; no search or adjustment after observing calibrated results",
+      "bootstrap": "2000 paired whole-origin resamples, seed 42; descriptive dependence caveat"
+    },
+    "configuration_recorded_utc": "2026-11-15T18:19:28.005300+00:00",
+    "rule_file_sha256": "4a83157bd1c3f239eec9b0f39f6687edcff3a9c5f9af74e2900059346b304e28",
+    "chronology_note": "Rule fixed in results/calibration_study/rule.json before the first calibrated scoring run. Copied unchanged into config.json after first scoring results and the user requested this location; not a claim config.json preceded results."
+  }
 }

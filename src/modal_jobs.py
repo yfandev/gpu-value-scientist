@@ -31,6 +31,7 @@ for source_directory in (Path(__file__).resolve().parent, Path('/gpu/src')):
         sys.path.insert(0, str(source_directory))
 from environment import load_environment
 load_environment()
+SITE_DIR = Path(os.environ.get('GPU_VALUE_DEMO_DIR', str(ROOT / 'demo')))
 PACK_REL = Path('data/pack/gpu-price-pack-v0.1.1-handover')
 ALLOWED_METHODS = {
     'drift': {'min_samples'},
@@ -46,7 +47,7 @@ PARAM_BOUNDS = {'window': (8, 365), 'min_samples': (2, 365),
                 'min_calibration': (2, 120)}
 INTEGER_PARAMS = {'window', 'min_samples', 'calibration_days', 'min_calibration'}
 PUBLIC_FILES = {'index.html', 'data.json', 'forecasts.csv', 'findings.md',
-                'README.md', 'targets.csv', 'DEMO_FLOW.md', 'ATTRIBUTION.md', 'sponsor_audit.json'}
+                'README.md', 'targets.csv', 'DEMO_FLOW.md', 'ATTRIBUTION.md', 'sponsor_audit.json', 'headlines.csv', 'forecasts_extended.csv', 'forecasts_calibrated.csv', 'demo.webm', 'project-screenshot.png'}
 
 
 def _date(value):
@@ -174,6 +175,8 @@ def public_demo_app(directory=None):
             return PlainTextResponse('Not found', status_code=404)
         response = await call_next(request)
         response.headers['X-Content-Type-Options'] = 'nosniff'
+        response.headers['Cache-Control'] = 'no-store, max-age=0'
+        response.headers['Pragma'] = 'no-cache'
         return response
 
     web.mount('/', StaticFiles(directory=str(site), html=True), name='demo')
@@ -197,7 +200,9 @@ else:
     compute_image = compute_image.add_local_file(ROOT / 'src/methods.py', '/gpu/src/methods.py')
     compute_image = compute_image.add_local_file(ROOT / 'src/environment.py', '/gpu/src/environment.py')
     site_image = modal.Image.debian_slim(python_version='3.11').pip_install('fastapi==0.115.12').add_local_dir(
-        ROOT / 'demo', '/gpu/demo', ignore=lambda p: not Path(p).is_dir() and Path(p).name not in PUBLIC_FILES)
+        SITE_DIR, '/gpu/demo', copy=True, ignore=lambda p: not Path(p).is_dir() and Path(p).name not in PUBLIC_FILES)
+    site_revision = hashlib.sha256(b''.join((SITE_DIR/name).read_bytes() for name in sorted(PUBLIC_FILES) if (SITE_DIR/name).is_file())).hexdigest()
+    site_image = site_image.env({'GPU_VALUE_SITE_REVISION': site_revision})
     site_image = site_image.add_local_file(ROOT / 'src/environment.py', '/gpu/src/environment.py')
 
     @app.function(image=compute_image, cpu=2, memory=2048, timeout=600, max_containers=8)

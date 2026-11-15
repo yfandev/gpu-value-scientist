@@ -24,5 +24,7 @@ done
 # Modal authenticates from MODAL_TOKEN_ID/MODAL_TOKEN_SECRET or its configured token file.
 # No tokens are printed, bundled into the image, or sent to browser code.
 mkdir -p logs
+"$PYTHON" -B src/prepare_deploy.py
+export GPU_VALUE_DEMO_DIR="$PWD/deliverables/deploy_demo"
 "$PYTHON" -B src/with_env.py "$MODAL_CLI" deploy src/modal_jobs.py 2>&1 | tee logs/modal-deploy.log
 printf '\nUse the exact public demo_site URL printed above. Verify it without cookies before sharing.\n'

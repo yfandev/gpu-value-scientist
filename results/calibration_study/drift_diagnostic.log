@@ -1,0 +1,144 @@
+backtest: cells scored 1017 (missing truth 504, filled from baseline 0, missing forecast 0) | pinball 0.021483 vs baseline 0.023341 | skill pooled 0.079622 mean-of-series 0.119888 median 0.097439 geomean 0.133456 | series with skill 37, degenerate 0 | wrote drift_base_last_value.json
+backtest: cells scored 1017 (missing truth 504, filled from baseline 0, missing forecast 0) | pinball 0.021483 vs baseline 0.021483 | skill pooled 0.0 mean-of-series 0.0 median 0.0 geomean 0.0 | series with skill 37, degenerate 0 | wrote drift_base_drift.json
+backtest: cells scored 1017 (missing truth 504, filled from baseline 0, missing forecast 0) | pinball 0.020566 vs baseline 0.023341 | skill pooled 0.118882 mean-of-series 0.097324 median 0.148514 geomean 0.138668 | series with skill 37, degenerate 0 | wrote drift_base_calibrated_last_value.json
+backtest: cells scored 1017 (missing truth 504, filled from baseline 0, missing forecast 0) | pinball 0.020566 vs baseline 0.021483 | skill pooled 0.042657 mean-of-series -0.016274 median 0.019899 geomean 0.006015 | series with skill 37, degenerate 0 | wrote drift_base_calibrated_drift.json
+{
+  "drift_base": {
+    "last_value": {
+      "n_cells": 1017,
+      "pinball": 0.021483,
+      "baseline_pinball": 0.023341,
+      "skill_pooled": 0.079622,
+      "pinball_by_quantile": {
+        "q10": 0.015605,
+        "q50": 0.023898,
+        "q90": 0.024945
+      },
+      "baseline_pinball_by_quantile": {
+        "q10": 0.016218,
+        "q50": 0.023341,
+        "q90": 0.030465
+      },
+      "coverage": {
+        "below_q10": 0.104228,
+        "within_q10_q90": 0.647001,
+        "above_q90": 0.248771
+      },
+      "mae_q50": 0.047796,
+      "baseline_mae_q50": 0.046682,
+      "skill_mean_of_series": 0.119888,
+      "skill_median_of_series": 0.097439,
+      "share_series_positive_skill": 0.756757,
+      "relative_loss_geomean": 0.866544,
+      "skill_geomean": 0.133456,
+      "n_series_with_skill": 37,
+      "n_series_baseline_degenerate": 0,
+      "n_series_no_cells": 0,
+      "headline_skill": 0.079622,
+      "headline_definition": "pooled"
+    },
+    "mean_width": 0.0627299692814061,
+    "drift": {
+      "n_cells": 1017,
+      "pinball": 0.021483,
+      "baseline_pinball": 0.021483,
+      "skill_pooled": 0.0,
+      "pinball_by_quantile": {
+        "q10": 0.015605,
+        "q50": 0.023898,
+        "q90": 0.024945
+      },
+      "baseline_pinball_by_quantile": {
+        "q10": 0.015605,
+        "q50": 0.023898,
+        "q90": 0.024945
+      },
+      "coverage": {
+        "below_q10": 0.104228,
+        "within_q10_q90": 0.647001,
+        "above_q90": 0.248771
+      },
+      "mae_q50": 0.047796,
+      "baseline_mae_q50": 0.047796,
+      "skill_mean_of_series": 0.0,
+      "skill_median_of_series": 0.0,
+      "share_series_positive_skill": 0.0,
+      "relative_loss_geomean": 1.0,
+      "skill_geomean": 0.0,
+      "n_series_with_skill": 37,
+      "n_series_baseline_degenerate": 0,
+      "n_series_no_cells": 0,
+      "headline_skill": 0.0,
+      "headline_definition": "pooled"
+    }
+  },
+  "drift_base_calibrated": {
+    "last_value": {
+      "n_cells": 1017,
+      "pinball": 0.020566,
+      "baseline_pinball": 0.023341,
+      "skill_pooled": 0.118882,
+      "pinball_by_quantile": {
+        "q10": 0.014261,
+        "q50": 0.023898,
+        "q90": 0.02354
+      },
+      "baseline_pinball_by_quantile": {
+        "q10": 0.016218,
+        "q50": 0.023341,
+        "q90": 0.030465
+      },
+      "coverage": {
+        "below_q10": 0.083579,
+        "within_q10_q90": 0.754179,
+        "above_q90": 0.162242
+      },
+      "mae_q50": 0.047796,
+      "baseline_mae_q50": 0.046682,
+      "skill_mean_of_series": 0.097324,
+      "skill_median_of_series": 0.148514,
+      "share_series_positive_skill": 0.675676,
+      "relative_loss_geomean": 0.861332,
+      "skill_geomean": 0.138668,
+      "n_series_with_skill": 37,
+      "n_series_baseline_degenerate": 0,
+      "n_series_no_cells": 0,
+      "headline_skill": 0.118882,
+      "headline_definition": "pooled"
+    },
+    "mean_width": 0.10920146627496082,
+    "drift": {
+      "n_cells": 1017,
+      "pinball": 0.020566,
+      "baseline_pinball": 0.021483,
+      "skill_pooled": 0.042657,
+      "pinball_by_quantile": {
+        "q10": 0.014261,
+        "q50": 0.023898,
+        "q90": 0.02354
+      },
+      "baseline_pinball_by_quantile": {
+        "q10": 0.015605,
+        "q50": 0.023898,
+        "q90": 0.024945
+      },
+      "coverage": {
+        "below_q10": 0.083579,
+        "within_q10_q90": 0.754179,
+        "above_q90": 0.162242
+      },
+      "mae_q50": 0.047796,
+      "baseline_mae_q50": 0.047796,
+      "skill_mean_of_series": -0.016274,
+      "skill_median_of_series": 0.019899,
+      "share_series_positive_skill": 0.594595,
+      "relative_loss_geomean": 0.993985,
+      "skill_geomean": 0.006015,
+      "n_series_with_skill": 37,
+      "n_series_baseline_degenerate": 0,
+      "n_series_no_cells": 0,
+      "headline_skill": 0.042657,
+      "headline_definition": "pooled"
+    }
+  }
+}

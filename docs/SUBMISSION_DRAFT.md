@@ -19,7 +19,7 @@ Challenges
 - past.dev: multiple live writers/readers and cross-agent use verified. The detailed brief says gains are not required; the form says to prove accuracy/latency/cost gains. Those gains are NOT established. Do not claim them.
 
 Project Screenshot
-Pending final 1920×1080 capture of the updated public demo.
+Download the 16:9 screenshot: https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/project-screenshot.png
 
 GitHub URL
 https://github.com/yfandev/gpu-value-scientist
@@ -28,4 +28,6 @@ Public website
 https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/
 
 Demo Link (YouTube/Loom)
-Pending final recorded walkthrough. The public website is not a YouTube or Loom recording.
+Recorded captioned walkthrough: https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm . This is a direct video, not a YouTube or Loom upload.
+
+Optional calibrated submission improves historical coverage to75.42% and measured pooled skill vs drift to4.323%, but uncertainty includes no improvement and some groups worsen. Original forecasts stay unchanged. See docs/CALIBRATION_STUDY.md; no final November performance claim.

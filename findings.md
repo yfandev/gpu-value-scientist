@@ -14,7 +14,7 @@ Paired mean loss difference against drift: -1.2174539823008747e-05; exploratory 
 
 config.json was saved and hashed before any score was run. Fifteen weekly origins run July 15–October 21 inclusive, the starter's interpretation of July 15–October 24. October 24 is a separate quickstart cutoff. Each forecast slices history at its own origin. Calibration uses only matured residuals. Each proposed hypothesis is frozen before its validation forecast origins, with at least three later origins required by the critic. Predictions for round t are committed before their error is evaluated. The 14-round curve evaluates July 22–October 21. Results from the same round never enter its own choices.
 
-Important brief discrepancy: the starter's October 24 headline catalog has 97 series, of which 80 are AWS archive spot and only 17 are posted rentals. At November 6 the official builder yields **37 posted-rental headline series**. We forecast that actual set, not 97 invented posted targets. The original 97-series quickstart remains in results/quickstart. data/targets.csv declares every instrument and full benchmark contract. Posted hyperscaler_spot is a collector's daily statistic, distinct from the unscored AWS archive. Source-specific medians are never chained. No index date alignment or interpolation across the AWS hole is used. The fixed final-cutoff cohort creates retrospective selection/survivorship bias in earlier backtests; this is not a real-time cohort backtest.
+Important brief discrepancy: the starter's October 24 headline catalog has 97 series, of which 80 are AWS archive spot and only 17 are posted rentals. Our November 6 posted-only build yields **37 headline posted-rental series**. The 80 AWS archive series from the October catalog remain legitimately forecastable from older observations, but are excluded from the posted-rental submission and Sunday scoring. A separate full-catalog audit and extended forecast file document that distinction. The original 97-series quickstart remains in results/quickstart. data/targets.csv declares every instrument and full benchmark contract. Posted hyperscaler_spot is a collector's daily statistic, distinct from the unscored AWS archive. Source-specific medians are never chained. No index date alignment or interpolation across the AWS hole is used. The fixed final-cutoff cohort creates retrospective selection/survivorship bias in earlier backtests; this is not a real-time cohort backtest.
 
 ## Methods and research loop
 
@@ -110,6 +110,248 @@ past.dev reduced prompt tokens by **72.39%**, tied accuracy, and added **0.3448 
 Inspection of the wrong answers found that both arms commonly returned the globally latest record of the requested kind instead of the latest record for the requested instrument group. The full-context baseline had all eligible records and received the same explicit group selector and instructions as the retrieval arm. The negative result remains intact; prompts and expected answers were not retuned after observing it. Any revised prompt should use a separately declared experiment and fresh questions rather than present these questions as unseen again.
 
 Measured results: `results/memory_benchmark.json`; individual trials: `results/memory_benchmark_trials.json`; frozen plan and corpus: `results/memory_benchmark_plan.json` and `results/memory_benchmark_snapshot.json`. The report's `mode: recorded` denotes offline presentation of original live measurements, not simulated API usage.
+
+
+# Structured temporal memory benchmark v2
+
+V1 remains intact: both arms achieved 25% exact-match accuracy; past.dev used fewer model tokens but was slower. Its expected records were present: wrong group and kind selection, rather than retrieval absence, caused the observed errors.
+
+V2 compares the same `gpt-4.1-mini`, temperature zero, strict three-field answer schema and revised explicit group/kind instructions in three arms:
+
+- `full_context`: every temporally eligible raw canonical record, with no truncation.
+- `local_compact`: locally filter exact group/kind/date and project id, origin, round, group, kind, candidate and verdict. Supply all matching records, not the gold answer.
+- `past_dev_compact`: real past.dev recall, canonical `sources[].sourceId` intersection, then the same filtering and projection. Generated memory text is never used as evidence. Missing retrieval records receive no local rescue.
+
+The comparison against full context bundles projection, filtering and retrieval; it cannot isolate a past.dev benefit. The strong local compact arm isolates the value of remote recall given the same projection. This structured lookup can also be answered deterministically without a model; a model-powered memory advantage must not be inferred from this task alone.
+
+The predeclared plan contains 18 fresh questions: every group and both kinds as of August 19 and September 16, plus two July 21 no-history questions. Two repetitions use seed 20261115 to randomize question order and all three arms within each pair: 108 model calls and 36 recall calls. The old October 14 questions are development cases. These are held-out question cutoffs on an already inspected 48-record corpus, not an independent unseen dataset. Repeated trials are related, not 36 independent problems.
+
+Plan SHA-256: `02f953eeb595e7cf0f2be965b19394bfcf850b8347d1687e02c8ed34787d36ef`. The frozen snapshot, selectors, schedule, prompt and unchanged v1 deterministic ground-truth function existed before v2 calls. The separate convenience `gold.json` was generated just after initial calls began because the first system-Python invocation lacked `requests`; it is mechanically derived and was never sent to either service. No results were used to tune selectors or answers.
+
+Latency includes the remote recall round trip, canonical validation/filtering/projection and prompt serialization, plus model round trip. Benchmark disk persistence is excluded. Offline replay retains original timings; it never presents replay speed as inference speed. Provider usage tokens are reported separately from money. past.dev evidence tokens are not model billing tokens. No total dollar savings are verified: ingestion, recall, subscriptions, model cached-token prices and actual account charges must be reconciled. Failures and raw trial rows remain recorded rather than selectively rerun.
+
+Commands:
+
+```sh
+.venv/bin/python -B src/memory_benchmark_v2.py --prepare
+.venv/bin/python -B src/memory_benchmark_v2.py --live
+.venv/bin/python -B src/memory_benchmark_v2.py # network-free recorded replay
+.venv/bin/python -m unittest discover -s tests -p test_memory_benchmark_v2.py
+```
+
+Plan preparation refuses to overwrite a declared experiment. Frozen inputs and results are in `results/memory_benchmark_v2/`; the separate request/response cache is `data/memory_benchmark_v2_cache.json`. The original main loop, production memory and v1 artifacts are untouched. Five offline tests cover strict group/kind/time filtering, source intersection, rejected future-source metadata, randomized repeated plans, complete raw context, absence of gold in requests, cache-miss refusal and exact replay of answers, tokens and timing components.
+
+A separately labeled post-plan deterministic diagnostic uses the same local compact records and takes the last sorted matching record, without a model. It answers 18/18 questions correctly with zero model tokens and zero remote calls (`deterministic_diagnostic.json`). It is not a predeclared fourth experimental arm, but demonstrates that this structured task itself does not require semantic retrieval or an LLM. The reusable `compact_records` and `deterministic_answer` helpers are not wired into the recorded research loop.
+
+## Completed live result — November 15, 2026
+
+All 108 model requests and 36 past.dev recalls completed. Offline replay reproduced byte-identical trial rows with `requests.post` patched to raise on any network call. Twelve v1/v2 tests passed (five v2 tests, including the deterministic tie-break and absent-history case).
+
+| Measure | Full raw context | Local compact | past.dev compact |
+|---|---:|---:|---:|
+| Exact matches / 36 | 0 | 25 | 26 |
+| Accuracy | 0% | 69.44% | 72.22% |
+| Mean total seconds | 0.8768 | 0.7833 | 1.5800 |
+| Median total seconds | 0.8883 | 0.7675 | 1.5600 |
+| Model prompt tokens | 368,800 | 11,386 | 11,386 |
+| Model completion tokens | 822 | 1,296 | 1,298 |
+| Missing expected sources | 0 | 0 | 0 |
+
+Compact past.dev context improved observed accuracy versus raw full context and reduced prompt tokens by 96.91%, but added 0.7032 seconds mean latency. Against the stronger local compact baseline it used **exactly the same prompt tokens**, was 0.7967 seconds slower, and answered just one additional trial correctly. Identical compact inputs can yield different model outputs even at temperature zero; this one-answer difference is not evidence of a retrieval accuracy advantage. No expected source was absent in either compact arm. This experiment does **not** establish all three sponsor gains or even a reliable past.dev-specific gain.
+
+All 57 incorrect trial answers are retained in `report.json` under `summary.failures` and in full `trials.json`. The full-context model sometimes returned the question ID as source ID or selected the wrong record. Compact arms still made answer-format/field errors, especially empty-history responses. No incorrect answer was repaired after the model call. No runtime API failures occurred. The separate gold-file preparation import failure is disclosed above. Complete raw context had all expected records, so its 0% result must not be attributed to unavailable information. Better prompting, different models and larger independent corpora remain untested; v1-v2 cross-run differences are not a paired causal comparison.
+
+
+# Model-free structured recall benchmark v3
+
+V3 removes the model from exact structured memory lookup. `resolve_recalled(entries, question, response)` reads only past.dev's canonical `sources[].sourceId`, validates provided occurrence timestamps, intersects with the trusted corpus, filters exact group/kind and as-of date, and deterministically selects the latest `(origin, round, id)`. It returns the answer and canonical provenance IDs. Missing remote evidence is never repaired from local records. This API is a reusable helper, not a change to the recorded forecasting loop.
+
+This task is an exact lookup over structured metadata. Removing an unnecessary model can avoid its selection errors and tokens. It does not demonstrate improved forecasting, arbitrary semantic memory QA, or a general past.dev advantage: an entirely local deterministic lookup is a necessary strong comparator.
+
+Before calls, `--prepare` froze corpus, gold answers, selectors, prompt, schedule and three arms under plan hash `e86b85d8849ae30a57dda6869ce64840a01949860f702ccbeca4c2a46de242d5`:
+
+- **Full context:** contemporaneous complete raw eligible corpus, same v2 explicit prompt, gpt-4.1-mini, temperature zero and strict answer schema.
+- **Local deterministic:** exact local predicate lookup and deterministic latest-record selection; no remote API or model.
+- **past.dev deterministic:** real remote recall and the validated deterministic resolver; no model.
+
+All 18 previously evaluated v2 questions are repeated three times, with seed 20261116 randomizing question order and arm order within each pair. These are now-known questions in an operational replication, **not new held-out data**. This makes 54 live recall calls, 54 model requests and 162 trials. All outcomes are retained. Accuracy is exact match of source ID, candidate and verdict. The latency sums full remote round trips and measured local request preparation/canonical processing, excluding benchmark cache disk persistence. Replays use recorded measurements. No repeat is a hidden cache hit: repetition, arm, question and plan IDs are part of request keys.
+
+The documented recall `level=low` is used. The saved OpenAPI `RecallRequest` schema specifies low as the default 8,000-token evidence budget, medium as 16,000, and caps both to 8,000 on Pay as you go/Flex. Consequently switching level need not change the actual budget or improve speed. This experiment cannot attribute a speed change to level alone, especially since it also removes the model call. Source: `artifacts/automated-self-review/past-openapi.json` (`https://past.dev/openapi.json`).
+
+Every v3 API response records UTC request start, request ID when provided, actual elapsed time and raw response. Recall IDs support subsequent billing reconciliation. Zero model tokens does **not** mean zero total cost: recall credits, ingestion amortization and subscription allocation remain relevant. No actual monetary-savings claim is made without account billing evidence. V2 timings are historical only; the full-context comparison here is newly measured and paired.
+
+```sh
+.venv/bin/python -B src/memory_benchmark_v3.py --prepare
+.venv/bin/python -B src/memory_benchmark_v3.py --live
+.venv/bin/python -B src/memory_benchmark_v3.py
+.venv/bin/python -m unittest discover -s tests -p 'test_memory_benchmark*.py'
+```
+
+Artifacts live in `results/memory_benchmark_v3/` and `data/memory_benchmark_v3_cache.json`; v1/v2 and main-loop artifacts remain untouched. Four new tests cover forged/unreturned IDs, future source metadata, deterministic no-network local lookup, absence of remote model calls, request-ID recording, exact offline replay and missing-cache refusal. The first test run exposed a malformed fixture that put a verdict field on a hypothesis; the fixture was corrected to canonical corpus semantics, with no benchmark algorithm change.
+
+## Completed live result — November 15, 2026
+
+All 54 recall and 54 model requests completed without API failures. A network-blocked replay reproduced byte-identical trial rows, and all 16 v1/v2/v3 tests passed.
+
+| Measure | Full raw context + model | Local deterministic | past.dev deterministic |
+|---|---:|---:|---:|
+| Exact answers / 54 | 0 | 54 | 54 |
+| Accuracy | 0% | 100% | 100% |
+| Mean total seconds | 0.690853 | 0.000426 | 0.823395 |
+| Median total seconds | 0.638885 | 0.000355 | 0.797488 |
+| Model prompt tokens | 553,200 | 0 | 0 |
+| Model completion tokens | 1,274 | 0 | 0 |
+| Missing expected sources | 0 | 0 | 0 |
+
+Removing the model fixed all observed answer errors and eliminated model tokens, but **past.dev remained 0.132541 seconds slower than the contemporaneous raw baseline** (19.18% higher mean latency). It tied local deterministic accuracy and was approximately 0.823 seconds slower than local lookup. The faster historical v2-to-v3 past.dev result is not a paired comparison and does not establish a latency win over current full context. This run therefore does **not** satisfy all three sponsor criteria. All 54 raw-context failures are preserved; its full corpus contained the necessary records. No incorrect response was repaired.
+
+## Credits and conditional list-price estimate
+
+`cost_estimate.json` matches **all 54 recall response request IDs** to the account's read-only request ledger: **54 actual credits consumed**. This is direct per-request credit evidence, not a timestamp-only inference. The reconciliation utility is `src/memory_benchmark_v3_costs.py` (it makes read-only account requests and saves only selected noncredential fields).
+
+Official OpenAI documentation fetched on November 15 lists GPT-4.1 mini at **$0.40/M uncached input, $0.10/M cached input and $1.60/M output**: https://developers.openai.com/api/docs/models/gpt-4.1-mini . Saved source text: `artifacts/automated-self-review/openai-gpt41mini-pricing.txt`. The full-context responses reported 553,200 prompt tokens, including **499,584 cached tokens**, and 1,274 completion tokens. Applying those rates gives **$0.0734432** model list cost, correctly accounting for cached input.
+
+At the published conservative PAYG pack rate of **$0.0003/credit**, the 54 recalls have **$0.0162** list cost. Corpus ingestion is estimated separately as 276 credits, **$0.0828**, from each canonical source's UTF-8 content bytes rounded up per 350 bytes. Original ingestion receipts were not reconciled, so this is an estimate, not observed ingestion billing.
+
+| Corpus ingestion amortized across | past.dev cost allocated to these 54 queries | Full-context model list estimate |
+|---|---:|---:|
+| 54 queries (all ingestion charged here) | $0.099000 | $0.0734432 |
+| 100 queries | $0.060912 | $0.0734432 |
+| 1,000 queries | $0.0206712 | $0.0734432 |
+| 10,000 queries | $0.01664712 | $0.0734432 |
+
+The monetary comparison changes with ingestion allocation: charging all ingestion to this small run makes past.dev more expensive. Reusing the corpus across 1,000 queries gives a conditional 71.85% list-cost reduction for the 54 queries. Actual cash savings remain unverified: credit grants, discounts, subscription allocation, taxes and local compute are excluded rather than silently treated as known zero. Local deterministic lookup has zero provider API charges but unmeasured local compute cost. Even under favorable amortization, the failed latency criterion remains unchanged.
+
+The resolver depends on retaining the complete trusted canonical corpus locally to validate and hydrate returned source IDs. This is not a demonstration that remote retrieval replaces local storage, and it does not measure operating without that corpus. Because exact selectors and local canonical data already suffice, the local deterministic comparator is the preferred path for this particular lookup.
+
+
+
+## past.dev challenge: measured result
+
+**Writers:** Analyst writes hypotheses and results; Critic writes verdicts; Researcher writes dated evidence. **Readers:** Analyst and Forecaster read shared records, including records written by other agents. The recorded live run verifies these past.dev API calls.
+
+In the structured lookup benchmark, past.dev matched the local lookup’s accuracy (**54/54**) but was slower: **0.8234 seconds** per query versus **0.000426 seconds** locally. **No cost savings are established.** Token reductions and list-price scenarios are not proof of lower total cost. This benchmark measures memory lookup, not GPU forecast accuracy.
+
+Reviews in this project are **automated self-review by the build agent**, including delegated agents in the same system. They are not external certification or official judging scores.
+
+
+# History-only interval calibration follow-up
+
+The fixed follow-up improves historical coverage from **64.70% to 75.42%**, still below the nominal 80%, and pooled skill versus drift from **0.057% to 4.323%**. This is a retrospective follow-up designed after seeing the original undercoverage, not an untouched external holdout or a November result. The original agent's historical choices were preserved. At each replay origin the adjustment uses only targets dated strictly before that origin. The official scorer reproduces 64.7001%, rather than the approximate 64.6% in the request, for both original baseline reports.
+
+## Fixed rule and chronology
+
+`results/calibration_study/rule.json` was written before the first calibrated run. Its exact unchanged contents were subsequently copied into `config.json`; the config chronology note makes that ordering explicit. There was one rule and no search or retuning after viewing calibrated results. The executable checks config equality against the predeclared JSON.
+
+Use original prequential forecast errors, never errors of previously recalibrated forecasts. For each horizon calculate signed relative lower residual `(q10-y)/max(abs(q50),1e-9)` and upper residual `(y-q90)/max(abs(q50),1e-9)`. Eligible records require both prior origin and target date strictly earlier than the current origin. Choose the first pool with at least **20 cells from at least 2 prior origins**: source × instrument class × horizon; instrument class × horizon; then horizon. Take order statistic `min(n,ceil(.9*(n+1)))` in each signed tail. Clip the resulting adjustment at zero, subtract the lower expansion from q10 (floor zero), and add the upper expansion to q90, scaling by the current absolute q50. Keep q50 unchanged. If no pool qualifies, leave the interval unchanged. Actual outputs remain strictly positive: minimum historical q10 0.0657612, final q10 0.0732508; the zero floor was not reached.
+
+This is a conservative empirical widening rule, not a finite-sample coverage guarantee: grouped time-series residuals are dependent and not exchangeable. Pooling normalized errors prevents the dollar scale alone deciding cross-series corrections. Fallback avoids estimating tails from tiny individual series samples, but can transfer an inappropriate error distribution. The first three origins are unchanged; on August 12 only 34 of 51 forecasts have enough matured history. `audit.csv` records every selected pool, sample count, prior-origin count and maximum target date.
+
+## Fair official comparison
+
+All loss and skill calculations use the **unmodified official `starter/scorer.py`**, including its imported aggregation routine for breakdowns and bootstrap. The four independently scored reports have identical **1,017 cells**, 37 series, 14 origins July 22–October 21, no baseline-filled predictions and no missing forecast cells. There are 504 grid cells without truth and 33 without an eligible baseline; these are excluded consistently. The forecast file itself has 1,056 rows. Missing values are not imputed for calibration or scoring. Scorer and input hashes are in `summary.json`.
+
+| Metric | Original | Calibrated |
+|---|---:|---:|
+| Pinball loss | 0.021470 | 0.020554 |
+| Pooled skill vs last value | 8.0144% | 11.9406% |
+| Pooled skill vs drift | 0.0567% | 4.3226% |
+| Mean series skill vs drift | 0.0084% | -1.6189% |
+| Median series skill vs drift | 0% | 1.9899% |
+| Geometric-mean skill vs drift | 0.0084% | 0.6100% |
+| Mean series skill vs last value | 11.9973% | 9.7409% |
+| Median series skill vs last value | 9.7439% | 14.8514% |
+| Geometric-mean skill vs last value | 13.3529% | 13.8741% |
+| Inclusive q10–q90 coverage | 64.7001% | 75.4179% |
+| Below q10 | 10.4228% | 8.3579% |
+| Above q90 | 24.8771% | 16.2242% |
+| Mean interval width, USD/GPU-hour | 0.062730 | 0.109200 |
+
+Width increases **74.1%**. The unchanged q50 means the gain comes from tails, not improved central forecasts. Pooled results reward the dollar-scale reductions on expensive series; mean series skill worsens, so this is not a broad or uniform dominance claim.
+
+A descriptive 2,000-draw paired whole-origin bootstrap (seed 42) gives 95% percentile intervals: calibrated pooled drift skill **[-0.82%, 7.02%]**; pinball change **[-0.001926, +0.000143]**; coverage gain **[6.28, 14.80] percentage points**. The skill interval crosses zero. Fourteen origins, serial dependence, correlated series and retrospective rule selection prevent treating this as strong significance evidence.
+
+## Where coverage failed and what changed
+
+Original upper misses were **253 cells**, versus **106 lower misses**. The original upper tail is the dominant shortfall. **52.8%** of original scored intervals have zero width: repeated unchanged daily prices yield zero empirical return quantiles, so later price steps escape the bands. This is consistent with price-step/nonstationarity and insufficient tail adaptation; it is a diagnosis from the observed residual pattern, not proof of a particular market cause. Longer-horizon errors are markedly worse.
+
+| Group | Cells | Original coverage | Calibrated coverage | Original lower / upper misses | Calibrated lower / upper misses |
+|---|---:|---:|---:|---:|---:|
+| Hyperscaler spot | 210 | 67.14% | 77.14% | 20.48% / 12.38% | 13.81% / 9.05% |
+| Marketplace ask | 33 | 69.70% | 69.70% | 12.12% / 18.18% | 12.12% / 18.18% |
+| Neocloud rate card | 627 | 61.08% | 72.25% | 9.25% / 29.67% | 8.13% / 19.62% |
+| Neocloud spot | 147 | 75.51% | 87.76% | 0.68% / 23.81% | 0.68% / 11.56% |
+| 1 day | 352 | 73.58% | 81.53% | 6.82% / 19.60% | 6.25% / 12.22% |
+| 3 days | 326 | 67.79% | 76.69% | 8.59% / 23.62% | 7.67% / 15.64% |
+| 7 days | 339 | 52.51% | 67.85% | 15.93% / 31.56% | 11.21% / 20.94% |
+
+Rate cards constitute 61.7% of scored cells and carry most undercoverage. Their original zero-width share is 58.9%; neocloud spot is 61.9%. Worst individual original coverage includes FastGPU RTX 6000 Ada rate card (23.81%, upper misses 71.43%), gpurentalprices B300 rate card (30.30%, upper misses 54.55%) and FastGPU A100 40GB rate card (33.33%, upper misses 52.38%). Hyperscaler spot has the reverse tail imbalance, with lower misses dominating. Pool/horizon distinctions are therefore necessary; a uniform symmetric widening would ignore this evidence.
+
+Calibration still undercovers 7-day and rate-card cells. It overcovers neocloud spot. One-day pinball worsens: calibrated skill vs drift **-2.599%**; 3-day skill is **+2.851%**, 7-day **+6.7649%**. By source the tradeoff is similarly mixed: afhubbard **-7.1268%**, FastGPU **+9.0591%**, gpurentalprices **+0.7462%** pooled drift skill. Full source, class, source×class, class×horizon, horizon, GPU, pricing tier, origin and individual-series diagnostics are in `group_diagnostics.csv`; official reports contain all per-series and per-horizon scores.
+
+## Secondary check matching the final drift base
+
+After the main results, a requested diagnostic applied the **identical fixed rule** to current-origin drift forecasts on the same 14 origins and 1,017 cells. The residual archive remains the original selected-policy forecasts, exactly as for the final candidate. There was no parameter change. This isolates the change from the final base more directly, while retaining the retrospective and residual-distribution caveats.
+
+| Metric | Drift base | Same base + calibration |
+|---|---:|---:|
+| Pinball | 0.021483 | 0.020566 |
+| Pooled skill vs drift | 0% | 4.2657% |
+| Pooled skill vs last value | 7.9622% | 11.8882% |
+| Mean series skill vs drift | 0% | -1.6274% |
+| Median series skill vs drift | 0% | 1.9899% |
+| Geometric-mean skill vs drift | 0% | 0.6015% |
+| Coverage | 64.7001% | 75.4179% |
+| Below q10 / above q90 | 10.4228% / 24.8771% | 8.3579% / 16.2242% |
+| Mean width | 0.062730 | 0.109201 |
+
+See `drift_base_summary.json` and the four `drift_base*.json` official reports. The main bootstrap intervals concern the original selected-policy comparison, not this secondary diagnostic. For the stated historical pooled-loss and coverage objectives, the optional calibrated candidate is the better observed choice. It is not a demonstrated future winner: average per-series skill declines, the main skill interval crosses zero, and final November truth is unavailable.
+
+## Optional November candidate and validation
+
+Because historical coverage moved closer to 80% and pooled drift skill improved, `forecasts_calibrated.csv` contains the optional November 6 candidate in the original column format, with **111 rows**. **`forecasts.csv` remains byte-for-byte unchanged**; hashes are in `final_provenance.json`. The same frozen rule uses only original historical prequential errors with target dates before November 6. Its calibration population follows the historical selected-policy forecasts, whereas the original final forecast uses drift fallback; this distribution mismatch is a limitation. It does not refit or alter the original point forecasts.
+
+The official frozen-cutoff scorer reports zero validation problems and no refusals, with **zero scored cells because all 111 November targets are unavailable**. No final-window skill is claimed. Historical final-audit dates remain strictly earlier than the cutoff.
+
+Run `.venv/bin/python src/calibration_study.py` to reproduce the study and conditionally regenerate the optional candidate. Run `.venv/bin/python -m unittest tests.test_calibration_study -v` for the five checks: widening/median preservation; strict maturity and minimum-pool fallback; truth dated **on or after every one of the 14 origins** changed to extreme values without affecting forecasts through that origin; future-forecast perturbation invariance; and preservation of the explicit original residual archive when the current base changes. All passed. These tests verify the calibration layer; they do not certify that every historical base forecast or fixed target catalog was free of earlier design-time selection effects.
+
+Data attribution remains as specified in `ATTRIBUTION.md` and the pack's `DATA.md`; no external data or providers were added.
+
+
+# Headline catalog and archived AWS forecast audit
+
+The actual catalog snapshots have **117 distinct headline series in their union**, not a fixed 97-series final target set. All 117 can be forecast using valid history dated on or before November 6. Absence of a November 6 observation does not prohibit an AWS forecast.
+
+| Actual artifact | Catalog as-of | All catalog series | Headline posted | Headline AWS | Total headline |
+|---|---|---:|---:|---:|---:|
+| `results/quickstart/series_catalog.csv` | 2026-10-24 | 725 | 17 | 80 | 97 |
+| `data/series_catalog.csv` | 2026-11-06 | 592 | 37 | omitted | 37 |
+| `results/series_audit/series_catalog.csv` (full starter rebuild) | 2026-11-06 | 725 | 37 | 0 | 37 |
+
+The 17 October posted headline series remain headline in November; another 20 posted series qualify. The union is therefore 80 AWS plus 37 posted series. The starter README's older 728-series prose is not the count in these actual handover-derived catalogs. The existing November catalog is a **posted-only project build**, not evidence that the AWS targets do not exist and not a separately verified official competition target list.
+
+`data/headline_series_audit.csv` enumerates **every one of the 117 series**, with snapshot membership, tiers, exact November 6 observation availability, latest usable date, history row count, full November tier reason, original inclusion, exclusion reason, posted-scope eligibility, forecast eligibility and truth availability. It is the authoritative per-series list for this audit.
+
+- All 37 posted series have an observation exactly on November 6 and are in the project's posted headline submission.
+- All 80 October headline AWS series have a usable archive close on October 31, six days before the origin. Each fails only `stale>3d_at_as_of` in the full November catalog. Each is a legitimate extended forecast target.
+- Those 80 AWS series are excluded from the posted-only scored scope by instrument/source scope and unavailable November archive truth. They are not inherently unforecastable. The starter permits extended-tier forecasts and scoring wherever matching truth exists.
+- No November 7–13 truth is present in the shipped pack, including for the posted targets. Consequently neither file has a claimed November score. AWS November scoring additionally requires an authorised live collection or the November archive, described by the pack as due December 1. We did not obtain either.
+
+## Forecast extension and semantics
+
+`forecasts_extended.csv` contains **351 rows: the original 111 rows unchanged, followed by 240 rows for the 80 AWS series at horizons 1, 3 and 7**. Original forecast bytes are preserved as the leading rows. The origin is November 6 and target dates are November 7, 9 and 13. `forecasts.csv` remains untouched; its SHA-256 is `62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31`.
+
+The extension is an additional forecast ledger, not a claim that all 117 series belong in the posted Sunday score. Added rows use the unchanged starter `baselines.py --method drift --frozen` with all available history through the cutoff and its default 20-change minimum. The starter anchors at the last observed value, then applies empirical h-day log-change quantiles. **For stale AWS history this is exactly the starter h-day convention, not a separately fitted six-plus-h-day uncertainty model.** `results/series_audit/aws_starter_drift.csv` retains its `method_note`, explicitly recording `last_value_date=2026-10-31;stale_days=6` and change counts.
+
+The unchanged full `build_series.py` reads the original archive and builds end-of-day closes. It carries within contiguous archive segments only: no prices are invented for the March–June archive hole or November 1–6. Composite membership is reused from the October quickstart catalog via `--members-from`, retaining the same instrument definition. Quickstart `series_daily.csv` already extends through November 6 for posted data and October 31 for AWS; its catalog's October 24 **as-of** is a tier-evaluation date, not proof that its full series file stops on that date.
+
+## Reproduce and verify
+
+```bash
+.venv/bin/python src/series_audit.py
+```
+
+This rebuilds full cutoff history from the unchanged pack, regenerates the 117-row audit and the extended forecasts, and validates the exact 117×3 grid, origin/target dates, positive finite ordered quantiles, original row bytes and hash, unchanged starter source hashes, no future history, absence of archive-gap rows, and numerical equality of the new forecasts to the starter drift implementation. Results and command output are in `results/series_audit/audit_report.json`; the full starter build report is beside it. No pack files are modified.
 
 ## The 2028–2029 view: argued scenarios, not scored forecasts
 

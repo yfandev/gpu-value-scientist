@@ -1,0 +1,16 @@
+{
+  "study": "retrospective follow-up designed after observing original undercoverage; not external holdout",
+  "rule_id": "signed-relative-tail-expansion-v1",
+  "pool_hierarchy": ["source_id + instrument_class + horizon_days", "instrument_class + horizon_days", "horizon_days"],
+  "minimum_pool_cells": 20,
+  "minimum_distinct_prior_origins": 2,
+  "maturity_rule": "prior origin_date < current origin_date AND target_date < current origin_date",
+  "residuals": "lower=(original_q10-y)/max(abs(original_q50),1e-9); upper=(y-original_q90)/max(abs(original_q50),1e-9)",
+  "tail_quantile": 0.9,
+  "quantile_rank": "min(n,ceil((n+1)*0.9)), one-indexed sorted signed residuals",
+  "adjustment": "q10=max(0,q10-scale*max(0,lower_quantile)); q90=q90+scale*max(0,upper_quantile); q50 unchanged",
+  "fallback": "first qualifying pool; if none leave unchanged (including first origin)",
+  "window": "all matured prior original online forecasts; never recalibrated residuals",
+  "tuning": "one fixed rule; no search or adjustment after observing calibrated results",
+  "bootstrap": "2000 paired whole-origin resamples, seed 42; descriptive dependence caveat"
+}

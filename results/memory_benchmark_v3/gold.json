@@ -1,0 +1,92 @@
+{
+  "h01": {
+    "candidate": "recent_56",
+    "record_id": "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+    "verdict": "not_applicable"
+  },
+  "h02": {
+    "candidate": "recent_28",
+    "record_id": "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+    "verdict": "rejected"
+  },
+  "h03": {
+    "candidate": "step_shrink",
+    "record_id": "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+    "verdict": "not_applicable"
+  },
+  "h04": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  },
+  "h05": {
+    "candidate": "calibrated",
+    "record_id": "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+    "verdict": "not_applicable"
+  },
+  "h06": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  },
+  "h07": {
+    "candidate": "calibrated",
+    "record_id": "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+    "verdict": "not_applicable"
+  },
+  "h08": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  },
+  "h09": {
+    "candidate": "last_value_empirical",
+    "record_id": "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+    "verdict": "not_applicable"
+  },
+  "h10": {
+    "candidate": "recent_56",
+    "record_id": "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+    "verdict": "rejected"
+  },
+  "h11": {
+    "candidate": "last_value_empirical",
+    "record_id": "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+    "verdict": "not_applicable"
+  },
+  "h12": {
+    "candidate": "last_value_empirical",
+    "record_id": "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+    "verdict": "accepted"
+  },
+  "h13": {
+    "candidate": "volatility",
+    "record_id": "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+    "verdict": "not_applicable"
+  },
+  "h14": {
+    "candidate": "calibrated",
+    "record_id": "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+    "verdict": "rejected"
+  },
+  "h15": {
+    "candidate": "volatility",
+    "record_id": "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+    "verdict": "not_applicable"
+  },
+  "h16": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  },
+  "h17": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  },
+  "h18": {
+    "candidate": "none",
+    "record_id": "none",
+    "verdict": "none"
+  }
+}

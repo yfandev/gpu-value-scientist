@@ -16,3 +16,12 @@ fi
 if [ -f results/memory_benchmark_v2/plan.json ]; then
   "$PYTHON" -B src/memory_benchmark_v2.py
 fi
+
+if [ -f results/memory_benchmark_v3/plan.json ]; then
+  "$PYTHON" -B src/memory_benchmark_v3.py
+fi
+if [ -f results/calibration_study/rule.json ]; then
+  "$PYTHON" -B src/calibration_study.py
+fi
+"$PYTHON" -B src/series_audit.py
+"$PYTHON" -B src/finalize_demo.py

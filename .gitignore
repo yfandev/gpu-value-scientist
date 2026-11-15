@@ -18,3 +18,6 @@ artifacts/preliminary-modal/
 *.webm
 
 docs/reference/
+
+results/series_audit/series_daily.csv
+artifacts/submission/raw/
