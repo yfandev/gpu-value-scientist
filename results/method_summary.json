@@ -1,0 +1,266 @@
+{
+  "drift": {
+    "n_cells": 1029,
+    "pinball": 0.021244,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.079123,
+    "pinball_by_quantile": {
+      "q10": 0.015431,
+      "q50": 0.023619,
+      "q90": 0.024681
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.103013,
+      "within_q10_q90": 0.651118,
+      "above_q90": 0.24587
+    },
+    "mae_q50": 0.047238,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.118962,
+    "skill_median_of_series": 0.097439,
+    "share_series_positive_skill": 0.756757,
+    "relative_loss_geomean": 0.867531,
+    "skill_geomean": 0.132469,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.079123,
+    "headline_definition": "pooled"
+  },
+  "last_value_empirical": {
+    "n_cells": 1029,
+    "pinball": 0.02106,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.087093,
+    "pinball_by_quantile": {
+      "q10": 0.015429,
+      "q50": 0.023069,
+      "q90": 0.024681
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.102041,
+      "within_q10_q90": 0.652089,
+      "above_q90": 0.24587
+    },
+    "mae_q50": 0.046138,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.121003,
+    "skill_median_of_series": 0.101202,
+    "share_series_positive_skill": 0.810811,
+    "relative_loss_geomean": 0.867731,
+    "skill_geomean": 0.132269,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.087093,
+    "headline_definition": "pooled"
+  },
+  "recent_28": {
+    "n_cells": 1029,
+    "pinball": 0.021222,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.080058,
+    "pinball_by_quantile": {
+      "q10": 0.01532,
+      "q50": 0.02434,
+      "q90": 0.024006
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.087464,
+      "within_q10_q90": 0.712342,
+      "above_q90": 0.200194
+    },
+    "mae_q50": 0.048679,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.123139,
+    "skill_median_of_series": 0.122923,
+    "share_series_positive_skill": 0.756757,
+    "relative_loss_geomean": 0.853889,
+    "skill_geomean": 0.146111,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.080058,
+    "headline_definition": "pooled"
+  },
+  "recent_56": {
+    "n_cells": 1029,
+    "pinball": 0.021286,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.077294,
+    "pinball_by_quantile": {
+      "q10": 0.015207,
+      "q50": 0.023607,
+      "q90": 0.025042
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.091351,
+      "within_q10_q90": 0.672498,
+      "above_q90": 0.236152
+    },
+    "mae_q50": 0.047215,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.117634,
+    "skill_median_of_series": 0.075531,
+    "share_series_positive_skill": 0.72973,
+    "relative_loss_geomean": 0.867826,
+    "skill_geomean": 0.132174,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.077294,
+    "headline_definition": "pooled"
+  },
+  "recent_90": {
+    "n_cells": 1029,
+    "pinball": 0.021277,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.07768,
+    "pinball_by_quantile": {
+      "q10": 0.01542,
+      "q50": 0.023595,
+      "q90": 0.024816
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.098154,
+      "within_q10_q90": 0.656948,
+      "above_q90": 0.244898
+    },
+    "mae_q50": 0.047189,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.116575,
+    "skill_median_of_series": 0.097439,
+    "share_series_positive_skill": 0.756757,
+    "relative_loss_geomean": 0.870494,
+    "skill_geomean": 0.129506,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.07768,
+    "headline_definition": "pooled"
+  },
+  "volatility": {
+    "n_cells": 1029,
+    "pinball": 0.021135,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.083846,
+    "pinball_by_quantile": {
+      "q10": 0.015061,
+      "q50": 0.023619,
+      "q90": 0.024724
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.100097,
+      "within_q10_q90": 0.670554,
+      "above_q90": 0.229349
+    },
+    "mae_q50": 0.047238,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.114368,
+    "skill_median_of_series": 0.09488,
+    "share_series_positive_skill": 0.756757,
+    "relative_loss_geomean": 0.871676,
+    "skill_geomean": 0.128324,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.083846,
+    "headline_definition": "pooled"
+  },
+  "step_shrink": {
+    "n_cells": 1029,
+    "pinball": 0.021376,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.073376,
+    "pinball_by_quantile": {
+      "q10": 0.015441,
+      "q50": 0.023607,
+      "q90": 0.025081
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.103984,
+      "within_q10_q90": 0.631681,
+      "above_q90": 0.264334
+    },
+    "mae_q50": 0.047213,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.111782,
+    "skill_median_of_series": 0.090354,
+    "share_series_positive_skill": 0.783784,
+    "relative_loss_geomean": 0.87781,
+    "skill_geomean": 0.12219,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.073376,
+    "headline_definition": "pooled"
+  },
+  "calibrated": {
+    "n_cells": 1029,
+    "pinball": 0.021706,
+    "baseline_pinball": 0.023069,
+    "skill_pooled": 0.059082,
+    "pinball_by_quantile": {
+      "q10": 0.015369,
+      "q50": 0.023607,
+      "q90": 0.026141
+    },
+    "baseline_pinball_by_quantile": {
+      "q10": 0.016029,
+      "q50": 0.023069,
+      "q90": 0.030109
+    },
+    "coverage": {
+      "below_q10": 0.070943,
+      "within_q10_q90": 0.758989,
+      "above_q90": 0.170068
+    },
+    "mae_q50": 0.047215,
+    "baseline_mae_q50": 0.046138,
+    "skill_mean_of_series": 0.110464,
+    "skill_median_of_series": 0.110729,
+    "share_series_positive_skill": 0.702703,
+    "relative_loss_geomean": 0.866413,
+    "skill_geomean": 0.133587,
+    "n_series_with_skill": 37,
+    "n_series_baseline_degenerate": 0,
+    "n_series_no_cells": 0,
+    "headline_skill": 0.059082,
+    "headline_definition": "pooled"
+  }
+}

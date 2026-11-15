@@ -1,0 +1,255 @@
+{
+  "fingerprint": "a16afb93e9c2378f0c6b26b35ebe90cafbb1375e16083abe27b5a6cddd6daa5a",
+  "identity": {
+    "config": {
+      "pack": "data/pack/gpu-price-pack-v0.1.1-handover",
+      "cutoff": "2026-11-06",
+      "catalog_as_of": "2026-10-24",
+      "origins": [
+        "2026-07-15",
+        "2026-07-22",
+        "2026-07-29",
+        "2026-08-05",
+        "2026-08-12",
+        "2026-08-19",
+        "2026-08-26",
+        "2026-09-02",
+        "2026-09-09",
+        "2026-09-16",
+        "2026-09-23",
+        "2026-09-30",
+        "2026-10-07",
+        "2026-10-14",
+        "2026-10-21"
+      ],
+      "horizons": [
+        1,
+        3,
+        7
+      ],
+      "seed": 42,
+      "bootstrap_samples": 2000,
+      "min_critic_origins": 3,
+      "model": "gpt-4.1-mini",
+      "temperature": 0,
+      "protocol": "At each new origin, mature previous targets, evaluate frozen earlier proposals, then choose future forecasts. Candidate library fixed before results. Final selection requires positive online skill against drift.",
+      "origin_note": "15 weekly origins from July 15 through October 21, following starter range July 15 to October 24 inclusive.",
+      "candidates": [
+        {
+          "id": "drift",
+          "method": "drift",
+          "parameters": {}
+        },
+        {
+          "id": "last_value_empirical",
+          "method": "last_value_empirical",
+          "parameters": {}
+        },
+        {
+          "id": "recent_28",
+          "method": "recent",
+          "parameters": {
+            "window": 28,
+            "min_samples": 10
+          }
+        },
+        {
+          "id": "recent_56",
+          "method": "recent",
+          "parameters": {
+            "window": 56,
+            "min_samples": 20
+          }
+        },
+        {
+          "id": "recent_90",
+          "method": "recent",
+          "parameters": {
+            "window": 90,
+            "min_samples": 20
+          }
+        },
+        {
+          "id": "volatility",
+          "method": "volatility",
+          "parameters": {
+            "window": 28,
+            "scale_min": 0.5,
+            "scale_max": 2.0
+          }
+        },
+        {
+          "id": "step_shrink",
+          "method": "step",
+          "parameters": {
+            "window": 56,
+            "shrinkage": 0.5
+          }
+        },
+        {
+          "id": "calibrated",
+          "method": "conformal",
+          "parameters": {
+            "window": 56,
+            "calibration_days": 35,
+            "min_calibration": 12
+          }
+        }
+      ]
+    },
+    "ordered_decision_keys": [
+      "faf4ff0ed42a98f4874bd1ff61549f51e8c4cac50171b03d51541771a0e67b51",
+      "0833de08c6c591ead8f3ac5fdf1cdc35b7773c3c27895b524965a4de279a2c59",
+      "7e2b6fd665824e0e1580a17e7691460f525b556902465ea208c0a7e180a3f093",
+      "43d396a9dd29db57ff382a7117d5eaef63ddaa9a906428843d73b3ad6b0e2763",
+      "de4bb83c69671ae6ce49dda55e753ad72b00e0008565a536e91cb7f6fff9f24b",
+      "3501261c022e8e38862b4da4bec381eaa05b5ef40bdfa48e6888bbcc08996cca",
+      "fc6d52ccaf5e8dc9d408123201fc623ecacd12a8b614eccb4d5145a674ff0e1b",
+      "e9ced3dfbb6443ad50a4061444211d30fa1712843ee4a2fbda7ee139a981cb5e",
+      "f56c271888e5d0d567a19c5def3668cbb7aca7c92e2219be0b9de5df4bef8dfa",
+      "6a49b152977bd122b1f6f0b83cf370805d7988864afc0fe040024e93659647bc",
+      "2314f52e1e298b6a6dbcf493c7de608e97053a547b9d74381b78722a71a5e510",
+      "fe99a6ebaf708f6c228f010f57bedb73c260b0da762e18428f753f45ef23d0cf",
+      "a8cd50ddf1be5fe822a5f591051c6fb15d85ca69fa8a8311792a634b01df4e25",
+      "5f00515f9c944b022ff8a99fe4a984b051d539267e17028932aa8f8b5c21d40c",
+      "5e0d5eccad06c81cb278327d6a13f9af315e8cc432b3498041a99912c4fc0ff0",
+      "d29e9842468a9708a54f17eef6ba32b7675345a77270e896122501087c31d235",
+      "22e5ee53d05ff871a904eab93dc3380bc9cb70b056aa824ddca7a754b2a95ce4",
+      "301c1e77a332ccd98d286448b49ca3975bb9402303739b05a3fc2cf5966ab7ce",
+      "b36f9754d2d9bb8a0b3cf33c1b9794a4bf5634ccf3edae8866ebe11cb946603d",
+      "9a2d572b872eeda6ad041c1e610c0b3ba69559d2276cba633ecb0d58447c2712",
+      "a2317eb7a9e4f96b5de28e8d80b938d354cbc1e6c33b4e11c9d8bc49fdbbf4e6",
+      "4ca607b081798436ad49dc561b9c3e5127f4d3cdf4e11caf5db62e423c7c43a1",
+      "cb145d13fb73216f707355b27098c1fa7cc7dbb7a628bd58fa097fc0b5b80016",
+      "6fe558e14a4d4811511d52a951a3dfd1558aeec84dddc8ac9a28b0af1c9d3e53",
+      "01ca67d463a01bfc33a64164c97fdc886b43c4806095a3e3b0f252d503e4054a",
+      "11e3d066ed247e7d2d41d608651ac2edf14f0332fde3c7f15f62f4ea31cc4b76",
+      "597482b4e25d9c55a5a2b03c5d0d096bbf5b2c07d65511b87261e3f0e8af3b6e",
+      "ab55dd00aa1dc8a10dc80f960a5813ac8ffa8e5abb9b695adf62cfa2b7ad3215",
+      "8b76418cf0d5256a5f6695010b343a3736d34ee153f1daf710b6c0a798cdada6",
+      "5a088d1d11d93bd0c3d6efac5bbc1828a263d815aea98598b83fed655b39ddd0",
+      "bb7903250c59810f2f919269fa710c38f9b0ad1f439a33aa3206dde9b8800c76",
+      "46b51cb303c345b0c976199310ddd205dad9870a0a26c0eddca965e7d3061f4d",
+      "a795942311f05660f952e9ac9bb7d6712d3b571ae9b7007af0c0a03d77f06d14",
+      "609eb476515ba7e55b08c6a5fbaa7e3106164d6557742510f6b99221eda71f60",
+      "6c1fe68965bee29fd932ac737c1d284817da962bbcd65f65ba8a90463742827e",
+      "62717fc4f74727880962d6682c15f2f9f8853efd5bb59c60801e1d066908ba33",
+      "18a2a67dc929218c9130ada4ae574e106455f4cce30353f187436a129f044359",
+      "f7383a9145552a5da96a691bb1c782bb7bfa60a6faa4340bf68739cb651bce88",
+      "bd810f377e01c152f377af42b0cd9fe163ad9c94e6cc303abf3a22f119ad89db",
+      "ec6a74ede2ae51cb88e4ccd8d3734243c9b7b59e79c5c01e2192f719aa1df56a",
+      "8ff0ea6bbbc2a2f85c6a56079441403aeaf3386c3e1eaeaaaa960f8421c8849b",
+      "09b2c218862d691da303e5582152f580edc8e47f2586c3ada6c60937c767a52f",
+      "0cf7a5ca48fc0022f8b95a147cf79ff428a10451a85cd40a57519ee4a28b8178",
+      "04004820ff7acc5c2d366202cdd11c65e3335a527c33928e2280532eb70c01e5",
+      "72b3657f785a8987d6050d361d8b4d5bb9e3a2dc323fd1a4d799153b0a2915d2",
+      "b873623ca1b94c96a56b884d8851295b8c5f0ead0220c8478a44aa3b22312c63",
+      "6038f5a9609e549ee277626a3b38ab62b3632942a3c1b2b11c1fac78c55d4ca0",
+      "077f9a52583f6383e6bc94858b841d269fe7097a9b9655b709ad97a5a3929b0a",
+      "d2a23ca7c9ee4abc26003a55fa43852e633d3324317c17a0791477ab199a0829",
+      "6a8bb04f9c87fc89c35bfb4c5f53f84d5698907960530c833baade173b84f070",
+      "b0e0964c36510bf91bf83c4ce34d1774665c9ea6cac5a4825e6ac60d39ac98ff",
+      "22831292ffd5e5b85916ed0e000246498640ac58dbf3ade20851d14964c2ca15",
+      "9b954672ba1329c585a6da5594bb9b5f09344abaf59d21e8a62478f4e0f046fd",
+      "4cf353f1e11852f3acb688e684a8e755c3eeb3fe3891c2b31584b9fba523c89e",
+      "01a61c0158b3dec4703fdf78499963839754e5067aef3827e41c4577bc071e71",
+      "271dcc1e9b3ec532bafe10bc6de2739d5361caf091c59546cf1012da7fdf2582",
+      "3436a6fd27020a0dee9f395dde6b7397ec1d03e6815b2170471a015ba405dfbd",
+      "1b9536082c78911b15b6b80229f573312ccda573e4b6942b0736a501f5daaa88",
+      "7cf9165279435561f1ae16b9bdada763ca0cda7b5c6a096371808c117768b901",
+      "9f463787d4d484c2fb3f7cfc35c376efaf9de601a6cdbf25b57e06152b06a5a0",
+      "1ce952126b28d1efcbddc3915267d37697deac00f26e1b2ca8213ab0fe9ee8cc",
+      "022e76616dc42f9581bb1e258ad53ada044849b4461fa8c976133a0f2b3e5054",
+      "110b1edaa114784286ef3389536ec935994e99e4756d54672b78c8e31a54ddd6",
+      "f2bc29f10315beadb9d3fed8ce60ed8dbbe730334bed82896f2eaacb6bd54c4b",
+      "61c92b7029e73ac7f5f005a24e051d712320b6f9bb4e914fb50315174c5c4b18",
+      "5cd6686137df808cdd384ae8902f66e9ba908a0a501be24723fb49bcafb2ff7a",
+      "4cfa8d5640026d7ab8d87f34f26458eb0dec4f28972974c0d9556457ef37b670",
+      "a93ad79a2b91c1dc960b241db44af1a40f3accf9d04108e35d21798c0574595a",
+      "f0b77a010e857337227a4166cbb12b8175d75833c38ee39faa5370fd8430e670",
+      "a89bdef3a559c1a602ccaa7e3600a8e27b08f975da67d1e14db8150432e30340",
+      "d9328a072987570c0d9312ceaf4a2334855c16e94e8a10ff02f01129967283dd",
+      "f90a18d9e29d9717491caa66683c32a513572952c5eec8478fbf3ed4695bb426",
+      "6a7e67608c1f5a17e2999ed4173f17499257fbf3d2df1474579cbcc6ed37c398",
+      "9eb2b431d11bb42c90d8f41a8b76c14b001c7fad15c7ea72e42829a54cbe4dce",
+      "1cdb0a43a9fe126725fa47692fc7bc671df157175d0be5374220717c6a37bec6",
+      "46424755ef9541b3898885dcbf4eabafcab1205f5d350c1671bece29d0d9c2c0",
+      "71f55659bb0e880649b3eabc9cf0bd5e8290c35a8f851e584352738b66b1a3cd",
+      "091502fe55da0de21f2042ab3c54ae3e8605d8059d450e94d92971122edd8530",
+      "c043aa1167652151b1830ad8e87f9a60579fab0a9c0a2c5d67c10cf42ca6043a",
+      "9bbe9091582ee5e64bc78994f3583e848d11e7d387d3c2426daac4f35fb3a194",
+      "8345b5012887b0dcd075d4f627612ec7ae9e963fe822c2ca6089ffb960758f2e",
+      "1c1573b9cfb0ac20dff2ef04b4f0877456843a4d930dbfafe21ba633ec3bbc98",
+      "14e6f28a9edb895cfaf7c81f440a1fb8b9498f4946e0cb95a0dbb4afd23660f8",
+      "6b53b5c4ae8a9f6031681522d051bc7a2092d9010c93829147712a90d2fb16d8",
+      "5d1d03e6a1b8dab840ca14d57e0ba28b389ff5dc47b3b6be43e52b73e31029b2",
+      "aed37694d212075b6a479d75952504136cc0e307e3999cc3ef97b8872ec8740b",
+      "87ddbf26b0b8de1133708878ded511f6ac926216ea6445fca44b9f2000fceb8d",
+      "ea03aafa1e69ad0b33ae45a02b26ab08cae78825aa876d48867c84d1b38947bb",
+      "55b13d0dc3b49db1d972d749731b80bc20bcaf119c553bcbe053e99a0b428a5a",
+      "93806a264d25ff86b1702a94c890de9758abce49c942716af722005532d992da",
+      "09da232b99e5fad545b2f819a83d31f65a3693f68878fb8c3a7185dbfab60504",
+      "bc95cd20ec2118e9f010aa18ea57cc9e1091dc7aa5f4e7830cbec8501b0ee20d",
+      "47504abdbd4d0ee4b88d5fb0c677fbc4e5b52a310f7a56794d52770003847267",
+      "281d40d897bdac11d8773a69c06bc0677770274c9e163dbc0f8670f0d22db081",
+      "385a73e6a55cba0f0c8cff69bb0309ddaaf9e47e744c197999c73c885cce699a",
+      "9469259239a0b48242f538d20615f70bd6cbf49cff97d04a898454744df6700c",
+      "2f26614ed2bb347a95c5411be974ffed37ecdbe6f8e85cfa7a881e6f546052cb",
+      "e1f41998a1d364c5bd4869ec807842fca7b943c1753c7ab3e25d46eb6d54d025",
+      "6c873954934696d6b503843cd63c47e7cd58fbde3a8e6dc45b496bceef53a5dc",
+      "a360cd8cd7fb460df488e9e394296dff81be7f6658184dce2aef9f3596614b5b",
+      "1a070e547b8b153c59bf20577ddb809a5caef9e52c59575922e95526c96989f1",
+      "18c26b298fbb532c8831e49d85e79c13ce5241e6b4a6c156c0e38a817d76b6fe",
+      "c6de7664eec5461897e3d8b5f8e40e7cb8b17da998994228fab4b8d9211cdd93",
+      "4d4ebbc3b55389c8beb3147cc0285c228f24cbe31249a2fbef35862882176665",
+      "976ec7a02df98a9a9d6b50db319110db644c8bdf315c190b5d835ef62b37c199",
+      "3bae40c6b4e8672a4bc2733a93659a947ab6b53125a212b5476e541d0fb4785d",
+      "3616f07d42c0dab7ff85a8b17de3730854669df9b96ffe9037998713a1bcbedd",
+      "ae661ba85fe2de871857a4b32f88bad8e9af88f7430e265a92c58e95c4430ce6"
+    ],
+    "forecast_sha256": "62ea5d18a77f4fd509ac96d9518c1d448ee777fa5839e380a0689d074a5eae31",
+    "online_sha256": "9c293f26b2766d1b31a238dd91a6063c009c837f6db51cc6975dee359e00cdc5"
+  },
+  "sponsors": {
+    "exa": {
+      "status": "live_verified",
+      "live_main_loop_calls": 13,
+      "source_bearing_rounds": 13,
+      "analyst_decisions_receiving_sources": 14,
+      "code": "src/research_loop.py:research_round -> src/evidence.py:LoopResearcher.research",
+      "repo_link": "pending user authorization; no Git commits or remote created"
+    },
+    "past_dev": {
+      "live_writers": [
+        "ANALYST",
+        "CRITIC",
+        "RESEARCHER"
+      ],
+      "live_readers": [
+        "ANALYST",
+        "FORECASTER"
+      ],
+      "multi_agent_live_access": true,
+      "performance_gains_verified": false,
+      "note": "Live access is not proof of accuracy, latency or cost gains; compare matched tasks and record API usage separately.",
+      "cross_agent_live_reads": 29,
+      "decisions_receiving_cross_agent_live_memory": 70,
+      "sponsor_requirements_verified": true
+    },
+    "modal": {
+      "requested_backend": "modal",
+      "actual_backend": "modal",
+      "fallback_reason": null,
+      "n_jobs": 8,
+      "wall_seconds": 28.570309392000127,
+      "modal_parallelism_limit": 8,
+      "claim": "Real Modal Function.map execution"
+    },
+    "originator": {
+      "status": "built_in_ori",
+      "note": "Work conducted in this hackwithori.com cloud workspace; judging and session submission not verified."
+    }
+  },
+  "status": "recorded_actual_execution",
+  "note": "Preserved original production log; no secrets or credentials are stored."
+}

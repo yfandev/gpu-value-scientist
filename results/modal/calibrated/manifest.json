@@ -1,0 +1,15 @@
+{
+  "id": "calibrated",
+  "spec": {
+    "id": "calibrated",
+    "method": "conformal",
+    "parameters": {
+      "window": 56,
+      "calibration_days": 35,
+      "min_calibration": 12
+    }
+  },
+  "elapsed_seconds": 4.121825799,
+  "input_sha256": "a837185c24f1db3aba8f56d73983aef21218c7a42a990582d1a0daaef48938aa",
+  "scorer_sha256": "38f197e966169d898b5b209e83bcf1c26b0cf5a3a5116e51d9a40aed5875037b"
+}

@@ -1,0 +1,189 @@
+{
+  "correct": 18,
+  "model_tokens": 0,
+  "n_questions": 18,
+  "remote_calls": 0,
+  "scope": "Post-plan diagnostic; not a predeclared model arm or a past.dev gain",
+  "trials": [
+    {
+      "answer": {
+        "candidate": "recent_56",
+        "record_id": "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h01",
+      "seconds": 0.000327945000208274
+    },
+    {
+      "answer": {
+        "candidate": "recent_28",
+        "record_id": "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "verdict": "rejected"
+      },
+      "exact_match": true,
+      "question_id": "h02",
+      "seconds": 0.0003102179998677457
+    },
+    {
+      "answer": {
+        "candidate": "step_shrink",
+        "record_id": "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h03",
+      "seconds": 0.00027967799996986287
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h04",
+      "seconds": 0.000280702000054589
+    },
+    {
+      "answer": {
+        "candidate": "calibrated",
+        "record_id": "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h05",
+      "seconds": 0.000277450000794488
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h06",
+      "seconds": 0.0002786389995890204
+    },
+    {
+      "answer": {
+        "candidate": "calibrated",
+        "record_id": "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h07",
+      "seconds": 0.0002889929992306861
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h08",
+      "seconds": 0.0002791090000755503
+    },
+    {
+      "answer": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h09",
+      "seconds": 0.0005841250003868481
+    },
+    {
+      "answer": {
+        "candidate": "recent_56",
+        "record_id": "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "verdict": "rejected"
+      },
+      "exact_match": true,
+      "question_id": "h10",
+      "seconds": 0.0005490780004038243
+    },
+    {
+      "answer": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h11",
+      "seconds": 0.0005453209996630903
+    },
+    {
+      "answer": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "verdict": "accepted"
+      },
+      "exact_match": true,
+      "question_id": "h12",
+      "seconds": 0.0005460620004669181
+    },
+    {
+      "answer": {
+        "candidate": "volatility",
+        "record_id": "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h13",
+      "seconds": 0.0008549220001441427
+    },
+    {
+      "answer": {
+        "candidate": "calibrated",
+        "record_id": "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "verdict": "rejected"
+      },
+      "exact_match": true,
+      "question_id": "h14",
+      "seconds": 0.000571040999602701
+    },
+    {
+      "answer": {
+        "candidate": "volatility",
+        "record_id": "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "verdict": "not_applicable"
+      },
+      "exact_match": true,
+      "question_id": "h15",
+      "seconds": 0.0005637470003421186
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h16",
+      "seconds": 0.0005571519996010466
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h17",
+      "seconds": 4.505999640969094e-06
+    },
+    {
+      "answer": {
+        "candidate": "none",
+        "record_id": "none",
+        "verdict": "none"
+      },
+      "exact_match": true,
+      "question_id": "h18",
+      "seconds": 3.471000127319712e-06
+    }
+  ]
+}

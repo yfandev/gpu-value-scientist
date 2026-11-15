@@ -1,0 +1,55 @@
+{
+  "starter_version": "0.1",
+  "run_utc": "2026-11-15T18:10:27Z",
+  "status": "refused",
+  "mode": "frozen_cutoff",
+  "cutoff": "2026-10-24",
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "horizons": [
+    1,
+    3,
+    7,
+    30
+  ],
+  "skill_baseline": "last_value",
+  "skill_definition": {
+    "cell": "mean over q10, q50, q90 of the pinball loss against the truth at origin + horizon",
+    "pooled": "1 - (mean cell loss / mean baseline cell loss) over every scored cell (equal cell weights; the track text's definition; scale-dependent, so high-priced volatile series weigh more)",
+    "mean_of_series": "mean over series of (1 - series loss / series baseline loss); series whose baseline loss is exactly 0 are excluded; unbounded below when a series barely moved",
+    "median_of_series": "median of the per-series skills",
+    "geomean": "1 - exp(mean over series of log(series loss / series baseline loss)), ratio floored at 0.001; scale-free and symmetric in over- and under-performance",
+    "primary": "pooled"
+  },
+  "missing_forecast_cells_scored_as_baseline": true,
+  "inputs": {
+    "forecast": {
+      "path": "baseline_drift.csv",
+      "sha256": "6a4d0464b171076c833472c074ba1f4abb49a8a1824ab35ca50ece80f6f55850",
+      "bytes": 55201
+    },
+    "truth": {
+      "path": "series_daily.csv",
+      "sha256": "a8dc0830ab395b40fdeced6677b4c71d2ea6d30933689ddb56f1761cf3dcd321",
+      "bytes": 18966328
+    },
+    "history": {
+      "path": "series_daily.csv",
+      "sha256": "a8dc0830ab395b40fdeced6677b4c71d2ea6d30933689ddb56f1761cf3dcd321",
+      "bytes": 18966328
+    },
+    "baseline_forecast": null
+  },
+  "refusals": [
+    "history file contains 7503 rows dated after the cutoff 2026-10-24 (latest 2026-11-06); the history input must be the snapshot truncated at the cutoff"
+  ],
+  "forecast_validation": {
+    "rows_in": 388,
+    "rows_valid": 388,
+    "n_problems": 0,
+    "problems": []
+  }
+}

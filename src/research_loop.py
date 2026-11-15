@@ -34,11 +34,12 @@ def sponsor_report(events,loop_evidence):
     using=[e for e in events if e.get('what')=='decision' and any(item.get('id') in admitted and item.get('agent')!=e.get('who') for item in e.get('inputs',{}).get('memory',[]))]
     memory['cross_agent_live_reads']=len(cross_reads);memory['decisions_receiving_cross_agent_live_memory']=len(using)
     memory['sponsor_requirements_verified']=memory['multi_agent_live_access'] and bool(using)
+    memory['verified_requirement_scope']='Multi-agent writes, reads and cross-agent use only; accuracy/latency/cost gains are evaluated separately.'
     searches=[e for e in events if e.get('what')=='exa_main_loop_search']
     actual=[e for e in searches if e.get('network_call') and e['outcome']['status']=='live_exa']
     recorded=[r for r in loop_evidence if r['status'] in ('live_exa','cached_exa') and r.get('results')]
     used=[e for e in events if e.get('who')=='ANALYST' and e.get('what')=='decision' and any(s.get('content',{}).get('sources') for s in e.get('inputs',{}).get('memory',[]) if s.get('kind')=='evidence')]
-    return {'exa':{'status':'live_verified' if actual and used else 'recorded_verified' if recorded and used else 'blocked_no_live_evidence','live_main_loop_calls':len(actual),'source_bearing_rounds':len(recorded),'analyst_decisions_receiving_sources':len(used),'code':'src/research_loop.py:research_round -> src/evidence.py:LoopResearcher.research','repo_link':'pending user authorization; no Git commits or remote created'},'past_dev':memory,'modal':{'status':'not_run_on_modal','report':'results/modal/execution.json'},'originator':{'status':'built_in_ori','note':'Work conducted in this hackwithori.com cloud workspace; judging and session submission not verified.'}}
+    return {'exa':{'status':'live_verified' if actual and used else 'recorded_verified' if recorded and used else 'blocked_no_live_evidence','live_main_loop_calls':len(actual),'source_bearing_rounds':len(recorded),'analyst_decisions_receiving_sources':len(used),'code':'src/research_loop.py:research_round -> src/evidence.py:LoopResearcher.research','repo_link':'https://github.com/yfandev/gpu-value-scientist'},'past_dev':memory,'modal':{'status':'not_run_on_modal','report':'results/modal/execution.json'},'originator':{'status':'built_in_ori','note':'Work conducted in this hackwithori.com cloud workspace; judging and session submission not verified.'}}
 
 def retain_live_receipt(root,config,events,sponsors):
     """Keep original execution evidence after offline replay replaces current logs."""

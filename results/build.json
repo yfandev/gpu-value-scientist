@@ -1,0 +1,75 @@
+{
+  "starter_version": "0.1",
+  "run_utc": "2026-11-15T18:10:37Z",
+  "pack": "gpu-price-pack-v0.1.1-handover",
+  "cutoff": "2026-11-06",
+  "parts": {
+    "daily_statistics": {
+      "rows_in": 39203,
+      "rows_dropped_ewyluda": 0,
+      "rows_dropped_nonpositive_or_null": 0,
+      "rows_out": 39203,
+      "n_series": 592
+    }
+  },
+  "rows_total_before_cutoff": 39203,
+  "rows_written": 39203,
+  "rows_dropped_after_cutoff": 0,
+  "series_written": 592,
+  "as_of": "2026-11-06",
+  "tiers": {
+    "extended": 555,
+    "headline": 37
+  },
+  "headline_series": [
+    "afhubbard.hyperscaler_spot.A100_40GB.spot.median",
+    "afhubbard.hyperscaler_spot.A100_SXM_80GB.spot.median",
+    "afhubbard.hyperscaler_spot.T4.spot.median",
+    "afhubbard.hyperscaler_spot.V100.spot.median",
+    "fastgpu_daily.hyperscaler_spot.A100_80GB.spot.median",
+    "fastgpu_daily.hyperscaler_spot.T4.spot.median",
+    "fastgpu_daily.neocloud_rate_card.A100_40GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.A100_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.B200.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.B300.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H100_PCIe_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.H200.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.L40S.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_A6000.on_demand.median",
+    "fastgpu_daily.neocloud_rate_card.RTX_PRO_6000.on_demand.median",
+    "fastgpu_daily.neocloud_spot.A100_80GB.spot.median",
+    "fastgpu_daily.neocloud_spot.B200.spot.median",
+    "fastgpu_daily.neocloud_spot.B300.spot.median",
+    "fastgpu_daily.neocloud_spot.H100_SXM_80GB.spot.median",
+    "fastgpu_daily.neocloud_spot.H200.spot.median",
+    "fastgpu_daily.neocloud_spot.L40S.spot.median",
+    "fastgpu_daily.neocloud_spot.RTX_PRO_6000.spot.median",
+    "gpurentalprices.marketplace_ask.H100_80GB.spot.median",
+    "gpurentalprices.neocloud_rate_card.A100_40GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.B200.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.B300.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H100_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.H200.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.L4.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.L40S.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_6000_Ada.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_A6000.on_demand.median",
+    "gpurentalprices.neocloud_rate_card.RTX_PRO_6000.on_demand.median"
+  ],
+  "gates": {
+    "min_history_days": 60,
+    "aws_min_history_days": 365,
+    "max_staleness_days": 3,
+    "min_distinct_90d": 5,
+    "min_providers": 3,
+    "composite_min_days": 365
+  },
+  "outputs": {
+    "series": "history.csv",
+    "catalog": "series_catalog.csv"
+  }
+}

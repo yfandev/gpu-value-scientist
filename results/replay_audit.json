@@ -1,0 +1,303 @@
+[
+  {
+    "round": 1,
+    "forecast_origin": "2026-07-22",
+    "training_origins": [
+      "2026-07-15"
+    ],
+    "max_available_target_date": "2026-07-22",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "8e7cefbde1e32367fa62dcc905bfe2a86c6ab14ca784e8e1ae04880122dd768c"
+  },
+  {
+    "round": 2,
+    "forecast_origin": "2026-07-29",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22"
+    ],
+    "max_available_target_date": "2026-07-29",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "65092a1e4002a42c7c233ff92fa752dc666b683121c5600f8675bf7bd41ec64e"
+  },
+  {
+    "round": 3,
+    "forecast_origin": "2026-08-05",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29"
+    ],
+    "max_available_target_date": "2026-08-05",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "317fb806626ad28b721dd2da4aeaa547cfd1d5888c8c65e5ccf4e75e15734b01"
+  },
+  {
+    "round": 4,
+    "forecast_origin": "2026-08-12",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05"
+    ],
+    "max_available_target_date": "2026-08-12",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "a0db5a52319d39077010662562febfeafa0e1a2d4487711008e002961d8f8b89"
+  },
+  {
+    "round": 5,
+    "forecast_origin": "2026-08-19",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12"
+    ],
+    "max_available_target_date": "2026-08-19",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "879f8984b96a9f0a67651d6fa514f2abaf9ea1ffc9cc93788bb3cc02ab0f613f"
+  },
+  {
+    "round": 6,
+    "forecast_origin": "2026-08-26",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19"
+    ],
+    "max_available_target_date": "2026-08-26",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "d36aac975a0fd0d698de4208bde4299e925b49b8120bb32b894bd066a5388ffb"
+  },
+  {
+    "round": 7,
+    "forecast_origin": "2026-09-02",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26"
+    ],
+    "max_available_target_date": "2026-09-02",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "15fe3a29dcebf5e29d1108fb3ed6e6f6e8ca4421c745a8adbec897c19abc9602"
+  },
+  {
+    "round": 8,
+    "forecast_origin": "2026-09-09",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02"
+    ],
+    "max_available_target_date": "2026-09-09",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "d2c01e15fc52b4f616437f5a9b0e08cbfcc08a5957fbd7c9b206a15786a7ddf3"
+  },
+  {
+    "round": 9,
+    "forecast_origin": "2026-09-16",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09"
+    ],
+    "max_available_target_date": "2026-09-16",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "ded7a423e74627a36ea46f044b8a7aef8933d11e5fefa7040e3d8202427e9e44"
+  },
+  {
+    "round": 10,
+    "forecast_origin": "2026-09-23",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16"
+    ],
+    "max_available_target_date": "2026-09-23",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "9fbfb6835ec179f335fe96c59f4f53d85da15fb0b87a1f2af263009ec5c82ecc"
+  },
+  {
+    "round": 11,
+    "forecast_origin": "2026-09-30",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16",
+      "2026-09-23"
+    ],
+    "max_available_target_date": "2026-09-30",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "89b7298e58e6b19efdeaa1cf0e17132e5c714749f0f8e604e4579f32e76a3605"
+  },
+  {
+    "round": 12,
+    "forecast_origin": "2026-10-07",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16",
+      "2026-09-23",
+      "2026-09-30"
+    ],
+    "max_available_target_date": "2026-10-07",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "652f5d0732e8dd10670a3fb893fcef6a19005fab05e509278eab82280b312d70"
+  },
+  {
+    "round": 13,
+    "forecast_origin": "2026-10-14",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16",
+      "2026-09-23",
+      "2026-09-30",
+      "2026-10-07"
+    ],
+    "max_available_target_date": "2026-10-14",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "34271356ee12e71ebace4e3c3d892e8cd463499045d338ed557f2811ccd748d1"
+  },
+  {
+    "round": 14,
+    "forecast_origin": "2026-10-21",
+    "training_origins": [
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-29",
+      "2026-08-05",
+      "2026-08-12",
+      "2026-08-19",
+      "2026-08-26",
+      "2026-09-02",
+      "2026-09-09",
+      "2026-09-16",
+      "2026-09-23",
+      "2026-09-30",
+      "2026-10-07",
+      "2026-10-14"
+    ],
+    "max_available_target_date": "2026-10-21",
+    "selections": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    },
+    "forecast_sha256": "deafdca513e79fb4a36edd2b27a02ef0f76bf0112a04024f6fd559a2ba145452"
+  }
+]

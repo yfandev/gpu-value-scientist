@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Starter forecast validity",
+    "status": "passed",
+    "detail": "111 rows; 37 actual posted headline series; positive ordered finite quantiles and exact dates."
+  },
+  {
+    "name": "Frozen cutoff refusal",
+    "status": "passed",
+    "detail": "Synthetic post-cutoff history row refused with exit 2; contamination fixture deleted."
+  },
+  {
+    "name": "Unseen-origin chronology",
+    "status": "passed",
+    "detail": "Selections frozen before same-origin scoring; only mature earlier-origin cells enter decisions."
+  },
+  {
+    "name": "GitHub publication identity",
+    "status": "passed",
+    "detail": "User authorized repository creation and pushes as yfandev only; credentials and original pack excluded."
+  }
+]

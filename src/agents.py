@@ -16,6 +16,7 @@ from pathlib import Path
 import sys
 import time
 import uuid
+from http_retry import request_with_retry
 
 ROOT = Path(__file__).resolve().parents[1]
 ROLES = ("ANALYST", "FORECASTER", "CRITIC", "RESEARCHER")
@@ -98,7 +99,7 @@ class AgentRuntime:
                        "response_format": {"type": "json_schema", "json_schema": {
                            "name": "research_decision", "strict": True, "schema": SCHEMA}}}
             try:
-                r = requests.post("https://api.openai.com/v1/chat/completions", json=payload,
+                r = request_with_retry(requests.post, "https://api.openai.com/v1/chat/completions", json=payload,
                                   headers={"Authorization": "Bearer " + os.environ["OPENAI_API_KEY"]}, timeout=90)
                 if not r.ok:
                     raise RuntimeError(f"OpenAI request failed HTTP {r.status_code}; no fallback used")
@@ -188,7 +189,7 @@ class SharedMemory:
         if not self.live or not self.key:
             raise RuntimeError("Network prohibited in offline memory mode")
         import requests
-        r = requests.request(method, "https://api.past.dev/api/v1" + path,
+        r = request_with_retry(requests.request, method, "https://api.past.dev/api/v1" + path,
                              headers={"Authorization": "Bearer " + self.key}, json=payload, timeout=timeout)
         if not r.ok:
             raise RuntimeError(f"past.dev HTTP {r.status_code}")

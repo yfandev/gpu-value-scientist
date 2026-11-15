@@ -1,0 +1,281 @@
+{
+  "status": "argued_not_scored",
+  "cutoff": "2026-11-06",
+  "scenarios": [
+    {
+      "gpu": "H100",
+      "scenario": "stress",
+      "annual_rental_change": [
+        -0.5,
+        -0.35
+      ],
+      "anchor_usd_per_gpu_hour": 3.5539,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "H100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.25,
+        0.4225
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        0.89,
+        1.5
+      ],
+      "resale_2028_usd": [
+        0,
+        4142
+      ],
+      "rental_2029_multiple": [
+        0.125,
+        0.2746
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        0.44,
+        0.98
+      ],
+      "resale_2029_usd": [
+        0,
+        2024
+      ]
+    },
+    {
+      "gpu": "H100",
+      "scenario": "central",
+      "annual_rental_change": [
+        -0.35,
+        -0.1
+      ],
+      "anchor_usd_per_gpu_hour": 3.5539,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "H100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.4225,
+        0.81
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        1.5,
+        2.88
+      ],
+      "resale_2028_usd": [
+        0,
+        16385
+      ],
+      "rental_2029_multiple": [
+        0.2746,
+        0.729
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        0.98,
+        2.59
+      ],
+      "resale_2029_usd": [
+        0,
+        14555
+      ]
+    },
+    {
+      "gpu": "H100",
+      "scenario": "capacity-constrained",
+      "annual_rental_change": [
+        -0.1,
+        0.0
+      ],
+      "anchor_usd_per_gpu_hour": 3.5539,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "H100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.81,
+        1.0
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        2.88,
+        3.55
+      ],
+      "resale_2028_usd": [
+        1190,
+        24409
+      ],
+      "rental_2029_multiple": [
+        0.729,
+        1.0
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        2.59,
+        3.55
+      ],
+      "resale_2029_usd": [
+        673,
+        24409
+      ]
+    },
+    {
+      "gpu": "A100",
+      "scenario": "stress",
+      "annual_rental_change": [
+        -0.55,
+        -0.4
+      ],
+      "anchor_usd_per_gpu_hour": 1.95,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "A100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.2025,
+        0.36
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        0.39,
+        0.7
+      ],
+      "resale_2028_usd": [
+        0,
+        630
+      ],
+      "rental_2029_multiple": [
+        0.0911,
+        0.216
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        0.18,
+        0.42
+      ],
+      "resale_2029_usd": [
+        0,
+        0
+      ]
+    },
+    {
+      "gpu": "A100",
+      "scenario": "central",
+      "annual_rental_change": [
+        -0.4,
+        -0.15
+      ],
+      "anchor_usd_per_gpu_hour": 1.95,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "A100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.36,
+        0.7225
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        0.7,
+        1.41
+      ],
+      "resale_2028_usd": [
+        0,
+        6341
+      ],
+      "rental_2029_multiple": [
+        0.216,
+        0.6141
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        0.42,
+        1.2
+      ],
+      "resale_2029_usd": [
+        0,
+        5103
+      ]
+    },
+    {
+      "gpu": "A100",
+      "scenario": "capacity-constrained",
+      "annual_rental_change": [
+        -0.15,
+        0.0
+      ],
+      "anchor_usd_per_gpu_hour": 1.95,
+      "anchor_date": "2026-11-06",
+      "series_id": "gpurentalprices.neocloud_rate_card.A100_SXM_80GB.on_demand.median",
+      "instrument_class": "neocloud_rate_card",
+      "benchmark_contract": "A100 SXM 80GB; on-demand; median posted USD per GPU-hour of gpurentalprices shipped offers; all regions pooled; no commitment.",
+      "source_url": "https://gpurentalprices.com/data",
+      "licence_id": "CC-BY-4.0",
+      "resale_assumption": "Illustrative GPU-allocated two-year net cash-flow value at resale, with zero terminal value; not a resale observation or prediction interval.",
+      "rental_2028_multiple": [
+        0.7225,
+        1.0
+      ],
+      "rental_2028_usd_per_gpu_hour": [
+        1.41,
+        1.95
+      ],
+      "resale_2028_usd": [
+        0,
+        12532
+      ],
+      "rental_2029_multiple": [
+        0.6141,
+        1.0
+      ],
+      "rental_2029_usd_per_gpu_hour": [
+        1.2,
+        1.95
+      ],
+      "resale_2029_usd": [
+        0,
+        12532
+      ]
+    }
+  ],
+  "assumptions": {
+    "utilization": [
+      0.35,
+      0.65
+    ],
+    "operating_cost_per_calendar_gpu_hour": [
+      0.15,
+      0.5
+    ],
+    "annual_discount_rate": [
+      0.15,
+      0.3
+    ],
+    "gpu_share_of_net_system_cashflow": [
+      0.5,
+      0.8
+    ],
+    "sale_and_refurbishment_cost_usd": [
+      200,
+      1000
+    ],
+    "remaining_years_at_resale": 2,
+    "terminal_value": 0
+  },
+  "notes": [
+    "These are scenario sensitivities, not calibrated 80% intervals and not observed resale prices.",
+    "The annual rental changes and utilization/cost assumptions are analyst choices, not estimates from the short backtest.",
+    "GPU resale allocation is not identified from rental prices; server configuration, condition, liquidity, and buyer economics can invalidate the DCF.",
+    "No price values from restricted resale pointers were collected. H100 launch price in Epoch is an allocated server quote, not official MSRP.",
+    "Historical AWS spot prices are administered prices; no interpolation across the March\u2013June 2026 gap."
+  ],
+  "capability": {
+    "h100_to_a100_inference_ratio": 2.46496,
+    "basis": "SXM 80GB, precision-matched cross-benchmark inference median, v3.0/v3.1; derived, not an official MLPerf score."
+  }
+}

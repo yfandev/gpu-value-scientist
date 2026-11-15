@@ -1,0 +1,1663 @@
+{
+  "02215e9072d8e4c360921a57dd8e437184efe63abc6b89f7e7c1cb7221f241b1": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-23",
+      "reader": "ANALYST",
+      "round": 10
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015"
+    ]
+  },
+  "0374ea2339dc1080943878a6e71a76766fed9d3652f66ae8c0c4863bd62486ed": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-07-22",
+      "reader": "ANALYST",
+      "round": 1
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2"
+    ]
+  },
+  "04875d771d2b5738088aab2d587c8ae481aa0b5298ff11917786cfe0b738dc7f": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-19",
+      "reader": "FORECASTER",
+      "round": 5
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7"
+    ]
+  },
+  "082d7aa132e720fd2e99e5412c6187d05dcb55953212401c5f519fc76c17c9b4": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-05",
+      "reader": "FORECASTER",
+      "round": 3
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95"
+    ]
+  },
+  "1f9be30332f5dd1dd195fab6e40e32f79fdb01b8b0ee3ad31707047510e39ee7": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-26",
+      "reader": "FORECASTER",
+      "round": 6
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c"
+    ]
+  },
+  "23e2032a92163e92b3279dd549eb5e58680c80930c122b750f3ba6598cf0a28d": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-05",
+      "reader": "ANALYST",
+      "round": 3
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d"
+    ]
+  },
+  "24238707dd1c175eb97e251a968fd7b4335deed95d8bda40de874d8627574e05": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+        "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+        "gvs-91fbdf53b761954a-18792a8931b34b27a1d28886ebfd596f",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-26",
+      "reader": "FORECASTER",
+      "round": 6
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+      "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+      "gvs-91fbdf53b761954a-18792a8931b34b27a1d28886ebfd596f",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c"
+    ]
+  },
+  "25beec7463f49738a6eb4c2eac3805ea2387b343f77ffa62522fb925874f5aea": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-07-22",
+      "reader": "FORECASTER",
+      "round": 1
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396"
+    ]
+  },
+  "272dbe9e872781836ce42d0ae648bad92b4d861278813b4004f09a5b81afcae6": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-09",
+      "reader": "FORECASTER",
+      "round": 8
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd"
+    ]
+  },
+  "304eb8bc8089a67ba9456307af841fb482da2ae53caa6e2d871e3e3ddc3322e3": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-09",
+      "reader": "ANALYST",
+      "round": 8
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f"
+    ]
+  },
+  "341ece94a3fe2dd0ea3f3cdf8a47f5d865874225df680c01f567ece29bfd5383": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+        "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-12",
+      "reader": "ANALYST",
+      "round": 4
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+      "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+      "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c"
+    ]
+  },
+  "3d7f22dc5dbe9076ff1666448c66a7419f1223cf512b93a178685f940b3fbe80": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+        "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+        "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4",
+        "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+        "gvs-91fbdf53b761954a-6ac4d3e24d3565705bb80264c9c0b428"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-10-14",
+      "reader": "FORECASTER",
+      "round": 13
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+      "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+      "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4",
+      "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+      "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+      "gvs-91fbdf53b761954a-6ac4d3e24d3565705bb80264c9c0b428"
+    ]
+  },
+  "3e041c9fa66ef971f12aac265d77988c21ee87131cb854e8cfd5f362474ff757": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-12",
+      "reader": "FORECASTER",
+      "round": 4
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1"
+    ]
+  },
+  "40b162081728c15b682e09b48bb9d1e9e081e163ecd98e3fb90efa4fc382ca20": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+        "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-9439fb4b20045bbb2683bcd1ea2c725f"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-19",
+      "reader": "ANALYST",
+      "round": 5
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+      "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-9439fb4b20045bbb2683bcd1ea2c725f"
+    ]
+  },
+  "4f3d80ec4504d8bd6b859d9051e8090a820b9a54c22adca51fc575e4dfb340d6": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-07-29",
+      "reader": "FORECASTER",
+      "round": 2
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5"
+    ]
+  },
+  "507ddeb731042e45c83b39ac31d568c6f3169ba1b1805bd5b75bade3046e99d5": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-07-29",
+      "reader": "ANALYST",
+      "round": 2
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3"
+    ]
+  },
+  "53b8c6ee64e41218f97c9043e12a3449a868e60f16b3c190795402e5674e2250": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-c774c00911e9c5ac40cebba32520b59a",
+        "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "gvs-91fbdf53b761954a-d2b297714191bda92b5b904b5658a044"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-10-14",
+      "reader": "ANALYST",
+      "round": 13
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1"
+    ]
+  },
+  "57e3cf4c7589588edc8edafc1b197d6bb2372b696e8179b9d1c8b802c87d9968": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-16",
+      "reader": "ANALYST",
+      "round": 9
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb"
+    ]
+  },
+  "5952b032de491139ade5527b7850880727938c862c6bac0b49890ac63e151d0b": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-c774c00911e9c5ac40cebba32520b59a",
+        "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "gvs-91fbdf53b761954a-d2b297714191bda92b5b904b5658a044",
+        "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+        "gvs-91fbdf53b761954a-9b6c0069c2f2f92b513e60ae55aee94c"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-10-21",
+      "reader": "ANALYST",
+      "round": 14
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+      "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30"
+    ]
+  },
+  "5e5ee2abf941f467564a9aadc6845ddc7241b774bbfb58b9b555a873ccc6b5c8": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-19",
+      "reader": "ANALYST",
+      "round": 5
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b"
+    ]
+  },
+  "6020387732ca3c2ff74aa0d7d6669c953dc43b601133a6508bb7a1c0c95090a0": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+        "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-05",
+      "reader": "ANALYST",
+      "round": 3
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+      "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+      "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed"
+    ]
+  },
+  "6655778c876896fbb5d114273a519ac3e10f80f940b49bb455bf5eb854996d0a": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-23",
+      "reader": "FORECASTER",
+      "round": 10
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+      "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c"
+    ]
+  },
+  "6cee5a092a0a61139b02255b3ec2a73617433d19f8254371a5b555c2cf93b59a": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-05",
+      "reader": "FORECASTER",
+      "round": 3
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95"
+    ]
+  },
+  "725ae2e681f86c82730672d9f8715498ab7174a5492bbe8555eaa4c8f62b4153": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-16",
+      "reader": "FORECASTER",
+      "round": 9
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af"
+    ]
+  },
+  "73b7dd3112e3f35d8bd31098edd29c66c3bf7e5b8babf4f7a2c1ab60b69e625e": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-02",
+      "reader": "ANALYST",
+      "round": 7
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe"
+    ]
+  },
+  "7850bd512fd34bccd397983f7261a8270642d2740828884233465cd68b6806ec": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-07-22",
+      "reader": "ANALYST",
+      "round": 1
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9"
+    ]
+  },
+  "7d9bddad21aaf6f04d65043b2f66809a0037521aba59911d88304a6ea8769584": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-26",
+      "reader": "ANALYST",
+      "round": 6
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae"
+    ]
+  },
+  "83d04453f84f1e7f0e92d1554999b4afc83d7ceffab779e2e8e1f0fc3a1516c0": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-c774c00911e9c5ac40cebba32520b59a"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-10-07",
+      "reader": "ANALYST",
+      "round": 12
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e"
+    ]
+  },
+  "8791921b5cfa943dc7669ff37fbc171ea056583b7daf2a95669ddae2a4afd362": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-12",
+      "reader": "FORECASTER",
+      "round": 4
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1"
+    ]
+  },
+  "99f723511ba99808d80ca20c29eaac1cfa65550e0676fa3e4ae8a77259758b01": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+        "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-30",
+      "reader": "FORECASTER",
+      "round": 11
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+      "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+      "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106"
+    ]
+  },
+  "9a50ef33829c0b719a1c4423be3bf48d365ca862b2bc760bbb1c8cf612959def": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-c774c00911e9c5ac40cebba32520b59a",
+        "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "gvs-91fbdf53b761954a-d2b297714191bda92b5b904b5658a044",
+        "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+        "gvs-91fbdf53b761954a-9b6c0069c2f2f92b513e60ae55aee94c",
+        "gvs-91fbdf53b761954a-af82a5ba158c35e863cc53934296ecdf",
+        "gvs-91fbdf53b761954a-2f4b74d6142fde2bc144dae09a4de82c",
+        "gvs-91fbdf53b761954a-7a1d50677d985d7c5a32ca1b9da44db8",
+        "gvs-91fbdf53b761954a-61d21169b6963eb0100c19a84ab409f8",
+        "gvs-91fbdf53b761954a-2df35bb85674d2492823ed460cc890c1",
+        "gvs-91fbdf53b761954a-81289909e8e234af67b7554ec965fcbc",
+        "gvs-91fbdf53b761954a-4262a917904b3684587dc64ea07179d0",
+        "gvs-91fbdf53b761954a-c07aa873a8b703639e40ecb5a2c43468",
+        "gvs-91fbdf53b761954a-63f9f7ff221beea474fe69f91e28a869",
+        "gvs-91fbdf53b761954a-57f4ec7abaea62fb6b4f676ab5bfbe78",
+        "gvs-91fbdf53b761954a-ee0efd5ce511f295d4f58f747c090842",
+        "gvs-91fbdf53b761954a-f27f9e3649d5b0351e912452b547b3ec",
+        "gvs-91fbdf53b761954a-a30965ca2f023b2c01a5d9488806c72a"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-11-06",
+      "reader": "ANALYST",
+      "round": 15
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+      "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+      "gvs-91fbdf53b761954a-a30965ca2f023b2c01a5d9488806c72a"
+    ]
+  },
+  "b19c88ffeb46b8b26e5a4692a485938243ad7647d5fbbf3171114eff775720ed": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+        "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-9439fb4b20045bbb2683bcd1ea2c725f",
+        "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+        "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+        "gvs-91fbdf53b761954a-faacfcf0709bfffc6e3912eb18585f63"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-26",
+      "reader": "ANALYST",
+      "round": 6
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+      "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a"
+    ]
+  },
+  "b2bed17c651c215ac1c5e90a489ba50d3bdd242082f31f75645b89d0443a0db5": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-02",
+      "reader": "FORECASTER",
+      "round": 7
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6"
+    ]
+  },
+  "b3a00e05e55d69fd6acc58ece93bd5ab9886eee573bf103b817f41abfa3d1433": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-07-29",
+      "reader": "FORECASTER",
+      "round": 2
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5"
+    ]
+  },
+  "bfb7c2c967d8e032c6b7de845b69f5d226255ba65c4b14dcb5c17c106e227d29": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-07-22",
+      "reader": "FORECASTER",
+      "round": 1
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396"
+    ]
+  },
+  "c1b1c0f2e765620e4618e8d4154d06233d33e74faba9a76dd3593c871f2f8151": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+        "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+        "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-10-07",
+      "reader": "FORECASTER",
+      "round": 12
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+      "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4"
+    ]
+  },
+  "d8df268bbcba29bdde45873b1a9fbb50011f3d6370eea6ccb31b1d98ff3401c7": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-8026dd6dd925f2611f3291b36c3967ea",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+        "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+        "gvs-91fbdf53b761954a-18792a8931b34b27a1d28886ebfd596f",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-f22b3c6e02c55fe07f9074de53ce78a0",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-09-02",
+      "reader": "FORECASTER",
+      "round": 7
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-361e5e3b9a7c1dcb4329eb83dbc6685c",
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-8f38323834bc00dade3cdd1ee2c71014",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-aaa2831cb2afc8345e3be979e6516e60",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-60f0c77a4b7bf75599ff95445437fe8a",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+      "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+      "gvs-91fbdf53b761954a-18792a8931b34b27a1d28886ebfd596f",
+      "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+      "gvs-91fbdf53b761954a-f22b3c6e02c55fe07f9074de53ce78a0",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6"
+    ]
+  },
+  "df1e554acf0c5ae8ef982b22a4da27a8b58515544684a3b10f7c97fe87ff5f89": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+        "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-30",
+      "reader": "ANALYST",
+      "round": 11
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3"
+    ]
+  },
+  "e23e4f8dabf1eeca83435b90754cf4c7e514dc136aafca3d58e3f4c48b54ebda": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-07-29",
+      "reader": "ANALYST",
+      "round": 2
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+      "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c"
+    ]
+  },
+  "e355f971767b2ef3ef17f6a5c663d5875e94e99d4a0be31b1f42096f922b15ac": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+        "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+        "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+        "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+        "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+        "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+        "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+        "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+        "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+        "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+        "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+        "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+        "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+        "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+        "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+        "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+        "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+        "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+        "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4",
+        "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+        "gvs-91fbdf53b761954a-6ac4d3e24d3565705bb80264c9c0b428",
+        "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+        "gvs-91fbdf53b761954a-052b0ffd865963b265ed0386a791dcdf",
+        "gvs-91fbdf53b761954a-b3aa02235b4439a84c8b328665e11147"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-10-21",
+      "reader": "FORECASTER",
+      "round": 14
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+      "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+      "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+      "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+      "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+      "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+      "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+      "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+      "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+      "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+      "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+      "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+      "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4",
+      "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+      "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+      "gvs-91fbdf53b761954a-6ac4d3e24d3565705bb80264c9c0b428",
+      "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+      "gvs-91fbdf53b761954a-052b0ffd865963b265ed0386a791dcdf",
+      "gvs-91fbdf53b761954a-b3aa02235b4439a84c8b328665e11147"
+    ]
+  },
+  "e4121d3932c7392c2f6b589cf4e8437a48c2bd5dd18f012c638b028be5ea0623": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+        "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+        "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-08-12",
+      "reader": "ANALYST",
+      "round": 4
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+      "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c"
+    ]
+  },
+  "f8234470e7241d83a9f117ec1d4868e407080deb2e32e3b42939caa84de54e23": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+        "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+        "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+        "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+        "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+        "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+        "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+        "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+        "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+        "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+        "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7"
+      ],
+      "kinds": [
+        "hypothesis",
+        "results",
+        "verdict"
+      ],
+      "origin": "2026-08-19",
+      "reader": "FORECASTER",
+      "round": 5
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+      "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+      "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+      "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+      "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+      "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+      "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+      "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+      "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7"
+    ]
+  },
+  "f94e4b95f7a54187f8d08e2c33705b180c6e950bb848b6e7c048fb215b8328ca": {
+    "backend": "past.dev",
+    "query": {
+      "eligible_ids": [
+        "gvs-91fbdf53b761954a-3a1e24d03cff79720c2e68fd89f15cc2",
+        "gvs-91fbdf53b761954a-40123a26c2bc3e6b5a8fc77b0577253c",
+        "gvs-91fbdf53b761954a-a233b71cf9739430b4af4338bdafe2ed",
+        "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+        "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+        "gvs-91fbdf53b761954a-9439fb4b20045bbb2683bcd1ea2c725f",
+        "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+        "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+        "gvs-91fbdf53b761954a-faacfcf0709bfffc6e3912eb18585f63",
+        "gvs-91fbdf53b761954a-278c62618804baab812841fe5a455ddd"
+      ],
+      "kinds": [
+        "evidence",
+        "verdict"
+      ],
+      "origin": "2026-09-02",
+      "reader": "ANALYST",
+      "round": 7
+    },
+    "selected_ids": [
+      "gvs-91fbdf53b761954a-e53340153891fef2cccc5d7cc308f95b",
+      "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+      "gvs-91fbdf53b761954a-8e46db2a4251e6a51ccf78de4c82b6d5",
+      "gvs-91fbdf53b761954a-a05d5b93ef8bb4563cf184cfb07b802a",
+      "gvs-91fbdf53b761954a-278c62618804baab812841fe5a455ddd"
+    ]
+  }
+}

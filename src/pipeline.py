@@ -148,6 +148,17 @@ def main():
     # Paired uncertainty for the prequential forecasts, evaluated on the same origin/cell grid.
     drift_overlap=cells['drift'][cells['drift'].origin_date.isin(CONFIG['origins'][1:])]
     uncertainty=bootstrap(online_cells,drift_overlap,CONFIG['seed'])
+    # Presentation-only provenance enrichment after every agent decision is frozen.
+    # Do not change historical memory contents or cache inputs during replay.
+    proposal_events=[json.loads(line) for line in Path('logs/agent_log.jsonl').read_text().splitlines()]
+    proposals={e['outcome']['content']['id']:e['outcome']['content'] for e in proposal_events
+               if e['who']=='ANALYST' and e['what']=='memory_write' and e['inputs']['kind']=='hypothesis'}
+    for h in hypotheses:
+        proposal=proposals[h['id']]
+        h['proposal_reason']=proposal['reason']
+        h['available_evidence_urls']=proposal.get('evidence_urls',[])
+        h['explicitly_cited_urls']=[url for url in h['available_evidence_urls'] if url in h['proposal_reason']]
+        h['source_interpretation_note']='Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models.'
     save('results/replay_audit.json',audit);save('results/hypotheses.json',hypotheses);save('results/learning_curve.json',rounds);save('results/uncertainty.json',uncertainty)
     save('results/method_summary.json',{n:r['overall'] for n,r in reports.items()})
     checks=validate_outputs(ids,PACK)
@@ -217,6 +228,10 @@ Runtime: **{payload['status']['agent_mode']}**. Shared memory: **{payload['statu
     text+='\n## Hypotheses and learning\n\n'
     for h in payload['hypotheses']:text+=f"- {h['id']} / {h['group']} / {h['candidate']}: **{h['verdict']}** — {h['reason']} CI {h['bootstrap_ci']}.\n"
     text+='\nFinal promotion requires positive online skill and an upper paired-loss CI below zero. Keeping drift when alternatives fail is a negative result, not a successful improvement claim. The full-library table is exploratory development feedback; only the online curve represents the specified decision process on subsequent origins.\n\n'
+    text+='\nSource provenance: each hypothesis preserves its original Analyst rationale separately from the Critic verdict. Available evidence is not automatically a citation. References to structural forecasting papers motivate experiments; our residual calibration does not implement those papers’ models.\n'
+    if Path('docs/MEMORY_BENCHMARK.md').exists():text+='\n'+Path('docs/MEMORY_BENCHMARK.md').read_text()+'\n'
+    for benchmark_doc in ['docs/MEMORY_BENCHMARK_V2.md','docs/MEMORY_BENCHMARK_V3.md']:
+        if Path(benchmark_doc).exists():text+='\n'+Path(benchmark_doc).read_text()+'\n'
     if Path('docs/economic_view.md').exists():text+=Path('docs/economic_view.md').read_text()
     text+='\n## Limitations\n\n'+'\n'.join('- '+x for x in payload['status']['warnings'])+'\n'
     text+='\n## Reproduction and attribution\n\nRun `./reproduce.sh` after installing requirements in a local virtual environment. `./reproduce.sh --live` requires configured API keys and rebuilds live decisions. The pack is read-only, verified with MANIFEST.sha256, and never bundled with generated submission files.\n\nPacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0. Full unchanged upstream attribution accompanies this work in ATTRIBUTION.md; original notices remain in the pack. Derived changes: target extraction, history-only forecasts, official score reports, and research decisions. No endorsement implied.\n'

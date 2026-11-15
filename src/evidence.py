@@ -11,6 +11,7 @@ import os
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from http_retry import request_with_retry
 from environment import load_environment
 load_environment()
 ROOT = Path(__file__).resolve().parents[1]
@@ -111,7 +112,7 @@ def collect(live=False):
             out['queries'].append({'category': category, 'request': payload, 'cache_key': digest})
             try:
                 if digest not in cache:
-                    r = requests.post('https://api.exa.ai/search', headers={'x-api-key': key}, json=payload, timeout=45)
+                    r = request_with_retry(requests.post, 'https://api.exa.ai/search', headers={'x-api-key': key}, json=payload, timeout=45)
                     r.raise_for_status()
                     response = r.json()
                     accepted, rejected = [], []
@@ -215,7 +216,7 @@ class LoopResearcher:
         try:
             # True records an attempted API call, even when the endpoint fails.
             out['executed_live'] = True
-            response = requests.post('https://api.exa.ai/search', headers={'x-api-key': api_key},
+            response = request_with_retry(requests.post, 'https://api.exa.ai/search', headers={'x-api-key': api_key},
                                      json=payload, timeout=45)
             response.raise_for_status()
             raw = response.json()

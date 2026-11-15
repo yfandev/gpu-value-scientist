@@ -2,6 +2,8 @@
 
 An auditable GPU rental forecasting experiment and static research demo for the Pacific challenge. Published to GitHub as yfandev with explicit user authorization. Credentials and the original data pack are excluded.
 
+Public demo: https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/
+
 ## Run
 
 ```bash
@@ -65,7 +67,7 @@ Create `.env` using `.env.example` and set OPENAI_API_KEY, EXA_API_KEY, PAST_API
 
 Exa is now called inside each round by `src/research_loop.py:research_round`, through `src/evidence.py:LoopResearcher.research`. Before Analyst proposes, Researcher searches with an exclusive publication end date at the next UTC midnight after that round's origin, rejects undated/later/restricted results, and writes cited notes to shared memory. Analyst reads those notes and chooses only fixed method-library candidates. The demo's Sources & sponsors tab links the results, dates, excerpts, and hypotheses. Offline replay uses exact cached searches; a cache miss is unavailable, never a fabricated Exa result. Current-source publication metadata does not prove that an older article was never revised: this limits historical claims, and sources are hypothesis context, never evaluation truth or unverified numerical targets.
 
-Actual production use is audited in `results/sponsor_audit.json`: API fixture tests do not count. past.dev requires multiple successful live writers/readers and evidence that decisions received another agent's retrieved records. We make no accuracy, latency, or cost-gain claim for memory. A repository link remains pending your explicit authorization to create and commit a repository.
+Actual production use is audited in `results/sponsor_audit.json`: API fixture tests do not count. past.dev requires multiple successful live writers/readers and evidence that decisions received another agent's retrieved records. We make no accuracy, latency, or cost-gain claim for memory. The public repository is https://github.com/yfandev/gpu-value-scientist. The original paired memory benchmark and its negative results are in docs/MEMORY_BENCHMARK.md; optimizations are evaluated separately without replacing that record.
 
 For Modal, install `requirements-modal.txt`, then run `./deploy_modal.sh` after setting its token pair. This deploys an independent public static site on Modal, not a tunnel or an Ori private-preview workaround. Run `.venv/bin/python -B tests/check_public.py '<exact URL printed by Modal>'` to verify the homepage, data and forecast download without cookies, authorization, or redirects, and verify secret paths return 404. The current Ori preview fails this anonymous-access test with HTTP 401 and must not be described as a public judges URL.
 

@@ -270,7 +270,7 @@ class IntegrationContractTests(unittest.TestCase):
             self.assertFalse(agents.sponsor_audit(self.events())['multi_agent_live_access'])
 
     def test_openai_error_never_turns_into_fake_success(self):
-        with patch('requests.post',return_value=response({},status=429)):
+        with patch('requests.post',return_value=response({},status=429)), patch('http_retry.time.sleep'):
             runtime=agents.AgentRuntime(self.config,live=True)
             with self.assertRaises(RuntimeError):
                 runtime.call('ANALYST',{'allowed_options':['drift']},{'choice':'drift','reason':'fallback'})

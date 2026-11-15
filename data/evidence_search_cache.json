@@ -1,0 +1,258 @@
+{
+  "a872c80d8b531ccca952f1ce528fe9d2a43d9db1f969f3e3751e7a1a1ea4ecde": {
+    "request": {
+      "query": "NVIDIA H100 H200 Blackwell product announcement launch",
+      "type": "auto",
+      "numResults": 5,
+      "endPublishedDate": "2026-11-07T00:00:00Z",
+      "excludeDomains": [
+        "vast.ai",
+        "runpod.io",
+        "ebay.com",
+        "reddit.com",
+        "gpulist.ai",
+        "cloud-gpus.com",
+        "silicondata.com",
+        "semianalysis.com",
+        "ornn.com",
+        "amcompute.com",
+        "ccir.io",
+        "compute.exchange",
+        "skypilot.co",
+        "dstack.ai"
+      ],
+      "contents": {
+        "highlights": true
+      }
+    },
+    "results": [
+      {
+        "title": "NVIDIA Supercharges Hopper, the World\u2019s Leading AI Computing Platform | NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform",
+        "publication_date": "2023-11-13",
+        "sentence": "# NVIDIA Supercharges Hopper, the World\u2019s Leading AI Computing Platform\n\nHGX H200 Systems and Cloud Instances Coming Soon From World\u2019s Top Server Manufacturers and Cloud Service Providers\n\n November 13, 2023 \n\n \n\nSC23\u2014 NVIDIA today announced it has supercharged the world\u2019s leading AI computing platform with the introduction of the NVIDIA HGX\u2122 H200. Based on NVIDIA Hopper\u2122 architecture, the platform features the NVIDIA H200 Tensor Core GPU with advanced memory to handle massive amounts of data for generative AI and high performance computing workloads.\n\nThe NVIDIA H200 is the first GPU to offer HBM3e \u2014 faster, larger memory to fuel the acceleration of generative AI and large language models, while advancing scientific computing for HPC workloads. With HBM3e, the NVIDIA H200 delivers 141GB of memory at 4.8 terabytes per second, nearly double the capacity and 2.4x more bandwidth compared with its predecessor, the NVIDIA A100.\n\nH200-powered systems from the world\u2019s leading server manufacturers and cloud service providers are expected to begin shipping in the second quarter of 2024.\n\n...\n\nPerpetual Innovation, Perpetual Performance Leaps The NVIDIA Hopper architecture delivers an unprec",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "launches"
+      },
+      {
+        "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing",
+        "publication_date": "2022-03-22",
+        "sentence": "# NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing\n\nThe New Engine for World's AI Infrastructure, NVIDIA H100 GPU Makes Order of Magnitude Performance Leap\n\n March 22, 2022 \n\n \n\nGTC\u2014 To power the next wave of AI data centers, NVIDIA today announced its next-generation accelerated computing platform with NVIDIA Hopper\u2122 architecture, delivering an order of magnitude performance leap over its predecessor.\n\nNamed for Grace Hopper, a pioneering U.S. computer scientist, the new architecture succeeds the NVIDIA Ampere architecture, launched two years ago.\n\nThe company also announced its first Hopper-based GPU, the NVIDIA H100, packed with 80 billion transistors. The world's largest and most powerful accelerator, the H100 has groundbreaking features such as a revolutionary Transformer Engine and a highly scalable NVIDIA NVLink\u00ae interconnect for advancing gigantic AI language models, deep recommender systems, genomics and complex digital twins.\n\n...\n\nBroad NVIDIA H100 Adoption NVIDIA H100 can be deployed in every type of data center, including on-premises, cloud, hybrid-cloud and edge. It is expected to be available worldwide later this year from the world'",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "launches"
+      },
+      {
+        "title": "Nvidia announces GB200 Blackwell AI chip, launching later this year",
+        "url": "https://www.cnbc.com/2024/03/18/nvidia-announces-gb200-blackwell-ai-chip-launching-later-this-year.html",
+        "publication_date": "2024-03-18",
+        "sentence": "Nvidia announces GB200 Blackwell AI chip, launching later this year\n\n# Nvidia CEO Jensen Huang announces new AI chips: 'We need bigger GPUs'\n\nPublished Mon, Mar 18 2024 4:28 PM EDT Updated Mon, Mar 18 2024 5:19 PM EDT\n\nKif Leswing@kifleswing\n\nKey Points\n\n- Nvidia on Monday announced a new generation of artificial intelligence chips and software for running AI models.\n- The new AI graphics processors are named Blackwell and are expected to ship later this year. \n- The announcement comes as companies and software makers still scramble to get their hands on the current generation of H100s and similar chips.\n\n...\n\nNvidia Add To Watchlist on Monday announced a new generation of artificial intelligence chips and software for running artificial intelligence models. The announcement, made during Nvidia's developer's conference in San Jose, comes as the chipmaker seeks to solidify its position as the go-to supplier for AI companies.\n\n...\n\nThe new generation of AI graphics processors is named Blackwell. The first Blackwell chip is called the GB200 and will ship later this year. Nvidia is enticing its customers with more powerful chips to spur new orders. Companies and software makers, for ex",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "launches"
+      },
+      {
+        "title": "NVIDIA Announces DGX H100 Systems \u2013 World\u2019s Most Advanced Enterprise AI Infrastructure | NVIDIA Newsroom",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-dgx-h100-systems-worlds-most-advanced-enterprise-ai-infrastructure",
+        "publication_date": "2022-03-22",
+        "sentence": "# NVIDIA Announces DGX H100 Systems \u2013 World\u2019s Most Advanced Enterprise AI Infrastructure\n\nCombined With New NVLink Switch System, Each DGX SuperPOD to Deliver 1 Exaflops of AI Performance; New NVIDIA Eos Supercomputer Expected to Be World's Fastest AI System; Immediate On-Ramp for Customers via Expanded DGX Foundry Service\n\n March 22, 2022 \n\n \n\nGTC\u2014 NVIDIA today announced the fourth-generation NVIDIA\u00ae DGX\u2122 system, the world\u2019s first AI platform to be built with new NVIDIA H100 Tensor Core GPUs.\n\nDGX H100 systems deliver the scale demanded to meet the massive compute requirements of large language models, recommender systems, healthcare research and climate science. Packing eight NVIDIA H100 GPUs per system, connected as one by NVIDIA NVLink\u00ae, each DGX H100 provides 32 petaflops of AI performance at new FP8 precision \u2014 6x more than the prior generation.\n\nDGX H100 systems are the building blocks of the next-generation NVIDIA DGX POD\u2122 and NVIDIA DGX SuperPOD\u2122 AI infrastructure platforms. The latest DGX SuperPOD architecture features a new NVIDIA NVLink Switch System that can connect up to 32 nodes with a total of 256 H100 GPUs.\n\n...\n\nAvailability NVIDIA DGX H100 systems, DGX PODs and D",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "launches"
+      }
+    ],
+    "rejected": [
+      {
+        "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing/",
+        "reason": "missing or invalid publication date"
+      }
+    ],
+    "request_id": "c0c553459d542f1f841495b39f431d0c"
+  },
+  "0b20d9b0f8b1e6cae3f8a3ef8ca1bd75b30ce7e77a253a4224f8d8479ac85dc6": {
+    "request": {
+      "query": "data center capacity GPU supply electricity infrastructure expansion",
+      "type": "auto",
+      "numResults": 5,
+      "endPublishedDate": "2026-11-07T00:00:00Z",
+      "excludeDomains": [
+        "vast.ai",
+        "runpod.io",
+        "ebay.com",
+        "reddit.com",
+        "gpulist.ai",
+        "cloud-gpus.com",
+        "silicondata.com",
+        "semianalysis.com",
+        "ornn.com",
+        "amcompute.com",
+        "ccir.io",
+        "compute.exchange",
+        "skypilot.co",
+        "dstack.ai"
+      ],
+      "contents": {
+        "highlights": true
+      }
+    },
+    "results": [
+      {
+        "title": "AI Data Center Boom: Can We Build It If They Come? | Bain & Company",
+        "url": "https://www.bain.com/insights/ai-data-center-boom-can-we-build-it-if-they-come-technology-report-2026/",
+        "publication_date": "2026-09-29",
+        "sentence": "| |\n| --- |\n| At a Glance Data centers have become critical infrastructure; Bain projects $5 trillion to $6.5 trillion of buildout, adding about 150 gigawatts or more by 2030. That would nearly triple global capacity over five years, but power, chips, skilled labor, and permitting are all constrained at once. Decisions made today set capacity several years from now, and the shortage won't resolve on its own. Closing the gap will take structural moves (new power and technology, public-private coordination, resource sharing), reshaping the industry. This article is part of Bain\u2019s Technology Report 2026 Explore the report Data centers powering AI have rapidly become a new layer of critical infrastructure worldwide that are central to technology innovation, economic growth, and national sovereignty. US capital investment in data centers as a share of GDP now rivals what it spent building its railroads, telecom networks, and electrical grid: generational projects. The data center boom is moving faster. Five years ago, a 50-megawatt (MW) facility was considered large. Now, hyperscalers are planning to build data center campuses 100 times bigger: 5 gigawatts (GW) or more, costing $150 bil",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "capacity"
+      },
+      {
+        "title": "Global Power Demand Capacity for Data Centers Expected to Rise 31% YoY in 2026; Grid Supply Gap to Widen in 2028, Says TrendForce",
+        "url": "https://www.trendforce.com/presscenter/news/20260916-13237.html",
+        "publication_date": "2026-09-16",
+        "sentence": "By 2030, global data center power demand capacity is projected to reach 490.7 GW. Assuming all other electricity demand is fully met, grid capacity available to data centers is estimated at only 222.6 GW. This leaves a supply-demand gap of 268 GW.",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "capacity"
+      },
+      {
+        "title": "AI Infrastructure Brief: Power, Capital, and Silicon Collide in the Next Phase of the Data Center Buildout | Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/machine-learning/news/55362264/ai-infrastructure-brief-power-capital-and-silicon-collide-in-the-next-phase-of-the-data-center-buildout",
+        "publication_date": "2026-03-06",
+        "sentence": "B&W has received full notice to proceed on a $2.4 billion design-build agreement with Base Electron, an independent power producer (IPP) backed by Applied Digital (NASDAQ: APLD) to deliver 1.2 GW of new generation capacity. The generation is intended to supply power to Applied Digital AI Factory campuses under separate power supply agreements. The project includes four 300-megawatt natural gas-fired boilers and steam turbine generator systems.",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "capacity"
+      },
+      {
+        "title": "2026 Global Data Center Market Outlook",
+        "url": "https://www.jll.com/en-us/insights/market-outlook/data-center-outlook",
+        "publication_date": "2026-01-05",
+        "sentence": "between 2026 and 2030, doubling global ... through 2030, which will require energy innovations to alleviate grid constraints. Hyperscalers will remain a key driver of sector growth, executing a dual strategy of leasing and self-building. \n-",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "capacity"
+      }
+    ],
+    "rejected": [
+      {
+        "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+        "reason": "missing or invalid publication date"
+      }
+    ],
+    "request_id": "fc3c51035f5b05fdf19384a57113c1bf"
+  },
+  "d47405c18e0629fd2c540929183175db4abbb9506c7711e8eb7c540642b705d0": {
+    "request": {
+      "query": "BLS electricity distribution producer price index data center electricity costs",
+      "type": "auto",
+      "numResults": 5,
+      "endPublishedDate": "2026-11-07T00:00:00Z",
+      "excludeDomains": [
+        "vast.ai",
+        "runpod.io",
+        "ebay.com",
+        "reddit.com",
+        "gpulist.ai",
+        "cloud-gpus.com",
+        "silicondata.com",
+        "semianalysis.com",
+        "ornn.com",
+        "amcompute.com",
+        "ccir.io",
+        "compute.exchange",
+        "skypilot.co",
+        "dstack.ai"
+      ],
+      "contents": {
+        "highlights": true
+      }
+    },
+    "results": [
+      {
+        "title": "Trends in electricity prices during the transition away from ...",
+        "url": "https://www.bls.gov/opub/btn/volume-10/trends-in-electricity-prices-during-the-transition-away-from-coal.htm",
+        "publication_date": "2021-05-04",
+        "sentence": "Identifying specific price effects from the transition away from coal is challenging; however the producer price indexes (PPIs) for electric power can be used to compare general trends in price development across generator types and regions, and can be used to learn valuable insights into the early effects of fuel switching in the electric power sector from coal to natural gas and renewable sources. The PPI program measures the average change in prices for industries based on the North American Industry Classification System (NAICS). This article uses industry indexes for NAICS 221110, electric power generation, and NAICS 221122, electric power distribution. 2 For tracking changes in prices for power generation, the PPI distinguishes between prices received by power distribution utilities that also generate electric power and non-utility electric power generators. Utility and non-utility generators differ in scale, integration with electric transmission and distribution networks, and fuel mix. For distribution to end-users, the PPI publishes indexes by end-user and census region. 3\n\n...\n\nBLS calculates the set of industry PPIs for electric power distribution using sample bills that",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "electricity"
+      }
+    ],
+    "rejected": [
+      {
+        "url": "https://data.bls.gov/timeseries/PCU2211--2211--",
+        "reason": "missing or invalid publication date"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/data/PCU22112211",
+        "reason": "missing or invalid publication date"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/tags/series?t=bls%3Belectricity%3Bindustry",
+        "reason": "missing or invalid publication date"
+      },
+      {
+        "url": "https://fred.stlouisfed.org/data/PCU221122221122",
+        "reason": "missing or invalid publication date"
+      }
+    ],
+    "request_id": "f6300f6e4b578f55985a824aa405acee"
+  },
+  "785fa48cd6eb02509cde4207703cebfa9f2a68f4128238ddff9d8630295ef65b": {
+    "request": {
+      "query": "GPU resale depreciation H100 A100 hardware economic useful life",
+      "type": "auto",
+      "numResults": 5,
+      "endPublishedDate": "2026-11-07T00:00:00Z",
+      "excludeDomains": [
+        "vast.ai",
+        "runpod.io",
+        "ebay.com",
+        "reddit.com",
+        "gpulist.ai",
+        "cloud-gpus.com",
+        "silicondata.com",
+        "semianalysis.com",
+        "ornn.com",
+        "amcompute.com",
+        "ccir.io",
+        "compute.exchange",
+        "skypilot.co",
+        "dstack.ai"
+      ],
+      "contents": {
+        "highlights": true
+      }
+    },
+    "results": [
+      {
+        "title": "Productive, Durable, Fungible: How NVIDIA AI Factories ...",
+        "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+        "publication_date": "2026-10-01",
+        "sentence": "The NVIDIA A100 GPU shipped in 2020 and is still in commercial service six years later, demonstrating its continued economic value; CoreWeave recently extended bookings for units first introduced in 2020 through 2029. Over the years, every major operator has extended the depreciation schedule on its servers, which is a guess about when hardware stops earning, and one that keeps moving out. A September 2026 Sprout analysis, \u201c The Productive Life of a Data Center GPU,\u201d tracks how that schedule has shifted across every major operator.\n\n### Disclosed Server Depreciation Life\n\n| Operator | Prior | Current |\n| --- | --- | --- |\n| Amazon (AWS) | 3 Years | 5-6 Years |\n| Microsoft | 4 Years | 6 Years |\n| Google | 3-4 Years | 6 Years |\n| Meta | 3 Years | 5.5 Years |\n| CoreWeave | - | 6 Years |\n\nEvery major operator has extended server life. Source: Sprout, \u201cThe Productive Life of a Data Center GPU,\u201d September 2026. Data based on company disclosures and press reporting compiled by Sprout. Accounting life is a conservative proxy for physical life \u2014 Microsoft\u2019s NVIDIA V100 fleet ran 8.4 years against a six-year book life.\n\nBarkr puts useful life at five to six years for an eight-GPU H100 system",
+        "source": "exa",
+        "note_type": "search result excerpt",
+        "use": "Narrative context only; publication metadata is search-provider supplied.",
+        "category": "resale"
+      }
+    ],
+    "rejected": [
+      {
+        "url": "https://dilikogluresearch.com/reports/old-gpu-worth-2026-10-29/pdf",
+        "reason": "missing or invalid publication date"
+      }
+    ],
+    "request_id": "f08667844bacf9d092e46253626dfb76"
+  }
+}

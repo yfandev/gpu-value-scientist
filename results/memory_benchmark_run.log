@@ -1,0 +1,103 @@
+q04 past_dev exact_match True seconds 1.848
+q04 full_context exact_match True seconds 1.18
+q05 past_dev exact_match False seconds 1.546
+q05 full_context exact_match False seconds 1.781
+q07 full_context exact_match False seconds 1.123
+q07 past_dev exact_match False seconds 1.547
+q08 past_dev exact_match False seconds 1.543
+q08 full_context exact_match False seconds 1.072
+q03 past_dev exact_match False seconds 1.507
+q03 full_context exact_match False seconds 1.077
+q06 past_dev exact_match False seconds 1.45
+q06 full_context exact_match False seconds 1.174
+q01 past_dev exact_match True seconds 1.507
+q01 full_context exact_match True seconds 1.279
+q02 past_dev exact_match False seconds 1.621
+q02 full_context exact_match False seconds 1.126
+{
+  "arms": {
+    "full_context": {
+      "n_trials": 8,
+      "exact_match_accuracy": 0.25,
+      "record_id_accuracy": 0.25,
+      "median_end_to_end_seconds": 1.1497624174999146,
+      "mean_end_to_end_seconds": 1.2264287467498889,
+      "median_retrieval_seconds": 0.0009183340002891782,
+      "prompt_tokens": 179928,
+      "completion_tokens": 376,
+      "total_model_tokens": 180304
+    },
+    "past_dev": {
+      "n_trials": 8,
+      "exact_match_accuracy": 0.25,
+      "record_id_accuracy": 0.25,
+      "median_end_to_end_seconds": 1.5444796889992176,
+      "mean_end_to_end_seconds": 1.5712008154997648,
+      "median_retrieval_seconds": 0.7130309434996889,
+      "prompt_tokens": 49681,
+      "completion_tokens": 374,
+      "total_model_tokens": 50055
+    }
+  },
+  "paired_question_differences": [
+    {
+      "question_id": "q01",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.22825128799922823
+    },
+    {
+      "question_id": "q02",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.49540928900023573
+    },
+    {
+      "question_id": "q03",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.4306395389994577
+    },
+    {
+      "question_id": "q04",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.6679811950007206
+    },
+    {
+      "question_id": "q05",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": -0.234961220000514
+    },
+    {
+      "question_id": "q06",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.2765894450003543
+    },
+    {
+      "question_id": "q07",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.4236035069998252
+    },
+    {
+      "question_id": "q08",
+      "accuracy_difference": 0,
+      "latency_difference_seconds": 0.47066350699969917
+    }
+  ],
+  "past_dev_accuracy_difference": 0.0,
+  "past_dev_mean_latency_difference_seconds": 0.34477206874987587,
+  "past_dev_prompt_token_reduction_fraction": 0.723883998043662,
+  "accuracy_improved": false,
+  "mean_latency_improved": false,
+  "total_cost_reduction_verified": false,
+  "all_three_sponsor_gains_verified": false,
+  "cost_note": "Token counts are not monetary cost. past.dev lists 1 credit/350 ingested bytes rounded per data point, plus recall charges depending on plan; model caching and account billing also matter. No account billing reconciliation performed.",
+  "limitations": [
+    "Eight related research questions from one small corpus; not a general benchmark.",
+    "Single repetition by default; randomized paired order reduces but cannot remove network and model latency noise.",
+    "The baseline receives complete admitted context without truncation; retrieval receives the same temporal eligibility and can omit records.",
+    "Exact-match memory QA is not GPU forecast accuracy. No claim that memory improves pinball loss follows.",
+    "Existing corpus ingestion cost, retrieval charges, subscription fees and local compute are not reconciled into dollars."
+  ],
+  "pricing_source": {
+    "url": "https://past.dev/pricing.md",
+    "accessed_date": "2026-11-15"
+  }
+}

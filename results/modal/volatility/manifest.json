@@ -1,0 +1,15 @@
+{
+  "id": "volatility",
+  "spec": {
+    "id": "volatility",
+    "method": "volatility",
+    "parameters": {
+      "window": 28,
+      "scale_min": 0.5,
+      "scale_max": 2.0
+    }
+  },
+  "elapsed_seconds": 1.8004441219999996,
+  "input_sha256": "311ee41153f73c852c6105879c889605393ed6778cc044a22f85e306eec5c442",
+  "scorer_sha256": "38f197e966169d898b5b209e83bcf1c26b0cf5a3a5116e51d9a40aed5875037b"
+}

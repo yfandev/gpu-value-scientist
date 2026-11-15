@@ -49,14 +49,14 @@ def check(url: str, artifacts: Path):
         if rounds:
             assert page.locator('#learning-chart svg').count() == 1
             page.locator('#reset').click()
-            assert 'REPLAY READY' in page.locator('#round-label').inner_text()
+            assert 'READY TO REPLAY' in page.locator('#round-label').inner_text()
             page.locator('#step').click()
-            assert 'ROUND 01' in page.locator('#round-label').inner_text()
+            assert 'TEST 1 OF' in page.locator('#round-label').inner_text()
             if len(rounds) > 2:
                 page.locator('#play').click()
                 page.wait_for_timeout(1550)
                 page.locator('#play').click()
-                assert 'ROUND 03' in page.locator('#round-label').inner_text()
+                assert 'TEST 3 OF' in page.locator('#round-label').inner_text()
             checks.append('Recorded learning curve reset, step, play, pause')
 
         page.get_by_role('tab', name='Research log').click()

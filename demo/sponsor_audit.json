@@ -1,0 +1,79 @@
+{
+  "exa": {
+    "status": "recorded_verified",
+    "live_main_loop_calls": 0,
+    "source_bearing_rounds": 13,
+    "analyst_decisions_receiving_sources": 14,
+    "code": "src/research_loop.py:research_round -> src/evidence.py:LoopResearcher.research",
+    "repo_link": "https://github.com/yfandev/gpu-value-scientist"
+  },
+  "past_dev": {
+    "live_writers": [],
+    "live_readers": [],
+    "multi_agent_live_access": false,
+    "performance_gains_verified": false,
+    "note": "Live access is not proof of accuracy, latency or cost gains; compare matched tasks and record API usage separately.",
+    "cross_agent_live_reads": 0,
+    "decisions_receiving_cross_agent_live_memory": 0,
+    "sponsor_requirements_verified": false,
+    "verified_requirement_scope": "Multi-agent writes, reads and cross-agent use only; accuracy/latency/cost gains are evaluated separately."
+  },
+  "modal": {
+    "requested_backend": "modal",
+    "actual_backend": "modal",
+    "fallback_reason": null,
+    "n_jobs": 8,
+    "wall_seconds": 28.570309392000127,
+    "modal_parallelism_limit": 8,
+    "claim": "Real Modal Function.map execution"
+  },
+  "originator": {
+    "status": "built_in_ori",
+    "note": "Work conducted in this hackwithori.com cloud workspace; judging and session submission not verified."
+  },
+  "recorded_live_run": {
+    "status": "matched_exact_live_run",
+    "fingerprint": "a16afb93e9c2378f0c6b26b35ebe90cafbb1375e16083abe27b5a6cddd6daa5a",
+    "path": "results/live_runs/a16afb93e9c2378f0c6b26b35ebe90cafbb1375e16083abe27b5a6cddd6daa5a/receipt.json",
+    "sponsors": {
+      "exa": {
+        "status": "live_verified",
+        "live_main_loop_calls": 13,
+        "source_bearing_rounds": 13,
+        "analyst_decisions_receiving_sources": 14,
+        "code": "src/research_loop.py:research_round -> src/evidence.py:LoopResearcher.research",
+        "repo_link": "pending user authorization; no Git commits or remote created"
+      },
+      "past_dev": {
+        "live_writers": [
+          "ANALYST",
+          "CRITIC",
+          "RESEARCHER"
+        ],
+        "live_readers": [
+          "ANALYST",
+          "FORECASTER"
+        ],
+        "multi_agent_live_access": true,
+        "performance_gains_verified": false,
+        "note": "Live access is not proof of accuracy, latency or cost gains; compare matched tasks and record API usage separately.",
+        "cross_agent_live_reads": 29,
+        "decisions_receiving_cross_agent_live_memory": 70,
+        "sponsor_requirements_verified": true
+      },
+      "modal": {
+        "requested_backend": "modal",
+        "actual_backend": "modal",
+        "fallback_reason": null,
+        "n_jobs": 8,
+        "wall_seconds": 28.570309392000127,
+        "modal_parallelism_limit": 8,
+        "claim": "Real Modal Function.map execution"
+      },
+      "originator": {
+        "status": "built_in_ori",
+        "note": "Work conducted in this hackwithori.com cloud workspace; judging and session submission not verified."
+      }
+    }
+  }
+}

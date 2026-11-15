@@ -14,7 +14,7 @@ Track
 Recursive Self-Improvement by Pacific — Direction A: self-improving GPU price forecasts.
 
 Challenges
-- Exa: actual main-loop calls and source-to-hypothesis trail verified; repository link still required.
+- Exa: actual main-loop calls and source-to-hypothesis trail verified; public repository available at https://github.com/yfandev/gpu-value-scientist.
 - Modal: eight actual remote experiment jobs and public demo deployment verified.
 - past.dev: multiple live writers/readers and cross-agent use verified. The detailed brief says gains are not required; the form says to prove accuracy/latency/cost gains. Those gains are NOT established. Do not claim them.
 
@@ -22,7 +22,7 @@ Project Screenshot
 Pending final 1920×1080 capture of the updated public demo.
 
 GitHub URL
-Not created: the user's explicit no-commit/no-remote/no-push rule remains in force.
+https://github.com/yfandev/gpu-value-scientist
 
 Public website
 https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/

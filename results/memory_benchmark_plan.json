@@ -1,0 +1,180 @@
+{
+  "config_sha256": "91fbdf53b761954a75785bf6776b8d95afad18832550e23cf5a587a69334bc09",
+  "cost_policy": "Report provider usage tokens. Total monetary cost and savings unverified; past.dev ingestion/recall/subscription charges are not zero.",
+  "created_utc": "2026-11-15T17:53:32.686653+00:00",
+  "model": "gpt-4.1-mini",
+  "n_snapshot_entries": 48,
+  "namespace": "gvs-91fbdf53b761954a",
+  "primary_accuracy": "Exact match of canonical record_id, candidate, and verdict.",
+  "primary_latency": "Measured retrieval + model request wall time, excluding cache/disk persistence.",
+  "protocol_version": 1,
+  "questions": [
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+        "verdict": "not_applicable"
+      },
+      "group": "hyperscaler_spot",
+      "id": "q01",
+      "kind": "hypothesis",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest hypothesis for instrument group hyperscaler_spot?"
+    },
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+        "verdict": "rejected"
+      },
+      "group": "hyperscaler_spot",
+      "id": "q02",
+      "kind": "verdict",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest verdict for instrument group hyperscaler_spot?"
+    },
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+        "verdict": "not_applicable"
+      },
+      "group": "marketplace_ask",
+      "id": "q03",
+      "kind": "hypothesis",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest hypothesis for instrument group marketplace_ask?"
+    },
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+        "verdict": "rejected"
+      },
+      "group": "marketplace_ask",
+      "id": "q04",
+      "kind": "verdict",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest verdict for instrument group marketplace_ask?"
+    },
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+        "verdict": "not_applicable"
+      },
+      "group": "neocloud_rate_card",
+      "id": "q05",
+      "kind": "hypothesis",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest hypothesis for instrument group neocloud_rate_card?"
+    },
+    {
+      "expected": {
+        "candidate": "volatility",
+        "record_id": "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+        "verdict": "rejected"
+      },
+      "group": "neocloud_rate_card",
+      "id": "q06",
+      "kind": "verdict",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest verdict for instrument group neocloud_rate_card?"
+    },
+    {
+      "expected": {
+        "candidate": "last_value_empirical",
+        "record_id": "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+        "verdict": "not_applicable"
+      },
+      "group": "neocloud_spot",
+      "id": "q07",
+      "kind": "hypothesis",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest hypothesis for instrument group neocloud_spot?"
+    },
+    {
+      "expected": {
+        "candidate": "calibrated",
+        "record_id": "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+        "verdict": "rejected"
+      },
+      "group": "neocloud_spot",
+      "id": "q08",
+      "kind": "verdict",
+      "origin": "2026-10-14",
+      "text": "As of 2026-10-14, what is the latest verdict for instrument group neocloud_spot?"
+    }
+  ],
+  "repetitions": 1,
+  "schedule": [
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q04",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q05",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "full_context",
+        "past_dev"
+      ],
+      "question_id": "q07",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q08",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q03",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q06",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q01",
+      "repetition": 0
+    },
+    {
+      "arms": [
+        "past_dev",
+        "full_context"
+      ],
+      "question_id": "q02",
+      "repetition": 0
+    }
+  ],
+  "scope": "All canonical records with origin <= question origin, without baseline truncation.",
+  "seed": 42,
+  "snapshot_sha256": "749ba15dff049f658ef45d40c538e192ea3dd1e10ef12bbd2b16feb99d8771ba",
+  "temperature": 0
+}

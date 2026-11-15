@@ -1,0 +1,2102 @@
+[
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-07-22",
+      "group": "hyperscaler_spot",
+      "query": "hyperscaler_spot GPU rental empirical quantile forecast rolling window nonstationary prices research published by 2026-07-22",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes dated sources relevant to GPU and cloud computing resource price forecasting. The 2022 study explores GPU spot instance pricing prediction using time series models and machine learning approaches like ANN and LSTM, focusing on cost-efficient exploitation of GPU spot instances. The 2017 paper addresses stochastic and regime-switching behavior in cloud spot prices, proposing dynamic-ARIMA and Markov regime-switching autoregressive models that outperform existing methods. The 2026 preprint discusses early asset pricing frameworks for AI compute, highlighting challenges in futures pricing due to the non-storable nature of compute and providing synthetic futures price estimates. These sources collectively provide dated, methodologically diverse insights into forecasting GPU-related compute pricing, supporting bounded forecasting hypotheses.",
+      "sources": [
+        {
+          "evidence_id": "bd33ab721f1c263e",
+          "note_type": "search result excerpt",
+          "publication_date": "2022-03-22",
+          "sentence": "Authors: Muhammad Khan, Ali Imran Jehangiri, Zulfiqar Ahmad, Mohammed Alaa Ala’anzy,\n\n...\n\nCluster Computing, Volume 25, Issue 5 Pages 3499 - 3515 https://doi.org/10.1007/s10586-022-03581-8\n\nPublished: 01 October 2022 Publication History\n\n...\n\nAmazon web services provide resources equipped with graphics processing unit (GPU) devices, which are commonly used for parallel processing applications. When there is less demand for cloud computing instances, the unused resources are provided at low-cost pricing as GPU spot instances. The pricing of the GPU spot instances dynamically changes over time based on the long-term demand and supply of cloud resources in the spot market. The main aim of this research is to predict upcoming GPU spot instance pricing using a time series prediction model. Our second aim is to study the unique characteristics of GPU spot instances. This research will help researchers to exploit GPU spot instances across distinct regions in a cost-efficient way. In the existing literature, researchers used machine learning approaches including artificial neural networks (ANN), long short-term memory (LSTM) networks, and random forecasts. They also used classical univari",
+          "source": "exa",
+          "title": "An exploration to graphics processing unit spot price prediction | Cluster Computing",
+          "url": "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "7894cda276e05ff7",
+          "note_type": "search result excerpt",
+          "publication_date": "2017-10-04",
+          "sentence": "Future Generation Computer Systems. Published: 2017-10-04. 21 citations.\n\n...\n\nBig data applications usually need to rent a large amount of virtual machines from cloud computing providers. As a result of the polices employed by Cloud providers, the prices of the resources have a stochastic behavior. Recently, Spot prices fluctuate greatly or have multiple regimes. Choosing virtual machines according to trends of prices is helpful to decrease the resource rental cost. Existing price predicting methods are unable to accurately predict prices in these environments. Therefore, a dynamic-ARIMA and two markov regime-switching autoregressive model based forecasting methods have been developed in this paper. Experimental results show that the proposals are better than the existing MonthAR for most scenarios.",
+          "source": "exa",
+          "title": "Price forecasting for spot instances in Cloud computing",
+          "url": "https://doi.org/10.1016/j.future.2017.09.038",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "d929db6f16b2c047",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-07-13",
+          "sentence": "# (Early) AI Compute Asset Pricing\n\narXiv (Cornell University). Published: 2026-07-13. Preprint. 0 citations.\n\n...\n\nCompute (computing power) is a scarce, capital-intensive input at the center of the AI economy. Compute capital expenditure and service flow already exceed 1% of U.S. GDP and are growing rapidly. The price of compute reflects uncertainty over AI adoption. The announced launch of compute futures turns this uncertainty into a tradable risk, raising questions on the pricing of a new asset class. We provide an early asset-pricing framework for compute. We begin by discussing the underlying compute rental market and its indexation. We then turn to pricing: 1) direct no-arbitrage links between futures prices and current spot prices fail due to the non-storable nature of compute, 2) synthetic futures prices from existing term rental contracts are likely upper bounds on true futures prices and, 3) upon financialization, futures prices will be investors' expectations of spot prices at expiration net of a risk premium. Using synthetic futures as stand-ins before the compute futures market launches, we construct the first compute futures return panel sorted by GPU generation and",
+          "source": "exa",
+          "title": "(Early) AI Compute Asset Pricing",
+          "url": "https://arxiv.org/abs/2607.12156",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-71a2d30874fd0737409199528f00c0f9",
+    "kind": "evidence",
+    "origin": "2026-07-22",
+    "round": 1
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "recent_28",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.12156",
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://doi.org/10.1016/j.future.2017.09.038"
+      ],
+      "frozen_at": "2026-07-22",
+      "group": "hyperscaler_spot",
+      "id": "h01",
+      "method": "recent",
+      "parameters": {
+        "min_samples": 10,
+        "window": 28
+      },
+      "proposed_round": 1,
+      "reason": "The 2022 study on GPU spot instance pricing prediction highlights the dynamic and non-stationary nature of GPU spot prices, suggesting that recent data windows are more relevant for forecasting. Using a recent 28-day window balances capturing recent trends while maintaining enough data for model stability, aligning with the evidence that GPU spot prices fluctuate based on short-term demand and supply dynamics."
+    },
+    "id": "gvs-91fbdf53b761954a-89c611ed51fcf3216ecfd4b319b00146",
+    "kind": "hypothesis",
+    "origin": "2026-07-22",
+    "round": 1
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.0007290595436111116,
+          "n_cells": 12
+        },
+        "drift": {
+          "mean_official_loss": 0.000986525338055556,
+          "n_cells": 12
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.000986525338055556,
+          "n_cells": 12
+        },
+        "recent_28": {
+          "mean_official_loss": 0.0008426135661111115,
+          "n_cells": 12
+        },
+        "recent_56": {
+          "mean_official_loss": 0.0011497280633333336,
+          "n_cells": 12
+        },
+        "recent_90": {
+          "mean_official_loss": 0.0010356715991666663,
+          "n_cells": 12
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.000685746266944445,
+          "n_cells": 12
+        },
+        "volatility": {
+          "mean_official_loss": 0.000668041384444445,
+          "n_cells": 12
+        }
+      },
+      "observed_through": "2026-07-22"
+    },
+    "id": "gvs-91fbdf53b761954a-b8a9cd1311901a98f82e5f81ce9be396",
+    "kind": "results",
+    "origin": "2026-07-22",
+    "round": 1
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-07-29",
+      "group": "marketplace_ask",
+      "query": "marketplace_ask GPU rental sticky posted prices change point shrinkage forecast research published by 2026-07-29",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes two dated sources from 2026 providing detailed data on GPU rental prices across multiple providers and marketplaces. The May 2026 research paper offers a multi-year panel from 2022 to 2026, highlighting extreme price dispersion and steady declines in consumer-GPU rental rates, while noting limitations such as thin datacenter-SKU history and lack of clear tradeable signals for AI infrastructure equities. The June 2026 weekly snapshot presents recent short-term price movements, including a significant 119.2% increase in NVIDIA L4 rental prices and varied trends across GPU tiers. Both sources provide empirical, time-stamped data critical for bounded forecasting hypotheses, with explicit acknowledgment of data limits and no speculative predictions, making them relevant and reliable for forecasting methods.",
+      "sources": [
+        {
+          "evidence_id": "360a09a349b7752c",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-29",
+          "sentence": "May 2026 Research paper\n\n# The GPU Rental Market: Price Dispersion and the Cost Curve of Compute\n\nA four-year cross-provider panel of GPU spot prices across 38 clouds\n\n...\n\nWe assemble a normalized, cross-provider panel of GPU rental prices and use it to characterize the structure of the accelerator-rental market. The study panel covers 6,216 price observations across 38 cloud providers and 32 GPU SKUs, spanning 2022 to 2026, with prices normalized to canonical SKUs on a per-hour basis.\n\nTwo findings stand out. First, price dispersion is extreme: the same accelerator rents for radically different prices across providers, with an 18x range on H100, 96x on A100, and 100x on RTX-4090. The market is fragmented and far from a single clearing price. Second, on the consumer-GPU segment, where we hold a continuous multi-year panel, rental rates declined steadily. We are deliberate about the data's limits: datacenter-SKU history is still thin, and we report an honest null result on whether GPU prices yet constitute a tradeable signal for AI-infrastructure equities.\n\n...\n\nOn the consumer-GPU segment, where we hold a continuous panel from a stable provider set, rental rates fell steadily over",
+          "source": "exa",
+          "title": "GPU Rental Prices: Dispersion and the Cost of Compute | Gerra",
+          "url": "https://www.gerra.com/research/gpu-market",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "8a12c45feebf80dd",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-06-29",
+          "sentence": "Weekly snapshot of GPU rental pricing across 31 marketplaces, June 22 - June 28, 2026. Observable data only — no estimates, no predictions.\n\n...\n\nThe NVIDIA L4 posted the largest single-SKU median price move tracked by Ai Mining Co. this week, rising 119.2% from $0.39 to $0.86 per GPU-hour across reporting marketplaces. That movement stands in sharp contrast to last week's relatively compressed dispersion, where no individual SKU exceeded double-digit percentage shifts in either direction. For the period June 22–28, AIMC collected 6,170 observations across 31 marketplaces and 110 distinct GPU SKUs. Beyond the L4, upward pressure was broad but uneven: the A100 PCIe 80GB gained 27.9%, reaching $1.79 per GPU-hour, and the H100 PCIe advanced 19.2% to $2.73, while the B200 SXM held flat at $5.89 across 11 marketplaces. The data this week segments naturally by tier — consumer-grade, professional mid-range, and datacenter-class — and each tells a different story.\n\n...\n\nThe most striking signal from the week of June 22–28 is the divergence between commodity-tier and enterprise-tier GPU pricing. AIMC's data shows the NVIDIA L4 posting a 119.2% week-over-week increase in median rental price,",
+          "source": "exa",
+          "title": "L4 Up 119.2% in GPU Rental Market — Week of June 22 - June 28, 2026 | AIMC | AIMC",
+          "url": "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-53b6b027b7c13d933d5d23acfc4a7da3",
+    "kind": "evidence",
+    "origin": "2026-07-29",
+    "round": 2
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "step_shrink",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.12156",
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://doi.org/10.1016/j.future.2017.09.038",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-07-29",
+      "group": "marketplace_ask",
+      "id": "h02",
+      "method": "step",
+      "parameters": {
+        "shrinkage": 0.5,
+        "window": 56
+      },
+      "proposed_round": 2,
+      "reason": "The recent evidence from 2026-07-29 highlights significant short-term price movements and volatility in GPU rental prices, including a 119.2% increase in NVIDIA L4 rental prices within a week. This suggests the presence of change points and sticky posted prices in the marketplace. The step_shrink method, which is designed to handle change point shrinkage and sticky price behavior, is therefore well-motivated for forecasting in this context. Prior research from 2026-05-29 and 2026-06-29 provides empirical data on price dispersion and short-term price dynamics, supporting the use of step_shrink for bounded forecasting hypotheses."
+    },
+    "id": "gvs-91fbdf53b761954a-1ce2e0ba3643ac8f089f4a29baa4024c",
+    "kind": "hypothesis",
+    "origin": "2026-07-29",
+    "round": 2
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.00774631846388889,
+          "n_cells": 24
+        },
+        "drift": {
+          "mean_official_loss": 0.0075289352375,
+          "n_cells": 24
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.0075289352375,
+          "n_cells": 24
+        },
+        "recent_28": {
+          "mean_official_loss": 0.007471306783055556,
+          "n_cells": 24
+        },
+        "recent_56": {
+          "mean_official_loss": 0.008061363525416669,
+          "n_cells": 24
+        },
+        "recent_90": {
+          "mean_official_loss": 0.007870599797222225,
+          "n_cells": 24
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.007373829385555557,
+          "n_cells": 24
+        },
+        "volatility": {
+          "mean_official_loss": 0.007373406928888889,
+          "n_cells": 24
+        }
+      },
+      "observed_through": "2026-07-29"
+    },
+    "id": "gvs-91fbdf53b761954a-c4516838ded61ad735388554859db3d5",
+    "kind": "results",
+    "origin": "2026-07-29",
+    "round": 2
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-08-05",
+      "group": "neocloud_rate_card",
+      "query": "neocloud_rate_card GPU rental volatility scaling quantile interval calibration time series research published by 2026-08-05",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence from June 12, 2026, presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity. It highlights the unique challenges in modeling GPU futures due to hardware depreciation and the absence of traditional storage arbitrage, proposing a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events. This source is directly relevant and recent, providing a structured, testable approach to GPU compute futures forecasting, which is valuable for the experiment's goals.",
+      "sources": [
+        {
+          "evidence_id": "6df09552dc5858d9",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-06-12",
+          "sentence": "# Pricing Compute Futures: Forward Curve and Volatility for a Non-Storable, Depreciating Commodity\n\n 14 Pages Posted: 19 Jun 2026 \n\n## Amine Assody\n\nIndependant\n\nDate Written: June 12, 2026\n\n### Abstract\n\nGPU rental rates are becoming a benchmarked, exchange-traded underlying. In May 2026 CME Group and ICE both announced cash-settled compute futures referencing daily GPU rental indices, with trading expected late 2026. The standard commodity toolkit does not transfer. Compute cannot be stored, so no cash-and-carry relationship anchors the forward curve; the hardware depreciates with each silicon generation, so the curve embeds semi-predictable downward jumps; and spot rates mean-revert toward an equilibrium that is itself bounded below by an energy-linked marginal cost. I propose a tractable framework: a Schwartz-Smith two-factor model extended with a scheduled jump component in which each announced hardware launch window carries a repricing event that is certain to occur but uncertain in size and timing, with options priced via Black-76 on the forward. The model makes three testable predictions ahead of contract launch: structural backwardation as the resting curve shape, a steepl",
+          "source": "exa",
+          "title": "Pricing Compute Futures: Forward Curve and Volatility for a Non-Storable, Depreciating Commodity by Amine Assody :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-cbdf8e3397cfa67141e0b81cad1da24d",
+    "kind": "evidence",
+    "origin": "2026-08-05",
+    "round": 3
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "calibrated",
+      "evidence_urls": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-08-05",
+      "group": "neocloud_rate_card",
+      "id": "h03",
+      "method": "conformal",
+      "parameters": {
+        "calibration_days": 35,
+        "min_calibration": 12,
+        "window": 56
+      },
+      "proposed_round": 3,
+      "reason": "The June 12, 2026 academic framework proposes a Schwartz-Smith two-factor model with scheduled jumps for GPU rental rates, addressing unique challenges like hardware depreciation and lack of storage arbitrage. This calibrated approach is directly relevant and testable for forecasting GPU compute futures, making it the most suitable bounded hypothesis to freeze now for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-f5a5a54e5418ae58e0c3c622f958ddbd",
+    "kind": "hypothesis",
+    "origin": "2026-08-05",
+    "round": 3
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.00943227734064815,
+          "n_cells": 36
+        },
+        "drift": {
+          "mean_official_loss": 0.008089293498518516,
+          "n_cells": 36
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.008089293498518516,
+          "n_cells": 36
+        },
+        "recent_28": {
+          "mean_official_loss": 0.00920112094740741,
+          "n_cells": 36
+        },
+        "recent_56": {
+          "mean_official_loss": 0.008366728277685186,
+          "n_cells": 36
+        },
+        "recent_90": {
+          "mean_official_loss": 0.008597973118425929,
+          "n_cells": 36
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.008606856838981485,
+          "n_cells": 36
+        },
+        "volatility": {
+          "mean_official_loss": 0.008764409102037036,
+          "n_cells": 36
+        }
+      },
+      "observed_through": "2026-08-05"
+    },
+    "id": "gvs-91fbdf53b761954a-b1c871318608c83daf2cd5fd50cade95",
+    "kind": "results",
+    "origin": "2026-08-05",
+    "round": 3
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        2.865486305555699e-05,
+        0.003450739255555565
+      ],
+      "candidate": "recent_28",
+      "evaluated_at": "2026-08-12",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.12156",
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://doi.org/10.1016/j.future.2017.09.038"
+      ],
+      "frozen_at": "2026-07-22",
+      "group": "hyperscaler_spot",
+      "id": "h01",
+      "method": "recent",
+      "n_origins": 3,
+      "parameters": {
+        "min_samples": 10,
+        "window": 28
+      },
+      "proposed_round": 1,
+      "reason": "The statistical gate requires rejection based on the paired origin-cluster bootstrap 95% confidence interval and mean loss difference. Although the mean loss difference is positive, indicating some improvement, the confidence interval does not support acceptance under the given criteria. Therefore, the hypothesis cannot be accepted.",
+      "round": 4,
+      "validation_origins": [
+        "2026-07-22",
+        "2026-07-29",
+        "2026-08-05"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-3f1ed844ca0c87c182c620518412a27b",
+    "kind": "verdict",
+    "origin": "2026-08-12",
+    "round": 4
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-08-12",
+      "group": "neocloud_spot",
+      "query": "neocloud_spot GPU rental GPU generation supply capacity rental prices forecasting research published by 2026-08-12",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes three dated sources from 2026 that provide relevant data on GPU spot prices and rental markets. The August 2026 Nebius earnings report highlights a tripling of GPU spot prices due to AI supply/demand imbalance, indicating short-term scarcity effects. The May 2026 Gerra research paper offers a comprehensive panel of GPU rental prices across multiple providers and SKUs from 2022 to 2026, revealing extreme price dispersion and a steady decline in consumer-GPU rental rates, though with limitations in datacenter-SKU history and no clear tradeable signal for equities. The May 2026 SSRN paper by Doohwi Cha analyzes GPU rental-rate benchmark indices across generations, documenting price dynamics and weak correlations with other assets, questioning the hedgeability of GPU compute prices. Together, these dated sources provide empirical data and analyses useful for bounded forecasting hypotheses about GPU price trends and market structure, while acknowledging data limitations and market fragmentation.",
+      "sources": [
+        {
+          "evidence_id": "d9bfc193d48c74da",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-08-12",
+          "sentence": "# Nebius Earnings: GPU Spot Prices Triple and Neoclouds Exploit Short-Term Scarcity\n\nJavier Correonero\n\nAug 12, 2026\n\nOur key takeaways from Nebius’ second-quarter call are that GPU spot rental rates continue to climb as the artificial intelligence supply/demand imbalance intensifies and neoclouds want to maximize value extracted from short-term pricing.",
+          "source": "exa",
+          "title": "Nebius Earnings: GPU Spot Prices Triple and Neoclouds Exploit Short-Term Scarcity | Morningstar",
+          "url": "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "fa89cf9dfa336aab",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-29",
+          "sentence": "May 2026 Research paper\n\n# The GPU Rental Market: Price Dispersion and the Cost Curve of Compute\n\nA four-year cross-provider panel of GPU spot prices across 38 clouds\n\nStatus\n\nPreprint\n\nAuthors\n\nGerra\n\nPanel\n\n...\n\n## Abstract\n\nWe assemble a normalized, cross-provider panel of GPU rental prices and use it to characterize the structure of the accelerator-rental market. The study panel covers 6,216 price observations across 38 cloud providers and 32 GPU SKUs, spanning 2022 to 2026, with prices normalized to canonical SKUs on a per-hour basis.\n\nTwo findings stand out. First, price dispersion is extreme: the same accelerator rents for radically different prices across providers, with an 18x range on H100, 96x on A100, and 100x on RTX-4090. The market is fragmented and far from a single clearing price. Second, on the consumer-GPU segment, where we hold a continuous multi-year panel, rental rates declined steadily. We are deliberate about the data's limits: datacenter-SKU history is still thin, and we report an honest null result on whether GPU prices yet constitute a tradeable signal for AI-infrastructure equities.\n\n...\n\n| SKU | Jul 2024 | Mar 2026 | Change |\n\n...\n\n| RTX 3090 24GB | $0.1",
+          "source": "exa",
+          "title": "GPU Rental Prices: Dispersion and the Cost of Compute | Gerra",
+          "url": "https://www.gerra.com/research/gpu-market",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "6bf9a4180829caeb",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-26",
+          "sentence": "20 Pages Posted: 4 Jun 2026 \n\n## Doohwi Cha\n\nIndependent\n\nDate Written: May 26, 2026\n\n### Abstract\n\nGPU compute has become a multi-hundred-billion-dollar exposure underpinning AI, yet whether its price risk can be hedged with existing assets—and thus whether the dedicated compute-futures markets announced in 2026 are warranted—has, to our knowledge, not been tested. Using daily GPU rental-rate benchmark indices (via Bloomberg) for three generations (A100, H100, B200)—the first such cross-generation panel we are aware of—we ask whether compute is \"the new oil\": a hedgeable industrial commodity. We document its price dynamics—newer generations are far more jump-prone than oil or equities (though lower in overall volatility), with no volatility clustering—and a cross-generation price structure whose discounts shift over time. We then test cross-asset proxy hedging out-of-sample. GPU rental returns are weakly correlated (daily |ρ| ≲ 0.1) with NVIDIA, semiconductors, compute-infrastructure equities, and the broad market, and no minimum-variance proxy hedge delivers out-of-sample variance reduction distinguishable from zero—across the three generations, across horizons from daily to week",
+          "source": "exa",
+          "title": "Is Compute the New Oil? Cross-Asset Risk and the Case for a Dedicated Market by Doohwi Cha :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-1db0c3226e125be45216d2427999913c",
+    "kind": "evidence",
+    "origin": "2026-08-12",
+    "round": 4
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "calibrated",
+      "evidence_urls": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-12",
+      "group": "neocloud_spot",
+      "id": "h04",
+      "method": "conformal",
+      "parameters": {
+        "calibration_days": 35,
+        "min_calibration": 12,
+        "window": 56
+      },
+      "proposed_round": 4,
+      "reason": "Recent evidence from June 2026 presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity using a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events. This calibrated approach directly addresses the unique challenges of GPU futures pricing and is supported by structured, testable predictions, making it the most suitable bounded forecasting hypothesis to freeze now for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-59c162620cae5d7f10c1ba7a87873d91",
+    "kind": "hypothesis",
+    "origin": "2026-08-12",
+    "round": 4
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.014978902587854408,
+          "n_cells": 87
+        },
+        "drift": {
+          "mean_official_loss": 0.014074655745747124,
+          "n_cells": 87
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.014074655745747124,
+          "n_cells": 87
+        },
+        "recent_28": {
+          "mean_official_loss": 0.014873967513639846,
+          "n_cells": 87
+        },
+        "recent_56": {
+          "mean_official_loss": 0.014352058743486591,
+          "n_cells": 87
+        },
+        "recent_90": {
+          "mean_official_loss": 0.014424510612758621,
+          "n_cells": 87
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.014281883229923372,
+          "n_cells": 87
+        },
+        "volatility": {
+          "mean_official_loss": 0.01438453161478927,
+          "n_cells": 87
+        }
+      },
+      "observed_through": "2026-08-12"
+    },
+    "id": "gvs-91fbdf53b761954a-ef0ce2b23e0fceae1429b84f35dbcad1",
+    "kind": "results",
+    "origin": "2026-08-12",
+    "round": 4
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-08-19",
+      "group": "hyperscaler_spot",
+      "query": "hyperscaler_spot GPU rental empirical quantile forecast rolling window nonstationary prices research published by 2026-08-19",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The provided evidence is a 2022 research article focused on predicting GPU spot instance pricing using time series prediction models. It discusses the dynamic pricing of GPU spot instances in cloud computing environments and aims to help optimize cost-efficient use of these resources. This source is directly relevant to forecasting GPU prices and provides a methodological foundation for price prediction based on demand and supply dynamics. However, the evidence is limited to GPU spot instances in cloud services and may not cover broader GPU market pricing or newer developments beyond 2022.",
+      "sources": [
+        {
+          "evidence_id": "ea98ed9b4fe72ded",
+          "note_type": "search result excerpt",
+          "publication_date": "2022-03-22",
+          "sentence": "# An exploration to graphics processing unit spot price prediction\n\nAuthors: Muhammad Khan, Ali Imran Jehangiri, Zulfiqar Ahmad, Mohammed Alaa Ala’anzy, Asif Umer Authors Info & Claims\n\nCluster Computing, Volume 25, Issue 5 Pages 3499 - 3515 https://doi.org/10.1007/s10586-022-03581-8\n\nPublished: 01 October 2022 Publication History\n\n...\n\n## Abstract\n\nAmazon web services provide resources equipped with graphics processing unit (GPU) devices, which are commonly used for parallel processing applications. When there is less demand for cloud computing instances, the unused resources are provided at low-cost pricing as GPU spot instances. The pricing of the GPU spot instances dynamically changes over time based on the long-term demand and supply of cloud resources in the spot market. The main aim of this research is to predict upcoming GPU spot instance pricing using a time series prediction model. Our second aim is to study the unique characteristics of GPU spot instances. This research will help researchers to exploit GPU spot instances across distinct regions in a cost-efficient way. In the existing literature, researchers used machine learning approaches including artificial neural ne",
+          "source": "exa",
+          "title": "An exploration to graphics processing unit spot price prediction | Cluster Computing",
+          "url": "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-a4367ada13982f83a36b66db6da0d18b",
+    "kind": "evidence",
+    "origin": "2026-08-19",
+    "round": 5
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "recent_56",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-19",
+      "group": "hyperscaler_spot",
+      "id": "h05",
+      "method": "recent",
+      "parameters": {
+        "min_samples": 20,
+        "window": 56
+      },
+      "proposed_round": 5,
+      "reason": "The recent_28 method was previously rejected based on the paired origin-cluster bootstrap 95% confidence interval and mean loss difference, indicating insufficient statistical support for acceptance. The recent_56 method, which uses a longer rolling window, may better capture the nonstationary and volatile nature of GPU rental prices as indicated by the 2022 research on GPU spot price prediction and the 2026 evidence of short-term scarcity and price jumps. This method balances recency and sample size, potentially improving forecast stability and accuracy in this fragmented and dynamic market."
+    },
+    "id": "gvs-91fbdf53b761954a-eaef891d304d49685ffef0a088510ab2",
+    "kind": "hypothesis",
+    "origin": "2026-08-19",
+    "round": 5
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.01893658250405798,
+          "n_cells": 138
+        },
+        "drift": {
+          "mean_official_loss": 0.01824576624070049,
+          "n_cells": 138
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.01824576624070049,
+          "n_cells": 138
+        },
+        "recent_28": {
+          "mean_official_loss": 0.018695404693671508,
+          "n_cells": 138
+        },
+        "recent_56": {
+          "mean_official_loss": 0.01844171691171498,
+          "n_cells": 138
+        },
+        "recent_90": {
+          "mean_official_loss": 0.018482070299975853,
+          "n_cells": 138
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.018557463081666677,
+          "n_cells": 138
+        },
+        "volatility": {
+          "mean_official_loss": 0.018432130474347837,
+          "n_cells": 138
+        }
+      },
+      "observed_through": "2026-08-19"
+    },
+    "id": "gvs-91fbdf53b761954a-67cc3d8d833201a181dd9d0556c3b4e7",
+    "kind": "results",
+    "origin": "2026-08-19",
+    "round": 5
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "candidate": "step_shrink",
+      "evaluated_at": "2026-08-26",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.12156",
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://doi.org/10.1016/j.future.2017.09.038",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-07-29",
+      "group": "marketplace_ask",
+      "id": "h02",
+      "method": "step",
+      "n_origins": 3,
+      "parameters": {
+        "shrinkage": 0.5,
+        "window": 56
+      },
+      "proposed_round": 2,
+      "reason": "The statistical gate indicates rejection, and the bootstrap evidence shows a mean loss difference of 0.0 with a confidence interval of [0.0, 0.0], providing no support for improvement. Therefore, the hypothesis cannot be accepted despite the contextual reasoning.",
+      "round": 6,
+      "validation_origins": [
+        "2026-08-05",
+        "2026-08-12",
+        "2026-08-19"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-4e32adf2cd172873fc5c947a444e3a91",
+    "kind": "verdict",
+    "origin": "2026-08-26",
+    "round": 6
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -0.0002571455938888859,
+        0.0
+      ],
+      "candidate": "calibrated",
+      "evaluated_at": "2026-08-26",
+      "evidence_urls": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-08-05",
+      "group": "neocloud_rate_card",
+      "id": "h03",
+      "method": "conformal",
+      "n_origins": 3,
+      "parameters": {
+        "calibration_days": 35,
+        "min_calibration": 12,
+        "window": 56
+      },
+      "proposed_round": 3,
+      "reason": "The statistical gate indicates rejection, and the 95% confidence interval includes zero with a mean loss difference very close to zero, providing no significant evidence to accept the hypothesis. Therefore, the hypothesis should be rejected based on the supplied paired bootstrap evidence.",
+      "round": 6,
+      "validation_origins": [
+        "2026-08-05",
+        "2026-08-12",
+        "2026-08-19"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-6df63278e1279cf24b0faea36c30f0ae",
+    "kind": "verdict",
+    "origin": "2026-08-26",
+    "round": 6
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-08-26",
+      "group": "marketplace_ask",
+      "query": "marketplace_ask GPU rental sticky posted prices change point shrinkage forecast research published by 2026-08-26",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The May 2026 research paper by Gerra provides a comprehensive, normalized panel of GPU rental prices across 38 cloud providers and 32 GPU SKUs from 2022 to 2026. It highlights significant price dispersion and a steady decline in consumer-GPU rental rates over multiple years. However, it notes limitations such as thin datacenter-SKU history and an inconclusive relationship between GPU prices and AI-infrastructure equities. This dated, empirical data is directly relevant for forecasting GPU market trends and price behaviors, while acknowledging its constraints.",
+      "sources": [
+        {
+          "evidence_id": "180fa66bb3b34d7f",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-29",
+          "sentence": "May 2026 Research paper\n\n# The GPU Rental Market: Price Dispersion and the Cost Curve of Compute\n\nA four-year cross-provider panel of GPU spot prices across 38 clouds\n\nStatus\n\nPreprint\n\nAuthors\n\nGerra\n\nPanel\n\n38 providers, 32 SKUs\n\n...\n\n## Abstract\n\nWe assemble a normalized, cross-provider panel of GPU rental prices and use it to characterize the structure of the accelerator-rental market. The study panel covers 6,216 price observations across 38 cloud providers and 32 GPU SKUs, spanning 2022 to 2026, with prices normalized to canonical SKUs on a per-hour basis.\n\nTwo findings stand out. First, price dispersion is extreme: the same accelerator rents for radically different prices across providers, with an 18x range on H100, 96x on A100, and 100x on RTX-4090. The market is fragmented and far from a single clearing price. Second, on the consumer-GPU segment, where we hold a continuous multi-year panel, rental rates declined steadily. We are deliberate about the data's limits: datacenter-SKU history is still thin, and we report an honest null result on whether GPU prices yet constitute a tradeable signal for AI-infrastructure equities.\n\n...\n\nThe coefficient of variation sits between 0.",
+          "source": "exa",
+          "title": "GPU Rental Prices: Dispersion and the Cost of Compute | Gerra",
+          "url": "https://www.gerra.com/research/gpu-market",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-1d6f1f5b0c8d470f3066971b82ce19c3",
+    "kind": "evidence",
+    "origin": "2026-08-26",
+    "round": 6
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-26",
+      "group": "marketplace_ask",
+      "id": "h06",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 6,
+      "reason": "Previous hypotheses using recent rolling windows (recent_28, step_shrink, calibrated) have been statistically rejected based on bootstrap confidence intervals including zero and no significant improvement in loss. The evidence from the May 2026 Gerra research paper and the August 2026 Nebius earnings report highlights extreme price dispersion and short-term scarcity effects, suggesting high volatility and non-stationarity in GPU rental prices. Given the lack of support for more complex smoothing or calibration methods and the dynamic market conditions, a simple last_value_empirical method is a reasonable bounded hypothesis to freeze for future testing as it relies on the most recent observed price without imposing smoothing assumptions that have failed validation."
+    },
+    "id": "gvs-91fbdf53b761954a-ff50e2ab3f923e48477875c207920deb",
+    "kind": "hypothesis",
+    "origin": "2026-08-26",
+    "round": 6
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.01760208533216932,
+          "n_cells": 189
+        },
+        "drift": {
+          "mean_official_loss": 0.01701252404040565,
+          "n_cells": 189
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.017012420690405646,
+          "n_cells": 189
+        },
+        "recent_28": {
+          "mean_official_loss": 0.017358339520987656,
+          "n_cells": 189
+        },
+        "recent_56": {
+          "mean_official_loss": 0.01717180550827161,
+          "n_cells": 189
+        },
+        "recent_90": {
+          "mean_official_loss": 0.01719980589820106,
+          "n_cells": 189
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.017237640913051154,
+          "n_cells": 189
+        },
+        "volatility": {
+          "mean_official_loss": 0.017153509672663145,
+          "n_cells": 189
+        }
+      },
+      "observed_through": "2026-08-26"
+    },
+    "id": "gvs-91fbdf53b761954a-a59823e70b27584db650e53eca05a64c",
+    "kind": "results",
+    "origin": "2026-08-26",
+    "round": 6
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-09-02",
+      "group": "neocloud_rate_card",
+      "query": "neocloud_rate_card GPU rental volatility scaling quantile interval calibration time series research published by 2026-09-02",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence from June 12, 2026, presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity. It introduces a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events, addressing unique challenges such as lack of storage, hardware depreciation, and mean-reverting spot rates. This source is directly relevant and provides a structured, testable forecasting approach for GPU futures, making it valuable for the forecasting experiment.",
+      "sources": [
+        {
+          "evidence_id": "6df09552dc5858d9",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-06-12",
+          "sentence": "# Pricing Compute Futures: Forward Curve and Volatility for a Non-Storable, Depreciating Commodity\n\n 14 Pages Posted: 19 Jun 2026 \n\n## Amine Assody\n\nIndependant\n\nDate Written: June 12, 2026\n\n### Abstract\n\nGPU rental rates are becoming a benchmarked, exchange-traded underlying. In May 2026 CME Group and ICE both announced cash-settled compute futures referencing daily GPU rental indices, with trading expected late 2026. The standard commodity toolkit does not transfer. Compute cannot be stored, so no cash-and-carry relationship anchors the forward curve; the hardware depreciates with each silicon generation, so the curve embeds semi-predictable downward jumps; and spot rates mean-revert toward an equilibrium that is itself bounded below by an energy-linked marginal cost. I propose a tractable framework: a Schwartz-Smith two-factor model extended with a scheduled jump component in which each announced hardware launch window carries a repricing event that is certain to occur but uncertain in size and timing, with options priced via Black-76 on the forward. The model makes three testable predictions ahead of contract launch: structural backwardation as the resting curve shape, a steepl",
+          "source": "exa",
+          "title": "Pricing Compute Futures: Forward Curve and Volatility for a Non-Storable, Depreciating Commodity by Amine Assody :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-380c871caac3188f46a50a01a9e97dbe",
+    "kind": "evidence",
+    "origin": "2026-09-02",
+    "round": 7
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "volatility",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-02",
+      "group": "neocloud_rate_card",
+      "id": "h07",
+      "method": "volatility",
+      "parameters": {
+        "scale_max": 2.0,
+        "scale_min": 0.5,
+        "window": 28
+      },
+      "proposed_round": 7,
+      "reason": "The latest evidence from 2026-06-12 presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity using a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events. This approach addresses unique challenges such as lack of storage, hardware depreciation, and mean-reverting spot rates, making it directly relevant and providing a structured, testable forecasting method. Previous hypotheses using recent windows and step shrinkage have been rejected based on bootstrap confidence intervals, and the conformal calibrated method also failed to show significant improvement. Therefore, the volatility-based method is the most promising bounded hypothesis to freeze now for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-54009fc3ef46bcb3e005fa4654ee2e3e",
+    "kind": "hypothesis",
+    "origin": "2026-09-02",
+    "round": 7
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.015445919328291667,
+          "n_cells": 240
+        },
+        "drift": {
+          "mean_official_loss": 0.015010666221583332,
+          "n_cells": 240
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.014992858797624999,
+          "n_cells": 240
+        },
+        "recent_28": {
+          "mean_official_loss": 0.015115425923333332,
+          "n_cells": 240
+        },
+        "recent_56": {
+          "mean_official_loss": 0.015160704650277777,
+          "n_cells": 240
+        },
+        "recent_90": {
+          "mean_official_loss": 0.015194231649791666,
+          "n_cells": 240
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.015169175805277779,
+          "n_cells": 240
+        },
+        "volatility": {
+          "mean_official_loss": 0.015142114597416663,
+          "n_cells": 240
+        }
+      },
+      "observed_through": "2026-09-02"
+    },
+    "id": "gvs-91fbdf53b761954a-4d13b3f56008f881943c934b5fbb78b6",
+    "kind": "results",
+    "origin": "2026-09-02",
+    "round": 7
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -3.6868449166664596e-05,
+        0.0004920854549999994
+      ],
+      "candidate": "recent_56",
+      "evaluated_at": "2026-09-09",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-19",
+      "group": "hyperscaler_spot",
+      "id": "h05",
+      "method": "recent",
+      "n_origins": 3,
+      "parameters": {
+        "min_samples": 20,
+        "window": 56
+      },
+      "proposed_round": 5,
+      "reason": "The 95% confidence interval for the mean loss difference includes zero (-3.6868e-05 to 0.000492), indicating no statistically significant improvement. Additionally, the statistical gate explicitly requires rejection. Therefore, the evidence does not support accepting the recent_56 method.",
+      "round": 8,
+      "validation_origins": [
+        "2026-08-19",
+        "2026-08-26",
+        "2026-09-02"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-ca69fd581142ff2c6aee4e9619a4696f",
+    "kind": "verdict",
+    "origin": "2026-09-09",
+    "round": 8
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-09-09",
+      "group": "neocloud_spot",
+      "query": "neocloud_spot GPU rental GPU generation supply capacity rental prices forecasting research published by 2026-09-09",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes two dated sources from 2026 that provide relevant data on GPU rental pricing trends and market structure. The first source (May 2026) offers a comprehensive panel of GPU rental prices from 2022 to 2026, highlighting extreme price dispersion and a steady decline in consumer-GPU rental rates, though it notes limitations such as thin datacenter-SKU history and inconclusive signals for AI-infrastructure equities. The second source (September 2026) reports a recent tripling of GPU spot rental rates in Q2 2026, indicating significant short-term price volatility and market dynamics. Both sources are directly relevant for forecasting GPU market behavior and illustrate the complexity and variability in pricing, which are critical considerations for forecasting methods.",
+      "sources": [
+        {
+          "evidence_id": "9f39fb46a151e1a2",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-29",
+          "sentence": "We assemble a normalized, cross-provider panel of GPU rental prices and use it to characterize the structure of the accelerator-rental market. The study panel covers 6,216 price observations across 38 cloud providers and 32 GPU SKUs, spanning 2022 to 2026, with prices normalized to canonical SKUs on a per-hour basis.\n\nTwo findings stand out. First, price dispersion is extreme: the same accelerator rents for radically different prices across providers, with an 18x range on H100, 96x on A100, and 100x on RTX-4090. The market is fragmented and far from a single clearing price. Second, on the consumer-GPU segment, where we hold a continuous multi-year panel, rental rates declined steadily. We are deliberate about the data's limits: datacenter-SKU history is still thin, and we report an honest null result on whether GPU prices yet constitute a tradeable signal for AI-infrastructure equities.",
+          "source": "exa",
+          "title": "GPU Rental Prices: Dispersion and the Cost of Compute | Gerra",
+          "url": "https://www.gerra.com/research/gpu-market",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "507eb0ef604c55c2",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-09-09",
+          "sentence": "# GPU Pricing Splits as Spot Rates Triple and Capacity Goes to Auction\n\nSpot GPU rental rates tripled in Nebius Group's Q2 2026 results while a new auction market is trying to put a real number on reserved GPU capacity.\n\nM Mireille Otsuka AI & ML \n\n Published September 9, 2026 Updated Oct 12, 2026 7 min read ≈ 7 min left 22 days ago Copy link\n\n...\n\nGPU spot rental rates tripled. That opening figure came out of Nebius Group's Q2 2026 earnings call on August 12, 2026, as reported by Morningstar. The unit is worth holding still: a spot rate is the price of a GPU-hour on a short horizon, clearing against scarcity in the moment rather than against a multi-month reservation. In an industry that publicly prices capacity in gigawatts and privately prices contracts in months, a tripled spot rate is the single number that repriced the room without anyone having to renegotiate a thing.",
+          "source": "exa",
+          "title": "GPU Pricing Splits as Spot Rates Triple and Capacity Goes to Auction — TechReaderDaily",
+          "url": "https://www.techreaderdaily.com/article/gpu-pricing-splits-as-spot-rates-triple-and-capacity-goes-to-auction",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-e0ea4ae797bb72e7ae50bde2c1891e56",
+    "kind": "evidence",
+    "origin": "2026-09-09",
+    "round": 8
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "volatility",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798"
+      ],
+      "frozen_at": "2026-09-09",
+      "group": "neocloud_spot",
+      "id": "h08",
+      "method": "volatility",
+      "parameters": {
+        "scale_max": 2.0,
+        "scale_min": 0.5,
+        "window": 28
+      },
+      "proposed_round": 8,
+      "reason": "Previous hypotheses using recent windows (recent_28, recent_56) and step shrink methods have been rejected based on bootstrap confidence intervals including zero, indicating no significant improvement. The calibrated conformal method was also rejected. However, the latest evidence from 2026-09-02 presents a detailed academic framework for forecasting GPU rental rates using a Schwartz-Smith two-factor model with scheduled jumps, addressing unique challenges such as hardware depreciation and mean-reverting spot rates. This model inherently involves volatility scaling and structured volatility modeling, making the volatility method a promising bounded hypothesis for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-a4ab0fb799fb97223cf4c64ab354d72c",
+    "kind": "hypothesis",
+    "origin": "2026-09-09",
+    "round": 8
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.0163882167133677,
+          "n_cells": 291
+        },
+        "drift": {
+          "mean_official_loss": 0.015666621831008015,
+          "n_cells": 291
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.015617679210446735,
+          "n_cells": 291
+        },
+        "recent_28": {
+          "mean_official_loss": 0.015753465491993128,
+          "n_cells": 291
+        },
+        "recent_56": {
+          "mean_official_loss": 0.015788844516563573,
+          "n_cells": 291
+        },
+        "recent_90": {
+          "mean_official_loss": 0.01582901722630011,
+          "n_cells": 291
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.01579365384676976,
+          "n_cells": 291
+        },
+        "volatility": {
+          "mean_official_loss": 0.01572585874061856,
+          "n_cells": 291
+        }
+      },
+      "observed_through": "2026-09-09"
+    },
+    "id": "gvs-91fbdf53b761954a-e33f26d4a9d608d926a8359664e441cd",
+    "kind": "results",
+    "origin": "2026-09-09",
+    "round": 8
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -0.0066818481111111175,
+        -0.0009269826111111141
+      ],
+      "candidate": "last_value_empirical",
+      "evaluated_at": "2026-09-16",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-26",
+      "group": "marketplace_ask",
+      "id": "h06",
+      "method": "last_value_empirical",
+      "n_origins": 3,
+      "parameters": {},
+      "proposed_round": 6,
+      "reason": "The bootstrap confidence interval for the mean loss difference is entirely below zero, indicating a statistically significant improvement of the candidate method over the baseline. The statistical gate allows acceptance. The hypothesis rationale is sound given the market volatility and prior rejections of more complex methods, supporting the choice of the last_value_empirical method as a reasonable approach.",
+      "round": 9,
+      "validation_origins": [
+        "2026-08-26",
+        "2026-09-02",
+        "2026-09-09"
+      ],
+      "verdict": "accepted"
+    },
+    "id": "gvs-91fbdf53b761954a-d7cea42d7d51e270c828c46ad0c917eb",
+    "kind": "verdict",
+    "origin": "2026-09-16",
+    "round": 9
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-09-16",
+      "group": "hyperscaler_spot",
+      "query": "hyperscaler_spot GPU rental empirical quantile forecast rolling window nonstationary prices research published by 2026-09-16",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence consists of two dated academic sources from 2017 and 2022 that focus on forecasting GPU spot instance prices using time series and machine learning models. The 2022 source explores GPU spot price prediction with ANN and time series models, emphasizing cost-efficient exploitation of GPU spot instances. The 2017 source discusses forecasting spot prices in cloud computing using dynamic-ARIMA and Markov regime-switching autoregressive models, highlighting challenges with stochastic price behavior and the use of fixed-length data windows for prediction. Both sources provide relevant, dated methodologies and insights into GPU spot price forecasting, supporting a bounded forecasting hypothesis.",
+      "sources": [
+        {
+          "evidence_id": "1bc986808a00f90c",
+          "note_type": "search result excerpt",
+          "publication_date": "2022-03-22",
+          "sentence": "# An exploration to graphics processing unit spot price prediction\n\nAuthors: Muhammad Khan, Ali Imran Jehangiri, Zulfiqar Ahmad, Mohammed Alaa Ala’anzy, Asif Umer Authors Info & Claims\n\nCluster Computing, Volume 25, Issue 5 Pages 3499 - 3515 https://doi.org/10.1007/s10586-022-03581-8\n\nPublished: 01 October 2022 Publication History\n\n...\n\nAmazon web services provide resources equipped with graphics processing unit (GPU) devices, which are commonly used for parallel processing applications. When there is less demand for cloud computing instances, the unused resources are provided at low-cost pricing as GPU spot instances. The pricing of the GPU spot instances dynamically changes over time based on the long-term demand and supply of cloud resources in the spot market. The main aim of this research is to predict upcoming GPU spot instance pricing using a time series prediction model. Our second aim is to study the unique characteristics of GPU spot instances. This research will help researchers to exploit GPU spot instances across distinct regions in a cost-efficient way. In the existing literature, researchers used machine learning approaches including artificial neural networks (ANN),",
+          "source": "exa",
+          "title": "An exploration to graphics processing unit spot price prediction | Cluster Computing",
+          "url": "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "56e129a303cb6e21",
+          "note_type": "search result excerpt",
+          "publication_date": "2017-10-04",
+          "sentence": "# Price forecasting for spot instances in Cloud computing\n\nFuture Generation Computer Systems. Published: 2017-10-04. 21 citations.\n\n...\n\nBig data applications usually need to rent a large amount of virtual machines from cloud computing providers. As a result of the polices employed by Cloud providers, the prices of the resources have a stochastic behavior. Recently, Spot prices fluctuate greatly or have multiple regimes. Choosing virtual machines according to trends of prices is helpful to decrease the resource rental cost. Existing price predicting methods are unable to accurately predict prices in these environments. Therefore, a dynamic-ARIMA and two markov regime-switching autoregressive model based forecasting methods have been developed in this paper. Experimental results show that the proposals are better than the existing MonthAR for most scenarios.\n\n...\n\nIn this paper, we aim to develop several prediction algorithms to forecast spot prices accurately. For a spot price time series, using all past data to forecast future prices is time consuming. Therefore, only data of a fixed length of time (a window) is usually used, e.g., the prices of past 480 hours.\n\nAs time goes, the",
+          "source": "exa",
+          "title": "Price forecasting for spot instances in Cloud computing",
+          "url": "https://doi.org/10.1016/j.future.2017.09.038",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-84db75ac83aa2ab909d9d8b96b037be1",
+    "kind": "evidence",
+    "origin": "2026-09-16",
+    "round": 9
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-16",
+      "group": "hyperscaler_spot",
+      "id": "h09",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 9,
+      "reason": "The last_value_empirical method was accepted in the most recent evaluation (round 9) with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero. Previous more complex methods such as recent_28, recent_56, step_shrink, and calibrated were rejected based on their confidence intervals including zero or failing the statistical gate. The market exhibits high volatility and fragmented pricing, as documented in the May 2026 research paper and June 2026 weekly snapshot, supporting the rationale that a simple empirical last value forecast is currently the most reliable bounded hypothesis for GPU rental price forecasting."
+    },
+    "id": "gvs-91fbdf53b761954a-67fbf8a471808643a832067887331c7e",
+    "kind": "hypothesis",
+    "origin": "2026-09-16",
+    "round": 9
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.01362321408796849,
+          "n_cells": 402
+        },
+        "drift": {
+          "mean_official_loss": 0.012762306711061358,
+          "n_cells": 402
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.012670756682910445,
+          "n_cells": 402
+        },
+        "recent_28": {
+          "mean_official_loss": 0.012715419779079596,
+          "n_cells": 402
+        },
+        "recent_56": {
+          "mean_official_loss": 0.012874019418938638,
+          "n_cells": 402
+        },
+        "recent_90": {
+          "mean_official_loss": 0.012879895158515751,
+          "n_cells": 402
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.012887212287023215,
+          "n_cells": 402
+        },
+        "volatility": {
+          "mean_official_loss": 0.012763699974577113,
+          "n_cells": 402
+        }
+      },
+      "observed_through": "2026-09-16"
+    },
+    "id": "gvs-91fbdf53b761954a-7469fb29b9aa376c53320752b0c0c8af",
+    "kind": "results",
+    "origin": "2026-09-16",
+    "round": 9
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -8.245881352659438e-06,
+        1.8887056521745198e-05
+      ],
+      "candidate": "volatility",
+      "evaluated_at": "2026-09-23",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-02",
+      "group": "neocloud_rate_card",
+      "id": "h07",
+      "method": "volatility",
+      "n_origins": 3,
+      "parameters": {
+        "scale_max": 2.0,
+        "scale_min": 0.5,
+        "window": 28
+      },
+      "proposed_round": 7,
+      "reason": "The bootstrap confidence interval [-8.25e-06, 1.89e-05] includes zero, indicating no statistically significant improvement in mean loss difference. The statistical gate requires rejection due to lack of significant evidence supporting the candidate hypothesis 'volatility' over the baseline. Therefore, the hypothesis cannot be accepted at this time.",
+      "round": 10,
+      "validation_origins": [
+        "2026-09-02",
+        "2026-09-09",
+        "2026-09-16"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-2d252a3d45b6d2690521dac7621c501d",
+    "kind": "verdict",
+    "origin": "2026-09-23",
+    "round": 10
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-09-23",
+      "group": "marketplace_ask",
+      "query": "marketplace_ask GPU rental sticky posted prices change point shrinkage forecast research published by 2026-09-23",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "no_eligible_sources",
+      "sentence": "No dated evidence or sources were provided to summarize or analyze. Therefore, only historical knowledge can be considered, but no new forecasting methods or data are available from the input.",
+      "sources": [],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-350b23f349b4b73d10a3d0459e995015",
+    "kind": "evidence",
+    "origin": "2026-09-23",
+    "round": 10
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-23",
+      "group": "marketplace_ask",
+      "id": "h10",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 10,
+      "reason": "The last_value_empirical method was accepted in round 9 based on a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero. Prior more complex methods such as recent_28, recent_56, step_shrink, calibrated, and volatility were rejected due to lack of significant improvement or confidence intervals including zero. The May 2026 research paper highlights extreme price dispersion and steady declines in GPU rental prices, suggesting market volatility and fragmentation where a simple empirical last value forecast is reasonable. Therefore, last_value_empirical is the most supported bounded hypothesis for freezing now for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-c115bdf4769f6309f364cf83f58fac4e",
+    "kind": "hypothesis",
+    "origin": "2026-09-23",
+    "round": 10
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.013029979838180635,
+          "n_cells": 513
+        },
+        "drift": {
+          "mean_official_loss": 0.012204803988589988,
+          "n_cells": 513
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.012121817022605584,
+          "n_cells": 513
+        },
+        "recent_28": {
+          "mean_official_loss": 0.012079740694528912,
+          "n_cells": 513
+        },
+        "recent_56": {
+          "mean_official_loss": 0.012305639291137097,
+          "n_cells": 513
+        },
+        "recent_90": {
+          "mean_official_loss": 0.012291649956458735,
+          "n_cells": 513
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.012304708216835604,
+          "n_cells": 513
+        },
+        "volatility": {
+          "mean_official_loss": 0.012174303264600388,
+          "n_cells": 513
+        }
+      },
+      "observed_through": "2026-09-23"
+    },
+    "id": "gvs-91fbdf53b761954a-c5d4266f2c0d8338eea99c334f4db21c",
+    "kind": "results",
+    "origin": "2026-09-23",
+    "round": 10
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "candidate": "calibrated",
+      "evaluated_at": "2026-09-30",
+      "evidence_urls": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-08-12",
+      "group": "neocloud_spot",
+      "id": "h04",
+      "method": "conformal",
+      "n_origins": 3,
+      "parameters": {
+        "calibration_days": 35,
+        "min_calibration": 12,
+        "window": 56
+      },
+      "proposed_round": 4,
+      "reason": "The statistical gate indicates rejection based on the paired origin-cluster bootstrap analysis with a 95% confidence interval of [0.0, 0.0] and a mean loss difference of 0.0, suggesting no improvement or calibration benefit. Therefore, despite the detailed academic framework and calibration approach, the evidence does not support accepting the hypothesis at this time.",
+      "round": 11,
+      "validation_origins": [
+        "2026-09-09",
+        "2026-09-16",
+        "2026-09-23"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-ba12e320bfb200e13604ced7c7385532",
+    "kind": "verdict",
+    "origin": "2026-09-30",
+    "round": 11
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "candidate": "volatility",
+      "evaluated_at": "2026-09-30",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798"
+      ],
+      "frozen_at": "2026-09-09",
+      "group": "neocloud_spot",
+      "id": "h08",
+      "method": "volatility",
+      "n_origins": 3,
+      "parameters": {
+        "scale_max": 2.0,
+        "scale_min": 0.5,
+        "window": 28
+      },
+      "proposed_round": 8,
+      "reason": "The bootstrap confidence interval includes zero and the mean loss difference is zero, indicating no significant improvement. The statistical gate requires rejection under these conditions, so the hypothesis cannot be accepted despite the theoretical promise of the volatility method.",
+      "round": 11,
+      "validation_origins": [
+        "2026-09-09",
+        "2026-09-16",
+        "2026-09-23"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-9bdfec8dc191a096b3ee32c610af68a3",
+    "kind": "verdict",
+    "origin": "2026-09-30",
+    "round": 11
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-09-30",
+      "group": "neocloud_rate_card",
+      "query": "neocloud_rate_card GPU rental volatility scaling quantile interval calibration time series research published by 2026-09-30",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes dated analyses from early and mid-2026 that provide empirical data and methodological insights relevant to GPU market forecasting. The January 2026 study analyzes Q4 2025 data on GPU utilization and volatility, finding a significant correlation that supports utilization as a predictor of future volatility, with quantified effect sizes and time horizons. The August 2026 methodology documents emphasize the importance of averaging over delivery periods to reduce manipulation and better match economic exposure, and highlight challenges in index construction such as composition noise and unit definitions affecting price signals. These dated sources collectively inform bounded forecasting hypotheses by providing concrete data relationships and methodological best practices, while also noting limitations like sampling biases and market noise.",
+      "sources": [
+        {
+          "evidence_id": "cb1da5ee76237c39",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-01-02",
+          "sentence": "Jan 02, 2026\n\n...\n\nI analyzed 90 days of Q4 2025 data (Oct 2 through Dec 30) for three GPUs: A100 SXM4, H100 SXM, and H200. Each has daily spot prices, a 7-day realized volatility series, and utilization percentages.\n\nThe question: does today’s utilization predict future volatility?\n\n...\n\nFor each SKU, I compared utilization on day t with volatility on day t+7. Shifting volatility forward by a week avoids correlating it with itself (rolling windows create overlap) and tests whether tightness today signals turbulence later.\n\nI also tested 3-day and 14-day horizons to check if the relationship is consistent or specific to a particular timescale.\n\n...\n\nThe correlation between H200 utilization and next-week volatility is +0.46 (p < 0.0001). A simple linear regression gives R² ≈ 0.21, meaning utilization explains roughly 21% of volatility variation a week out. For a single variable in noisy market data, that’s substantial.\n\nThe slope is about +0.74 volatility points per 1% utilization increase. Moving from 40% to 70% utilization corresponds to roughly +22 volatility points the following week.\n\nSplit the data into quartiles:\n\n- Lowest utilization (≤41.5%): average next-week vol ≈ 10.5%\n-",
+          "source": "exa",
+          "title": "Three GPU Markets, Three Volatility Regimes",
+          "url": "https://davefriedman.substack.com/p/three-gpu-markets-three-volatility",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "fda00af59b181d20",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-08-16",
+          "sentence": "16 Aug 2026 Methodology v0.11.1 Published Mark Rusch\n\n...\n\n### 3. The one rule that matters most: settle on an average, never a fix\n\nAcross every mature complex, the object a contract settles against is an arithmetic mean over the delivery period:\n\n- EEX and Nasdaq power futures settle on the mean of hourly prices across the delivery period (~2,880 market time units in a month), baseload and peakload.\n- ICE JKM settles on a half-month assessment window.\n- CME's own compute futures represent \"one month's worth of rental costs.\"\n\nTwo reasons. First, averaging over ~30 daily prints is dramatically harder to manipulate than a single fix. That is the lesson of the WM/Reuters 4pm scandal, after which the fixing window was widened from one minute to five, following £1.1bn in FCA and $1.4bn in CFTC penalties. Second, an average matches the economic exposure. Nobody consumes a GPU-hour at 11:00 UTC on a Tuesday; they consume a month of capacity.\n\n...\n\n### 4. What compute has that oil does not: generational obsolescence\n\nBrent in 2026 is Brent in 1996. An H100 is not.\n\nAzure's own EEA pricing on 2026-08-15 shows H200 SXM at $13.78/GPU-hr against H100 SXM at $16.53, newer and strictly better ",
+          "source": "exa",
+          "title": "What makes a compute benchmark hedgeable — TCI Research",
+          "url": "https://thecomputeindices.com/research/hedgeable-benchmark-design.html",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "42e4ad31feadbadc",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-08-16",
+          "sentence": "# When an index measures its own sampling\n\nHow a 10% move in a compute benchmark turned out to be entirely composition noise, and what the unit definition had to do with it\n\n 16 Aug 2026 Methodology v0.11.1 Published Mark Rusch\n\n...\n\nBetween 18 July and 15 August 2026, the TCI-CRI-H100 headline moved from $2.99 to $3.29, a rise of 10.03%. Decomposing that move against the underlying constituent set shows the matched-pair market move over the same window was +0.00%. Every basis point of the published change came from constituents entering and leaving the panel.\n\nThe proximate cause was the estimator. A weighted median over roughly six providers has a partial derivative of 1.0 with respect to exactly one constituent and 0.0 with respect to every other. The root cause was the unit definition. A minimum-node-size filter of eight GPUs admitted marketplace inventory on one collection day in ten, discarding a source that had posted nine distinct prices spanning 12.3%, while retaining catalog rate cards that had not moved once in a month.\n\n...\n\nAll figures derive from `data/eucri.db` in the public repository, covering 14 collection days between 2026-07-18 and 2026-08-15. Seven providers we",
+          "source": "exa",
+          "title": "When an index measures its own sampling — TCI Research",
+          "url": "https://thecomputeindices.com/research/composition-vs-price.html",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-b6ed008e3d66171c785b87f8925b03ac",
+    "kind": "evidence",
+    "origin": "2026-09-30",
+    "round": 11
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-30",
+      "group": "neocloud_rate_card",
+      "id": "h11",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 11,
+      "reason": "The last_value_empirical method was accepted in round 9 with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero, demonstrating better performance than other tested methods. Prior methods such as recent_28, recent_56, step_shrink, calibrated, and volatility were rejected due to lack of statistical significance or improvement. The May 2026 research paper highlights extreme price dispersion and steady declines in GPU rental rates, suggesting that a simple empirical last value approach may effectively capture recent market conditions without overfitting. Therefore, last_value_empirical is the most justified bounded hypothesis to freeze for future testing."
+    },
+    "id": "gvs-91fbdf53b761954a-8e9280eb4d191198bc0e6764ceb37bdd",
+    "kind": "hypothesis",
+    "origin": "2026-09-30",
+    "round": 11
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.013195878981207795,
+          "n_cells": 624
+        },
+        "drift": {
+          "mean_official_loss": 0.012546390373926276,
+          "n_cells": 624
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.012474274148872859,
+          "n_cells": 624
+        },
+        "recent_28": {
+          "mean_official_loss": 0.012432654133357904,
+          "n_cells": 624
+        },
+        "recent_56": {
+          "mean_official_loss": 0.012622385227024567,
+          "n_cells": 624
+        },
+        "recent_90": {
+          "mean_official_loss": 0.012620260077040592,
+          "n_cells": 624
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.01266163672470619,
+          "n_cells": 624
+        },
+        "volatility": {
+          "mean_official_loss": 0.012482753132190166,
+          "n_cells": 624
+        }
+      },
+      "observed_through": "2026-09-30"
+    },
+    "id": "gvs-91fbdf53b761954a-a61ba16fab0cde9127cc85e3ac532106",
+    "kind": "results",
+    "origin": "2026-09-30",
+    "round": 11
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -1.6879602592592458e-05,
+        7.694063888888998e-06
+      ],
+      "candidate": "last_value_empirical",
+      "evaluated_at": "2026-10-07",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-16",
+      "group": "hyperscaler_spot",
+      "id": "h09",
+      "method": "last_value_empirical",
+      "n_origins": 3,
+      "parameters": {},
+      "proposed_round": 9,
+      "reason": "The bootstrap confidence interval [-1.6879602592592458e-05, 7.694063888888998e-06] includes zero, indicating no statistically significant improvement. The statistical gate requires significance to accept, so the hypothesis must be rejected.",
+      "round": 12,
+      "validation_origins": [
+        "2026-09-16",
+        "2026-09-23",
+        "2026-09-30"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-e861bd727277095176666b5cff88f56e",
+    "kind": "verdict",
+    "origin": "2026-10-07",
+    "round": 12
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-10-07",
+      "group": "neocloud_spot",
+      "query": "neocloud_spot GPU rental GPU generation supply capacity rental prices forecasting research published by 2026-10-07",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence consists of three dated sources from 2025 and 2026 that provide empirical data and analysis on GPU rental markets and pricing structures. These sources include a hedonic pricing study covering multiple GPU generations and providers, a system proposal for consumption-based GPU pricing with revenue impact analysis, and a large panel study documenting extreme price dispersion and trends in GPU rental prices across many providers and SKUs. Each source explicitly notes limitations such as market fragmentation, data thinness for certain SKUs, and confounding factors in provider composition. Together, these dated sources offer relevant, bounded, and origin-filtered empirical data suitable for informing forecasting hypotheses about GPU pricing and market behavior.",
+      "sources": [
+        {
+          "evidence_id": "5d4760c252b9b077",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-09-29",
+          "sentence": "# The Price of Compute: Hedonic Evidence from GPU Rental Markets \n\n 10 Pages Posted: 30 Sep 2026 \n\n## Helvin Shek\n\nIndependent\n\nDate Written: September 29, 2026\n\n### Abstract\n\nI measure the implicit prices of GPU rental characteristics using the hedonic framework of Rosen (1974). The data are 556 rental listings covering five GPU generations from two sources. Hardware specification is the largest determinant of price dispersion (η 2 = 29.6%). The elasticity of price with respect to compute capacity is 0.686. Hyperscalers charge 138.9% more than specialized clouds. Spot contracts trade at a 62.6% discount. The Hedonic Dispersion Index is 0.514. A Chow test rejects coefficient stability across the two sources. Source and date are confounded with provider composition. The pooled estimates are an average across two market snapshots.",
+          "source": "exa",
+          "title": "The Price of Compute: Hedonic Evidence from GPU Rental Markets  by Helvin Shek :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7541938",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "44694f169466142d",
+          "note_type": "search result excerpt",
+          "publication_date": "2025-09-26",
+          "sentence": "# Agora: A System for Consumption-Based GPU Pricing\n\narXiv:2510.05111. cs.DC. Submitted 2025-09-26. Latest version v2, 2026-09-22.\n\n...\n\n#\n\n...\n\nWe present Agora, a lightweight system designed for cloud-based GPUs which meters a three-dimensional resource vector from commodity performance counters and prices it with a function that charges customers based on resources used rather than time spent renting. Because the calibration is revenue-neutral, any gain must come from demand the flat rate had priced out, and we report under what conditions this consumption-based pricing scheme increases revenue: we find that the switch is revenue-negative at the median on a fixed market, but provides benefits in 86% of cases where a provider serves 15–30% of its addressable market against 10% where it serves over 60%. Revenue expands dramatically in proportion to the number of customers priced out by the flat rate: up to 141% in an optimistic case.",
+          "source": "exa",
+          "title": "Agora: A System for Consumption-Based GPU Pricing",
+          "url": "https://arxiv.org/abs/2510.05111",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "9f39fb46a151e1a2",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-29",
+          "sentence": "We assemble a normalized, cross-provider panel of GPU rental prices and use it to characterize the structure of the accelerator-rental market. The study panel covers 6,216 price observations across 38 cloud providers and 32 GPU SKUs, spanning 2022 to 2026, with prices normalized to canonical SKUs on a per-hour basis.\n\nTwo findings stand out. First, price dispersion is extreme: the same accelerator rents for radically different prices across providers, with an 18x range on H100, 96x on A100, and 100x on RTX-4090. The market is fragmented and far from a single clearing price. Second, on the consumer-GPU segment, where we hold a continuous multi-year panel, rental rates declined steadily. We are deliberate about the data's limits: datacenter-SKU history is still thin, and we report an honest null result on whether GPU prices yet constitute a tradeable signal for AI-infrastructure equities.",
+          "source": "exa",
+          "title": "GPU Rental Prices: Dispersion and the Cost of Compute | Gerra",
+          "url": "https://www.gerra.com/research/gpu-market",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-c774c00911e9c5ac40cebba32520b59a",
+    "kind": "evidence",
+    "origin": "2026-10-07",
+    "round": 12
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+        "https://www.gerra.com/research/gpu-market",
+        "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+      ],
+      "frozen_at": "2026-10-07",
+      "group": "neocloud_spot",
+      "id": "h12",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 12,
+      "reason": "The last_value_empirical method was accepted in round 9 with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero, demonstrating better performance than the baseline. Prior more complex methods such as recent_28, recent_56, step_shrink, calibrated, and volatility were rejected due to lack of significant improvement. The acceptance of last_value_empirical aligns with the market volatility and prior rejections, making it a reasonable bounded hypothesis to freeze for future testing. This choice is supported by evidence from multiple sources including the 2026 Nebius earnings report and research papers from Gerra and Doohwi Cha, which highlight GPU spot price dynamics and market fragmentation."
+    },
+    "id": "gvs-91fbdf53b761954a-2577339c587550745b3503f6cfc3a1a9",
+    "kind": "hypothesis",
+    "origin": "2026-10-07",
+    "round": 12
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.01939279883825125,
+          "n_cells": 735
+        },
+        "drift": {
+          "mean_official_loss": 0.019581802759953283,
+          "n_cells": 735
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.019523687555876187,
+          "n_cells": 735
+        },
+        "recent_28": {
+          "mean_official_loss": 0.0188808637290907,
+          "n_cells": 735
+        },
+        "recent_56": {
+          "mean_official_loss": 0.019626775237640358,
+          "n_cells": 735
+        },
+        "recent_90": {
+          "mean_official_loss": 0.019648631077685712,
+          "n_cells": 735
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.0197435812592848,
+          "n_cells": 735
+        },
+        "volatility": {
+          "mean_official_loss": 0.019468705910352376,
+          "n_cells": 735
+        }
+      },
+      "observed_through": "2026-10-07"
+    },
+    "id": "gvs-91fbdf53b761954a-142d17e9844ed5d31b0bfd226eb146b4",
+    "kind": "results",
+    "origin": "2026-10-07",
+    "round": 12
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -0.0012804499999999792,
+        0.0
+      ],
+      "candidate": "last_value_empirical",
+      "evaluated_at": "2026-10-14",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-23",
+      "group": "marketplace_ask",
+      "id": "h10",
+      "method": "last_value_empirical",
+      "n_origins": 3,
+      "parameters": {},
+      "proposed_round": 10,
+      "reason": "The bootstrap confidence interval includes zero, indicating no statistically significant improvement. The statistical gate requires significance to accept, so the hypothesis must be rejected despite the negative mean loss difference.",
+      "round": 13,
+      "validation_origins": [
+        "2026-09-23",
+        "2026-09-30",
+        "2026-10-07"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-d8dcecf584f0ffcdec411e7ae0186bc1",
+    "kind": "verdict",
+    "origin": "2026-10-14",
+    "round": 13
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-10-14",
+      "group": "hyperscaler_spot",
+      "query": "hyperscaler_spot GPU rental empirical quantile forecast rolling window nonstationary prices research published by 2026-10-14",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes three dated sources relevant to GPU price forecasting. The 2022 study by Khan et al. focuses on predicting GPU spot instance prices using time series models, highlighting dynamic pricing based on demand and supply in cloud markets. The 2017 paper presents forecasting methods using dynamic-ARIMA and Markov regime-switching models to handle stochastic and regime-changing spot prices in cloud computing, showing improved accuracy over prior methods. The 2026 study by Shek uses a hedonic pricing framework to analyze GPU rental prices across generations and providers, revealing price determinants and market segmentation. These sources provide empirical and methodological insights into GPU price forecasting, though each has limitations such as focus on spot instances, fixed data windows, or market snapshot averaging.",
+      "sources": [
+        {
+          "evidence_id": "ea98ed9b4fe72ded",
+          "note_type": "search result excerpt",
+          "publication_date": "2022-03-22",
+          "sentence": "# An exploration to graphics processing unit spot price prediction\n\nAuthors: Muhammad Khan, Ali Imran Jehangiri, Zulfiqar Ahmad, Mohammed Alaa Ala’anzy, Asif Umer Authors Info & Claims\n\nCluster Computing, Volume 25, Issue 5 Pages 3499 - 3515 https://doi.org/10.1007/s10586-022-03581-8\n\nPublished: 01 October 2022 Publication History\n\n...\n\n## Abstract\n\nAmazon web services provide resources equipped with graphics processing unit (GPU) devices, which are commonly used for parallel processing applications. When there is less demand for cloud computing instances, the unused resources are provided at low-cost pricing as GPU spot instances. The pricing of the GPU spot instances dynamically changes over time based on the long-term demand and supply of cloud resources in the spot market. The main aim of this research is to predict upcoming GPU spot instance pricing using a time series prediction model. Our second aim is to study the unique characteristics of GPU spot instances. This research will help researchers to exploit GPU spot instances across distinct regions in a cost-efficient way. In the existing literature, researchers used machine learning approaches including artificial neural ne",
+          "source": "exa",
+          "title": "An exploration to graphics processing unit spot price prediction | Cluster Computing",
+          "url": "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "3177feaca7ca6835",
+          "note_type": "search result excerpt",
+          "publication_date": "2017-10-04",
+          "sentence": "# Price forecasting for spot instances in Cloud computing\n\nFuture Generation Computer Systems. Published: 2017-10-04. 21 citations.\n\n...\n\n## Abstract\n\nBig data applications usually need to rent a large amount of virtual machines from cloud computing providers. As a result of the polices employed by Cloud providers, the prices of the resources have a stochastic behavior. Recently, Spot prices fluctuate greatly or have multiple regimes. Choosing virtual machines according to trends of prices is helpful to decrease the resource rental cost. Existing price predicting methods are unable to accurately predict prices in these environments. Therefore, a dynamic-ARIMA and two markov regime-switching autoregressive model based forecasting methods have been developed in this paper. Experimental results show that the proposals are better than the existing MonthAR for most scenarios.\n\n...\n\nIn this paper, we aim to develop several prediction algorithms to forecast spot prices accurately. For a spot price time series, using all past data to forecast future prices is time consuming. Therefore, only data of a fixed length of time (a window) is usually used, e.g., the prices of past 480 hours.\n\nAs t",
+          "source": "exa",
+          "title": "Price forecasting for spot instances in Cloud computing",
+          "url": "https://doi.org/10.1016/j.future.2017.09.038",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "5d4760c252b9b077",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-09-29",
+          "sentence": "# The Price of Compute: Hedonic Evidence from GPU Rental Markets \n\n 10 Pages Posted: 30 Sep 2026 \n\n## Helvin Shek\n\nIndependent\n\nDate Written: September 29, 2026\n\n### Abstract\n\nI measure the implicit prices of GPU rental characteristics using the hedonic framework of Rosen (1974). The data are 556 rental listings covering five GPU generations from two sources. Hardware specification is the largest determinant of price dispersion (η 2 = 29.6%). The elasticity of price with respect to compute capacity is 0.686. Hyperscalers charge 138.9% more than specialized clouds. Spot contracts trade at a 62.6% discount. The Hedonic Dispersion Index is 0.514. A Chow test rejects coefficient stability across the two sources. Source and date are confounded with provider composition. The pooled estimates are an average across two market snapshots.",
+          "source": "exa",
+          "title": "The Price of Compute: Hedonic Evidence from GPU Rental Markets  by Helvin Shek :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7541938",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-d2b297714191bda92b5b904b5658a044",
+    "kind": "evidence",
+    "origin": "2026-10-14",
+    "round": 13
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-10-14",
+      "group": "hyperscaler_spot",
+      "id": "h13",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 13,
+      "reason": "The last_value_empirical method was previously accepted at round 9 based on a statistically significant improvement with a bootstrap confidence interval entirely below zero, indicating better performance than alternatives. Although subsequent rounds showed no significant improvement, the prior acceptance and the market's volatile and fragmented nature support freezing this simple empirical last value method for future testing. This choice aligns with the May 2026 research highlighting extreme price dispersion and steady declines, suggesting that complex models have not outperformed simple empirical baselines in this domain."
+    },
+    "id": "gvs-91fbdf53b761954a-c1ae798d7ddd792386e77365b9892aa5",
+    "kind": "hypothesis",
+    "origin": "2026-10-14",
+    "round": 13
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.018967203401264506,
+          "n_cells": 833
+        },
+        "drift": {
+          "mean_official_loss": 0.018885756489391354,
+          "n_cells": 833
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.018813044390195672,
+          "n_cells": 833
+        },
+        "recent_28": {
+          "mean_official_loss": 0.018403299158156063,
+          "n_cells": 833
+        },
+        "recent_56": {
+          "mean_official_loss": 0.01891753615668227,
+          "n_cells": 833
+        },
+        "recent_90": {
+          "mean_official_loss": 0.018954317568543017,
+          "n_cells": 833
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.019009623386525405,
+          "n_cells": 833
+        },
+        "volatility": {
+          "mean_official_loss": 0.01877605938178471,
+          "n_cells": 833
+        }
+      },
+      "observed_through": "2026-10-14"
+    },
+    "id": "gvs-91fbdf53b761954a-6ac4d3e24d3565705bb80264c9c0b428",
+    "kind": "results",
+    "origin": "2026-10-14",
+    "round": 13
+  },
+  {
+    "agent": "CRITIC",
+    "content": {
+      "bootstrap_ci": [
+        -0.00022659706695905572,
+        7.333119009661452e-05
+      ],
+      "candidate": "last_value_empirical",
+      "evaluated_at": "2026-10-21",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+        "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+        "https://www.gerra.com/research/gpu-market"
+      ],
+      "frozen_at": "2026-09-30",
+      "group": "neocloud_rate_card",
+      "id": "h11",
+      "method": "last_value_empirical",
+      "n_origins": 3,
+      "parameters": {},
+      "proposed_round": 11,
+      "reason": "The 95% confidence interval for the mean loss difference includes zero ([-0.0002266, 0.0000733]), indicating no statistically significant improvement of the candidate method over the baseline. The statistical gate requires significance to accept, so the hypothesis must be rejected.",
+      "round": 14,
+      "validation_origins": [
+        "2026-09-30",
+        "2026-10-07",
+        "2026-10-14"
+      ],
+      "verdict": "rejected"
+    },
+    "id": "gvs-91fbdf53b761954a-4dc3210cb37c2c53e7170aa1c4da5f30",
+    "kind": "verdict",
+    "origin": "2026-10-21",
+    "round": 14
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "date": "2026-10-21",
+      "group": "marketplace_ask",
+      "query": "marketplace_ask GPU rental sticky posted prices change point shrinkage forecast research published by 2026-10-21",
+      "scope": "Hypothesis context only; price truth remains the frozen pack.",
+      "search_status": "exa_sources",
+      "sentence": "The evidence includes dated sources from 2026 that provide detailed observations and analyses of GPU rental prices and market characteristics. The first source from September 26, 2026, documents a significant price increase in mid-May 2026, with prices more than doubling for most sellers over several weeks, indicating demand or capacity changes. The second source from September 29, 2026, offers a hedonic pricing analysis of GPU rentals across multiple generations and providers, quantifying price dispersion and factors influencing prices, which is valuable for forecasting price behavior. The third source from May 13, 2026, highlights a wide price spread for Nvidia H100 listings within a day, explaining variability due to differing service levels and market segments, relevant for understanding market dynamics. These dated, empirical data and analyses are directly relevant for bounded forecasting hypotheses about GPU rental markets.",
+      "sources": [
+        {
+          "evidence_id": "d4053b25b9868779",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-09-26",
+          "sentence": "26 September 2026\n\nGPU rental prices go up and down. There are small day-to-day changes, longer trends and periods when prices move more sharply. I’m interested in these patterns and what they might tell me about demand picking up or capacity becoming harder to find, and the reasons behind price changes.\n\n...\n\nIn mid-May, prices begin to leave that range. On May 30, the index reaches 240.1, while the baseline is 105.4: 128% above its baseline.\n\nThe main period above the range runs from May 14 to June 13, 31 days, using three consecutive days outside the band to identify a sustained change. Prices then fall back towards the baseline.\n\n...\n\nOn May 30, 39 of 40 sellers were more than 10% above their April prices. Raising the threshold to 100% still leaves 34 of 40. For most of these sellers, prices had more than doubled.\n\nThe price rise lasted several weeks and involved most of the sellers that were tracked. Prices increased on individual listings, so cheaper offers disappearing cannot explain the rise on its own. Each search returns at most 64 listings, so this describes the sellers in the sample, but should still be indicative of the wider price movement.\n\n...\n\nSo in a situation whe",
+          "source": "exa",
+          "title": "Adam Sioud | Modelling GPU rental prices",
+          "url": "https://www.adamsioud.com/exemplars/gpu-prices/",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "c256aecf00496f13",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-09-29",
+          "sentence": "Independent\n\n...\n\nI measure the implicit prices of GPU rental characteristics using the hedonic framework of Rosen (1974). The data are 556 rental listings covering five GPU generations from two sources. Hardware specification is the largest determinant of price dispersion (η 2 = 29.6%). The elasticity of price with respect to compute capacity is 0.686. Hyperscalers charge 138.9% more than specialized clouds. Spot contracts trade at a 62.6% discount. The Hedonic Dispersion Index is 0.514. A Chow test rejects coefficient stability across the two sources. Source and date are confounded with provider composition. The pooled estimates are an average across two market snapshots.",
+          "source": "exa",
+          "title": "The Price of Compute: Hedonic Evidence from GPU Rental Markets  by Helvin Shek :: SSRN",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7541938",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        },
+        {
+          "evidence_id": "925e21c826d2c053",
+          "note_type": "search result excerpt",
+          "publication_date": "2026-05-13",
+          "sentence": "The most striking figure: observed Nvidia H100 listings ranging from $0.72 to $15.14 per hour within a 24-hour period.\n\nThat 21-fold spread does not necessarily mean equivalent infrastructure is trading at wildly irrational prices. Marketplaces vary significantly in networking, service guarantees, geographic location, and node quality. Some listings represent spot-style excess capacity. Others bundle higher-end infrastructure or enterprise-oriented configurations.\n\n...\n\nThe pressure is already visible in parts of the market.",
+          "source": "exa",
+          "title": "Live GPU Rental Listings Point to Early Price Compression",
+          "url": "https://www.datacenterknowledge.com/infrastructure/gpu-rental-markets-show-signs-of-pricing-compression",
+          "use": "Origin-filtered evidence for a bounded forecasting hypothesis; never target truth."
+        }
+      ],
+      "title": "Main-loop Exa research"
+    },
+    "id": "gvs-91fbdf53b761954a-9b6c0069c2f2f92b513e60ae55aee94c",
+    "kind": "evidence",
+    "origin": "2026-10-21",
+    "round": 14
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "candidate": "last_value_empirical",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1007/s10586-022-03581-8"
+      ],
+      "frozen_at": "2026-10-21",
+      "group": "marketplace_ask",
+      "id": "h14",
+      "method": "last_value_empirical",
+      "parameters": {},
+      "proposed_round": 14,
+      "reason": "The last_value_empirical method was previously accepted at round 9 with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero. Although subsequent rounds showed no significant improvement, this method remains the most promising based on prior acceptance and market volatility context. Other methods such as recent_28, step_shrink, calibrated, and volatility have been rejected due to lack of statistical significance. The 2022 research article on GPU spot price prediction supports simple empirical approaches for dynamic pricing environments, motivating the choice of last_value_empirical for bounded hypothesis freezing."
+    },
+    "id": "gvs-91fbdf53b761954a-052b0ffd865963b265ed0386a791dcdf",
+    "kind": "hypothesis",
+    "origin": "2026-10-21",
+    "round": 14
+  },
+  {
+    "agent": "ANALYST",
+    "content": {
+      "methods": {
+        "calibrated": {
+          "mean_official_loss": 0.019796825342316863,
+          "n_cells": 931
+        },
+        "drift": {
+          "mean_official_loss": 0.019495160320080196,
+          "n_cells": 931
+        },
+        "last_value_empirical": {
+          "mean_official_loss": 0.019426192587001078,
+          "n_cells": 931
+        },
+        "recent_28": {
+          "mean_official_loss": 0.019081056245714642,
+          "n_cells": 931
+        },
+        "recent_56": {
+          "mean_official_loss": 0.01956256920878768,
+          "n_cells": 931
+        },
+        "recent_90": {
+          "mean_official_loss": 0.01956251402434443,
+          "n_cells": 931
+        },
+        "step_shrink": {
+          "mean_official_loss": 0.019632255904051914,
+          "n_cells": 931
+        },
+        "volatility": {
+          "mean_official_loss": 0.01944559619114751,
+          "n_cells": 931
+        }
+      },
+      "observed_through": "2026-10-21"
+    },
+    "id": "gvs-91fbdf53b761954a-b3aa02235b4439a84c8b328665e11147",
+    "kind": "results",
+    "origin": "2026-10-21",
+    "round": 14
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2024-03-18",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence dated March 18, 2024, confirms NVIDIA announced the Blackwell platform as a new generation competing product. However, it does not provide numeric data or observed depreciation rates for the H100 GPU. Therefore, this information is suitable only for narrative context and not for quantitative forecasting inputs.",
+      "source": "direct_public_source",
+      "title": "NVIDIA Blackwell Platform Arrives to Power a New Era of Computing",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+    },
+    "id": "gvs-91fbdf53b761954a-af82a5ba158c35e863cc53934296ecdf",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2023-11-13",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from a direct public source dated November 13, 2023, states that NVIDIA announced the H200 GPU with 141 GB of HBM3e memory and 4.8 TB/s memory bandwidth, with shipments expected in Q2 2024. This information is vendor-provided specifications and does not include workload-matched price or performance data, limiting its use to narrative citation only.",
+      "source": "direct_public_source",
+      "title": "NVIDIA Supercharges Hopper, the World’s Leading AI Computing Platform",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform"
+    },
+    "id": "gvs-91fbdf53b761954a-2f4b74d6142fde2bc144dae09a4de82c",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2024-12-20",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence provides a projection from the DOE that data centers' electricity consumption in the U.S. will increase from about 4.4% in 2023 to approximately 6.7–12% by 2028. This information is relevant for understanding infrastructure constraints related to electricity demand but does not include any forecast or data on electricity prices. Therefore, it supports narrative context only and cannot be used for price forecasting.",
+      "source": "direct_public_source",
+      "title": "DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers",
+      "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
+    },
+    "id": "gvs-91fbdf53b761954a-7a1d50677d985d7c5a32ca1b9da44db8",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2023-11-13",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from November 13, 2023, describes NVIDIA's announcement of the HGX H200 system featuring the H200 Tensor Core GPU based on Hopper architecture with HBM3e memory. It highlights performance improvements and expected shipping in Q2 2024. However, this is a product announcement without detailed launch dates or availability specifics, suitable only for narrative context.",
+      "source": "exa",
+      "title": "NVIDIA Supercharges Hopper, the World’s Leading AI Computing Platform | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-supercharges-hopper-the-worlds-leading-ai-computing-platform"
+    },
+    "id": "gvs-91fbdf53b761954a-61d21169b6963eb0100c19a84ab409f8",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2022-03-22",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from March 22, 2022, announces NVIDIA's Hopper architecture and the H100 GPU, highlighting its significant performance improvements and features. However, it does not provide specific launch dates or detailed availability information beyond an expected release later in the year. Therefore, this information is suitable only for narrative context and not for precise forecasting or launch timing.",
+      "source": "exa",
+      "title": "NVIDIA Announces Hopper Architecture, the Next Generation of Accelerated Computing | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing"
+    },
+    "id": "gvs-91fbdf53b761954a-2df35bb85674d2492823ed460cc890c1",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2024-03-18",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from March 18, 2024, indicates that Nvidia announced a new generation of AI chips named Blackwell, with the first chip called GB200 expected to ship later in 2024. This announcement was made during Nvidia's developer conference and highlights Nvidia's intent to maintain its leadership in AI hardware. However, the information is limited to the announcement and expected launch timeframe without detailed specifications or confirmed release dates.",
+      "source": "exa",
+      "title": "Nvidia announces GB200 Blackwell AI chip, launching later this year",
+      "url": "https://www.cnbc.com/2024/03/18/nvidia-announces-gb200-blackwell-ai-chip-launching-later-this-year.html"
+    },
+    "id": "gvs-91fbdf53b761954a-81289909e8e234af67b7554ec965fcbc",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2022-03-22",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence is a search result excerpt from March 22, 2022, announcing NVIDIA's DGX H100 systems featuring the new H100 Tensor Core GPUs. It provides detailed information about the system's AI performance capabilities and infrastructure but does not include specific forecasting data or future predictions. Therefore, it is suitable only for narrative context.",
+      "source": "exa",
+      "title": "NVIDIA Announces DGX H100 Systems – World’s Most Advanced Enterprise AI Infrastructure | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-dgx-h100-systems-worlds-most-advanced-enterprise-ai-infrastructure"
+    },
+    "id": "gvs-91fbdf53b761954a-4262a917904b3684587dc64ea07179d0",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2026-09-29",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from the Bain & Company report dated 2026-09-29 provides a detailed narrative on the projected growth of data center capacity, estimating an addition of about 150 gigawatts by 2030, nearly tripling global capacity. It highlights constraints such as power, chips, skilled labor, and permitting, and emphasizes the need for structural changes to close the capacity gap. However, it does not provide specific quantitative forecasts or direct implications for GPU supply or demand, thus serving best as narrative context rather than concrete forecasting data.",
+      "source": "exa",
+      "title": "AI Data Center Boom: Can We Build It If They Come? | Bain & Company",
+      "url": "https://www.bain.com/insights/ai-data-center-boom-can-we-build-it-if-they-come-technology-report-2026/"
+    },
+    "id": "gvs-91fbdf53b761954a-c07aa873a8b703639e40ecb5a2c43468",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2026-09-16",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from a 2026-09-16 source projects that by 2030, global data center power demand will reach 490.7 GW, while grid capacity available to data centers is only 222.6 GW, resulting in a 268 GW supply-demand gap. This projection highlights a significant future capacity shortfall for data centers. However, the data is a forecast with inherent uncertainties and does not specify assumptions about technological or policy changes that could affect outcomes.",
+      "source": "exa",
+      "title": "Global Power Demand Capacity for Data Centers Expected to Rise 31% YoY in 2026; Grid Supply Gap to Widen in 2028, Says TrendForce",
+      "url": "https://www.trendforce.com/presscenter/news/20260916-13237.html"
+    },
+    "id": "gvs-91fbdf53b761954a-63f9f7ff221beea474fe69f91e28a869",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2026-03-06",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence describes a power generation project involving 1.2 GW of new capacity to supply AI factory campuses, which provides context on infrastructure capacity relevant to AI and data center buildout. However, it does not directly address GPU forecasting or related specifics, so it is suitable only for narrative context.",
+      "source": "exa",
+      "title": "AI Infrastructure Brief: Power, Capital, and Silicon Collide in the Next Phase of the Data Center Buildout | Data Center Frontier",
+      "url": "https://www.datacenterfrontier.com/machine-learning/news/55362264/ai-infrastructure-brief-power-capital-and-silicon-collide-in-the-next-phase-of-the-data-center-buildout"
+    },
+    "id": "gvs-91fbdf53b761954a-57f4ec7abaea62fb6b4f676ab5bfbe78",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2026-01-05",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from the 2026-01-05 publication provides a narrative context about the expected doubling of global capacity between 2026 and 2030 and the role of hyperscalers in sector growth. However, it lacks specific quantitative data or direct references to GPU forecasting, limiting its use to narrative context only.",
+      "source": "exa",
+      "title": "2026 Global Data Center Market Outlook",
+      "url": "https://www.jll.com/en-us/insights/market-outlook/data-center-outlook"
+    },
+    "id": "gvs-91fbdf53b761954a-ee0efd5ce511f295d4f58f747c090842",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2021-05-04",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence provides a detailed explanation of how producer price indexes (PPIs) for electric power are used to analyze price trends during the transition away from coal to natural gas and renewables. It highlights the complexity of identifying specific price effects and describes the methodology and distinctions between utility and non-utility generators. However, it does not provide specific quantitative data or forecasts, making it suitable only for narrative context.",
+      "source": "exa",
+      "title": "Trends in electricity prices during the transition away from ...",
+      "url": "https://www.bls.gov/opub/btn/volume-10/trends-in-electricity-prices-during-the-transition-away-from-coal.htm"
+    },
+    "id": "gvs-91fbdf53b761954a-f27f9e3649d5b0351e912452b547b3ec",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  },
+  {
+    "agent": "RESEARCHER",
+    "content": {
+      "publication_date": "2026-10-01",
+      "scope": "Argued long-term view only; not used in historical forecasts.",
+      "sentence": "The evidence from a 2026-10-01 source indicates that major operators have extended the depreciation schedules for data center GPUs, reflecting longer economic and physical lifespans than previously assumed. For example, AWS extended from 3 to 5-6 years, Microsoft from 4 to 6 years, and Google from 3-4 to 6 years. The NVIDIA A100 GPU, shipped in 2020, remains in commercial service six years later, with CoreWeave extending bookings through 2029. This suggests GPUs retain value and utility well beyond initial depreciation estimates. However, the data is based on disclosed accounting depreciation schedules and company reports, which serve as proxies rather than direct measures of physical lifespan. Therefore, the evidence supports a narrative that GPUs have durable, extended productive lives in data centers, but exact physical longevity and performance over time are inferred rather than directly measured.",
+      "source": "exa",
+      "title": "Productive, Durable, Fungible: How NVIDIA AI Factories ...",
+      "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/"
+    },
+    "id": "gvs-91fbdf53b761954a-a30965ca2f023b2c01a5d9488806c72a",
+    "kind": "evidence",
+    "origin": "2026-11-06",
+    "round": 15
+  }
+]

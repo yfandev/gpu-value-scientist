@@ -1,0 +1,10 @@
+{
+  "ci": [
+    -2.4329069252961188e-05,
+    0.0
+  ],
+  "n_origins": 14,
+  "mean_loss_difference": -1.2174539823008747e-05,
+  "n_cells": 1017,
+  "resampling": "paired origin-cluster bootstrap, exploratory 95% CI; no multiplicity correction"
+}

@@ -1,0 +1,9 @@
+{
+  "requested_backend": "modal",
+  "actual_backend": "modal",
+  "fallback_reason": null,
+  "n_jobs": 8,
+  "wall_seconds": 28.570309392000127,
+  "modal_parallelism_limit": 8,
+  "claim": "Real Modal Function.map execution"
+}

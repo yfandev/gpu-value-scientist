@@ -1,0 +1,16 @@
+{
+  "agent_mode": "openai_recorded",
+  "memory_backend": "local_json",
+  "evidence_status": "exa_complete",
+  "final_method": "drift fallback",
+  "cutoff": "2026-11-06",
+  "n_series": 37,
+  "n_rows": 111,
+  "warnings": [
+    "37 posted headline targets at Nov 6; the brief\u2019s 97 at Oct 24 include 80 AWS archive series.",
+    "Historical cohort selected at final cutoff: retrospective cohort/survivorship limitation; forecast values and decisions remain time-filtered.",
+    "Final Nov 6 scoring truth is withheld: no final-submission performance claim.",
+    "Paired bootstrap is exploratory with few origin clusters and repeated tests; no multiplicity-controlled guarantee.",
+    "Past.dev current backend: local_json; recorded source: past.dev. Actual live access is audited separately."
+  ]
+}

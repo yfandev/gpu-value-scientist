@@ -1,0 +1,842 @@
+[
+  {
+    "round": 1,
+    "origin_date": "2026-07-22",
+    "skill_vs_drift": 0.0,
+    "skill_vs_last_value": 0.002032,
+    "coverage": 0.333333,
+    "decisions": [],
+    "cumulative_skill_vs_drift": 0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 2,
+    "origin_date": "2026-07-29",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.19337,
+    "coverage": 0.5,
+    "decisions": [
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "recent_28",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 3,
+    "origin_date": "2026-08-05",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.058496,
+    "coverage": 0.653333,
+    "decisions": [
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "recent_28",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "step_shrink",
+        "verdict": "pending",
+        "reason": "Only 0 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 4,
+    "origin_date": "2026-08-12",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.057245,
+    "coverage": 0.674603,
+    "decisions": [
+      {
+        "id": "h01",
+        "group": "hyperscaler_spot",
+        "candidate": "recent_28",
+        "method": "recent",
+        "parameters": {
+          "window": 28,
+          "min_samples": 10
+        },
+        "frozen_at": "2026-07-22",
+        "proposed_round": 1,
+        "reason": "The statistical gate requires rejection based on the paired origin-cluster bootstrap 95% confidence interval and mean loss difference. Although the mean loss difference is positive, indicating some improvement, the confidence interval does not support acceptance under the given criteria. Therefore, the hypothesis cannot be accepted.",
+        "evidence_urls": [
+          "https://arxiv.org/abs/2607.12156",
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://doi.org/10.1016/j.future.2017.09.038"
+        ],
+        "round": 4,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          2.865486305555699e-05,
+          0.003450739255555565
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-08-12",
+        "validation_origins": [
+          "2026-07-22",
+          "2026-07-29",
+          "2026-08-05"
+        ],
+        "proposal_reason": "The 2022 study on GPU spot instance pricing prediction highlights the dynamic and non-stationary nature of GPU spot prices, suggesting that recent data windows are more relevant for forecasting. Using a recent 28-day window balances capturing recent trends while maintaining enough data for model stability, aligning with the evidence that GPU spot prices fluctuate based on short-term demand and supply dynamics.",
+        "available_evidence_urls": [
+          "https://arxiv.org/abs/2607.12156",
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://doi.org/10.1016/j.future.2017.09.038"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "step_shrink",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 5,
+    "origin_date": "2026-08-19",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.048268,
+    "coverage": 0.677966,
+    "decisions": [
+      {
+        "group": "marketplace_ask",
+        "candidate": "step_shrink",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 0 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 6,
+    "origin_date": "2026-08-26",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.032867,
+    "coverage": 0.701754,
+    "decisions": [
+      {
+        "id": "h02",
+        "group": "marketplace_ask",
+        "candidate": "step_shrink",
+        "method": "step",
+        "parameters": {
+          "window": 56,
+          "shrinkage": 0.5
+        },
+        "frozen_at": "2026-07-29",
+        "proposed_round": 2,
+        "reason": "The statistical gate indicates rejection, and the bootstrap evidence shows a mean loss difference of 0.0 with a confidence interval of [0.0, 0.0], providing no support for improvement. Therefore, the hypothesis cannot be accepted despite the contextual reasoning.",
+        "evidence_urls": [
+          "https://arxiv.org/abs/2607.12156",
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://doi.org/10.1016/j.future.2017.09.038",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 6,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          0.0,
+          0.0
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-08-26",
+        "validation_origins": [
+          "2026-08-05",
+          "2026-08-12",
+          "2026-08-19"
+        ],
+        "proposal_reason": "The recent evidence from 2026-07-29 highlights significant short-term price movements and volatility in GPU rental prices, including a 119.2% increase in NVIDIA L4 rental prices within a week. This suggests the presence of change points and sticky posted prices in the marketplace. The step_shrink method, which is designed to handle change point shrinkage and sticky price behavior, is therefore well-motivated for forecasting in this context. Prior research from 2026-05-29 and 2026-06-29 provides empirical data on price dispersion and short-term price dynamics, supporting the use of step_shrink for bounded forecasting hypotheses.",
+        "available_evidence_urls": [
+          "https://arxiv.org/abs/2607.12156",
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://doi.org/10.1016/j.future.2017.09.038",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "id": "h03",
+        "group": "neocloud_rate_card",
+        "candidate": "calibrated",
+        "method": "conformal",
+        "parameters": {
+          "window": 56,
+          "calibration_days": 35,
+          "min_calibration": 12
+        },
+        "frozen_at": "2026-08-05",
+        "proposed_round": 3,
+        "reason": "The statistical gate indicates rejection, and the 95% confidence interval includes zero with a mean loss difference very close to zero, providing no significant evidence to accept the hypothesis. Therefore, the hypothesis should be rejected based on the supplied paired bootstrap evidence.",
+        "evidence_urls": [
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 6,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -0.0002571455938888859,
+          0.0
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-08-26",
+        "validation_origins": [
+          "2026-08-05",
+          "2026-08-12",
+          "2026-08-19"
+        ],
+        "proposal_reason": "The June 12, 2026 academic framework proposes a Schwartz-Smith two-factor model with scheduled jumps for GPU rental rates, addressing unique challenges like hardware depreciation and lack of storage arbitrage. This calibrated approach is directly relevant and testable for forecasting GPU compute futures, making it the most suitable bounded hypothesis to freeze now for future testing.",
+        "available_evidence_urls": [
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 0 later matured origins; need 3."
+      },
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "recent_56",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 7,
+    "origin_date": "2026-09-02",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.05607,
+    "coverage": 0.702509,
+    "decisions": [
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 0 later matured origins; need 3."
+      },
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "recent_56",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 8,
+    "origin_date": "2026-09-09",
+    "skill_vs_drift": -0.0,
+    "skill_vs_last_value": 0.055189,
+    "coverage": 0.733333,
+    "decisions": [
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 0 later matured origins; need 3."
+      },
+      {
+        "id": "h05",
+        "group": "hyperscaler_spot",
+        "candidate": "recent_56",
+        "method": "recent",
+        "parameters": {
+          "window": 56,
+          "min_samples": 20
+        },
+        "frozen_at": "2026-08-19",
+        "proposed_round": 5,
+        "reason": "The 95% confidence interval for the mean loss difference includes zero (-3.6868e-05 to 0.000492), indicating no statistically significant improvement. Additionally, the statistical gate explicitly requires rejection. Therefore, the evidence does not support accepting the recent_56 method.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "round": 8,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -3.6868449166664596e-05,
+          0.0004920854549999994
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-09-09",
+        "validation_origins": [
+          "2026-08-19",
+          "2026-08-26",
+          "2026-09-02"
+        ],
+        "proposal_reason": "The recent_28 method was previously rejected based on the paired origin-cluster bootstrap 95% confidence interval and mean loss difference, indicating insufficient statistical support for acceptance. The recent_56 method, which uses a longer rolling window, may better capture the nonstationary and volatile nature of GPU rental prices as indicated by the 2022 research on GPU spot price prediction and the 2026 evidence of short-term scarcity and price jumps. This method balances recency and sample size, potentially improving forecast stability and accuracy in this fragmented and dynamic market.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "volatility",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": -0.0,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "drift",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 9,
+    "origin_date": "2026-09-16",
+    "skill_vs_drift": 0.000971,
+    "skill_vs_last_value": 0.045024,
+    "coverage": 0.714571,
+    "decisions": [
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      },
+      {
+        "id": "h06",
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "method": "last_value_empirical",
+        "parameters": {},
+        "frozen_at": "2026-08-26",
+        "proposed_round": 6,
+        "reason": "The bootstrap confidence interval for the mean loss difference is entirely below zero, indicating a statistically significant improvement of the candidate method over the baseline. The statistical gate allows acceptance. The hypothesis rationale is sound given the market volatility and prior rejections of more complex methods, supporting the choice of the last_value_empirical method as a reasonable approach.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "round": 9,
+        "verdict": "accepted",
+        "bootstrap_ci": [
+          -0.0066818481111111175,
+          -0.0009269826111111141
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-09-16",
+        "validation_origins": [
+          "2026-08-26",
+          "2026-09-02",
+          "2026-09-09"
+        ],
+        "proposal_reason": "Previous hypotheses using recent rolling windows (recent_28, step_shrink, calibrated) have been statistically rejected based on bootstrap confidence intervals including zero and no significant improvement in loss. The evidence from the May 2026 Gerra research paper and the August 2026 Nebius earnings report highlights extreme price dispersion and short-term scarcity effects, suggesting high volatility and non-stationarity in GPU rental prices. Given the lack of support for more complex smoothing or calibration methods and the dynamic market conditions, a simple last_value_empirical method is a reasonable bounded hypothesis to freeze for future testing as it relies on the most recent observed price without imposing smoothing assumptions that have failed validation.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "volatility",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "volatility",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.000971,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 10,
+    "origin_date": "2026-09-23",
+    "skill_vs_drift": 0.001268,
+    "skill_vs_last_value": 0.054532,
+    "coverage": 0.669935,
+    "decisions": [
+      {
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "id": "h07",
+        "group": "neocloud_rate_card",
+        "candidate": "volatility",
+        "method": "volatility",
+        "parameters": {
+          "window": 28,
+          "scale_min": 0.5,
+          "scale_max": 2.0
+        },
+        "frozen_at": "2026-09-02",
+        "proposed_round": 7,
+        "reason": "The bootstrap confidence interval [-8.25e-06, 1.89e-05] includes zero, indicating no statistically significant improvement in mean loss difference. The statistical gate requires rejection due to lack of significant evidence supporting the candidate hypothesis 'volatility' over the baseline. Therefore, the hypothesis cannot be accepted at this time.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 10,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -8.245881352659438e-06,
+          1.8887056521745198e-05
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-09-23",
+        "validation_origins": [
+          "2026-09-02",
+          "2026-09-09",
+          "2026-09-16"
+        ],
+        "proposal_reason": "The latest evidence from 2026-06-12 presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity using a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events. This approach addresses unique challenges such as lack of storage, hardware depreciation, and mean-reverting spot rates, making it directly relevant and providing a structured, testable forecasting method. Previous hypotheses using recent windows and step shrinkage have been rejected based on bootstrap confidence intervals, and the conformal calibrated method also failed to show significant improvement. Therefore, the volatility-based method is the most promising bounded hypothesis to freeze now for future testing.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "volatility",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.001268,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 11,
+    "origin_date": "2026-09-30",
+    "skill_vs_drift": 0.000861,
+    "skill_vs_last_value": 0.049498,
+    "coverage": 0.650069,
+    "decisions": [
+      {
+        "id": "h04",
+        "group": "neocloud_spot",
+        "candidate": "calibrated",
+        "method": "conformal",
+        "parameters": {
+          "window": 56,
+          "calibration_days": 35,
+          "min_calibration": 12
+        },
+        "frozen_at": "2026-08-12",
+        "proposed_round": 4,
+        "reason": "The statistical gate indicates rejection based on the paired origin-cluster bootstrap analysis with a 95% confidence interval of [0.0, 0.0] and a mean loss difference of 0.0, suggesting no improvement or calibration benefit. Therefore, despite the detailed academic framework and calibration approach, the evidence does not support accepting the hypothesis at this time.",
+        "evidence_urls": [
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "round": 11,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          0.0,
+          0.0
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-09-30",
+        "validation_origins": [
+          "2026-09-09",
+          "2026-09-16",
+          "2026-09-23"
+        ],
+        "proposal_reason": "Recent evidence from June 2026 presents a detailed academic framework for forecasting GPU rental rates as a non-storable, depreciating commodity using a Schwartz-Smith two-factor model with scheduled jumps tied to hardware launch events. This calibrated approach directly addresses the unique challenges of GPU futures pricing and is supported by structured, testable predictions, making it the most suitable bounded forecasting hypothesis to freeze now for future testing.",
+        "available_evidence_urls": [
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6829278",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market",
+          "https://www.morningstar.com/company-reports/1494693-nebius-earnings-gpu-spot-prices-triple-and-neoclouds-exploit-short-term-scarcity"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "id": "h08",
+        "group": "neocloud_spot",
+        "candidate": "volatility",
+        "method": "volatility",
+        "parameters": {
+          "window": 28,
+          "scale_min": 0.5,
+          "scale_max": 2.0
+        },
+        "frozen_at": "2026-09-09",
+        "proposed_round": 8,
+        "reason": "The bootstrap confidence interval includes zero and the mean loss difference is zero, indicating no significant improvement. The statistical gate requires rejection under these conditions, so the hypothesis cannot be accepted despite the theoretical promise of the volatility method.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798"
+        ],
+        "round": 11,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          0.0,
+          0.0
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-09-30",
+        "validation_origins": [
+          "2026-09-09",
+          "2026-09-16",
+          "2026-09-23"
+        ],
+        "proposal_reason": "Previous hypotheses using recent windows (recent_28, recent_56) and step shrink methods have been rejected based on bootstrap confidence intervals including zero, indicating no significant improvement. The calibrated conformal method was also rejected. However, the latest evidence from 2026-09-02 presents a detailed academic framework for forecasting GPU rental rates using a Schwartz-Smith two-factor model with scheduled jumps, addressing unique challenges such as hardware depreciation and mean-reverting spot rates. This model inherently involves volatility scaling and structured volatility modeling, making the volatility method a promising bounded hypothesis for future testing.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6926798"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.000861,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 12,
+    "origin_date": "2026-10-07",
+    "skill_vs_drift": 0.000788,
+    "skill_vs_last_value": 0.059965,
+    "coverage": 0.651644,
+    "decisions": [
+      {
+        "id": "h09",
+        "group": "hyperscaler_spot",
+        "candidate": "last_value_empirical",
+        "method": "last_value_empirical",
+        "parameters": {},
+        "frozen_at": "2026-09-16",
+        "proposed_round": 9,
+        "reason": "The bootstrap confidence interval [-1.6879602592592458e-05, 7.694063888888998e-06] includes zero, indicating no statistically significant improvement. The statistical gate requires significance to accept, so the hypothesis must be rejected.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 12,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -1.6879602592592458e-05,
+          7.694063888888998e-06
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-10-07",
+        "validation_origins": [
+          "2026-09-16",
+          "2026-09-23",
+          "2026-09-30"
+        ],
+        "proposal_reason": "The last_value_empirical method was accepted in the most recent evaluation (round 9) with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero. Previous more complex methods such as recent_28, recent_56, step_shrink, and calibrated were rejected based on their confidence intervals including zero or failing the statistical gate. The market exhibits high volatility and fragmented pricing, as documented in the May 2026 research paper and June 2026 weekly snapshot, supporting the rationale that a simple empirical last value forecast is currently the most reliable bounded hypothesis for GPU rental price forecasting.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.000788,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 13,
+    "origin_date": "2026-10-14",
+    "skill_vs_drift": 0.000683,
+    "skill_vs_last_value": 0.07816,
+    "coverage": 0.646355,
+    "decisions": [
+      {
+        "id": "h10",
+        "group": "marketplace_ask",
+        "candidate": "last_value_empirical",
+        "method": "last_value_empirical",
+        "parameters": {},
+        "frozen_at": "2026-09-23",
+        "proposed_round": 10,
+        "reason": "The bootstrap confidence interval includes zero, indicating no statistically significant improvement. The statistical gate requires significance to accept, so the hypothesis must be rejected despite the negative mean loss difference.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 13,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -0.0012804499999999792,
+          0.0
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-10-14",
+        "validation_origins": [
+          "2026-09-23",
+          "2026-09-30",
+          "2026-10-07"
+        ],
+        "proposal_reason": "The last_value_empirical method was accepted in round 9 based on a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero. Prior more complex methods such as recent_28, recent_56, step_shrink, calibrated, and volatility were rejected due to lack of significant improvement or confidence intervals including zero. The May 2026 research paper highlights extreme price dispersion and steady declines in GPU rental prices, suggesting market volatility and fragmentation where a simple empirical last value forecast is reasonable. Therefore, last_value_empirical is the most supported bounded hypothesis for freezing now for future testing.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "neocloud_rate_card",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.000683,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  },
+  {
+    "round": 14,
+    "origin_date": "2026-10-21",
+    "skill_vs_drift": 0.000567,
+    "skill_vs_last_value": 0.080144,
+    "coverage": 0.647001,
+    "decisions": [
+      {
+        "id": "h11",
+        "group": "neocloud_rate_card",
+        "candidate": "last_value_empirical",
+        "method": "last_value_empirical",
+        "parameters": {},
+        "frozen_at": "2026-09-30",
+        "proposed_round": 11,
+        "reason": "The 95% confidence interval for the mean loss difference includes zero ([-0.0002266, 0.0000733]), indicating no statistically significant improvement of the candidate method over the baseline. The statistical gate requires significance to accept, so the hypothesis must be rejected.",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "round": 14,
+        "verdict": "rejected",
+        "bootstrap_ci": [
+          -0.00022659706695905572,
+          7.333119009661452e-05
+        ],
+        "n_origins": 3,
+        "evaluated_at": "2026-10-21",
+        "validation_origins": [
+          "2026-09-30",
+          "2026-10-07",
+          "2026-10-14"
+        ],
+        "proposal_reason": "The last_value_empirical method was accepted in round 9 with a statistically significant improvement indicated by a bootstrap confidence interval entirely below zero, demonstrating better performance than other tested methods. Prior methods such as recent_28, recent_56, step_shrink, calibrated, and volatility were rejected due to lack of statistical significance or improvement. The May 2026 research paper highlights extreme price dispersion and steady declines in GPU rental rates, suggesting that a simple empirical last value approach may effectively capture recent market conditions without overfitting. Therefore, last_value_empirical is the most justified bounded hypothesis to freeze for future testing.",
+        "available_evidence_urls": [
+          "https://dl.acm.org/doi/10.1007/s10586-022-03581-8",
+          "https://www.aiminingco.com/insights/gpu-rental-market-week-of-june-22-2026",
+          "https://www.gerra.com/research/gpu-market"
+        ],
+        "explicitly_cited_urls": [],
+        "source_interpretation_note": "Sources were supplied to the Analyst. Only literal URLs in its rationale count as explicit URL citations; cited papers are motivation, not implementations of their models."
+      },
+      {
+        "group": "neocloud_spot",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 2 later matured origins; need 3."
+      },
+      {
+        "group": "hyperscaler_spot",
+        "candidate": "last_value_empirical",
+        "verdict": "pending",
+        "reason": "Only 1 later matured origins; need 3."
+      }
+    ],
+    "cumulative_skill_vs_drift": 0.000567,
+    "selected": {
+      "hyperscaler_spot": "drift",
+      "marketplace_ask": "last_value_empirical",
+      "neocloud_rate_card": "drift",
+      "neocloud_spot": "drift"
+    }
+  }
+]

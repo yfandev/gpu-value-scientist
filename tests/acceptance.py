@@ -41,10 +41,15 @@ def main():
     hs=json.loads(Path('results/hypotheses.json').read_text())
     for h in hs:
         for origin in h.get('validation_origins',[]):assert h['frozen_at']<=origin<h['evaluated_at']
-    result={'status':'passed_offline_core','forecast_sha256':actual,'pack_files_verified':len(manifest.stdout.splitlines()),'offline_network_guard_positive_control':'passed','byte_identical_forecasts':True,'official_metrics_identical':True,'memory_writers':sorted(writers),'memory_readers':sorted(readers),'live_integrations':'not verified; credentials missing','target_discrepancy':'37 actual November posted headline targets, not the mixed 97 October targets'}
+    sponsor=json.loads(Path('results/sponsor_audit.json').read_text())
+    receipt=sponsor.get('recorded_live_run',{})
+    verified=receipt.get('status')=='matched_exact_live_run'
+    live=receipt.get('sponsors',{}) if verified else sponsor
+    integration_ok=live.get('past_dev',{}).get('sponsor_requirements_verified',False) and live.get('exa',{}).get('status')=='live_verified'
+    result={'status':'passed_offline_core','forecast_sha256':actual,'pack_files_verified':len(manifest.stdout.splitlines()),'offline_network_guard_positive_control':'passed','byte_identical_forecasts':True,'official_metrics_identical':True,'memory_writers':sorted(writers),'memory_readers':sorted(readers),'live_integrations':{'matching_live_receipt':verified,'actual_access_verified':integration_ok},'target_discrepancy':'37 actual November posted headline targets, not the mixed 97 October targets'}
     Path('results/acceptance.json').write_text(json.dumps(result,indent=2)+'\n')
     payload=json.loads(Path('demo/data.json').read_text())
-    payload['checks'].extend([{'name':'Offline byte-identical reproduction','status':'passed','detail':'Network socket connections denied; positive control fails; forecasts and official metrics identical.'},{'name':'Shared memory roles','status':'passed','detail':f"Local fallback: writers {', '.join(sorted(writers))}; readers {', '.join(sorted(readers))}."},{'name':'Live OpenAI / past.dev / Exa','status':'blocked','detail':'API credentials missing. No live integration success claimed.'},{'name':'80% interval calibration goal','status':'not achieved','detail':'Measured historical online coverage is below target; see actual metric.'}])
+    payload['checks'].extend([{'name':'Offline byte-identical reproduction','status':'passed','detail':'Network socket connections denied; positive control fails; forecasts and official metrics identical.'},{'name':'Shared memory roles','status':'passed','detail':f"Offline replay roles: writers {', '.join(sorted(writers))}; readers {', '.join(sorted(readers))}."},{'name':'Live OpenAI / past.dev / Exa','status':'passed' if integration_ok else 'unverified','detail':'Matching recorded live receipt verifies actual API access; this acceptance run itself is offline.' if integration_ok else 'No matching actual live execution verified.'},{'name':'80% interval calibration goal','status':'not achieved','detail':'Measured historical online coverage is below target; see actual metric.'}])
     Path('demo/data.json').write_text(json.dumps(payload,indent=2)+'\n')
     print(json.dumps(result,indent=2));print('GPU_VALUE_OFFLINE_ACCEPTANCE_PASSED')
 if __name__=='__main__':main()
