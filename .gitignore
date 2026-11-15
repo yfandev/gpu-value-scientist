@@ -21,3 +21,6 @@ docs/reference/
 
 results/series_audit/series_daily.csv
 artifacts/submission/raw/
+
+artifacts/submission/narration/
+artifacts/submission/*.wav

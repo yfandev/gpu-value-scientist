@@ -1,0 +1,71 @@
+{
+  "duration_seconds": 112.28,
+  "audio": true,
+  "disclosure": "AI-generated narration spoken at opening",
+  "segments": [
+    {
+      "segment": 0,
+      "start": 0,
+      "end": 7,
+      "source_seconds": 7.35,
+      "speed": 1.0808823529411764,
+      "audio_sha256": "ea1506b1bf26796c0e406501949a1c75db5759e0adbe8d52c05959f5fb9c08d8"
+    },
+    {
+      "segment": 1,
+      "start": 7,
+      "end": 16,
+      "source_seconds": 10.05,
+      "speed": 1.1420454545454546,
+      "audio_sha256": "89922d557f7bb288b5205ef856a29416f59d0786ac7f15af984a9a00cd4525fa"
+    },
+    {
+      "segment": 2,
+      "start": 16,
+      "end": 38,
+      "source_seconds": 19.7,
+      "speed": 1,
+      "audio_sha256": "041417d691cd906bf7f5e2f3186cf6974ff4b2205ba0dff8d5ce960d38673eea"
+    },
+    {
+      "segment": 3,
+      "start": 38,
+      "end": 52,
+      "source_seconds": 16.6,
+      "speed": 1.2028985507246377,
+      "audio_sha256": "8b59de5476030abd11a0f77495d11515512cc2ec1b00beec53f95dc2d6b26ccd"
+    },
+    {
+      "segment": 4,
+      "start": 52,
+      "end": 65,
+      "source_seconds": 13.9,
+      "speed": 1.0859375,
+      "audio_sha256": "0df7982d0968dea5f40ee69ae86f26c46693dfa0e1c6253d415bb3bea539d8ee"
+    },
+    {
+      "segment": 5,
+      "start": 65,
+      "end": 81,
+      "source_seconds": 21.2,
+      "speed": 1.341772151898734,
+      "audio_sha256": "7cb4e680c43b7334c4bdd3a7ece3318f1ba0166b97927b0beb6799f967325351"
+    },
+    {
+      "segment": 6,
+      "start": 81,
+      "end": 96,
+      "source_seconds": 16.85,
+      "speed": 1.1385135135135136,
+      "audio_sha256": "c222194e2275f819a9dd5a289767b6f5addb3922250b70042572722b5401ddf0"
+    },
+    {
+      "segment": 7,
+      "start": 96,
+      "end": 111.8,
+      "source_seconds": 19.95,
+      "speed": 1.278846153846154,
+      "audio_sha256": "1deeff79a93b4823682bcae3f523b592369cbd531a462abf434c923c799c4043"
+    }
+  ]
+}

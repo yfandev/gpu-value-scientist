@@ -2,8 +2,34 @@
 
 An AI research team that tests GPU rental-price forecasts, shares evidence, and keeps a record of ideas that fail.
 
-**[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the captioned walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv)**
+**[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the narrated, captioned demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv)**
 
+
+## Submission links
+
+- **Live site:** [https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)
+- **Demo video (1:52):** [Watch or download the narrated walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm). Includes spoken AI-generated narration and explanatory on-screen captions.
+- **One submission screenshot (16:9):** [Download project-screenshot.png](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/project-screenshot.png).
+- **GitHub:** https://github.com/yfandev/gpu-value-scientist
+- **Judge-panel rehearsal:** [Simulated critique and media verification](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/JUDGE_VIDEO_REHEARSAL.md). This is automated self-review, not feedback from the judges.
+- **Selected forecasts:** [forecasts_calibrated.csv](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/forecasts_calibrated.csv)
+- **Full form fields and video-upload instructions:** [Submission guide](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/SUBMISSION_DRAFT.md).
+
+The video is publicly hosted on Modal. If the form requires YouTube, Drive or Loom, upload this video there and submit that host's share link; no such link has been created here.
+
+## Submission description
+
+GPU Value Scientist is an AI research team that forecasts GPU rental prices, tests its own ideas, and preserves the evidence—including failures.
+
+Four roles—Analyst, Forecaster, Critic and Researcher—use OpenAI models, Exa searches inside the research loop, shared past.dev memory, and Modal parallel experiments. Built in the Originator cloud workspace, the public demo shows predictions, sources, decisions and rejected hypotheses.
+
+Our strongest research finding challenges what a GPU price index measures. A reproducible audit reconstructed 2,837 daily medians from 444,663 observations. In one H100 marketplace category, the median moved $1.90 → $0.94 → $2.23 while a matching observed price record stayed at $0.94. Changes in the observed listings can move the index without that matching record changing price—a distinction that matters when valuing a specific GPU configuration.
+
+A human-guided calibration step broadened prediction ranges without changing their middle estimates. Historical coverage rose from 64.70% to 75.42%, with 4.323% lower combined forecast error than Pacific’s drift baseline. However, the confidence interval includes no improvement, and later checks did not confirm the gain. We rejected two subsequent forecasting approaches that failed their adoption tests and preserved the frozen submission.
+
+The demo also presents evidence-informed, assumption-based 2028–2029 scenarios for H100 and A100 rentals and equipment values. Exa ran inside the research loop; multiple agents wrote to and read from past.dev; eight experiment jobs ran on Modal. Memory retrieval matched local lookup on accuracy but was slower, with no established cost savings.
+
+After installing the supplied data pack and dependencies, one command reproduces the saved forecasts offline. Code, experiment protocols, official scores, sources and verification artifacts are public.
 
 ## What the price data taught us
 
@@ -88,8 +114,8 @@ To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY
 - The starter rejects history containing a post-cutoff row.
 - Network-disabled reproduction preserves forecast bytes and official metrics.
 - A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
-- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts under two minutes.
-- A fresh agent with no project background reviewed the site for a two-minute judging visit; its clarity findings were fixed before final capture ([review](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FINAL_DEMO_REVIEW.md)).
+- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A narrated, captioned walkthrough lasts 1 minute 52 seconds.
+- A fresh agent with no project background reviewed the site for a two-minute judging visit; its clarity findings were fixed before final capture ([review](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FINAL_IMPATIENT_REVIEW.md)).
 - Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 
 Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/main/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/MEMORY_BENCHMARK_V3.md).
