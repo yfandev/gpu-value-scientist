@@ -10,9 +10,9 @@ from openai import OpenAI
 OUT=ROOT/'artifacts/submission';CACHE=OUT/'narration';CACHE.mkdir(exist_ok=True)
 FFMPEG=imageio_ffmpeg.get_ffmpeg_exe()
 TEXTS=[
-'Four point three two three percent less historical forecast error than Pacific. The gain is uncertain. GPU Value Scientist shows the evidence. This voice is AI generated.',
+'Four point three two three percent less historical forecast error than Pacific. GPU Value Scientist shows the evidence. This voice is AI generated.',
 'One H one hundred record stayed at ninety-four cents per GPU hour while the category median changed. Changing listings can move an index.',
-'Our original prediction ranges were too narrow. Human-guided calibration widened them without changing the middle. Coverage rose from sixty-four point seven to seventy-five point four two percent. The uncertainty includes no improvement, and later November checks did not confirm the gain.',
+'Our original prediction ranges were too narrow. Human-guided calibration widened them without changing the middle. Coverage rose from sixty-four point seven to seventy-five point four two percent. Later November checks did not confirm the gain.',
 'Four agents propose, test and record forecasting ideas. Later human-guided models failed their checks. Rejections remain visible, and our frozen submission stays unchanged.',
 'Exa searched inside the loop. Three agents wrote shared past dot dev memory; two read it. Modal ran eight jobs. Memory matched local accuracy, but was slower.',
 'White shows recorded prices. Green and gold overlap because our middle prediction matches Pacific. We changed the prediction bounds, not actual prices. Future actual prices are unavailable.',

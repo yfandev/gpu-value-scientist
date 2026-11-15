@@ -7,9 +7,9 @@
       "segment": 0,
       "start": 0,
       "end": 12.802928040999978,
-      "source_seconds": 14.25,
-      "speed": 1.130689626540892,
-      "audio_sha256": "823d8a5aed7b6144027a231a247bc5e63d44d776c9e3c5c5ddac3a507b410433"
+      "source_seconds": 12.5,
+      "speed": 1,
+      "audio_sha256": "7f14ca29ea73250819c205b9829057eafc9f41b1d5fc75342ac29c33b67e6d85"
     },
     {
       "segment": 1,
@@ -23,9 +23,9 @@
       "segment": 2,
       "start": 20.94525768499807,
       "end": 41.86270874899754,
-      "source_seconds": 21.05,
-      "speed": 1.0160516337156165,
-      "audio_sha256": "b4f5fc0265806c666088fcb27d98566ddd737679a49a90c2d810037028e1f297"
+      "source_seconds": 16.2,
+      "speed": 1,
+      "audio_sha256": "81d093fd012c811c1dfb96750f6fedb18428e03b278bedb54a24d976095c45b2"
     },
     {
       "segment": 3,

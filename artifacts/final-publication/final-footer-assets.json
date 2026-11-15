@@ -1,0 +1,18 @@
+[
+  {
+    "file": "index.html",
+    "sha256": "2b81ea96bb6ae32df17338c7ea3d200149520100bc1b575e1895061c3f879525"
+  },
+  {
+    "file": "README.md",
+    "sha256": "c04f9ee45b084ccf955b0ab963853f794f1c5b4017c472e023d4fb4e0679525b"
+  },
+  {
+    "file": "demo.webm",
+    "sha256": "24c2188b8e981188cba88249157bf2f6cad2567ae5a3277ea5f9c78469cce221"
+  },
+  {
+    "file": "project-screenshot.png",
+    "sha256": "1746a610d42c3c0e71dfe23bf318804869ff7bc3aee76d3aa66acac1756ca240"
+  }
+]

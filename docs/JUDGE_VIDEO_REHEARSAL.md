@@ -81,3 +81,25 @@ The two-second frame shows the updated upright, single-line headline and the 202
 The opening screenshot was extended through approximately **20.945 seconds**, including the measurement explanation, before replay begins. Current `artifacts/submission/demo-final.webm` SHA-256: `7201d69b7f35333cd1a3f1b0b7420a29ac0f2901813c02e2303e308dcdc9af16`. All earlier media hashes in this report identify prior versions.
 
 Full decode succeeds at **108.12 seconds**. Decoded audio retains the identical PCM hash `5ba018f7759d5983b953f093249235edbb1f60f1f3c5d98df23e1ded21857677`. The 15-second frame now shows the upright single-line headline, 2029 outlook and complete matching-record comparison table. The earlier typography reappearance in that scene is resolved. The replaced segment uses the page screenshot rather than the old explanatory overlay; the page itself supplies the claims and caveats. **Approved, with no blocking issue found.**
+
+## Final concise-narration revision
+
+Current reviewed final file SHA-256: `3104a3c949f039cbd7e986bfef9aee47e2346022e5f91fc8c2d92967ad61f9a0`. This supersedes the media versions above. Full decode passes at **108.12 seconds**.
+
+New automatic transcription of the actual final muxed audio replaces `artifacts/submission/judge-transcription.json`. Both user-requested spoken phrases—“The gain is uncertain” and “The uncertainty includes no improvement”—are absent. The complete narration remains recoverable without an apparent cut-off, including exact 4.323%, human-guided calibration, unchanged middle estimates, later November checks not confirming the gain, the 2029 ranges and scenario qualification, and the closing no-proven-victory sentence.
+
+The actual opening frame retains the adjacent on-screen uncertainty interval, failed-November qualification and assumption-based 2029 label. Only the requested spoken repetitions were removed; the visible qualifications remain. **Approved: no blocking media or factual issue identified.** Speech verification is automatic transcription, not human listening.
+
+## Footer qualification revision
+
+Reviewed the subsequent user-requested move of the exact hero qualification paragraph into a 12px global page footer, linked by a superscript 1 from the headline. The historical-result / human-guided-calibration label remains above the headline. This supersedes earlier descriptions of an immediately adjacent uncertainty paragraph.
+
+On the deployed site, the headline remains one line at 1920×1080 and 1366×768. At 390×844 it wraps naturally to three lines with the footnote link; no horizontal overflow is present. After initial page rendering settles, clicking the accessible “Read forecast result qualifications” link changes the fragment to `#forecast-caveat` and displays the entire caveat at all three sizes (vertical bounds approximately 955–974, 624–662 and 663–739 pixels respectively). Exact wording and numeric interval are retained.
+
+Minor edge case: clicking immediately when the first metric populates can land short of the footer because later asynchronous layout expands the page. Waiting for the initial layout to settle produces the correct anchor position. This finding was reported to the build agent. Settled-page layout and anchor approved for screenshot capture; no application files were edited by this reviewer. This remains automated self-review, not actual judge feedback.
+
+## Final footer-version media verification
+
+Current final video SHA-256: `24c2188b8e981188cba88249157bf2f6cad2567ae5a3277ea5f9c78469cce221`. This supersedes previous final-media hashes above. Full decode passes at **108.12 seconds**. Decoded PCM audio is identical to the already transcribed concise narration: SHA-256 `191e0c3b08f46895c3e88b1fd9f3e88f5e25ab57d6a5ca5f46c10966d06af464` in both current final and narrated source files.
+
+The actual two-second video frame shows the upright single-line headline with superscript 1, the 2029 scenario card and the discovery table. The moved caveat paragraph is absent from the hero as requested; its full wording remains linked in the live site's footer, as separately verified above. The screenshot-based opening does not itself make that link interactive. No new numeric claim or audio change was introduced in this revision. **Media verification approved.**

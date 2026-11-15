@@ -6,7 +6,7 @@ GPU Value Scientist
 ## Description
 4.323% lower historical forecast error than Pacific’s drift baseline—and a clear 2029 GPU rental outlook.
 
-GPU Value Scientist’s human-guided calibration broadened prediction ranges while keeping middle estimates unchanged. Historical coverage rose from 64.70% to 75.42%. The 4.323% error reduction is promising but not established: its 95% uncertainty interval is −0.82% to +7.02%, and later November checks did not confirm the gain. We preserve those failures rather than claim a proven victory.
+GPU Value Scientist’s human-guided calibration broadened prediction ranges while keeping middle estimates unchanged. Historical coverage rose from 64.70% to 75.42%.
 
 Our central 2029 scenario predicts H100 rents falling from $3.55 to $0.98–$2.59 and A100 rents from $1.95 to $0.42–$1.20 per GPU-hour for the specified SXM 80GB rental categories. Newer chips’ greater capability can pressure older-chip rents; lower expected rental profits can also reduce used-equipment values. These are evidence-informed scenarios with explicit assumptions, not tested future prices.
 
