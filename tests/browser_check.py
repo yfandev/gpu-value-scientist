@@ -117,6 +117,12 @@ def check(url: str, artifacts: Path):
             page.get_by_role('tab',name='Overview').click()
             assert page.locator('#calibration-comparison tbody tr').count()==2
             assert '75.4%' in page.locator('#calibration-comparison').inner_text()
+            assert page.locator('#metric-coverage').inner_text()=='75.42%'
+            assert page.locator('#metric-drift').inner_text()=='+4.323%'
+            assert 'forecasts_calibrated.csv' in page.locator('#final-method').inner_text()
+            assert '54/54' in page.locator('#shared-memory-label').inner_text()
+            assert 'Exa ran inside' in page.locator('#researcher-detail').inner_text()
+            assert 'Details' in page.locator('#rejected-table').inner_text()
             assert 'Pacific' in page.locator('#overview').inner_text()
             checks.append('Recorded calibration comparison displays both official outcomes and named Pacific baseline')
         downloads = ['forecasts.csv', 'findings.md', 'README.md', 'data.json']

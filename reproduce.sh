@@ -24,4 +24,7 @@ if [ -f results/calibration_study/rule.json ]; then
   "$PYTHON" -B src/calibration_study.py
 fi
 "$PYTHON" -B src/series_audit.py
+if [ -f results/group_calibration_study/rule.json ]; then
+  "$PYTHON" -B src/group_calibration_study.py
+fi
 "$PYTHON" -B src/finalize_demo.py

@@ -1,0 +1,43 @@
+{
+  "rule_id": "class-versus-global-drift-archive-v1",
+  "frozen_utc": "2026-11-15T18:38:52.589791+00:00",
+  "design": "Retrospective later-origin evaluation; all origins previously viewed, not independent heldout data. No tuning/search after scoring.",
+  "later_origins": [
+    "2026-09-23",
+    "2026-09-30",
+    "2026-10-07",
+    "2026-10-14",
+    "2026-10-21"
+  ],
+  "warmup": "All preceding available origins; later origins may use matured earlier later-origin residuals.",
+  "base_and_archive": "Both global and grouped use identical drift base and historical drift-only residual archive. Current-v1 reference uses drift base and original mixed-policy archive.",
+  "pools": {
+    "global": [
+      "horizon_days"
+    ],
+    "grouped": [
+      "instrument_class+horizon_days",
+      "horizon_days (sparse fallback only)"
+    ]
+  },
+  "minimum_cells": 20,
+  "minimum_prior_origins": 2,
+  "maturity": "origin_date < current origin_date and target_date < current origin_date",
+  "scale": "max(abs(q50),1e-9)",
+  "signed_tails": [
+    "(q10-y)/scale",
+    "(y-q90)/scale"
+  ],
+  "quantile": 0.9,
+  "rank": "min(n,ceil((n+1)*0.9)), one-indexed",
+  "adjustment": "nonnegative tail expansion; q10 floor zero; q50 unchanged",
+  "evaluation": "Official scorer only, common exact later-origin cells, last_value and drift baselines; pooled/mean/median/geomean skill, coverage and width; group and series contributions and leave-one-series-out",
+  "bootstrap": {
+    "unit": "whole origin paired",
+    "seed": 42,
+    "replicates": 2000,
+    "interval": "95% percentile",
+    "caveat": "Only five origin clusters, dependent series/time, retrospective selection; descriptive only"
+  },
+  "promotion_gate": "grouped-minus-global AND grouped-minus-current-v1 official paired mean pinball CI upper < 0; grouped mean-series skill vs drift >= both comparators AND >= 0; if passes save separate forecasts_group_calibrated.csv; never overwrite forecasts.csv or forecasts_calibrated.csv"
+}

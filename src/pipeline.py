@@ -203,7 +203,7 @@ Question: can bounded experiments and an auditable memory improve posted GPU ren
 
 ## Measured result
 
-Final submission: **{payload['status']['final_method']}**, {payload['status']['n_rows']} rows across {payload['status']['n_series']} posted-rental series, origin 2026-11-06, horizons 1, 3, 7.
+Original forecast file (preserved): **{payload['status']['final_method']}**, {payload['status']['n_rows']} rows across {payload['status']['n_series']} posted-rental series, origin 2026-11-06, horizons 1, 3, 7.
 
 Historical prequential results (14 unseen origins; NOT the withheld November scoring window): pooled skill against last value **{o['skill_pooled']}**; against drift **{d['skill_pooled']}**; interval coverage **{o['coverage']['within_q10_q90']}**. Mean series skill {o['skill_mean_of_series']}, median {o['skill_median_of_series']}, geometric-mean skill {o['skill_geomean']}. Scored cells: {o['n_cells']}. All scores come from the unmodified starter scorer.py, with complete reports in results/.
 
@@ -239,9 +239,11 @@ Runtime: **{payload['status']['agent_mode']}**. Shared memory: **{payload['statu
     if Path('docs/PAST_DEV_DISCLOSURE.md').exists():text+='\n'+Path('docs/PAST_DEV_DISCLOSURE.md').read_text()+'\n'
     if Path('docs/CALIBRATION_STUDY.md').exists():text+='\n'+Path('docs/CALIBRATION_STUDY.md').read_text()+'\n'
     if Path('docs/SERIES_AUDIT.md').exists():text+='\n'+Path('docs/SERIES_AUDIT.md').read_text()+'\n'
+    if Path('docs/GROUP_CALIBRATION_STUDY.md').exists():text+='\n'+Path('docs/GROUP_CALIBRATION_STUDY.md').read_text()+'\n'
     if Path('docs/economic_view.md').exists():text+=Path('docs/economic_view.md').read_text()
     text+='\n## Limitations\n\n'+'\n'.join('- '+x for x in payload['status']['warnings'])+'\n'
     text+='\n## Reproduction and attribution\n\nRun `./reproduce.sh` after installing requirements in a local virtual environment. `./reproduce.sh --live` requires configured API keys and rebuilds live decisions. The pack is read-only, verified with MANIFEST.sha256, and never bundled with generated submission files.\n\nPacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0. Full unchanged upstream attribution accompanies this work in ATTRIBUTION.md; original notices remain in the pack. Derived changes: target extraction, history-only forecasts, official score reports, and research decisions. No endorsement implied.\n'
+    if Path('docs/SELECTED_SUBMISSION.md').exists():text=text.replace('## Measured result',Path('docs/SELECTED_SUBMISSION.md').read_text()+'\n## Original agent-loop result',1)
     Path('findings.md').write_text(text)
 
 if __name__=='__main__':main()

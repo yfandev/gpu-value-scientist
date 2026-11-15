@@ -17,6 +17,12 @@ for name in ['forecasts.csv','forecasts_calibrated.csv']:
   with (source/name).open() as f:rows=list(csv.DictReader(f))
   assert len(rows)==111 and all(r['origin_date']=='2026-11-06' for r in rows)
 assert data['sponsors']['recorded_live_run']['status']=='matched_exact_live_run'
+if data.get('selected_submission',{}).get('file')=='forecasts_calibrated.csv':
+ with (source/'forecasts_calibrated.csv').open() as f:rows=list(csv.DictReader(f))
+ displayed={(r['series_id'],int(r['horizon_days'])):r for r in data['forecasts']}
+ for row in rows:
+  shown=displayed[row['series_id'],int(row['horizon_days'])]
+  assert all(float(row[k])==float(shown[k]) for k in ['q10','q50','q90']), 'Explorer differs from selected forecast file'
 out=ROOT/'deliverables/deploy_demo';temp=ROOT/'deliverables/deploy_demo.tmp'
 if temp.exists():shutil.rmtree(temp)
 shutil.copytree(source,temp)
