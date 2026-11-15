@@ -22,7 +22,7 @@
     "Recorded calibration comparison displays both official outcomes and named Pacific baseline",
     "All displayed downloads respond; /.env returns 404",
     "Mobile navigation and layout without horizontal page overflow",
-    "Stage1366x768 playback scrolls into view; measured ready time0.846s (hosting may be warm)",
+    "Stage1366x768 playback scrolls into view; measured ready time0.554s (hosting may be warm)",
     "No browser JavaScript errors"
   ]
 }

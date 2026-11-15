@@ -2,7 +2,7 @@
 
 An AI research team that tests GPU rental-price forecasts, shares evidence, and keeps a record of ideas that fail.
 
-**[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the captioned walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/forecasts_calibrated.csv)**
+**[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the captioned walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv)**
 
 ## What to submit
 
@@ -23,7 +23,7 @@ The improvement is uncertain: its 95% interval is **−0.82% to +7.02%**, which 
 
 We selected the calibrated file for its observed overall error and coverage improvements. It is not proven better on future data. The rule was fixed before its test, after we had already seen the original undercoverage. It was first saved in a separate JSON file, then copied unchanged into `config.json`; the timestamps and limitation are preserved.
 
-A further fixed-rule test asked whether separate widening for rental groups beat global widening. **It did not.** It helped hyperscaler spot but hurt neocloud rate cards and neocloud spot on pooled error. The average across series was also worse than global widening. No replacement file was produced. [Read the full comparison](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/GROUP_CALIBRATION_STUDY.md).
+A further fixed-rule test asked whether separate widening for rental groups beat global widening. **It did not.** It helped hyperscaler spot but hurt neocloud rate cards and neocloud spot on pooled error. The average across series was also worse than global widening. No replacement file was produced. [Read the full comparison](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/GROUP_CALIBRATION_STUDY.md).
 
 ## What the agents actually did
 
@@ -56,7 +56,7 @@ past.dev holds shared hypotheses, verdicts and evidence. Local files hold canoni
 
 October 24 has **97 headline series: 80 AWS archive series plus 17 posted-rental series**. November 6 has 37 eligible posted-rental series: those 17 plus 20 more. All 37 have November 6 data.
 
-The AWS series are still forecastable from October 31 observations, but are stale and outside Sunday’s scored posted-rental scope. [`forecasts_extended.csv`](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/forecasts_extended.csv) preserves the original 111 rows and adds 240 AWS predictions: **117 series, 351 rows**. It is not the selected calibrated submission. [Every series, latest date and inclusion reason](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/data/headline_series_audit.csv).
+The AWS series are still forecastable from October 31 observations, but are stale and outside Sunday’s scored posted-rental scope. [`forecasts_extended.csv`](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_extended.csv) preserves the original 111 rows and adds 240 AWS predictions: **117 series, 351 rows**. It is not the selected calibrated submission. [Every series, latest date and inclusion reason](https://github.com/yfandev/gpu-value-scientist/blob/main/data/headline_series_audit.csv).
 
 ## Reproduce it
 
@@ -78,11 +78,11 @@ To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY
 - The starter rejects history containing a post-cutoff row.
 - Network-disabled reproduction preserves forecast bytes and official metrics.
 - A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
-- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts about 112 seconds.
+- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A complete captioned walkthrough lasts under two minutes.
 - Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 
-Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/docs/MEMORY_BENCHMARK_V3.md).
+Details: [findings](https://github.com/yfandev/gpu-value-scientist/blob/main/findings.md), [calibration](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/CALIBRATION_STUDY.md), [falsification audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FALSIFICATION_AUDIT.md), [series audit](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/SERIES_AUDIT.md), [memory benchmarks](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/MEMORY_BENCHMARK_V3.md).
 
 Remaining limits include retrospective target selection, previously inspected test dates, few test origins, dependent prices, uneven gains across series, and unavailable November outcomes. Long-term resale/rental ranges are assumption-based scenarios, not scored forecasts.
 
-Data: Pacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0 compilation. Preserve the original pack and [full attribution](https://github.com/yfandev/gpu-value-scientist/blob/ori/about-event-sf-ai-gpu-value-scientist/ATTRIBUTION.md). No endorsement implied.
+Data: Pacific Machines (2026), gpu-price-pack v0.1.1-handover, CC BY 4.0 compilation. Preserve the original pack and [full attribution](https://github.com/yfandev/gpu-value-scientist/blob/main/ATTRIBUTION.md). No endorsement implied.

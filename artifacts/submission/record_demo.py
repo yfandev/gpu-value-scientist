@@ -22,7 +22,7 @@ with sync_playwright() as p:
  page.get_by_role('tab',name='Sources & sponsors').click();page.locator('#sponsor-cards').scroll_into_view_if_needed()
  caption('Verified execution: Exa searches inside the loop; three agents write to past.dev and two read shared findings.')
  page.wait_for_timeout(16000)
- page.get_by_role('tab',name='Forecast explorer').click();page.locator('#series-search').fill('H100');page.locator('#price-history-chart').scroll_into_view_if_needed()
+ page.get_by_role('tab',name='Forecast explorer').click();page.locator('#series-search').fill('H100');page.locator('[data-series="gpurentalprices.neocloud_rate_card.H100_SXM_80GB.on_demand.median"]').click();page.locator('#price-history-chart').scroll_into_view_if_needed()
  caption('White shows observed prices through November 6. Forecast lines overlap because calibration only widens the uncertainty ranges.')
  page.wait_for_timeout(14000)
  page.get_by_role('tab',name='Economic view').click();page.locator('#economics').scroll_into_view_if_needed()
