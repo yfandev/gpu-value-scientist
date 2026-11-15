@@ -3,10 +3,8 @@
   "browser_errors": [],
   "recording": "actual browser with explanatory captions",
   "audio": true,
-  "duration": 112.28,
+  "duration": 108.12,
   "width": 1920,
   "height": 1080,
-  "playback_check": "local encoded file opens and seeks in Chromium",
-  "narration": "OpenAI AI-generated voice, disclosed at opening",
-  "captions": "explanatory on-screen captions"
+  "narration": "AI-generated voice disclosed at opening; exact result and2029 ranges spoken"
 }

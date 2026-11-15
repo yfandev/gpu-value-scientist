@@ -1,0 +1,34 @@
+[
+  {
+    "start": 0.8817455979988154,
+    "caption": "4.323% less historical forecast error than Pacific\u2019s drift forecast. The uncertainty includes no gain; later checks did not confirm improvement."
+  },
+  {
+    "start": 12.922928040999977,
+    "caption": "A matching H100 price record stayed at $0.94 while the reported middle price changed. Changing observed entries can move a price index."
+  },
+  {
+    "start": 20.94525768499807,
+    "caption": "Green shows predictions after broadening their ranges; blue shows them before. This is a retrospective comparison, not proof of future improvement."
+  },
+  {
+    "start": 41.98270874899754,
+    "caption": "Rejected ideas remain visible. The Critic checks later prices before an idea can be used."
+  },
+  {
+    "start": 52.04182653499811,
+    "caption": "Saved records show Exa searches during research. Three agents saved findings in past.dev, and two read them."
+  },
+  {
+    "start": 62.155249458999606,
+    "caption": "White shows recorded prices through November 6. Green and gold show future estimates; widening the range did not change the middle prediction."
+  },
+  {
+    "start": 74.20924265699796,
+    "caption": "By 2029, our central scenario has H100 rents falling to $0.98\u2013$2.59 and A100 to $0.42\u2013$1.20 per GPU-hour. These are assumptions, not tested future prices."
+  },
+  {
+    "start": 88.25744359099917,
+    "caption": "After setup, one command rebuilds the saved forecasts without internet access."
+  }
+]

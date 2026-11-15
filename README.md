@@ -1,6 +1,6 @@
 # GPU Value Scientist
 
-An AI research team that tests GPU rental-price forecasts, shares evidence, and keeps a record of ideas that fail.
+**4.323% lower historical forecast error than Pacific’s drift baseline.** The uncertainty includes no gain, and later checks did not confirm improvement. Our central 2029 scenario predicts lower H100 and A100 rents; these are assumption-based future ranges.
 
 **[Open the live demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)** · **[Watch the narrated, captioned demo](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm)** · **[Selected forecast file](https://github.com/yfandev/gpu-value-scientist/blob/main/forecasts_calibrated.csv)**
 
@@ -8,7 +8,7 @@ An AI research team that tests GPU rental-price forecasts, shares evidence, and 
 ## Submission links
 
 - **Live site:** [https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/)
-- **Demo video (1:52):** [Watch or download the narrated walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm). Includes spoken AI-generated narration and explanatory on-screen captions.
+- **Demo video (1:48):** [Watch or download the narrated walkthrough](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/demo.webm). Includes spoken AI-generated narration and explanatory on-screen captions.
 - **One submission screenshot (16:9):** [Download project-screenshot.png](https://y-fan-development--gpu-value-scientist-demo-site.us-east.modal.run/project-screenshot.png).
 - **GitHub:** https://github.com/yfandev/gpu-value-scientist
 - **Judge-panel rehearsal:** [Simulated critique and media verification](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/JUDGE_VIDEO_REHEARSAL.md). This is automated self-review, not feedback from the judges.
@@ -19,17 +19,17 @@ The video is publicly hosted on Modal. If the form requires YouTube, Drive or Lo
 
 ## Submission description
 
-GPU Value Scientist is an AI research team that forecasts GPU rental prices, tests its own ideas, and preserves the evidence—including failures.
+4.323% lower historical forecast error than Pacific’s drift baseline—and a clear 2029 GPU rental outlook.
 
-Four roles—Analyst, Forecaster, Critic and Researcher—use OpenAI models, Exa searches inside the research loop, shared past.dev memory, and Modal parallel experiments. Built in the Originator cloud workspace, the public demo shows predictions, sources, decisions and rejected hypotheses.
+GPU Value Scientist’s human-guided calibration broadened prediction ranges while keeping middle estimates unchanged. Historical coverage rose from 64.70% to 75.42%. The 4.323% error reduction is promising but not established: its 95% uncertainty interval is −0.82% to +7.02%, and later November checks did not confirm the gain. We preserve those failures rather than claim a proven victory.
 
-Our strongest research finding challenges what a GPU price index measures. A reproducible audit reconstructed 2,837 daily medians from 444,663 observations. In one H100 marketplace category, the median moved $1.90 → $0.94 → $2.23 while a matching observed price record stayed at $0.94. Changes in the observed listings can move the index without that matching record changing price—a distinction that matters when valuing a specific GPU configuration.
+Our central 2029 scenario predicts H100 rents falling from $3.55 to $0.98–$2.59 and A100 rents from $1.95 to $0.42–$1.20 per GPU-hour for the specified SXM 80GB rental categories. Newer chips’ greater capability can pressure older-chip rents; lower expected rental profits can also reduce used-equipment values. These are evidence-informed scenarios with explicit assumptions, not tested future prices.
 
-A human-guided calibration step broadened prediction ranges without changing their middle estimates. Historical coverage rose from 64.70% to 75.42%, with 4.323% lower combined forecast error than Pacific’s drift baseline. However, the confidence interval includes no improvement, and later checks did not confirm the gain. We rejected two subsequent forecasting approaches that failed their adoption tests and preserved the frozen submission.
+Four AI research roles—Analyst, Forecaster, Critic and Researcher—use OpenAI models, Exa searches inside the research loop, shared past.dev memory, and Modal parallel experiments. Built in the Originator cloud workspace, the system records hypotheses, sources, decisions and rejected ideas. Exa ran in the main loop; three agents wrote to past.dev and two read shared findings; eight experiment jobs ran on Modal. Memory matched local lookup accuracy but was slower, with no established cost savings.
 
-The demo also presents evidence-informed, assumption-based 2028–2029 scenarios for H100 and A100 rentals and equipment values. Exa ran inside the research loop; multiple agents wrote to and read from past.dev; eight experiment jobs ran on Modal. Memory retrieval matched local lookup on accuracy but was slower, with no established cost savings.
+A separate reproducible audit reconstructed 2,837 daily medians from 444,663 observations. One H100 category’s median moved $1.90 → $0.94 → $2.23 while a matching observed record stayed at $0.94—showing why changes in observed listings must be distinguished from changes in a fixed GPU contract’s value.
 
-After installing the supplied data pack and dependencies, one command reproduces the saved forecasts offline. Code, experiment protocols, official scores, sources and verification artifacts are public.
+The public narrated demo exposes results, limitations and economic assumptions. After installing the supplied data pack and dependencies, one command reproduces the saved forecasts offline. Code, frozen protocols, official scores and verification artifacts are public.
 
 ## What the price data taught us
 
@@ -114,7 +114,7 @@ To run API-backed research, copy `.env.example` to `.env`, enter `OPENAI_API_KEY
 - The starter rejects history containing a post-cutoff row.
 - Network-disabled reproduction preserves forecast bytes and official metrics.
 - A second leakage check physically removed future history at every test date; forecasts and eight fresh official reports matched.
-- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A narrated, captioned walkthrough lasts 1 minute 52 seconds.
+- The public site was exercised across desktop/mobile tabs, downloads, replay and stage playback. A narrated, captioned walkthrough lasts 1 minute 48 seconds.
 - A fresh agent with no project background reviewed the site for a two-minute judging visit; its clarity findings were fixed before final capture ([review](https://github.com/yfandev/gpu-value-scientist/blob/main/docs/FINAL_IMPATIENT_REVIEW.md)).
 - Reviews are **automated self-review by the build agent**, including separately tasked agents in the same system. They are not external certification or official judging.
 

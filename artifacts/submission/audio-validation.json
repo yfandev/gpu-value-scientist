@@ -1,55 +1,55 @@
 {
   "audio_codec": "opus",
-  "audio_seconds": 112.28,
+  "audio_seconds": 108.12,
   "sample_rate": 24000,
   "scenes": [
     {
       "start": 0,
-      "end": 7,
-      "rms": 1058.715005527253,
-      "spoken_text": "Can agents distinguish GPU value from a changing price index? This voice is AI generated."
+      "end": 12.802928040999978,
+      "rms": 1100.337500031095,
+      "spoken_text": "Four point three two three percent less historical forecast error than Pacific. The gain is uncertain. GPU Value Scientist shows the evidence. This voice is AI generated."
     },
     {
-      "start": 7,
-      "end": 16,
-      "rms": 1180.9507264119713,
+      "start": 12.922928040999977,
+      "end": 20.825257684998068,
+      "rms": 1170.778890343981,
       "spoken_text": "One H one hundred record stayed at ninety-four cents per GPU hour while the category median changed. Changing listings can move an index."
     },
     {
-      "start": 16,
-      "end": 38,
-      "rms": 1192.218165796873,
-      "spoken_text": "Our original prediction ranges were too narrow. Human-guided calibration widened them without changing the middle. Historical coverage rose from sixty-five to seventy-five percent. Combined error fell four point three percent versus Pacific, but the uncertainty includes no improvement."
+      "start": 20.94525768499807,
+      "end": 41.86270874899754,
+      "rms": 1352.4068910122478,
+      "spoken_text": "Our original prediction ranges were too narrow. Human-guided calibration widened them without changing the middle. Coverage rose from sixty-four point seven to seventy-five point four two percent. The uncertainty includes no improvement, and later November checks did not confirm the gain."
     },
     {
-      "start": 38,
-      "end": 52,
-      "rms": 1306.6827905623406,
-      "spoken_text": "Four agents propose, test and record bounded forecasting ideas. The log keeps failures visible. Later, human-guided price-model studies failed their promotion checks. We rejected them and preserved the frozen submission."
+      "start": 41.98270874899754,
+      "end": 51.92182653499811,
+      "rms": 1275.906843839932,
+      "spoken_text": "Four agents propose, test and record forecasting ideas. Later human-guided models failed their checks. Rejections remain visible, and our frozen submission stays unchanged."
     },
     {
-      "start": 52,
-      "end": 65,
-      "rms": 1163.2548952957331,
-      "spoken_text": "Exa searches ran inside the research loop. Three agents wrote to past dot dev, and two read shared findings. Modal ran eight experiment jobs. Memory matched local accuracy, but was slower."
+      "start": 52.04182653499811,
+      "end": 62.03524945899961,
+      "rms": 1351.2355376771052,
+      "spoken_text": "Exa searched inside the loop. Three agents wrote shared past dot dev memory; two read it. Modal ran eight jobs. Memory matched local accuracy, but was slower."
     },
     {
-      "start": 65,
-      "end": 81,
-      "rms": 1098.2268499900476,
-      "spoken_text": "Here is the selected H one hundred forecast. White shows recorded advertised prices. Green and gold overlap because our middle prediction matches Pacific. We changed the prediction bounds, not the actual prices. Future actual prices are not available."
+      "start": 62.155249458999606,
+      "end": 74.08924265699795,
+      "rms": 871.2034920471752,
+      "spoken_text": "White shows recorded prices. Green and gold overlap because our middle prediction matches Pacific. We changed the prediction bounds, not actual prices. Future actual prices are unavailable."
     },
     {
-      "start": 81,
-      "end": 96,
-      "rms": 1101.910178810717,
-      "spoken_text": "Our central scenario expects lower H one hundred and A one hundred rents by twenty twenty-nine. Newer chips offer more work per GPU. Lower rental profits could reduce used equipment values. These are assumption-based scenarios, not measured future outcomes."
+      "start": 74.20924265699796,
+      "end": 88.13744359099917,
+      "rms": 1071.1737348921583,
+      "spoken_text": "For twenty twenty-nine: H one hundred rents, ninety-eight cents to two dollars fifty-nine; A one hundred, forty-two cents to one dollar twenty per GPU hour. Assumed scenarios, not tested future prices."
     },
     {
-      "start": 96,
-      "end": 111.8,
-      "rms": 1425.2202344072366,
-      "spoken_text": "After setup, one command reproduces the saved forecasts offline. Frozen protocols, source rows and official scores are public. Our insight: a changing price index is not the same as a fixed GPU contract. Better historical coverage is measured; forecasting victory is not proven."
+      "start": 88.25744359099917,
+      "end": 108.0,
+      "rms": 1218.802234552931,
+      "spoken_text": "After setup, one command rebuilds saved forecasts offline. Sources, frozen protocols, official scores and failures are public. Better historical coverage is measured; a forecasting victory is not proven."
     }
   ],
   "all_scenes_non_silent": true,

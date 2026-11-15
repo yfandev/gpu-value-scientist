@@ -33,7 +33,7 @@ The most defensible pitch is a falsifiable research workflow plus a useful measu
 3. Distinguish bounded agent-loop proposals from later human-guided model studies.
 4. Lead and close with the measurement insight while retaining the uncertainty and no-proven-victory caveats.
 
-## Independent final media checks
+## Initial media checks (prior version)
 
 Final file reviewed: `artifacts/submission/demo-narrated.webm`.
 SHA-256: `eb96430a1306a235c927855107c2922fda892bed1a49211f0e2abb4d8d84f5ce`.
@@ -46,3 +46,38 @@ SHA-256: `eb96430a1306a235c927855107c2922fda892bed1a49211f0e2abb4d8d84f5ce`.
 - Speech recognition rendered Exa as “Exer” and past.dev as “pass.dev”. Proper-name recognition is imperfect; sponsor names are spelled correctly on screen. No substantive quantitative claim was lost in transcription.
 
 No blocking media or factual issue found after the revisions. Small UI body text requires full-screen viewing; the narration and larger overlays carry the essential story. This review did not alter forecasts, model files, app code or the recording scripts.
+
+## Highlight revision review
+
+The subsequent user-requested revision promotes **4.323% lower historical error** and the **2029 rental outlook** across the hero and submission description. This supersedes the earlier measurement-first editorial emphasis; the media hash above identifies the earlier recording only.
+
+Independently opened the deployed public site at 1920×1080, 1366×768 and 390×844. At all three sizes, both highlights appear on the first screen with readable adjacent qualifications. No document horizontal overflow or headline clipping was detected. The 95% interval, lack of confirmation on later November checks, human-guided calibration label and assumption-based 2029 label remain visible. The README and submission description use the same qualified claims. Approved for recapture.
+
+Reviewed revised narration source: exact 4.323% opens the video, the calibration scene retains unchanged middle predictions and failed later checks, and the economics scene speaks the H100 $0.98–$2.59 and A100 $0.42–$1.20 hourly ranges. Recommended keeping “After setup” in the closing reproduction line. This paragraph is a source/UI review; the revised rendered recording needs its own final media check before publication.
+
+## Highlight recording approval (prior version)
+
+The highlight revision was independently checked after rendering. Final reviewed file: `artifacts/submission/demo-narrated.webm`; SHA-256 `5924d7869b3183b67bbd94e459159c1d43b79ca85988ef3d46abd003c2bc82c1`. Video duration **108.12 seconds**. Full video/audio decoding succeeded without errors.
+
+A new automatic transcription extracted from this actual muxed file replaces the earlier `artifacts/submission/judge-transcription.json`. It confirms the opening **4.323%** figure, immediate uncertainty caveat, human-guided calibration, unchanged middle estimates, failure of later November checks, and spoken **2029 H100 $0.98–$2.59 / A100 $0.42–$1.20 per GPU-hour** ranges. It also recovers the assumption-based qualification, “After setup” and the final no-proven-victory sentence. ASR still imperfectly renders the past.dev name, which is correctly spelled on screen.
+
+Frames sampled two seconds into the opening, calibration, economics and reproduction segments show matching content and explanatory overlays. The opening presents both requested highlights; the economics overlay repeats the spoken ranges and their limitation. The corresponding scene starts are approximately 0, 20.95, 74.21 and 88.26 seconds. This is sampled visual alignment plus full automatic speech transcription, not a claim of human listening or frame-by-frame manual review.
+
+**Approved: no blocking factual, duration, audio or sampled synchronization issue found.** Earlier 112-second media metadata in this document is historical and does not describe this final revision. No forecasts or application files were changed by the reviewer.
+
+## Upright headline layout check
+
+After the final cosmetic request, the deployed headline was checked again at 1920×1080, 1366×768 and 390×844. At the two desktop sizes its height equals one computed line height (50.39/50.4 pixels and 42.61/42.62 pixels respectively). The headline contains no forced break or emphasis element; computed style is upright sans-serif. At 390 pixels it wraps naturally to two lines without horizontal overflow. Both highlighted results and their qualifications remain in the first screen. Approved for the final screenshot and opening-frame replacement; this check does not itself verify the subsequently encoded media.
+
+## Opening-only replacement verification (prior version)
+
+Final encoded deliverable reviewed: `artifacts/submission/demo-final.webm`, SHA-256 `79691880d4a84511d968783ef5adfe1d85197517a0fe9cdf01f273c5a1ca6022`. Full decode succeeds; video remains **108.12 seconds**. Decoded signed-16-bit PCM audio is byte-identical to the previously transcribed narration, SHA-256 `5ba018f7759d5983b953f093249235edbb1f60f1f3c5d98df23e1ded21857677`; no new speech-recognition call was necessary.
+
+The two-second frame shows the updated upright, single-line headline and the 2029 outlook. The 15-second frame correctly shows the measurement scene and matching explanatory overlay. Only the opening through approximately 12.923 seconds was replaced: subsequent footage retains the earlier typography, including its italic, two-line hero when visible. This is consistent with the opening-only edit scope, not a claim that every frame has the new typography. No blocking decode, audio, duration or sampled transition issue found.
+
+
+## Current final deliverable verification
+
+The opening screenshot was extended through approximately **20.945 seconds**, including the measurement explanation, before replay begins. Current `artifacts/submission/demo-final.webm` SHA-256: `7201d69b7f35333cd1a3f1b0b7420a29ac0f2901813c02e2303e308dcdc9af16`. All earlier media hashes in this report identify prior versions.
+
+Full decode succeeds at **108.12 seconds**. Decoded audio retains the identical PCM hash `5ba018f7759d5983b953f093249235edbb1f60f1f3c5d98df23e1ded21857677`. The 15-second frame now shows the upright single-line headline, 2029 outlook and complete matching-record comparison table. The earlier typography reappearance in that scene is resolved. The replaced segment uses the page screenshot rather than the old explanatory overlay; the page itself supplies the claims and caveats. **Approved, with no blocking issue found.**

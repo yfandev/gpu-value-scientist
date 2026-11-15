@@ -8,7 +8,7 @@ r=subprocess.run([ff,'-i',str(video)],capture_output=True,text=True)
 assert 'Audio: opus' in r.stderr,r.stderr
 pcm=subprocess.check_output([ff,'-v','error','-i',str(video),'-map','0:a:0','-ar','24000','-ac','1','-f','s16le','-'])
 samples=array.array('h',pcm);duration=len(samples)/24000
-assert 110<duration<120,duration
+assert 90<duration<120,duration
 script=json.loads((OUT/'narration-script.json').read_text());scenes=[]
 for start,end,text in script['segments']:
  values=samples[int(start*24000):int(end*24000)]
